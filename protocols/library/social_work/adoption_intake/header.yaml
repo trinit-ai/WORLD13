@@ -1,0 +1,9 @@
+id: adoption_intake
+name: Adoption Services Intake
+category: social_work
+status: active
+description: Adoption services intake for adoption social workers and prospective adoptive families beginning the adoption process. Evaluates the adoption type, the family's readiness and circumstances, the home study requirements, the legal process, and the child's needs to produce an adoption intake profile with process pathway and preparation priorities. Not legal advice.
+deliverable: adoption_intake_profile
+estimated_turns: 12-16
+version: 1.0
+author: Robert C. Ventura

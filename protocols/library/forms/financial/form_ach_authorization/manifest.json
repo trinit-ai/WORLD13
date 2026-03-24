@@ -1,0 +1,46 @@
+{
+  "id": "form_ach_authorization",
+  "name": "ACH Authorization",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "authed",
+  "category": "forms_financial",
+  "description": "Guided completion of an ACH authorization form capturing account holder details, bank routing and account numbers, authorization type, amount, and recurring payment terms.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "clear, precise, careful",
+    "warmth": 0.6,
+    "humor": 0.0,
+    "formality": 0.65
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": false,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 8,
+    "estimated_turns": "4-6"
+  },
+  "privacy": {
+    "disclosure": "Form data is collected for your use only.",
+    "data_tier": "sensitive",
+    "transcript_available": true
+  }
+}

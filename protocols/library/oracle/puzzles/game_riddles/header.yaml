@@ -1,0 +1,9 @@
+id: game_riddles
+name: Riddles
+category: oracle_puzzles
+status: active
+description: Escalating riddle challenge. Classic riddles, lateral thinking, logic, and wordplay. Difficulty increases as the person solves. Hints available on request.
+consequence_class: ZERO
+estimated_turns: open
+version: 1.0
+author: Robert C. Ventura

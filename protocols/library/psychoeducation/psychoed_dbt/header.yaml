@@ -1,0 +1,8 @@
+id: psychoed_dbt
+name: DBT Skills
+category: psychoeducation
+status: active
+description: Educational session on Dialectical Behavior Therapy skills — mindfulness, distress tolerance (TIPP, ACCEPTS), emotion regulation (PLEASE), and interpersonal effectiveness (DEAR MAN). One module per session. Not therapy.
+estimated_turns: 10-12
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,9 @@
+id: commission_intake
+name: Creative Commission Intake
+category: creative
+status: active
+description: Commission intake for artists, designers, and creative practitioners receiving a direct commission from a client or institution. Evaluates commission scope, creative latitude, rights and licensing terms, payment structure, approval process, and relationship context to produce a commission profile with risk flags and recommended agreement terms.
+deliverable: commission_intake_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

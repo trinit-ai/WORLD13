@@ -1,0 +1,8 @@
+id: life_pet_care
+name: Pet Care
+category: lifestyle
+status: active
+description: Pet care session covering behavior, training, and enrichment for companion animals — NOT veterinary advice. Routes medical concerns to veterinary professionals.
+estimated_turns: 6-10
+version: 1.0
+author: Robert C. Ventura

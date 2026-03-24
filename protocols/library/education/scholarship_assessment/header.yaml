@@ -1,0 +1,9 @@
+id: scholarship_assessment
+name: Scholarship Application Assessment Intake
+category: education
+status: active
+description: Scholarship application assessment intake for scholarship administrators, selection committees, and financial aid officers evaluating scholarship applications. Evaluates the selection criteria, review process, equity considerations, conflict of interest management, documentation requirements, and decision defensibility to produce a scholarship assessment profile with process gap analysis and risk flags.
+deliverable: scholarship_assessment_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

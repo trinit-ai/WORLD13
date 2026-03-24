@@ -1,0 +1,17 @@
+{
+  "id": "interview_law_school",
+  "name": "Law School Interview",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "learning_interviews",
+  "description": "Law school interview preparation session that helps applicants articulate their motivation for law, discuss their experiences with analytical depth, and navigate questions about specific legal interests and career goals.",
+  "base": "library_intake",
+  "personality": { "tone": "precise", "warmth": 0.4, "humor": 0.0, "formality": 0.6 },
+  "cartridges": [],
+  "commands": { "session": { "reset": { "pattern": "^(reset|start over|restart|new session|clear)$", "action": "reset_session" }, "status": { "pattern": "^(status|progress|where am i|summary)$", "action": "show_status" } } },
+  "features": { "session_intelligence": true, "contact_collection": false, "deliverables_pipeline": true, "session_journal": true, "depth_tracking": true },
+  "session_policy": { "type": "metered", "free_turns": 18, "estimated_turns": "10-14" },
+  "privacy": { "disclosure": "A summary of this session will be available for review.", "data_tier": "standard_intake", "transcript_available": true },
+  "deliverables": { "enabled": true, "types": [{ "id": "law_school_interview_prep_brief", "name": "Law School Interview Prep Brief", "description": "Generated law school interview prep brief.", "trigger": { "min_turns": 4, "contact_required": false }, "channels": ["download"], "include_transcript": true, "include_state_snapshot": true }] }
+}

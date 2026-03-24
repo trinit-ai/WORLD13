@@ -1,0 +1,9 @@
+id: music_licensing
+name: Music Licensing Intake
+category: creative
+status: active
+description: Music licensing intake for music supervisors, filmmakers, advertisers, and content creators seeking to license music for a project, and for rights holders evaluating a licensing request. Evaluates the licensing need, rights required, territory and term, exclusivity, and fee structure to produce a music licensing profile with rights gap analysis and risk flags.
+deliverable: music_licensing_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

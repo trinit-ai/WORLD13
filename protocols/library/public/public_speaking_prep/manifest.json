@@ -1,0 +1,31 @@
+{
+  "id": "public_speaking_prep",
+  "name": "Public Speaking Preparation",
+  "category": "public",
+  "version": "1.0",
+  "turns": {
+    "min": 8,
+    "max": 12
+  },
+  "author": "Robert C. Ventura",
+  "company": "TMOS13, LLC",
+  "description": "Talk, presentation, or keynote preparation. The talk is for the audience, not the speaker.",
+  "kill_patterns": [
+    "generic tips",
+    "memorized scripts",
+    "just be yourself",
+    "presentation templates",
+    "treating anxiety as a problem to eliminate"
+  ],
+  "completion": {
+    "type": "experiential",
+    "signal": "the speaker knows what they want to say and why it matters to the audience"
+  },
+  "routing": [],
+  "files": [
+    "header.yaml",
+    "manifest.json",
+    "MANIFEST.md",
+    "master.md"
+  ]
+}

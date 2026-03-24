@@ -1,0 +1,46 @@
+{
+  "id": "form_informed_consent",
+  "name": "Informed Consent Form",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "forms_medical",
+  "description": "Structured informed consent form collecting patient identity, procedure details, description, material risks (provider-completed section), benefits, alternatives, acknowledgment of understanding, and signatures. Information collection only — risks section completed by provider. Healthcare provider must review. Not medical advice.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "clear, precise, careful",
+    "warmth": 0.65,
+    "humor": 0.0,
+    "formality": 0.6
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 12,
+    "estimated_turns": "6-8"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  }
+}

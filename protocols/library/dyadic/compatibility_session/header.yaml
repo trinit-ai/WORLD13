@@ -1,0 +1,9 @@
+id: compatibility_session
+name: Compatibility Session
+category: dyadic
+status: active
+description: Deliberate honest assessment of romantic compatibility across values, needs, and whether the relationship supports both people's genuine selves.
+deliverable: compatibility_brief
+estimated_turns: "10-14"
+version: 1.0
+author: Robert C. Ventura

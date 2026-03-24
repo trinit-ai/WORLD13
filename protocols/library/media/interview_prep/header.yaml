@@ -1,0 +1,9 @@
+id: interview_prep
+name: Journalistic Interview Preparation Intake
+category: media
+status: active
+description: Journalistic interview preparation intake for journalists and hosts preparing for a significant interview. Evaluates the subject, the story angle, the key questions, the research requirements, the interview format, and the subject's likely evasion patterns to produce an interview preparation profile with question framework and research checklist.
+deliverable: interview_prep_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

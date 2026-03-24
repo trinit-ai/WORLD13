@@ -1,0 +1,9 @@
+id: food_safety_intake
+name: Food Safety Intake
+category: agriculture
+status: active
+description: Agricultural food safety compliance intake. Evaluates a farm or food operation's compliance posture under FSMA, GAP, HACCP, and related frameworks — assessing produce handling, water testing, worker hygiene, traceability, and recordkeeping practices. Produces a food safety compliance profile with gap analysis and corrective action priorities.
+deliverable: food_safety_compliance_report
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

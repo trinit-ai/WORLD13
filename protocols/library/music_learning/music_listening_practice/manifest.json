@@ -1,0 +1,20 @@
+{
+  "id": "music_listening_practice",
+  "name": "Active Listening",
+  "category": "music_learning",
+  "version": "1.0",
+  "status": "active",
+  "turn_budget": [8, 10],
+  "metered": true,
+  "entry_point": "master.md",
+  "files": [
+    "header.yaml",
+    "manifest.json",
+    "MANIFEST.md",
+    "master.md"
+  ],
+  "description": "Active listening — specific moments to listen for in specific pieces, hearing what you have been missing.",
+  "tags": ["listening", "active_listening", "music_appreciation", "analysis", "music_learning"],
+  "author": "Robert C. Ventura",
+  "created": "2026-03-18"
+}

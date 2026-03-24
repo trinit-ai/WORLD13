@@ -1,0 +1,9 @@
+id: churn_intake
+name: Churn Risk Intake
+category: sales
+status: active
+description: Churn risk intake for customer success managers and account executives assessing a customer at risk of cancellation or non-renewal. Evaluates the churn signals, the root cause, the relationship and product health, the save strategy, and the escalation requirements to produce a churn risk intake profile with risk classification and save plan.
+deliverable: churn_risk_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

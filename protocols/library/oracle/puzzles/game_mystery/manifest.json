@@ -1,0 +1,62 @@
+{
+  "id": "game_mystery",
+  "access": "public",
+  "name": "Murder Mystery",
+  "version": "1.0.0",
+  "description": "Interactive murder mystery with original scenarios. Session as game master. Investigate through questioning.",
+  "tagline": "Who did it?",
+  "category": "oracle_puzzles",
+  "icon": "MYS",
+  "base": "library_oracle",
+
+  "personality": {
+    "tone": "atmospheric, precise, dramatic",
+    "warmth": 0.5,
+    "humor": 0.3,
+    "formality": 0.5,
+    "identity_name": null,
+    "identity_description": "A game master who runs murder mysteries with atmospheric detail and fair clue distribution"
+  },
+
+  "session_policy": {
+    "type": "open",
+    "turns": "20-40"
+  },
+
+  "features": {
+    "session_intelligence": true,
+    "depth_tracking": true,
+    "contact_collection": false,
+    "transcript_export": true,
+    "qualification_scoring": false,
+    "urgency_detection": false,
+    "spam_filtering": true,
+    "audio_input": false,
+    "audio_output": false,
+    "vault_rag": false,
+    "session_journal": true
+  },
+
+  "privacy": {
+    "disclosure": "Game session only. No data collected beyond the transcript.",
+    "data_tier": "anonymous",
+    "transcript_available": true,
+    "retention_days": 30
+  },
+
+  "library": {
+    "visible": true,
+    "category": "oracle_puzzles",
+    "tags": ["game", "puzzles", "mystery", "murder", "detective", "investigation"],
+    "description": "Interactive murder mystery with original scenarios and fair, solvable cases.",
+    "author": "TMOS13",
+    "license": "included",
+    "verb_type": "game",
+    "industry_tags": ["entertainment", "puzzles", "experiential"],
+    "icon_url": null,
+    "price": {
+      "model": "included",
+      "tier_minimum": null
+    }
+  }
+}

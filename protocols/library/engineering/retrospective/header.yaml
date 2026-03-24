@@ -1,0 +1,9 @@
+id: retrospective
+name: Sprint Retrospective Intake
+category: engineering
+status: active
+description: Sprint retrospective intake for engineering teams structuring or facilitating a sprint retrospective. Evaluates the retrospective format, psychological safety conditions, prior action item follow-through, and outcome quality to produce a retrospective profile with facilitation recommendations and process health indicators.
+deliverable: retrospective_profile
+estimated_turns: 6-10
+version: 1.0
+author: Robert C. Ventura

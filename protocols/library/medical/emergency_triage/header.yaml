@@ -1,0 +1,9 @@
+id: emergency_triage
+name: Emergency Triage Intake
+category: medical
+status: active
+description: Emergency triage intake for emergency department triage nurses and clinical staff conducting an initial emergency triage assessment. Evaluates the chief complaint, vital signs, acuity level, and immediate clinical needs to produce an emergency triage profile with acuity classification and immediate action requirements. Not medical advice. Emergency conditions route to immediate clinical response.
+deliverable: emergency_triage_profile
+estimated_turns: 6-10
+version: 1.0
+author: Robert C. Ventura

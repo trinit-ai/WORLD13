@@ -1,0 +1,22 @@
+{
+  "pack_id": "form_background_check",
+  "pack_name": "Background Check Authorization",
+  "category": "forms_hr",
+  "tone": "clear, professional, helpful",
+  "warmth": 0.6,
+  "formality": 0.6,
+  "autonomy": "mediated",
+  "turn_budget": 6,
+  "deliverable": "completed_form",
+  "version": "1.0",
+  "fields": [
+    "applicant_name",
+    "ssn",
+    "date_of_birth",
+    "current_address",
+    "address_history_7_years",
+    "fcra_disclosure_acknowledged",
+    "authorization_signature",
+    "authorization_date"
+  ]
+}

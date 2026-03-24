@@ -1,0 +1,9 @@
+id: estrangement_session
+name: Estrangement Session
+category: dyadic
+status: active
+description: Guided session for navigating estrangement from family or a significant person — the grief, complexity, and social weight of chosen, experienced, or ambiguous cutoff.
+deliverable: estrangement_record
+estimated_turns: "10-14"
+version: 1.0
+author: Robert C. Ventura

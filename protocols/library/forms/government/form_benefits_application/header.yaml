@@ -1,0 +1,9 @@
+id: form_benefits_application
+name: Benefits Application (SNAP/Medicaid)
+category: forms_government
+status: active
+description: Guided completion of a public benefits application covering SNAP, Medicaid, and related programs with household and income documentation.
+deliverable: completed_form
+estimated_turns: "10-12"
+version: 1.0
+author: Robert C. Ventura

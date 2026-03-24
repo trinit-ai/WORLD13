@@ -1,0 +1,17 @@
+id: becoming_arc
+name: Becoming Arc
+category: chains
+status: active
+description: Multi-session arc for intentional self-construction — clarifying values, articulating mission, inventorying fears, auditing life, setting goals, and marking the transition with a rite of passage. The full arc from who you are to who you are becoming.
+type: arc
+sessions_in_arc: 6
+estimated_total_turns: "50-80"
+packs_in_arc:
+  - values_clarification
+  - personal_mission
+  - fear_inventory
+  - life_audit
+  - goal_setting_session
+  - rite_of_passage
+version: 1.0
+author: Robert C. Ventura

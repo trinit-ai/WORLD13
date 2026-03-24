@@ -1,0 +1,9 @@
+id: therapy_progress
+name: Therapy Progress Review Intake
+category: mental_health
+status: active
+description: Therapy progress review intake for licensed therapists conducting a structured review of treatment progress. Evaluates progress toward treatment goals, symptom change, functional improvement, therapeutic alliance, emerging issues, and treatment direction to produce a therapy progress profile with goal attainment summary and treatment direction considerations. Not clinical advice.
+deliverable: therapy_progress_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

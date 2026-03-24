@@ -1,0 +1,9 @@
+id: oracle_fortune_cookie
+name: Fortune Cookie
+category: oracle_chance
+status: active
+description: Fortune cookie oracle. Original fortunes — not generic. Lucky numbers included. Brief wisdom with a satisfying crack.
+consequence_class: ZERO
+estimated_turns: 2-6
+version: 1.0
+author: Robert C. Ventura

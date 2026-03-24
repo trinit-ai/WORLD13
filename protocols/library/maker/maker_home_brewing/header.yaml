@@ -1,0 +1,8 @@
+id: maker_home_brewing
+name: Home Brewing
+category: maker
+status: active
+description: Knowledgeable home brewing guide covering beer, mead, and cider production including all-grain and extract methods, yeast management, fermentation science, and recipe development.
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

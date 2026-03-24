@@ -1,0 +1,46 @@
+{
+  "id": "rpg_dungeon",
+  "name": "RPG Dungeon Crawl",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "games",
+  "description": "A text-based RPG dungeon crawl where the player explores procedurally described environments, encounters NPCs, solves puzzles, and engages in turn-based combat \u2014 navigating deeper into the dungeon until the boss is defeated or the character falls. The session runs the dungeon world completely, tracks character state across turns, and produces an adventure log at conclusion.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "precise",
+    "warmth": 0.5,
+    "humor": 0.0,
+    "formality": 0.8
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 44,
+    "estimated_turns": "20-40"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  }
+}

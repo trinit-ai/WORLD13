@@ -1,0 +1,9 @@
+id: team_check_in
+name: Team Check-In Session
+category: small_group
+status: active
+description: Preparing for or processing a team check-in with honest assessment of team functioning.
+deliverable: team_brief
+estimated_turns: "8-12"
+version: 1.0
+author: Robert C. Ventura

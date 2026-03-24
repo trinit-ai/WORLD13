@@ -1,0 +1,192 @@
+{
+  "pack_id": "gaming",
+  "access": "authed",
+  "name": "Game Room",
+  "version": "1.0.0",
+  "tagline": "Real games. Real rules. Real stakes.",
+  "philosophy": "Seven games that keep score, enforce rules, and remember your history.",
+  "assembly_mode": "assembled",
+
+  "personality": {
+    "tone": "witty, energetic, self-aware, playful, sharp",
+    "warmth": 0.7,
+    "humor": 0.85,
+    "formality": 0.15,
+    "identity_name": "The Host",
+    "identity_description": "A game host who treats every player like a worthy opponent and every game like it matters."
+  },
+
+  "cartridges": {
+    "twenty_questions": {
+      "file": "twenty_questions.md",
+      "name": "20 Questions",
+      "number": 1,
+      "description": "I think of something. You get twenty yes-or-no questions. Classic deduction.",
+      "state_class": "game"
+    },
+    "trivia": {
+      "file": "trivia.md",
+      "name": "Trivia",
+      "number": 2,
+      "description": "Ten rounds of adaptive trivia. No multiple choice — you know it or you don't.",
+      "state_class": "game"
+    },
+    "would_you_rather": {
+      "file": "would_you_rather.md",
+      "name": "Would You Rather",
+      "number": 3,
+      "description": "Ten dilemmas. Two options. No right answers — but I'll argue the other side.",
+      "state_class": "game"
+    },
+    "mystery": {
+      "file": "mystery.md",
+      "name": "Murder Mystery",
+      "number": 4,
+      "description": "A locked-room murder mystery. Four suspects, one killer, and you're the detective.",
+      "state_class": "simulation"
+    },
+    "word_duel": {
+      "file": "word_duel.md",
+      "name": "Word Duel",
+      "number": 5,
+      "description": "You vs. me. Word chain, Ghost, or Blitz. Vocabulary is ammunition.",
+      "state_class": "game"
+    },
+    "survival": {
+      "file": "survival.md",
+      "name": "Survival",
+      "number": 6,
+      "description": "Dropped into a survival scenario. Resources are finite. Choices have consequences.",
+      "state_class": "simulation"
+    },
+    "story_forge": {
+      "file": "story_forge.md",
+      "name": "Story Forge",
+      "number": 7,
+      "description": "Collaborative fiction. You control the character, I control the world. We write it together.",
+      "state_class": "simulation"
+    },
+    "company_profile": {
+      "name": "Company Profile",
+      "number": 8,
+      "description": "Your business identity, hours, contact info, FAQs, disclaimers, and policies — automatically woven into every interaction.",
+      "passive": true
+    }
+  },
+
+  "system_screens": {
+    "boot": { "file": "boot.md" },
+    "menu": { "file": "menu.md" }
+  },
+
+  "commands": {
+    "numerical": {
+      "000": { "action": "menu", "label": "Main Menu" },
+      "999": { "action": "close", "label": "End Session" }
+    },
+    "session": [
+      { "pattern": "menu|games|what can I play|back to menu|game list", "action": "menu" },
+      { "pattern": "quit|exit|done|leave|bye|end", "action": "close" },
+      { "pattern": "score|stats|record|how am I doing", "action": "direct", "target": "session_stats" }
+    ],
+    "navigation": [
+      { "pattern": "20 questions|twenty questions|guess what|think of something", "target": "twenty_questions" },
+      { "pattern": "trivia|quiz|knowledge|quick draw|test me", "target": "trivia" },
+      { "pattern": "would you rather|rather|dilemma|choices", "target": "would_you_rather" },
+      { "pattern": "mystery|murder|detective|whodunit|whodunnit|the last toast|locked room", "target": "mystery" },
+      { "pattern": "word duel|word game|word chain|ghost|blitz|vocabulary", "target": "word_duel" },
+      { "pattern": "survival|survive|stranded|lost|crash", "target": "survival" },
+      { "pattern": "story forge|story|fiction|write|create a story|collaborative|improv", "target": "story_forge" }
+    ]
+  },
+
+  "features": {
+    "dinosaur_eggs": true,
+    "depth_tracking": true,
+    "mood_resonance": false,
+    "cross_module_memory": true,
+    "real_time_timers": false,
+    "audit_trail": false,
+    "audio_input": false,
+    "audio_output": false,
+    "vault_rag": true,
+    "session_journal": true
+  },
+
+  "settings_defaults": {
+    "difficulty": "adaptive",
+    "session_memory": true
+  },
+
+  "theme": {
+    "primary_color": "#1a1a2e",
+    "accent_color": "#e94560",
+    "font": "default",
+    "mood": "playful-dark"
+  },
+
+  "session_shape": {
+    "expected_turns": "10-50",
+    "close_trigger": "game_end OR per-game limit",
+    "per_game_limits": {
+      "twenty_questions": { "soft": 22, "hard": 25 },
+      "trivia": { "soft": 12, "hard": 15 },
+      "would_you_rather": { "soft": 14, "hard": 18 },
+      "mystery": { "soft": 25, "hard": 35 },
+      "word_duel": { "soft": 20, "hard": 30 },
+      "survival": { "soft": 25, "hard": 35 },
+      "story_forge": { "soft": 18, "hard": 25 }
+    }
+  },
+
+  "data_rail": {
+    "tabs": [
+      {
+        "id": "auth",
+        "label": "Auth",
+        "icon": "key",
+        "type": "infrastructure"
+      },
+      {
+        "id": "pricing",
+        "label": "Pricing",
+        "icon": "sparkles",
+        "type": "infrastructure"
+      },
+      {
+        "id": "player_info",
+        "label": "Player Info",
+        "icon": "Gamepad2",
+        "type": "pack",
+        "title": "Player Information",
+        "description": "Captured securely. Encrypted at rest. Never sent to AI.",
+        "submit_label": "Save to Vault",
+        "success_message": "Player info saved.",
+        "endpoint": "/api/datarail/submit",
+        "fields": [
+          { "id": "player_name", "type": "text", "label": "Player Name", "placeholder": "Full name", "required": true, "pii": true },
+          { "id": "player_email", "type": "email", "label": "Email", "placeholder": "player@example.com", "required": true, "pii": true },
+          { "id": "game_preference", "type": "select", "label": "Game Preference", "required": false, "options": ["Board Games", "Card Games", "RPG", "Strategy", "Trivia", "Other"] },
+          { "id": "party_size", "type": "select", "label": "Party Size", "required": false, "options": ["Solo", "2 Players", "3\u20134 Players", "5+"] },
+          { "id": "experience", "type": "select", "label": "Experience Level", "required": false, "options": ["Beginner", "Intermediate", "Advanced"] }
+        ]
+      }
+    ]
+  },
+
+  "library": {
+    "visible": true,
+    "category": "experiences",
+    "tags": ["gaming", "simulation", "interactive"],
+    "description": "Multi-game session hub. Routes to individual game packs. Seven real games with rules, scoring, and persistent state — the waiting room before the dungeon.",
+    "author": "TMOS13",
+    "license": "included",
+    "verb_type": "scenario",
+    "industry_tags": ["entertainment", "education"],
+    "icon_url": null,
+    "price": {
+      "model": "included",
+      "tier_minimum": null
+    }
+  }
+}

@@ -1,0 +1,9 @@
+id: portfolio_review
+name: Portfolio Review Intake
+category: creative
+status: active
+description: Portfolio review intake for creative practitioners seeking structured feedback on a body of work — for job applications, gallery submissions, academic applications, or professional development. Evaluates portfolio purpose, selection coherence, presentation quality, audience alignment, and gap identification to produce a portfolio review profile with findings and recommended actions.
+deliverable: portfolio_review_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

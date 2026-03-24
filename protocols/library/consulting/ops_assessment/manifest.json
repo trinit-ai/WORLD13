@@ -1,0 +1,65 @@
+{
+  "id": "ops_assessment",
+  "name": "Operations Assessment Intake",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "consulting",
+  "description": "Operations assessment intake for organizations seeking to diagnose operational performance gaps, inefficiencies, or system failures. Evaluates scope, baseline metrics, process documentation, technology stack, workforce capacity, root cause hypothesis, and access to produce an operational assessment profile with gap analysis, risk flags, and recommended assessment design.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "grounded",
+    "warmth": 0.5,
+    "humor": 0.0,
+    "formality": 0.7
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": true,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 18,
+    "estimated_turns": "10-14"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  },
+  "deliverables": {
+    "enabled": true,
+    "types": [
+      {
+        "id": "operations_assessment_profile",
+        "name": "Operations Assessment Profile",
+        "description": "Generated operations assessment profile from intake session data.",
+        "trigger": {
+          "min_turns": 4,
+          "contact_required": false
+        },
+        "channels": [
+          "download"
+        ],
+        "include_transcript": true,
+        "include_state_snapshot": true
+      }
+    ]
+  }
+}

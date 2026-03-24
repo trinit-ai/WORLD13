@@ -1,0 +1,9 @@
+id: product_requirements
+name: Product Requirements Intake
+category: engineering
+status: active
+description: Product requirements intake for product managers and engineering leads assessing a feature or product requirement before development begins. Evaluates requirement clarity, user story quality, acceptance criteria, technical feasibility signal, dependency identification, and definition of done to produce a product requirements profile with gap analysis and risk flags.
+deliverable: product_requirements_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

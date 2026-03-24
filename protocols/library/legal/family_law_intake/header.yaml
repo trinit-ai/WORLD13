@@ -1,0 +1,9 @@
+id: family_law_intake
+name: Family Law Intake
+category: legal
+status: active
+description: Family law intake for family law attorneys and paralegals conducting an initial consultation for a divorce, custody, support, or other family law matter. Evaluates the matter type, the parties, the children involved, the assets and debts, the procedural posture, and the client's objectives to produce a family law intake profile with matter assessment and immediate action requirements. Not legal advice.
+deliverable: family_law_intake_profile
+estimated_turns: 12-18
+version: 1.0
+author: Robert C. Ventura

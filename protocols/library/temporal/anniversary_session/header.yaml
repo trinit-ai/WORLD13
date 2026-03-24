@@ -1,0 +1,9 @@
+id: anniversary_session
+name: Anniversary Session
+category: temporal
+status: active
+description: Mark a significant anniversary — of something good, something hard, or something complex — with witnessed presence and honest acknowledgment.
+deliverable: anniversary_record
+estimated_turns: "6-10"
+version: 1.0
+author: Robert C. Ventura

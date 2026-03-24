@@ -1,0 +1,9 @@
+id: trivia_game
+name: Trivia Game
+category: simulations
+status: active
+description: A structured trivia game session with customizable categories, difficulty, and format. The session runs the game as host — asking questions, adjudicating answers, tracking score, and maintaining the competitive energy of a well-run trivia night. Produces a final score record with category performance and notable moments.
+deliverable: trivia_score_record
+estimated_turns: 15-40
+version: 1.0
+author: Robert C. Ventura

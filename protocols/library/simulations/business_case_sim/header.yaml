@@ -1,0 +1,9 @@
+id: business_case_sim
+name: Business Case Simulation
+category: simulations
+status: active
+description: A live business case simulation in the style of a consulting interview or MBA case competition. The session presents a structured business problem, guides the participant through hypothesis formation, analysis, and recommendation, and produces a performance debrief assessing structured thinking, quantitative reasoning, and communication clarity.
+deliverable: business_case_debrief
+estimated_turns: 15-25
+version: 1.0
+author: Robert C. Ventura

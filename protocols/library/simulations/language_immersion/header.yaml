@@ -1,0 +1,9 @@
+id: language_immersion
+name: Language Immersion Session
+category: simulations
+status: active
+description: A conversational language immersion session for language learners at any level. The session conducts an extended conversation in the target language, calibrates difficulty to the learner's level, provides in-context corrections without breaking immersion, and produces a session log with vocabulary, grammar patterns, and progress notes.
+deliverable: language_immersion_log
+estimated_turns: 15-30
+version: 1.0
+author: Robert C. Ventura

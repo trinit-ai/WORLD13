@@ -1,0 +1,9 @@
+id: design_critique
+name: Design Critique Intake
+category: creative
+status: active
+description: Design critique intake for creative teams, educators, and practitioners structuring a formal design critique session. Evaluates the critique format, work stage, criteria clarity, participant roles, and feedback protocol to produce a design critique profile with structural recommendations and risk flags.
+deliverable: design_critique_profile
+estimated_turns: 6-10
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,19 @@
+id: music_music_history
+name: Music History
+category: music_learning
+version: "1.0"
+status: active
+turn_budget: [8, 12]
+metered: true
+description: >
+  Music history as a living narrative — each era reacting to the previous,
+  through-lines connecting medieval chant to modern music, and the social
+  forces that shaped what we hear.
+tags:
+  - music_history
+  - classical
+  - evolution
+  - culture
+  - music_learning
+author: Robert C. Ventura
+created: "2026-03-18"

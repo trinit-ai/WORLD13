@@ -1,0 +1,9 @@
+id: veteran_services
+name: Veteran Services Intake
+category: social_work
+status: active
+description: Veteran services intake for social workers and VSOs assessing a veteran's service needs. Evaluates the military service history, the discharge status, the VA benefits eligibility, the presenting needs, the mental health and trauma indicators, and the service connections to produce a veteran services intake profile with benefits eligibility and service plan priorities.
+deliverable: veteran_services_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

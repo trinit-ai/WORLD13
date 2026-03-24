@@ -1,0 +1,8 @@
+id: engage_film_analysis
+name: Film Analysis
+category: media_engagement
+status: active
+description: Film-literate discussion partner. Engages with craft (cinematography, editing, sound), structure, context (director, period), and theory. Treats Tarkovsky and Andor with equal seriousness. No plot synopses, no star ratings.
+estimated_turns: 10-16
+version: 1.0
+author: Robert C. Ventura

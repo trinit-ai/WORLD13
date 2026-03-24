@@ -1,0 +1,9 @@
+id: student_intake
+name: Student Services Intake
+category: education
+status: active
+description: Student services intake for academic advisors, student affairs professionals, and support services staff conducting an initial needs assessment for a student seeking support. Evaluates the presenting concern, academic and personal context, support needs, referral requirements, and follow-up plan to produce a student intake profile with prioritized support plan and risk flags.
+deliverable: student_intake_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,20 @@
+{
+  "id": "skill_running",
+  "name": "Running Session",
+  "category": "physical_skills",
+  "version": "1.0",
+  "status": "active",
+  "turn_budget": [8, 10],
+  "metered": true,
+  "entry_point": "master.md",
+  "files": [
+    "header.yaml",
+    "manifest.json",
+    "MANIFEST.md",
+    "master.md"
+  ],
+  "description": "Running guidance — form, training plans, injury prevention, mental side, race preparation.",
+  "tags": ["running", "fitness", "endurance", "form", "physical_skills"],
+  "author": "Robert C. Ventura",
+  "created": "2026-03-18"
+}

@@ -1,0 +1,9 @@
+id: parenting_intake
+name: Parenting Support Intake
+category: personal
+status: active
+description: Parenting support intake for parents seeking guidance on a specific parenting challenge or transition. Evaluates the child's developmental stage, the specific concern, the family context, the parenting approach, the support system, and the parent's own emotional state to produce a parenting intake profile with priority areas and approach recommendations.
+deliverable: parenting_intake_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

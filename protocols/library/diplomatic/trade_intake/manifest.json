@@ -1,0 +1,46 @@
+{
+  "id": "trade_intake",
+  "name": "International Trade Engagement Intake",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "diplomatic",
+  "description": "International trade engagement intake for trade negotiators, export-import professionals, and organizations entering or assessing a cross-border trade relationship. Evaluates the trade framework, tariff and non-tariff barriers, compliance requirements, export controls, customs obligations, and dispute resolution mechanisms to produce a trade engagement profile with gap analysis and risk flags.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "professional, direct",
+    "warmth": 0.5,
+    "humor": 0.0,
+    "formality": 0.7
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 18,
+    "estimated_turns": "10-14"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  }
+}

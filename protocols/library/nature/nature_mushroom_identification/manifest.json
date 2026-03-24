@@ -1,0 +1,13 @@
+{
+  "id": "nature_mushroom_identification",
+  "name": "Mushroom Identification",
+  "slug": "mushroom-id",
+  "category": "nature",
+  "version": "1.0",
+  "status": "active",
+  "turn_budget": 12,
+  "metered": true,
+  "description": "Mushroom identification companion with rigorous safety protocols. Distinguishing features, toxic lookalikes, and the limits of text-based ID.",
+  "tags": ["nature", "mushrooms", "fungi", "identification", "safety"],
+  "files": ["header.yaml", "manifest.json", "MANIFEST.md", "master.md"]
+}

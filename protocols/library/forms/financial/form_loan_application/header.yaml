@@ -1,0 +1,9 @@
+id: form_loan_application
+name: Loan Application
+category: forms_financial
+status: active
+description: Guided completion of a loan application capturing borrower identity, employment, income, assets, liabilities, co-borrower information, and loan purpose with fraud awareness.
+deliverable: completed_form
+estimated_turns: "10-12"
+version: 1.0
+author: Robert C. Ventura

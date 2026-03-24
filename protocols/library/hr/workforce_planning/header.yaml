@@ -1,0 +1,9 @@
+id: workforce_planning
+name: Workforce Planning Intake
+category: hr
+status: active
+description: Workforce planning intake for HR leaders and business unit heads scoping a workforce planning initiative. Evaluates the business strategy context, current workforce profile, future capability requirements, gap analysis, build-buy-borrow strategy, and workforce risk to produce a workforce planning profile with strategic priorities and talent acquisition guidance.
+deliverable: workforce_planning_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,255 @@
+{
+  "id": "base_simulator",
+  "access": "system",
+  "name": "Base Simulator",
+  "version": "1.0.0",
+  "description": "Foundation template for simulation-based packs",
+  "category": "simulator",
+  "icon": "🎯",
+  "base": "strategic_simulation",
+
+  "_comment_category": "SIMULATOR vs VERTICAL: 'vertical' packs (CRM) produce structured records from real stakeholder conversations. 'simulator' packs produce strategic insight from roleplayed scenarios. Different engine mode, different state management, different output artifacts.",
+
+  "cartridges": [
+    {
+      "id": "briefing",
+      "name": "Situation Briefing",
+      "description": "User describes their position, stakes, constraints, and objectives. System builds the scenario state.",
+      "protocol": "briefing.md"
+    },
+    {
+      "id": "{{scenario_1_id}}",
+      "name": "{{Scenario 1 Name}}",
+      "description": "{{Primary simulation scenario.}}",
+      "protocol": "{{scenario_1}}.md"
+    },
+    {
+      "id": "{{scenario_2_id}}",
+      "name": "{{Scenario 2 Name}}",
+      "description": "{{Secondary simulation scenario.}}",
+      "protocol": "{{scenario_2}}.md"
+    },
+    {
+      "id": "debrief",
+      "name": "Strategic Debrief",
+      "description": "Post-simulation analysis — outcome assessment, decision tree review, alternative paths, strategic recommendations.",
+      "protocol": "debrief.md"
+    }
+  ],
+
+  "_comment_cartridges": "Every simulator has at minimum: briefing (intake), 1+ scenario cartridges (the simulation), and debrief (analysis). The briefing builds the world. The scenarios play it out. The debrief extracts the learning.",
+
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new scenario|clear)$",
+        "action": "reset_session"
+      },
+      "menu": {
+        "pattern": "^(menu|help|options|what can I do|commands|back)$",
+        "action": "show_menu"
+      },
+      "status": {
+        "pattern": "^(status|where am i|summary|position|board)$",
+        "action": "show_status"
+      },
+      "branch": {
+        "pattern": "^(what if|alternative|other option|branch|fork|explore)$",
+        "action": "explore_branch"
+      },
+      "debrief": {
+        "pattern": "^(debrief|analysis|review|assess|score|how did I do)$",
+        "action": "enter_debrief"
+      },
+      "transcript": {
+        "pattern": "^(transcript|download|export|save)$",
+        "action": "show_transcript"
+      }
+    },
+    "navigation": {
+      "_comment": "Simulator-specific navigation patterns go here. Unlike CRM packs which route by topic, simulators route by scenario type or phase."
+    }
+  },
+
+  "system_screens": {
+    "boot": "boot.md",
+    "menu": "menu.md"
+  },
+
+  "features": {
+    "session_intelligence": true,
+    "dual_state": true,
+    "persona_engine": true,
+    "branching_tree": true,
+    "outcome_scoring": true,
+    "counterfactual_analysis": true,
+    "contact_collection": false,
+    "transcript_export": true,
+    "qualification_scoring": false,
+    "urgency_detection": false,
+    "spam_filtering": false,
+    "depth_tracking": true,
+    "mood_resonance": true,
+    "cross_module_memory": true,
+    "dinosaur_eggs": false,
+    "real_time_timers": false,
+    "audio_input": false,
+    "audio_output": false
+  },
+
+  "_comment_features": "SIMULATOR-SPECIFIC FEATURES: dual_state (persona + evaluation running in parallel), persona_engine (AI-as-character with hidden state and behavior rules), branching_tree (explore alternative decision paths mid-simulation), outcome_scoring (evaluate decisions against optimal play), counterfactual_analysis (what-if exploration of paths not taken).",
+
+  "privacy": {
+    "disclosure": "This is a strategic simulation. Your scenario inputs are used to generate the simulation and are not shared externally.",
+    "data_tier": "session_only",
+    "transcript_available": true,
+    "retention_days": 30
+  },
+
+  "_comment_privacy": "Simulators default to session_only data tier — no contact collection, no business record output, no CRM integration. The artifact is the strategic insight, not a lead or ticket.",
+
+  "notifications": {
+    "_comment": "Simulators typically don't fire external notifications. The output is consumed by the user in-session. Override in specific packs if needed (e.g., team-based wargaming where a manager wants session summaries)."
+  },
+
+  "settings": {
+    "difficulty": {
+      "default": "adaptive",
+      "options": ["guided", "balanced", "adversarial", "adaptive"]
+    },
+    "persona_realism": {
+      "default": "realistic",
+      "options": ["cooperative", "realistic", "aggressive"]
+    },
+    "branching_mode": {
+      "default": "interactive",
+      "options": ["linear", "interactive", "exhaustive"]
+    },
+    "response_depth": {
+      "default": "balanced",
+      "options": ["concise", "balanced", "detailed"]
+    }
+  },
+
+  "_comment_settings": "DIFFICULTY: guided = AI helps the user make good decisions, balanced = realistic counterparty, adversarial = counterparty plays to win, adaptive = adjusts to user skill. PERSONA_REALISM: how rational/emotional the counterparty behaves. BRANCHING: linear = one path, interactive = user can explore forks, exhaustive = system maps all major branches.",
+
+  "state": {
+    "session": {
+      "phase": null,
+      "outcome": null,
+      "turn_count": 0,
+      "active_cartridge": null,
+      "depth": 0,
+      "started_at": null,
+      "last_activity": null,
+      "mode": "simulation",
+      "difficulty": "adaptive",
+      "branches_explored": 0,
+      "current_branch": "main"
+    },
+
+    "scenario": {
+      "title": null,
+      "domain": null,
+      "stakes": null,
+      "time_horizon": null,
+      "complexity": null,
+      "parties": [],
+      "key_variables": {},
+      "constraints": [],
+      "objectives": [],
+      "success_criteria": []
+    },
+
+    "_comment_scenario": "The scenario state is built during briefing. It defines the world the simulation operates in. Every simulator pack extends this with domain-specific fields.",
+
+    "user_position": {
+      "role": null,
+      "objectives": [],
+      "constraints": [],
+      "leverage": [],
+      "vulnerabilities": [],
+      "information_advantage": [],
+      "information_gaps": [],
+      "walk_away_point": null,
+      "best_alternative": null
+    },
+
+    "_comment_user_position": "BATNA-aware state. The user's strategic position including what they know, what they don't, what leverage they hold, and their walk-away threshold. Built during briefing, updated during simulation.",
+
+    "counterparty": {
+      "name": null,
+      "role": null,
+      "persona_type": null,
+      "objectives": [],
+      "constraints": [],
+      "leverage": [],
+      "vulnerabilities": [],
+      "hidden_state": {},
+      "behavior_rules": {},
+      "revealed_information": [],
+      "withheld_information": []
+    },
+
+    "_comment_counterparty": "The AI-as-character state. Hidden state is invisible to the user but drives persona behavior. Revealed/withheld information tracks what the user has successfully uncovered through the simulation.",
+
+    "decision_tree": {
+      "moves": [],
+      "current_node": null,
+      "branch_points": [],
+      "paths_explored": [],
+      "paths_available": [],
+      "critical_moments": []
+    },
+
+    "_comment_decision_tree": "Tracks the branching narrative. Each move has: {turn, actor, action, rationale, outcome, alternatives[]}. Branch points are moments where the user made a consequential choice. Critical moments are decision tree nodes with high outcome variance.",
+
+    "outcome": {
+      "result": null,
+      "score": 0,
+      "dimensions": {},
+      "optimal_play_delta": null,
+      "key_decisions": [],
+      "missed_opportunities": [],
+      "risks_avoided": [],
+      "risks_incurred": [],
+      "strategic_grade": null
+    },
+
+    "_comment_outcome": "Populated during debrief. Score is domain-specific (deal value captured, risk mitigated, objectives achieved). Optimal play delta measures how far the user's actual path deviated from the best available path. Strategic grade is a qualitative assessment."
+  },
+
+  "theme": {
+    "accent": "{{hex_color}}",
+    "surface": "#0D0B09",
+    "text": "#E5E2DC"
+  },
+
+  "transcript": {
+    "format": "markdown",
+    "include_metadata": true,
+    "include_summary": true,
+    "include_scoring": true,
+    "include_decision_tree": true,
+    "include_counterfactuals": true,
+    "download_label": "Download Strategic Analysis"
+  },
+
+  "_comment_transcript": "Simulator transcripts include the decision tree and counterfactual analysis — not just what happened, but what could have happened. This is the primary deliverable.",
+
+  "library": {
+    "visible": false,
+    "category": "templates",
+    "tags": ["template", "simulation"],
+    "description": "Base template for simulation-style packs. Fork this to create scenario-based experiences with branching decisions and scored outcomes.",
+    "author": "TMOS13",
+    "license": "included",
+    "verb_type": "scenario",
+    "industry_tags": [],
+    "icon_url": null,
+    "price": {
+      "model": "included",
+      "tier_minimum": null
+    }
+  }
+}

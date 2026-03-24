@@ -1,0 +1,31 @@
+{
+  "id": "emergence_session",
+  "name": "Emergence Session",
+  "category": "exploratory",
+  "version": "1.0",
+  "turns": {
+    "min": 8,
+    "max": 12
+  },
+  "author": "Robert C. Ventura",
+  "company": "TMOS13, LLC",
+  "description": "At the edge of something forming — new understanding, direction, sense of self. Fragile. Session holds without forcing premature articulation.",
+  "kill_patterns": [
+    "naming it for them",
+    "rushing to articulation",
+    "sounds like you're saying... when they haven't said it yet",
+    "celebrating prematurely",
+    "pinning down what is still forming"
+  ],
+  "completion": {
+    "type": "experiential",
+    "signal": "the emerging thing either arrived or the person is more comfortable at the edge"
+  },
+  "routing": [],
+  "files": [
+    "header.yaml",
+    "manifest.json",
+    "MANIFEST.md",
+    "master.md"
+  ]
+}

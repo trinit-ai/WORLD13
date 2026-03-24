@@ -1,0 +1,9 @@
+id: immigration_intake
+name: Immigration Legal Intake
+category: legal
+status: active
+description: Immigration legal intake for immigration attorneys and accredited representatives conducting an initial immigration consultation. Evaluates the client's immigration history, current status, available relief, priority concerns, and immediate needs to produce an immigration legal intake profile with case assessment and representation priorities. Not legal advice.
+deliverable: immigration_legal_intake_profile
+estimated_turns: 12-18
+version: 1.0
+author: Robert C. Ventura

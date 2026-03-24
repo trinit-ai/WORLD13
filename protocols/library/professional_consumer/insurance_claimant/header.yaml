@@ -1,0 +1,9 @@
+id: insurance_claimant
+name: Insurance Claim Navigation
+category: professional_consumer
+status: active
+description: Guides individuals through insurance claim processes including coverage understanding, documentation, submission, denial response, and escalation.
+deliverable: claim_brief
+estimated_turns: "8-12"
+version: 1.0
+author: Robert C. Ventura

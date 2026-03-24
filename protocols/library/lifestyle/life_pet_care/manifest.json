@@ -1,0 +1,46 @@
+{
+  "id": "life_pet_care",
+  "name": "Pet Care",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "lifestyle",
+  "description": "Pet care session covering behavior, training, and enrichment for companion animals — NOT veterinary advice. Routes medical concerns to veterinary professionals.",
+  "base": "library_lifestyle",
+  "personality": {
+    "tone": "warm, knowledgeable, practical",
+    "warmth": 0.7,
+    "humor": 0.2,
+    "formality": 0.2
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": false,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 14,
+    "estimated_turns": "6-10"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_session",
+    "transcript_available": true
+  }
+}

@@ -1,0 +1,9 @@
+id: grief_session
+name: Grief Session
+category: temporal
+status: active
+description: Hold space for grief — loss of person, relationship, role, possibility, or version of self — without imposing timeline, stages, or resolution.
+deliverable: grief_record
+estimated_turns: "8-14"
+version: 1.0
+author: Robert C. Ventura

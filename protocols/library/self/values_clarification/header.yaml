@@ -1,0 +1,9 @@
+id: values_clarification
+name: Values Clarification
+category: self
+status: active
+description: Identify and rank core values through behavioral evidence, not abstract self-rating.
+deliverable: values_profile
+estimated_turns: "8-12"
+version: 1.0
+author: Robert C. Ventura

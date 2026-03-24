@@ -1,0 +1,9 @@
+id: patent_intake
+name: Patent Application Intake
+category: research
+status: active
+description: Patent application intake for inventors, technology transfer offices, and patent professionals preparing a patent application. Evaluates the invention disclosure, the novelty assessment, the prior art landscape, the claim scope, the commercialization potential, and the filing strategy to produce a patent intake profile with prosecution priorities and filing strategy. Not legal advice.
+deliverable: patent_intake_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

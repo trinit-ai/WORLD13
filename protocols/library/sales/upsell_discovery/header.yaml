@@ -1,0 +1,9 @@
+id: upsell_discovery
+name: Upsell and Expansion Discovery Intake
+category: sales
+status: active
+description: Upsell and expansion discovery intake for customer success managers and account executives identifying expansion opportunities within an existing customer. Evaluates the customer's current deployment, the unmet needs, the expansion signals, the timing, and the commercial approach to produce an upsell discovery profile with expansion opportunity map and recommended approach.
+deliverable: upsell_discovery_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

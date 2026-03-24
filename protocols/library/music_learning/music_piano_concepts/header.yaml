@@ -1,0 +1,19 @@
+id: music_piano_concepts
+name: Piano Concepts
+category: music_learning
+version: "1.0"
+status: active
+turn_budget: [8, 10]
+metered: true
+description: >
+  Piano concepts — keyboard geography, hand position, reading treble and
+  bass clef, chord voicing, and practice efficiency. Conceptual framework
+  for piano learners.
+tags:
+  - piano
+  - keyboard
+  - technique
+  - reading
+  - music_learning
+author: Robert C. Ventura
+created: "2026-03-18"

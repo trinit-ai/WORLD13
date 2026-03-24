@@ -1,0 +1,46 @@
+{
+  "id": "therapy_progress",
+  "name": "Therapy Progress Review Intake",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "mental_health",
+  "description": "Therapy progress review intake for licensed therapists conducting a structured review of treatment progress. Evaluates progress toward treatment goals, symptom change, functional improvement, therapeutic alliance, emerging issues, and treatment direction to produce a therapy progress profile with goal attainment summary and treatment direction considerations. Not clinical advice.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "professional, direct",
+    "warmth": 0.5,
+    "humor": 0.0,
+    "formality": 0.7
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 16,
+    "estimated_turns": "8-12"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  }
+}

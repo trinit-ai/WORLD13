@@ -1,0 +1,9 @@
+id: catering_intake
+name: Catering Intake
+category: hospitality
+status: active
+description: Catering intake for event planners, catering managers, and food service coordinators scoping a catering engagement. Evaluates event type, guest count, service style, dietary requirements, menu preferences, beverage program, and operational requirements to produce a catering brief with menu direction and service specification.
+deliverable: catering_brief
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,46 @@
+{
+  "id": "workshop_poetry",
+  "name": "Poetry Workshop",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "creative_workshop",
+  "description": "Craft-level poetry workshop where the session functions as genuine reader — responding to what the poem does to the reader rather than what the poet intended.",
+  "base": "library_workshop",
+  "personality": {
+    "tone": "attentive, precise, respectful of the poem",
+    "warmth": 0.5,
+    "humor": 0.1,
+    "formality": 0.3
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": false,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 18,
+    "estimated_turns": "8-14"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_session",
+    "transcript_available": true
+  }
+}

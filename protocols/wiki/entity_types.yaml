@@ -1,0 +1,222 @@
+# Wiki Expedition — Entity Type Taxonomy
+# Each entity type maps to a governing expedition template.
+
+entity_types:
+
+  person:
+    description: >
+      A human being — historical or living — explored as a knowledge territory,
+      not as a biographical subject. What they meant, what shaped them, what's
+      misunderstood, where the interesting questions live.
+    subtypes:
+      - historical_figure
+      - living_public_figure
+      - artist
+      - scientist
+      - political_leader
+      - philosopher
+      - athlete
+      - inventor
+      - activist
+      - religious_figure
+    template: person_expedition.md
+    examples:
+      - Nikola Tesla
+      - Frida Kahlo
+      - Alan Turing
+      - Hypatia
+
+  work:
+    description: >
+      A creative or intellectual artifact — film, book, album, painting, game,
+      software, architectural work. Explored for what it IS underneath the
+      surface: craft, context, reception, influence, and honest evaluation.
+    subtypes:
+      - book
+      - film
+      - album
+      - painting
+      - sculpture
+      - video_game
+      - software
+      - building
+      - television_series
+      - play
+      - poem
+      - essay
+    template: work_expedition.md
+    examples:
+      - Blade Runner (1982)
+      - "Gödel, Escher, Bach"
+      - The Goldberg Variations
+      - Guernica
+
+  concept:
+    description: >
+      An idea, theory, framework, or abstraction. Explored for what it actually
+      is (not the pop version), where it came from, the beautiful core, the live
+      questions, and the connections to other ideas.
+    subtypes:
+      - scientific_theory
+      - philosophical_concept
+      - mathematical_framework
+      - economic_theory
+      - psychological_concept
+      - linguistic_concept
+      - legal_doctrine
+      - design_principle
+    template: concept_expedition.md
+    examples:
+      - Entropy
+      - Categorical Imperative
+      - Natural Selection
+      - Game Theory
+
+  event:
+    description: >
+      A discrete historical, cultural, or scientific occurrence. Explored for
+      what actually happened, why it mattered, what it changed, what's contested,
+      and what the counterfactuals look like.
+    subtypes:
+      - battle
+      - revolution
+      - disaster
+      - discovery
+      - treaty
+      - cultural_event
+      - scientific_breakthrough
+      - political_crisis
+      - exploration
+    template: event_expedition.md
+    examples:
+      - The Moon Landing
+      - The Fall of Constantinople
+      - Chernobyl Disaster
+      - The Seneca Falls Convention
+
+  place:
+    description: >
+      A geographic location — city, landmark, region, building, natural feature.
+      Explored for sense of place: what it feels like, what it means, what shaped
+      it, the layers of history, what guidebooks miss.
+    subtypes:
+      - city
+      - country
+      - landmark
+      - natural_feature
+      - neighborhood
+      - archaeological_site
+      - body_of_water
+      - mountain
+      - island
+    template: place_expedition.md
+    examples:
+      - Istanbul
+      - The Great Barrier Reef
+      - Pompeii
+      - The Silk Road
+
+  movement:
+    description: >
+      An intellectual, artistic, political, or cultural movement. Explored for
+      what it was reacting against, key figures and internal tensions, legacy,
+      and what survived versus what was absorbed or forgotten.
+    subtypes:
+      - artistic_movement
+      - political_movement
+      - philosophical_movement
+      - social_movement
+      - scientific_paradigm
+      - religious_movement
+      - literary_movement
+      - technological_movement
+    template: movement_expedition.md
+    examples:
+      - Surrealism
+      - The Civil Rights Movement
+      - Stoicism
+      - The Bauhaus
+
+  period:
+    description: >
+      A historical era or age. Explored for what it felt like to live then, what
+      we get wrong about it, the tensions and contradictions, how it ended and
+      why, and why it matters now.
+    subtypes:
+      - ancient_era
+      - medieval_period
+      - early_modern
+      - modern_era
+      - cultural_age
+      - geological_era
+      - technological_era
+    template: period_expedition.md
+    examples:
+      - The Weimar Republic
+      - The Cambrian Explosion
+      - The Jazz Age
+      - The European Enlightenment
+
+  field:
+    description: >
+      A domain of study, practice, or inquiry. Explored for what the field
+      actually does (vs. popular perception), its methods, its open questions,
+      its internal debates, and where it's headed.
+    subtypes:
+      - scientific_discipline
+      - branch_of_mathematics
+      - engineering_domain
+      - humanities_discipline
+      - social_science
+      - applied_field
+      - interdisciplinary_field
+    template: concept_expedition.md
+    examples:
+      - Mycology
+      - Computational Linguistics
+      - Epidemiology
+      - Materials Science
+
+  species:
+    description: >
+      A biological organism — animal, plant, fungus, microbe. Explored for the
+      genuinely remarkable: behavior, cognition, evolution, ecology, relationship
+      with humans, and what makes it extraordinary without anthropomorphizing.
+    subtypes:
+      - mammal
+      - bird
+      - reptile
+      - insect
+      - marine_organism
+      - plant
+      - fungus
+      - microorganism
+      - extinct_species
+    template: species_expedition.md
+    examples:
+      - Octopus vulgaris
+      - Corvus corax (Common Raven)
+      - Ophiocordyceps (Zombie Fungus)
+      - Tardigrades
+
+  phenomenon:
+    description: >
+      A natural or social phenomenon — observable, recurring, often
+      counterintuitive. Explored for how it works, why it happens, what's
+      surprising, where understanding is incomplete, and what it's like to
+      encounter it.
+    subtypes:
+      - physical_phenomenon
+      - atmospheric_phenomenon
+      - geological_phenomenon
+      - biological_phenomenon
+      - social_phenomenon
+      - cognitive_phenomenon
+      - astronomical_phenomenon
+      - quantum_phenomenon
+    template: phenomenon_expedition.md
+    examples:
+      - Aurora Borealis
+      - Bioluminescence
+      - The Dunning-Kruger Effect
+      - Tidal Resonance

@@ -1,0 +1,9 @@
+id: interview_internal
+name: Internal/Promotion Interview
+category: learning_interviews
+status: active
+description: Internal promotion interview preparation session that helps candidates navigate the unique dynamics of interviewing within their current organization — leveraging institutional knowledge while avoiding the familiarity trap.
+deliverable: internal_interview_prep_brief
+estimated_turns: 10-12
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,8 @@
+id: conn_coffee
+name: Coffee Session
+category: connoisseurship
+status: active
+description: Accessible coffee appreciation guide covering origins, processing methods, roast levels, brew methods, specialty vocabulary, and developing taste awareness.
+estimated_turns: 6-10
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,13 @@
+{
+  "id": "coll_stamps_philately",
+  "name": "Stamp Collecting",
+  "slug": "stamps",
+  "category": "collecting",
+  "version": "1.0",
+  "status": "active",
+  "turn_budget": 10,
+  "metered": true,
+  "description": "Stamp collecting companion covering condition, errors, key issues, topical collecting, and philatelic market navigation.",
+  "tags": ["collecting", "stamps", "philately", "postal history", "errors"],
+  "files": ["header.yaml", "manifest.json", "MANIFEST.md", "master.md"]
+}

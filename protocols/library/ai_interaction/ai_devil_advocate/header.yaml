@@ -1,0 +1,9 @@
+id: ai_devil_advocate
+name: "Devil's Advocate"
+category: ai_interaction
+status: active
+description: A governed devil's advocate session. The facilitator argues the strongest opposing position to whatever the person presents. Steel-man opposition maintained throughout, with explicit release and debrief at session end.
+consequence_class: ZERO
+estimated_turns: 10-16
+version: 1.0
+author: Robert C. Ventura

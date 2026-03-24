@@ -1,0 +1,9 @@
+id: prep_lsat
+name: LSAT Prep
+category: learning_exam
+status: active
+description: LSAT preparation and diagnostic assessment. Covers all three scored sections — Logical Reasoning, Logic Games (Analytical Reasoning), and Reading Comprehension. Builds a personalized study plan based on diagnostic performance, target score, and timeline to test day.
+deliverable: lsat_study_plan
+estimated_turns: 12-16
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,9 @@
+id: performance_review
+name: Performance Review Intake
+category: hr
+status: active
+description: Performance review intake for managers and HR professionals conducting a structured performance review. Evaluates the review framework, rating calibration, documentation quality, feedback effectiveness, goal alignment, and legal documentation standards to produce a performance review profile with quality assessment and documentation checklist. Not legal advice.
+deliverable: performance_review_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

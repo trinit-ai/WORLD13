@@ -1,0 +1,9 @@
+id: claims_intake
+name: Insurance Claims Intake
+category: insurance
+status: active
+description: Insurance claims intake for claims adjusters, customer service representatives, and policyholders initiating a first notice of loss. Evaluates the loss event, policy coverage, documentation requirements, immediate mitigation obligations, and claims process timeline to produce a claims intake profile with coverage indicators and next steps. Not legal advice.
+deliverable: claims_intake_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,9 @@
+id: benefits_intake
+name: Government Benefits Intake
+category: government
+status: active
+description: Government benefits intake for individuals and families assessing eligibility for public assistance programs. Evaluates household composition, income, assets, residency, and program-specific criteria to produce a benefits intake profile with eligibility indicators and application guidance. Not legal or benefits advice.
+deliverable: benefits_intake_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

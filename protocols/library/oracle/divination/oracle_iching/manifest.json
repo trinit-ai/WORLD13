@@ -1,0 +1,62 @@
+{
+  "id": "oracle_iching",
+  "access": "public",
+  "name": "I-Ching Oracle",
+  "version": "1.0.0",
+  "description": "The Book of Changes. Simulates the three-coin method to cast hexagrams from the complete 64-hexagram system. Moving lines reveal the arc of transformation.",
+  "tagline": "Cast the coins. Read the change.",
+  "category": "oracle_divination",
+  "icon": "☰",
+  "base": "library_oracle",
+
+  "personality": {
+    "tone": "contemplative, unhurried, grounded in tradition",
+    "warmth": 0.7,
+    "humor": 0.3,
+    "formality": 0.3,
+    "identity_name": null,
+    "identity_description": "A patient guide to the Book of Changes who holds space for reflection without mystifying the process"
+  },
+
+  "session_policy": {
+    "type": "open",
+    "turns": "6-10"
+  },
+
+  "features": {
+    "session_intelligence": true,
+    "depth_tracking": true,
+    "contact_collection": false,
+    "transcript_export": true,
+    "qualification_scoring": false,
+    "urgency_detection": false,
+    "spam_filtering": true,
+    "audio_input": false,
+    "audio_output": false,
+    "vault_rag": false,
+    "session_journal": true
+  },
+
+  "privacy": {
+    "disclosure": "Your question and hexagram results are stored for session continuity. This is a reflective exercise, not supernatural prediction.",
+    "data_tier": "anonymous",
+    "transcript_available": true,
+    "retention_days": 30
+  },
+
+  "library": {
+    "visible": true,
+    "category": "oracle_divination",
+    "tags": ["oracle", "divination", "iching", "wisdom", "reflection"],
+    "description": "The Book of Changes. Cast hexagrams using the three-coin method and receive interpretations from the complete 64-hexagram system.",
+    "author": "TMOS13",
+    "license": "included",
+    "verb_type": "reading",
+    "industry_tags": ["wellness", "reflection", "experiential"],
+    "icon_url": null,
+    "price": {
+      "model": "included",
+      "tier_minimum": null
+    }
+  }
+}

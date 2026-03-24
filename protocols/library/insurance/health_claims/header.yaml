@@ -1,0 +1,9 @@
+id: health_claims
+name: Health Insurance Claims Intake
+category: insurance
+status: active
+description: Health insurance claims intake for patient advocates, benefits coordinators, and policyholders navigating a health insurance claim. Evaluates the service type, coverage verification, prior authorization status, network status, coordination of benefits, and claims dispute indicators to produce a health claims intake profile with coverage assessment and next steps. Not legal or medical advice.
+deliverable: health_claims_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

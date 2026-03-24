@@ -1,0 +1,9 @@
+id: survey_design
+name: Survey Design Intake
+category: research
+status: active
+description: Survey design intake for researchers designing a survey instrument. Evaluates the research objectives, the target population, the question types, the instrument structure, the pilot testing plan, the administration method, and the response rate strategy to produce a survey design intake profile with instrument quality assessment and design priorities.
+deliverable: survey_design_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

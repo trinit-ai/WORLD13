@@ -1,0 +1,9 @@
+id: incident_intake
+name: Engineering Incident Intake
+category: engineering
+status: active
+description: Engineering incident intake for on-call engineers and incident commanders managing a production incident. Evaluates severity, impact scope, affected systems, timeline, mitigation status, and communication requirements to produce an incident intake profile with immediate action priorities and coordination plan.
+deliverable: incident_intake_profile
+estimated_turns: 6-10
+version: 1.0
+author: Robert C. Ventura

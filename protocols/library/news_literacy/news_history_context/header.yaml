@@ -1,0 +1,19 @@
+id: news_history_context
+name: Historical Context
+category: news_literacy
+version: "1.0"
+status: active
+turn_budget: [8, 12]
+metered: true
+description: >
+  History as context for understanding the present — patterns, precedents,
+  and the forces that shaped current events. Non-partisan. History as
+  context, not verdict.
+tags:
+  - history
+  - context
+  - current_events
+  - perspective
+  - news_literacy
+author: Robert C. Ventura
+created: "2026-03-18"

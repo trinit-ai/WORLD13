@@ -1,0 +1,9 @@
+id: employment_intake
+name: Employment Law Intake
+category: legal
+status: active
+description: Employment law intake for employment attorneys and paralegals conducting an initial employment law consultation. Evaluates the employment claim type, the protected class basis, the adverse action, the documentation available, the filing deadlines, and the client's objectives to produce an employment law intake profile with claim assessment framework and immediate action requirements. Not legal advice.
+deliverable: employment_intake_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

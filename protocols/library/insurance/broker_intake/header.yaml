@@ -1,0 +1,9 @@
+id: broker_intake
+name: Insurance Broker Client Intake
+category: insurance
+status: active
+description: Insurance broker client intake for insurance brokers and agents onboarding a new commercial or personal lines client. Evaluates the client's risk profile, coverage needs, current program, coverage gaps, and service requirements to produce a broker intake profile with coverage program design and market placement priorities.
+deliverable: broker_intake_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,17 @@
+{
+  "id": "biz_competitive_analysis",
+  "name": "Competitive Analysis",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "business",
+  "description": "Competitive analysis session that maps direct competitors, indirect alternatives, and the 'do nothing' option to help founders understand the real competitive landscape they operate in and where they can win.",
+  "base": "library_intake",
+  "personality": { "tone": "analytical", "warmth": 0.3, "humor": 0.0, "formality": 0.6 },
+  "cartridges": [],
+  "commands": { "session": { "reset": { "pattern": "^(reset|start over|restart|new session|clear)$", "action": "reset_session" }, "status": { "pattern": "^(status|progress|where am i|summary)$", "action": "show_status" } } },
+  "features": { "session_intelligence": true, "contact_collection": false, "deliverables_pipeline": true, "session_journal": true, "depth_tracking": true },
+  "session_policy": { "type": "metered", "free_turns": 18, "estimated_turns": "10-14" },
+  "privacy": { "disclosure": "A summary of this session will be available for review.", "data_tier": "standard_intake", "transcript_available": true },
+  "deliverables": { "enabled": true, "types": [{ "id": "competitive_landscape_map", "name": "Competitive Landscape Map", "description": "Generated competitive landscape analysis from session data.", "trigger": { "min_turns": 4, "contact_required": false }, "channels": ["download"], "include_transcript": true, "include_state_snapshot": true }] }
+}

@@ -1,0 +1,9 @@
+id: cognitive_assessment
+name: Cognitive Function Assessment Intake
+category: mental_health
+status: active
+description: Cognitive function assessment intake for licensed clinicians conducting an initial cognitive assessment. Evaluates the presenting cognitive concerns, the domains affected, the onset and trajectory, the functional impact, the contributing factors, and the differential considerations to produce a cognitive assessment profile with domain summary and clinical considerations for the treating provider. Not clinical advice.
+deliverable: cognitive_assessment_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

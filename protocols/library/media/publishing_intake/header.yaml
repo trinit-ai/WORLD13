@@ -1,0 +1,9 @@
+id: publishing_intake
+name: Book Publishing Intake
+category: media
+status: active
+description: Book publishing intake for authors, editors, and publishing professionals scoping a new book project. Evaluates the concept, the market positioning, the author platform, the competitive landscape, the publishing path, and the timeline to produce a publishing intake profile with market assessment and publishing path recommendation.
+deliverable: publishing_intake_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

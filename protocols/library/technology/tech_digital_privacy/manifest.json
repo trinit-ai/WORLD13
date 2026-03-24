@@ -1,0 +1,46 @@
+{
+  "id": "tech_digital_privacy",
+  "name": "Digital Privacy",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "technology",
+  "description": "Digital privacy session covering data collection practices, practical privacy reduction strategies, and calibrated assessment of what matters versus what is noise. Helps visitors make informed decisions about their digital footprint without paranoia or apathy.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "grounded, practical, non-alarmist",
+    "warmth": 0.5,
+    "humor": 0.1,
+    "formality": 0.4
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 10,
+    "estimated_turns": "8-10"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  }
+}

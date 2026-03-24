@@ -1,0 +1,20 @@
+{
+  "id": "skill_yoga",
+  "name": "Yoga Practice",
+  "category": "physical_skills",
+  "version": "1.0",
+  "status": "active",
+  "turn_budget": [8, 12],
+  "metered": true,
+  "entry_point": "master.md",
+  "files": [
+    "header.yaml",
+    "manifest.json",
+    "MANIFEST.md",
+    "master.md"
+  ],
+  "description": "Yoga practice guidance — Hatha, Vinyasa, Yin, Restorative. Pose technique, sequences, pranayama, safety.",
+  "tags": ["yoga", "fitness", "flexibility", "mindfulness", "physical_skills"],
+  "author": "Robert C. Ventura",
+  "created": "2026-03-18"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "parent_toddler",
+  "name": "Toddler Parent (1-3 Years)",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "parenting",
+  "description": "Toddler parent session covering tantrums as healthy individuation, language explosion, boundary setting, toilet training, and the daily reality of parenting a small human whose primary developmental task is asserting autonomy. Not clinical.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "warm, grounded, validating",
+    "warmth": 0.7,
+    "humor": 0.2,
+    "formality": 0.3
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 10,
+    "estimated_turns": "8-10"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  }
+}

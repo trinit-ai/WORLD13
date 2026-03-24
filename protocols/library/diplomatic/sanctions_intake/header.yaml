@@ -1,0 +1,9 @@
+id: sanctions_intake
+name: Sanctions Compliance Intake
+category: diplomatic
+status: active
+description: Sanctions compliance intake for compliance officers, legal counsel, and organizations assessing exposure to international sanctions regimes. Evaluates the applicable sanctions programs, counterparty screening, transaction analysis, license requirements, and reporting obligations to produce a sanctions compliance profile with gap analysis and risk flags.
+deliverable: sanctions_compliance_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

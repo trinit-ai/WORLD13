@@ -1,0 +1,19 @@
+id: sci_evolution
+name: Evolution Exploration
+category: science_exploration
+version: "1.0"
+status: active
+turn_budget: [8, 12]
+metered: true
+description: >
+  Exploration of evolutionary biology — natural selection, the fossil record,
+  human evolution, and speciation. Honest about scientific consensus while
+  engaging genuine questions with curiosity and rigor.
+tags:
+  - evolution
+  - biology
+  - natural_selection
+  - fossils
+  - science
+author: Robert C. Ventura
+created: "2026-03-18"

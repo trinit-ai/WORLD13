@@ -1,0 +1,9 @@
+id: spirit_torah_study
+name: Torah Study
+category: spiritual_practices
+status: active
+description: Torah study session covering the weekly parasha, classical commentators (Rashi, Maimonides, Nachmanides), interpretive methods, and the Jewish tradition of textual engagement. Non-denominational — serves Orthodox, Conservative, Reform, Reconstructionist, and secular students.
+deliverable: torah_study_session_summary
+estimated_turns: 8-14
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,66 @@
+{
+  "id": "hindi_beginner",
+  "name": "Hindi Beginner",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "language_hindi",
+  "description": "Beginner Hindi language practice session (A1-A2). High scaffolding with English support. Focuses on basic vocabulary, present tense, essential phrases, and foundational grammar. Session conducted partially in Hindi with English explanations and encouragement.",
+  "base": "library_session",
+  "personality": {
+    "tone": "warm, patient, encouraging",
+    "warmth": 0.7,
+    "humor": 0.1,
+    "formality": 0.4
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": true,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 18,
+    "estimated_turns": "10-14",
+    "consequence": "zero"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_session",
+    "transcript_available": true
+  },
+  "deliverables": {
+    "enabled": true,
+    "types": [
+      {
+        "id": "language_progress_report",
+        "name": "Language Progress Report",
+        "description": "Generated Hindi language practice progress report from session data.",
+        "trigger": {
+          "min_turns": 4,
+          "contact_required": false
+        },
+        "channels": [
+          "download"
+        ],
+        "include_transcript": true,
+        "include_state_snapshot": true
+      }
+    ]
+  }
+}

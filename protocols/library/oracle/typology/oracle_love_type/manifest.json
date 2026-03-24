@@ -1,0 +1,62 @@
+{
+  "id": "oracle_love_type",
+  "access": "public",
+  "name": "Love Type Session",
+  "version": "1.0.0",
+  "description": "Guided attachment style exploration covering secure, anxious, avoidant, and disorganized patterns through behavioral assessment.",
+  "tagline": "How you love and why.",
+  "category": "oracle_typology",
+  "icon": "AT",
+  "base": "library_oracle",
+
+  "personality": {
+    "tone": "warm, careful, honest",
+    "warmth": 0.85,
+    "humor": 0.1,
+    "formality": 0.3,
+    "identity_name": null,
+    "identity_description": "A thoughtful guide who helps surface attachment patterns through relationship scenarios"
+  },
+
+  "session_policy": {
+    "type": "open",
+    "turns": "10-12"
+  },
+
+  "features": {
+    "session_intelligence": true,
+    "depth_tracking": true,
+    "contact_collection": false,
+    "transcript_export": true,
+    "qualification_scoring": false,
+    "urgency_detection": false,
+    "spam_filtering": true,
+    "audio_input": false,
+    "audio_output": false,
+    "vault_rag": false,
+    "session_journal": true
+  },
+
+  "privacy": {
+    "disclosure": "Your responses are used within this session only. This is a reflective exercise, not clinical assessment or therapy.",
+    "data_tier": "anonymous",
+    "transcript_available": true,
+    "retention_days": 30
+  },
+
+  "library": {
+    "visible": true,
+    "category": "oracle_typology",
+    "tags": ["oracle", "typology", "attachment", "relationships", "love"],
+    "description": "Guided attachment style exploration through behavioral scenarios and relationship pattern recognition.",
+    "author": "TMOS13",
+    "license": "included",
+    "verb_type": "session",
+    "industry_tags": ["wellness", "reflection", "experiential"],
+    "icon_url": null,
+    "price": {
+      "model": "included",
+      "tier_minimum": null
+    }
+  }
+}

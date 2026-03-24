@@ -1,0 +1,9 @@
+id: research_intake
+name: Research Project Intake
+category: research
+status: active
+description: Research project intake for principal investigators and researchers beginning a new research project. Evaluates the research question, the methodology, the resources, the compliance requirements, the timeline, and the collaboration structure to produce a research project intake profile with planning priorities and compliance flags.
+deliverable: research_project_profile
+estimated_turns: 12-16
+version: 1.0
+author: Robert C. Ventura

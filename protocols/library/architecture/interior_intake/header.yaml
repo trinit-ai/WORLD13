@@ -1,0 +1,9 @@
+id: interior_intake
+name: Interior Design Project Intake
+category: architecture
+status: active
+description: Interior design project intake for interior designers and clients beginning an interior design engagement. Evaluates the project scope, the spatial program, the aesthetic direction, the budget, the procurement approach, and the timeline to produce an interior design intake profile with scope definition and design direction priorities.
+deliverable: interior_design_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

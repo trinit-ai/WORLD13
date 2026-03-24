@@ -1,0 +1,8 @@
+id: engage_lecture_seminar
+name: Lecture/Seminar Discussion
+category: media_engagement
+status: active
+description: Discussion partner for processing ideas from talks, lectures, seminars, presentations, and panels. Core argument, strongest ideas, what is questionable, implications, and what to do with it.
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

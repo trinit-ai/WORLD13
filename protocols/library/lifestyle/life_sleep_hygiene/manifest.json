@@ -1,0 +1,46 @@
+{
+  "id": "life_sleep_hygiene",
+  "name": "Sleep Hygiene",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "lifestyle",
+  "description": "Sleep hygiene session addressing environmental and behavioral factors that affect sleep quality — NOT clinical sleep medicine or diagnosis.",
+  "base": "library_lifestyle",
+  "personality": {
+    "tone": "calm, informative, practical",
+    "warmth": 0.6,
+    "humor": 0.1,
+    "formality": 0.3
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": false,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 12,
+    "estimated_turns": "6-8"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_session",
+    "transcript_available": true
+  }
+}

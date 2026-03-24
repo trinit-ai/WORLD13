@@ -1,0 +1,9 @@
+id: arabic_intermediate
+name: Arabic Intermediate
+category: language_arabic
+status: active
+description: Intermediate Arabic language practice session (B1-B2). Primarily conducted in Arabic with natural pacing. Covers complex topics, advanced grammar, and nuanced expression. Corrections woven into conversation naturally.
+deliverable: language_progress_report
+estimated_turns: 12-16
+version: 1.0
+author: Robert C. Ventura

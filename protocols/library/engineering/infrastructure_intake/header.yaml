@@ -1,0 +1,9 @@
+id: infrastructure_intake
+name: Infrastructure Assessment Intake
+category: engineering
+status: active
+description: Infrastructure assessment intake for platform engineers and infrastructure leads evaluating a new infrastructure design or existing infrastructure health. Evaluates cloud architecture, cost structure, security posture, resilience design, operational complexity, and compliance requirements to produce an infrastructure assessment profile with findings and risk flags.
+deliverable: infrastructure_assessment_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

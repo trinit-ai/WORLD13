@@ -1,0 +1,9 @@
+id: cybersecurity_intake
+name: Cybersecurity Assessment Intake
+category: criminal_justice
+status: active
+description: Cybersecurity assessment intake for organizations initiating a security assessment, penetration test, or incident response engagement. Evaluates the assessment scope, authorization structure, legal permissions, incident status, and remediation planning to produce a cybersecurity assessment intake profile with gap analysis and risk flags.
+deliverable: cybersecurity_assessment_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

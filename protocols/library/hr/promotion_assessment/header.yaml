@@ -1,0 +1,9 @@
+id: promotion_assessment
+name: Promotion Assessment Intake
+category: hr
+status: active
+description: Promotion assessment intake for HR professionals and managers evaluating an employee for promotion. Evaluates the performance record, role readiness indicators, skill gap assessment, succession context, compensation implications, and equity considerations to produce a promotion assessment profile with recommendation and development gaps. Not legal advice.
+deliverable: promotion_assessment_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

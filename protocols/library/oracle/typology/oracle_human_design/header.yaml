@@ -1,0 +1,9 @@
+id: oracle_human_design
+name: Human Design Reading
+category: oracle_typology
+status: active
+description: Guided Human Design exploration covering the five Types (Generator, Manifesting Generator, Manifestor, Projector, Reflector), seven Authorities, twelve Profiles, and nine Centers. Produces a personalized chart interpretation.
+consequence_class: ZERO
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

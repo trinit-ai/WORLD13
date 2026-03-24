@@ -1,0 +1,9 @@
+id: auto_claims
+name: Auto Insurance Claims Intake
+category: insurance
+status: active
+description: Auto insurance claims intake for claims adjusters and policyholders initiating an automobile insurance claim. Evaluates the loss event, vehicle damage, liability indicators, injury involvement, coverage in force, and documentation requirements to produce an auto claims intake profile with coverage indicators, liability assessment, and next steps. Not legal advice.
+deliverable: auto_claims_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

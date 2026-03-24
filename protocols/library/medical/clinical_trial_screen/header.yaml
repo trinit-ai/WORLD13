@@ -1,0 +1,9 @@
+id: clinical_trial_screen
+name: Clinical Trial Eligibility Screening Intake
+category: medical
+status: active
+description: Clinical trial eligibility screening intake for research coordinators and clinical staff conducting an initial screen of a patient for potential clinical trial enrollment. Evaluates the diagnosis, the trial's inclusion and exclusion criteria, the patient's interest and understanding, and the consent requirements to produce a clinical trial screening profile with eligibility indicators and next steps. Not medical advice.
+deliverable: clinical_trial_screen_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

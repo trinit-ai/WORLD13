@@ -1,0 +1,9 @@
+id: zoning_intake
+name: Zoning and Land Use Intake
+category: real_estate
+status: active
+description: Zoning and land use intake for property owners, developers, and real estate professionals assessing the zoning status of a property or pursuing a zoning change. Evaluates the current zoning, the permitted uses, the proposed use or change, the variance or rezoning process, and the timeline to produce a zoning intake profile with use assessment and process requirements. Not legal advice.
+deliverable: zoning_intake_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

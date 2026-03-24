@@ -1,0 +1,9 @@
+id: compliance_audit
+name: Compliance Audit Intake
+category: criminal_justice
+status: active
+description: Compliance audit intake for organizations initiating an internal or external compliance audit in a regulated domain — criminal justice, financial services, healthcare, or other regulated industry. Evaluates audit scope, triggering condition, applicable regulatory framework, evidence preservation, personnel authority, and remediation planning to produce a compliance audit intake profile with gap analysis and risk flags.
+deliverable: compliance_audit_intake_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

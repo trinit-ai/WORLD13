@@ -1,0 +1,9 @@
+id: loneliness_session
+name: Loneliness Session
+category: dyadic
+status: active
+description: Guided session for holding loneliness honestly, understanding what it asks for, and moving toward what is possible.
+deliverable: connection_brief
+estimated_turns: "8-12"
+version: 1.0
+author: Robert C. Ventura

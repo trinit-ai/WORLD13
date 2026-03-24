@@ -1,0 +1,9 @@
+id: patient_intake
+name: Medical Patient Intake
+category: medical
+status: active
+description: Medical patient intake for clinical staff conducting an initial patient intake. Evaluates the chief complaint, medical history, current medications, allergies, insurance, and visit purpose to produce a patient intake profile with clinical documentation and priority flags for the treating provider. Not medical advice.
+deliverable: patient_intake_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

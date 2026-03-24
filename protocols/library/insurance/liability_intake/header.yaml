@@ -1,0 +1,9 @@
+id: liability_intake
+name: Liability Claims Intake
+category: insurance
+status: active
+description: Liability insurance claims intake for claims adjusters handling a third-party liability claim. Evaluates the incident, the alleged liability, the injured party's damages, the coverage in force, the investigation requirements, and the litigation risk to produce a liability claims intake profile with coverage assessment, investigation scope, and reserve guidance. Not legal advice.
+deliverable: liability_claims_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

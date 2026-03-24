@@ -1,0 +1,9 @@
+id: tech_coding_javascript
+name: JavaScript Coding Session
+category: technology
+status: active
+description: JavaScript coding session covering DOM manipulation, async/await patterns, Node.js basics, and modern ES6+ features. Supports learning mode (concept-driven with exercises), problem-solving mode (specific challenge walkthrough), and review mode (code evaluation and improvement). Produces working code in browser or Node context.
+deliverable: javascript_session_summary
+estimated_turns: 10-16
+version: 1.0
+author: Robert C. Ventura

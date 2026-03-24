@@ -1,0 +1,9 @@
+id: immigration_services
+name: Immigration Services Intake
+category: government
+status: active
+description: Immigration services intake for nonprofit immigration legal services organizations, accredited representatives, and legal aid staff conducting an initial immigration assessment. Evaluates the individual's immigration history, current status, available relief, and priority concerns to produce an immigration services intake profile with case assessment and professional referral guidance. Not legal advice.
+deliverable: immigration_services_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

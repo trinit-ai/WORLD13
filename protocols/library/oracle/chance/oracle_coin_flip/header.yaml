@@ -1,0 +1,9 @@
+id: oracle_coin_flip
+name: Coin Flip Oracle
+category: oracle_chance
+status: active
+description: The desire-revealing coin flip. Frame the decision, assign sides, flip, then ask the real question — what were you hoping for? The coin does not decide. Your reaction to the coin decides.
+consequence_class: ZERO
+estimated_turns: 4-6
+version: 1.0
+author: Robert C. Ventura

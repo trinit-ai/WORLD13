@@ -1,0 +1,9 @@
+id: peacekeeping_intake
+name: Peacekeeping Mission Intake
+category: diplomatic
+status: active
+description: Peacekeeping mission intake for UN peacekeeping personnel, troop-contributing country liaisons, and peace operations planners assessing or preparing a peacekeeping deployment. Evaluates the mission mandate, rules of engagement, host country consent, protection of civilians obligations, conduct and discipline requirements, and exit strategy to produce a peacekeeping mission profile with operational assessment and risk flags.
+deliverable: peacekeeping_mission_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

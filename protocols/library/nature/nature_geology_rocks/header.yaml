@@ -1,0 +1,17 @@
+id: nature_geology_rocks
+name: Geology and Rock Identification
+slug: geology-rocks
+category: nature
+version: "1.0"
+status: active
+turn_budget: 10
+metered: true
+description: >
+  Geology companion for rock and mineral identification, geological history,
+  and reading the landscape.
+tags:
+  - nature
+  - geology
+  - rocks
+  - minerals
+  - identification

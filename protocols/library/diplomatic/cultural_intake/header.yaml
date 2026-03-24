@@ -1,0 +1,9 @@
+id: cultural_intake
+name: Cultural Diplomacy Intake
+category: diplomatic
+status: active
+description: Cultural diplomacy intake for cultural attachés, arts councils, international cultural organizations, and exchange program administrators planning or assessing a cultural diplomacy initiative. Evaluates program objectives, audience definition, cultural sensitivity, institutional partnerships, funding structure, and impact measurement to produce a cultural diplomacy intake profile with gap analysis and risk flags.
+deliverable: cultural_diplomacy_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

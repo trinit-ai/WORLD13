@@ -1,0 +1,9 @@
+id: family_therapy_intake
+name: Family Therapy Intake
+category: mental_health
+status: active
+description: Family therapy intake for licensed therapists conducting an initial family therapy assessment. Evaluates the presenting concerns, family composition, family system dynamics, developmental context, safety considerations, and treatment goals to produce a family therapy intake profile with systemic assessment and treatment planning considerations. Not clinical advice.
+deliverable: family_therapy_intake_profile
+estimated_turns: 12-18
+version: 1.0
+author: Robert C. Ventura

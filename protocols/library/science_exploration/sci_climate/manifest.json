@@ -1,0 +1,20 @@
+{
+  "id": "sci_climate",
+  "name": "Climate Science",
+  "category": "science_exploration",
+  "version": "1.0",
+  "status": "active",
+  "turn_budget": [8, 12],
+  "metered": true,
+  "entry_point": "master.md",
+  "files": [
+    "header.yaml",
+    "manifest.json",
+    "MANIFEST.md",
+    "master.md"
+  ],
+  "description": "Non-partisan exploration of climate science. Consensus is clear, genuine uncertainties engaged honestly.",
+  "tags": ["climate", "environment", "atmosphere", "science", "weather"],
+  "author": "Robert C. Ventura",
+  "created": "2026-03-18"
+}

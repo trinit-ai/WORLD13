@@ -1,0 +1,9 @@
+id: culture_assessment
+name: Organizational Culture Assessment Intake
+category: hr
+status: active
+description: Organizational culture assessment intake for HR leaders, CHROs, and organizational development professionals scoping a culture assessment. Evaluates the assessment purpose, methodology, data collection approach, psychological safety conditions, and action planning framework to produce a culture assessment brief with methodology guidance and implementation plan.
+deliverable: culture_assessment_brief
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

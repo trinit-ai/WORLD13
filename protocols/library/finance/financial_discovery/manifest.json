@@ -1,0 +1,46 @@
+{
+  "id": "financial_discovery",
+  "name": "Financial Discovery Intake",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "finance",
+  "description": "Financial discovery intake for attorneys, mediators, and financial professionals conducting financial discovery in litigation, divorce, or dispute proceedings. Evaluates the discovery scope, asset identification, income documentation, disclosure completeness, hidden asset indicators, and professional coordination to produce a financial discovery intake profile with scope definition and risk flags.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "professional, direct",
+    "warmth": 0.5,
+    "humor": 0.0,
+    "formality": 0.7
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 18,
+    "estimated_turns": "10-14"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  }
+}

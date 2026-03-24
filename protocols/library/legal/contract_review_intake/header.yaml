@@ -1,0 +1,9 @@
+id: contract_review_intake
+name: Contract Review Intake
+category: legal
+status: active
+description: Contract review intake for attorneys, paralegals, and business professionals initiating a contract review. Evaluates the contract type, the reviewing party's role, key provisions of concern, negotiation context, deadline, and the review objectives to produce a contract review intake profile with review scope and priority provisions checklist. Not legal advice.
+deliverable: contract_review_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

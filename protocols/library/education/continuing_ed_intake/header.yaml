@@ -1,0 +1,9 @@
+id: continuing_ed_intake
+name: Continuing Education Intake
+category: education
+status: active
+description: Continuing education intake for professional development coordinators, CE providers, and licensing boards assessing a continuing education need or program. Evaluates the professional context, licensure requirements, learning objectives, format fit, credit eligibility, and documentation requirements to produce a continuing education intake profile with gap analysis and risk flags.
+deliverable: continuing_ed_intake_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

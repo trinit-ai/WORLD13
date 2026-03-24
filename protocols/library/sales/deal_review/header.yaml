@@ -1,0 +1,9 @@
+id: deal_review
+name: Deal Review Intake
+category: sales
+status: active
+description: Deal review intake for sales managers and account executives conducting a pipeline deal review. Evaluates the deal's qualification status, the engagement pattern, the risks, the competitive position, and the path to close to produce a deal review profile with risk assessment and action plan.
+deliverable: deal_review_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

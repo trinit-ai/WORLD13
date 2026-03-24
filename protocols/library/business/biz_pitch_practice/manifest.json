@@ -1,0 +1,54 @@
+{
+  "id": "biz_pitch_practice",
+  "name": "Investor Pitch Practice",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "business",
+  "description": "Investor pitch practice session that plays a skeptical investor across multiple rounds. Drills the one-liner, sharpens the ask, stress-tests the narrative arc, and kills empty validation before the founder walks into a real room.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "direct",
+    "warmth": 0.3,
+    "humor": 0.1,
+    "formality": 0.6
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": { "pattern": "^(reset|start over|restart|new session|clear)$", "action": "reset_session" },
+      "status": { "pattern": "^(status|progress|where am i|summary)$", "action": "show_status" }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": false,
+    "deliverables_pipeline": true,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 24,
+    "estimated_turns": "14-20"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  },
+  "deliverables": {
+    "enabled": true,
+    "types": [
+      {
+        "id": "pitch_practice_debrief",
+        "name": "Pitch Practice Debrief",
+        "description": "Generated pitch practice debrief from session data.",
+        "trigger": { "min_turns": 6, "contact_required": false },
+        "channels": ["download"],
+        "include_transcript": true,
+        "include_state_snapshot": true
+      }
+    ]
+  }
+}

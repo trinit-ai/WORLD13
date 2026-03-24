@@ -1,0 +1,9 @@
+id: spirit_prayer_practice
+name: Prayer Practice
+category: spiritual_practices
+status: active
+description: Prayer practice session covering forms of prayer across traditions — petition, praise, lament, contemplation, intercessory, meditative. Guides actual prayer practice within the session. Non-positional on theology while engaging each tradition seriously.
+deliverable: prayer_practice_session_summary
+estimated_turns: 6-10
+version: 1.0
+author: Robert C. Ventura

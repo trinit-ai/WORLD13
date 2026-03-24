@@ -1,0 +1,9 @@
+id: consular_intake
+name: Consular Services Intake
+category: diplomatic
+status: active
+description: Consular services intake for consular officers, embassy staff, and organizations supporting nationals abroad. Evaluates the consular need, the individual's status, applicable bilateral agreements, available services, and emergency response requirements to produce a consular intake profile with service assessment and recommended actions.
+deliverable: consular_intake_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

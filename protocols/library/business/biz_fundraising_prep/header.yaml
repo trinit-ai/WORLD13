@@ -1,0 +1,9 @@
+id: biz_fundraising_prep
+name: Fundraising Preparation
+category: business
+status: active
+description: Fundraising preparation session that helps founders prepare for a raise by stage — pre-seed, seed, or Series A. Covers materials, narrative, timing, investor targeting, and process design. NOT financial advice.
+deliverable: fundraising_readiness_assessment
+estimated_turns: 12-14
+version: 1.0
+author: Robert C. Ventura

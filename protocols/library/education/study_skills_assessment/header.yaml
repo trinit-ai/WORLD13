@@ -1,0 +1,9 @@
+id: study_skills_assessment
+name: Study Skills Assessment Intake
+category: education
+status: active
+description: Study skills assessment intake for academic coaches, learning specialists, and advisors assessing a student's study and learning strategies. Evaluates time management, note-taking, reading comprehension strategies, test preparation, self-regulation, and the learning environment to produce a study skills assessment profile with targeted skill development recommendations.
+deliverable: study_skills_assessment_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

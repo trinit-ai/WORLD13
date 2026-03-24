@@ -1,0 +1,18 @@
+id: oral_history_session
+name: Oral History Session
+category: public
+turns: "10-14"
+version: "1.0"
+author: Robert C. Ventura
+company: "TMOS13, LLC"
+description: >
+  Recording own story — genuine capture of experience for family, posterity.
+  The specific particular detail. The story belongs to the teller.
+kill_patterns:
+  - editing the story
+  - imposing narrative
+  - rushing to lesson
+  - treating ordinary lives as insufficient
+  - correcting memory
+completion: experiential
+completion_signal: "a meaningful portion of the person's story has been captured with fidelity and respect"

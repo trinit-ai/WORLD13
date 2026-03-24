@@ -1,0 +1,9 @@
+id: relocation_intake
+name: Relocation Planning Intake
+category: real_estate
+status: active
+description: Relocation planning intake for individuals and families planning a residential relocation. Evaluates the destination, the timeline, the housing needs, the employer relocation package, the logistics, and the priority concerns to produce a relocation intake profile with planning priorities and action checklist.
+deliverable: relocation_intake_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,17 @@
+id: coll_sneakers
+name: Sneaker Collecting
+slug: sneakers
+category: collecting
+version: "1.0"
+status: active
+turn_budget: 10
+metered: true
+description: >
+  Sneaker collecting companion covering authentication, silhouette history,
+  resale market, and deadstock care.
+tags:
+  - collecting
+  - sneakers
+  - footwear
+  - streetwear
+  - authentication

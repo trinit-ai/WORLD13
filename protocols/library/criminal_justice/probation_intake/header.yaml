@@ -1,0 +1,9 @@
+id: probation_intake
+name: Probation Supervision Intake
+category: criminal_justice
+status: active
+description: Probation supervision intake for probation officers conducting an initial intake for an individual sentenced to probation. Evaluates sentence conditions, housing and employment status, financial obligations, treatment requirements, validated risk and needs assessment, and community support to produce a probation intake profile with supervision planning recommendations and flag conditions.
+deliverable: probation_intake_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

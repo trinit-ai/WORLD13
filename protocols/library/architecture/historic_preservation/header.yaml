@@ -1,0 +1,9 @@
+id: historic_preservation
+name: Historic Preservation Intake
+category: architecture
+status: active
+description: Historic preservation project intake and compliance assessment. Evaluates a project's historic designation status, Secretary of the Interior's Standards compliance posture, tax credit eligibility, and proposed scope to produce a preservation profile with gap analysis, risk flags, and recommended actions before design or regulatory submission.
+deliverable: historic_preservation_report
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

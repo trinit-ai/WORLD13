@@ -1,0 +1,9 @@
+id: sprint_planning
+name: Sprint Planning Intake
+category: engineering
+status: active
+description: Sprint planning intake for engineering teams preparing for a sprint planning session. Evaluates backlog readiness, capacity assessment, definition of ready, dependency mapping, and goal clarity to produce a sprint planning profile with readiness assessment and risk flags.
+deliverable: sprint_planning_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

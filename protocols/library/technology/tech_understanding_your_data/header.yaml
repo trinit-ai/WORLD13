@@ -1,0 +1,9 @@
+id: tech_understanding_your_data
+name: Data Literacy
+category: technology
+status: active
+description: Data literacy session covering how to read charts, understand correlation vs. causation, interpret p-values and statistical claims, and critically evaluate the data you encounter in news, work, and personal decisions.
+deliverable: data_literacy_summary
+estimated_turns: 8-10
+version: 1.0
+author: Robert C. Ventura

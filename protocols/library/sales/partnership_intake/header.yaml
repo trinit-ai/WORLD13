@@ -1,0 +1,9 @@
+id: partnership_intake
+name: Partnership Development Intake
+category: sales
+status: active
+description: Partnership development intake for business development and partnership managers evaluating or onboarding a new business partner. Evaluates the partnership opportunity, the strategic fit, the mutual value exchange, the go-to-market alignment, and the success framework to produce a partnership intake profile with opportunity assessment and partnership structure recommendations.
+deliverable: partnership_intake_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

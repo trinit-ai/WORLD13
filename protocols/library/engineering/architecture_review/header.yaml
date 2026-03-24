@@ -1,0 +1,9 @@
+id: architecture_review
+name: Architecture Review
+category: engineering
+status: active
+description: Architecture review intake for engineering leads and architects evaluating a system design, architectural decision, or significant technical change. Evaluates design drivers, trade-off analysis, scalability, reliability, security, operational complexity, and decision documentation to produce an architecture review profile with findings and risk flags.
+deliverable: architecture_review_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

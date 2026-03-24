@@ -1,0 +1,17 @@
+id: nature_gardening_native
+name: Native Plant Gardening
+slug: native-gardening
+category: nature
+version: "1.0"
+status: active
+turn_budget: 10
+metered: true
+description: >
+  Native plant gardening companion for habitat creation, pollinator support,
+  and ecological landscape design.
+tags:
+  - nature
+  - gardening
+  - native plants
+  - pollinators
+  - ecology

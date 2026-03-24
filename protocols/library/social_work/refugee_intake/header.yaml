@@ -1,0 +1,9 @@
+id: refugee_intake
+name: Refugee and Immigrant Services Intake
+category: social_work
+status: active
+description: Refugee and immigrant services intake for resettlement agencies and social workers serving newly arrived refugees, asylees, and immigrants. Evaluates the arrival situation, the documentation status, the immediate needs, the cultural and language considerations, and the resettlement service priorities to produce a refugee intake profile with immediate needs assessment and resettlement plan. Not legal advice.
+deliverable: refugee_intake_profile
+estimated_turns: 12-16
+version: 1.0
+author: Robert C. Ventura

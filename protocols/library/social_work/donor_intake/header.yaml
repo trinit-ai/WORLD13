@@ -1,0 +1,9 @@
+id: donor_intake
+name: Donor Engagement Intake
+category: social_work
+status: active
+description: Donor engagement intake for nonprofit development staff cultivating a major donor prospect or managing a donor relationship. Evaluates the donor's interests and connection to the mission, the giving history, the capacity, the engagement level, and the relationship strategy to produce a donor intake profile with cultivation priorities and ask strategy.
+deliverable: donor_intake_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,9 @@
+id: form_wire_transfer
+name: Wire Transfer Authorization
+category: forms_financial
+status: active
+description: Guided completion of a wire transfer authorization form capturing sender and recipient banking details, amount, purpose, and verification with prominent fraud warnings.
+deliverable: completed_form
+estimated_turns: "6-8"
+version: 1.0
+author: Robert C. Ventura

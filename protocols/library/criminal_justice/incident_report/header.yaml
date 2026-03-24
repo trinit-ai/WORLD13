@@ -1,0 +1,9 @@
+id: incident_report
+name: Incident Report Intake
+category: criminal_justice
+status: active
+description: Incident report intake for law enforcement, institutional security, and organizational safety officers documenting an incident. Evaluates the incident type, scene conditions, witness identification, evidence preservation, reporting obligations, and chain of custody to produce a structured incident report intake profile with documentation completeness assessment and flag conditions.
+deliverable: incident_report_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

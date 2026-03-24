@@ -1,0 +1,19 @@
+id: sci_climate
+name: Climate Science
+category: science_exploration
+version: "1.0"
+status: active
+turn_budget: [8, 12]
+metered: true
+description: >
+  Non-partisan exploration of climate science. The consensus is clear and
+  presented as such. Genuine uncertainties engaged honestly. Science, not
+  advocacy.
+tags:
+  - climate
+  - environment
+  - atmosphere
+  - science
+  - weather
+author: Robert C. Ventura
+created: "2026-03-18"

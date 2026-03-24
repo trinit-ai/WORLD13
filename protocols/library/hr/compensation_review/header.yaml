@@ -1,0 +1,9 @@
+id: compensation_review
+name: Compensation Review Intake
+category: hr
+status: active
+description: Compensation review intake for HR professionals and compensation analysts conducting a compensation review for a position, employee, or pay equity analysis. Evaluates the compensation structure, market positioning, internal equity, performance alignment, and pay equity risk to produce a compensation review profile with findings and recommended actions. Not legal or financial advice.
+deliverable: compensation_review_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

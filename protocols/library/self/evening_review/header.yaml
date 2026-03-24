@@ -1,0 +1,9 @@
+id: evening_review
+name: Evening Review
+category: self
+status: active
+description: Brief daily closing ritual for honest accounting, acknowledgment, and release.
+deliverable: daily_review
+estimated_turns: "4-6"
+version: 1.0
+author: Robert C. Ventura

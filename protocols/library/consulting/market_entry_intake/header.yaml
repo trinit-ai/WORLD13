@@ -1,0 +1,9 @@
+id: market_entry_intake
+name: Market Entry Intake
+category: consulting
+status: active
+description: Market entry strategy intake for organizations entering a new geography, segment, or product category. Evaluates market definition, competitive landscape, entry mode, regulatory exposure, route to market, resource requirements, and organizational readiness to produce a market entry profile with gap analysis, risk flags, and recommended pre-entry actions.
+deliverable: market_entry_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

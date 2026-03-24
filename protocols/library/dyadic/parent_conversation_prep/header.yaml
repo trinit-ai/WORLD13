@@ -1,0 +1,9 @@
+id: parent_conversation_prep
+name: Parent Conversation Preparation
+category: dyadic
+status: active
+description: Helping a parent prepare for a significant conversation with their child.
+deliverable: conversation_brief
+estimated_turns: "8-12"
+version: 1.0
+author: Robert C. Ventura

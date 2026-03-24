@@ -1,0 +1,9 @@
+id: concierge_intake
+name: Concierge Services Intake
+category: hospitality
+status: active
+description: Concierge services intake for hotel concierges, destination management companies, and luxury hospitality professionals conducting a guest needs assessment. Evaluates the guest's interests, schedule, preferences, and special requirements to produce a concierge services brief with personalized itinerary direction and reservation priorities.
+deliverable: concierge_services_brief
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

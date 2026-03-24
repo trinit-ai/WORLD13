@@ -1,0 +1,9 @@
+id: technical_intake
+name: Technical Project Intake
+category: engineering
+status: active
+description: Technical project intake for engineering leads and project managers scoping a new technical initiative. Evaluates the project mandate, success criteria, technical approach, resource requirements, dependency map, risk assessment, and go/no-go readiness to produce a technical intake profile with scope definition and risk flags.
+deliverable: technical_intake_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,9 @@
+id: due_diligence
+name: Financial Due Diligence Intake
+category: finance
+status: active
+description: Financial due diligence intake for acquirers, investors, and advisors initiating a financial due diligence process. Evaluates the transaction context, scope of financial review, data room readiness, quality of earnings focus areas, key risk areas, and workstream coordination to produce a financial due diligence intake profile with scope definition and risk flags.
+deliverable: financial_due_diligence_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

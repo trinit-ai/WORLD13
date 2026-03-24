@@ -1,0 +1,17 @@
+{
+  "id": "biz_fundraising_prep",
+  "name": "Fundraising Preparation",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "business",
+  "description": "Fundraising preparation session that helps founders prepare for a raise by stage — pre-seed, seed, or Series A. Covers materials, narrative, timing, investor targeting, and process design. NOT financial advice.",
+  "base": "library_intake",
+  "personality": { "tone": "direct", "warmth": 0.4, "humor": 0.0, "formality": 0.6 },
+  "cartridges": [],
+  "commands": { "session": { "reset": { "pattern": "^(reset|start over|restart|new session|clear)$", "action": "reset_session" }, "status": { "pattern": "^(status|progress|where am i|summary)$", "action": "show_status" } } },
+  "features": { "session_intelligence": true, "contact_collection": false, "deliverables_pipeline": true, "session_journal": true, "depth_tracking": true },
+  "session_policy": { "type": "metered", "free_turns": 18, "estimated_turns": "12-14" },
+  "privacy": { "disclosure": "A summary of this session will be available for review.", "data_tier": "standard_intake", "transcript_available": true },
+  "deliverables": { "enabled": true, "types": [{ "id": "fundraising_readiness_assessment", "name": "Fundraising Readiness Assessment", "description": "Generated fundraising readiness assessment from session data.", "trigger": { "min_turns": 5, "contact_required": false }, "channels": ["download"], "include_transcript": true, "include_state_snapshot": true }] }
+}

@@ -1,0 +1,9 @@
+id: account_planning
+name: Account Planning Intake
+category: sales
+status: active
+description: Account planning intake for account executives and sales managers building a strategic account plan. Evaluates the account's current state, the revenue opportunity, the relationship map, the whitespace, the risks, and the growth strategy to produce an account planning profile with priority actions and engagement roadmap.
+deliverable: account_plan_profile
+estimated_turns: 12-16
+version: 1.0
+author: Robert C. Ventura

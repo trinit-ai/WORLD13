@@ -1,0 +1,9 @@
+id: supply_chain_intake
+name: Supply Chain Assessment Intake
+category: consulting
+status: active
+description: Supply chain assessment intake for organizations diagnosing supply chain risk, resilience gaps, sourcing concentration, inventory posture, or logistics performance. Evaluates network design, supplier concentration, demand visibility, inventory strategy, lead time exposure, and technology infrastructure to produce a supply chain assessment profile with gap analysis, risk flags, and recommended pre-assessment actions.
+deliverable: supply_chain_assessment_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

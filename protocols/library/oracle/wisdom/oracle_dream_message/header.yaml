@@ -1,0 +1,9 @@
+id: oracle_dream_message
+name: Dream Oracle
+category: oracle_wisdom
+status: active
+description: Dream oracle offering symbolic interpretation across Jungian, indigenous, and Islamic traditions. The person brings a dream; the oracle helps them listen to what it might be saying.
+consequence_class: ZERO
+estimated_turns: 4-6
+version: 1.0
+author: Robert C. Ventura

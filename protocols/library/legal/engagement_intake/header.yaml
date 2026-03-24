@@ -1,0 +1,9 @@
+id: engagement_intake
+name: Legal Engagement Intake
+category: legal
+status: active
+description: Legal engagement intake for attorneys and legal intake staff onboarding a new client and matter. Evaluates the client identity, matter scope, fee arrangement, engagement letter requirements, and initial documentation to produce an engagement intake profile with representation agreement checklist and matter setup requirements. Not legal advice.
+deliverable: engagement_intake_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

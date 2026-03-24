@@ -1,0 +1,9 @@
+id: broadcast_intake
+name: Broadcast Production Intake
+category: media
+status: active
+description: Broadcast production intake for television and radio producers scoping a new segment, episode, or program. Evaluates the format, the story, the guests, the production requirements, the airtime constraints, and the clearance requirements to produce a broadcast intake profile with production checklist and segment structure.
+deliverable: broadcast_intake_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,9 @@
+id: grant_intake
+name: Government Grant Application Intake
+category: government
+status: active
+description: Government grant application intake for organizations applying for federal, state, or local government grants. Evaluates eligibility, application requirements, budget structure, matching requirements, compliance obligations, and submission readiness to produce a government grant intake profile with gap analysis and deadline flags. Not legal or financial advice.
+deliverable: government_grant_intake_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

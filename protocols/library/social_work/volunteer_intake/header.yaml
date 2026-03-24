@@ -1,0 +1,9 @@
+id: volunteer_intake
+name: Volunteer Services Intake
+category: social_work
+status: active
+description: Volunteer services intake for volunteer coordinators and nonprofit organizations onboarding new volunteers. Evaluates the volunteer's background, skills, availability, motivations, placement fit, and training requirements to produce a volunteer intake profile with placement recommendations and onboarding plan.
+deliverable: volunteer_intake_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

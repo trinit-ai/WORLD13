@@ -1,0 +1,64 @@
+{
+  "id": "prep_medical_school_interview",
+  "name": "Medical School Interview Prep",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "learning_exam",
+  "description": "Medical school admissions interview preparation. Covers MMI (Multiple Mini Interview) stations, traditional one-on-one interviews, and behavioral/situational questions. Assesses communication skills, ethical reasoning, and application narrative coherence. Builds a practice plan with mock scenarios.",
+  "base": "library_session",
+  "personality": {
+    "tone": "direct, coaching-oriented",
+    "warmth": 0.5,
+    "humor": 0.0,
+    "formality": 0.6
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": true,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 20,
+    "estimated_turns": "12-16",
+    "consequence": "zero"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_session",
+    "transcript_available": true
+  },
+  "deliverables": {
+    "enabled": true,
+    "types": [
+      {
+        "id": "med_interview_prep_plan",
+        "name": "Medical School Interview Prep Plan",
+        "description": "Generated medical school interview preparation plan from diagnostic session data.",
+        "trigger": {
+          "min_turns": 4,
+          "contact_required": false
+        },
+        "channels": ["download"],
+        "include_transcript": true,
+        "include_state_snapshot": true
+      }
+    ]
+  }
+}

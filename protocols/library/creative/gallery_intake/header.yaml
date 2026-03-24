@@ -1,0 +1,9 @@
+id: gallery_intake
+name: Gallery Submission Intake
+category: creative
+status: active
+description: Gallery submission intake for artists and gallerists preparing a gallery submission or evaluating an artist for representation or exhibition. Evaluates the work, the artist's practice and career stage, the gallery fit, the submission requirements, and the presentation approach to produce a gallery submission intake profile with fit assessment and submission priorities.
+deliverable: gallery_submission_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

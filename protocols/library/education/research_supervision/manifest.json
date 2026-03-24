@@ -1,0 +1,46 @@
+{
+  "id": "research_supervision",
+  "name": "Graduate Research Supervision Intake",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "education",
+  "description": "Graduate research supervision intake for faculty advisors, thesis committee members, and graduate program coordinators establishing or reviewing a graduate research supervision relationship. Evaluates the research project scope, advisor-advisee expectations, milestone structure, committee composition, intellectual property considerations, and wellbeing and support framework to produce a research supervision profile with gap analysis and risk flags.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "professional, direct",
+    "warmth": 0.5,
+    "humor": 0.0,
+    "formality": 0.7
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 16,
+    "estimated_turns": "8-12"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  }
+}

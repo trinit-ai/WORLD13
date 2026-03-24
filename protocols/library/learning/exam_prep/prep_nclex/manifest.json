@@ -1,0 +1,64 @@
+{
+  "id": "prep_nclex",
+  "name": "NCLEX Prep",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "learning_exam",
+  "description": "NCLEX-RN and NCLEX-PN preparation and diagnostic assessment. Covers CAT (Computer Adaptive Testing) format, 8 client needs categories, and the Clinical Judgment Measurement Model (CJMM). Builds a study plan focused on clinical reasoning and priority-setting.",
+  "base": "library_session",
+  "personality": {
+    "tone": "direct, coaching-oriented",
+    "warmth": 0.4,
+    "humor": 0.0,
+    "formality": 0.6
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": true,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 18,
+    "estimated_turns": "10-14",
+    "consequence": "zero"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_session",
+    "transcript_available": true
+  },
+  "deliverables": {
+    "enabled": true,
+    "types": [
+      {
+        "id": "nclex_study_plan",
+        "name": "NCLEX Study Plan",
+        "description": "Generated NCLEX study plan from diagnostic session data.",
+        "trigger": {
+          "min_turns": 4,
+          "contact_required": false
+        },
+        "channels": ["download"],
+        "include_transcript": true,
+        "include_state_snapshot": true
+      }
+    ]
+  }
+}

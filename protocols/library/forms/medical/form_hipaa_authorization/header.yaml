@@ -1,0 +1,9 @@
+id: form_hipaa_authorization
+name: HIPAA Authorization for Release of PHI
+category: forms_medical
+status: active
+description: Structured HIPAA authorization form for release of protected health information. Collects patient identity, specific information to disclose, recipient details, purpose, expiration, right to revoke, and signature authorization. Information collection only — healthcare provider must review. Not medical advice.
+deliverable: completed_form
+estimated_turns: 6-8
+version: 1.0
+author: Robert C. Ventura

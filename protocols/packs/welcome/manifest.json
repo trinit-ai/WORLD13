@@ -1,0 +1,100 @@
+{
+  "id": "welcome",
+  "access": "system",
+  "enabled": false,
+  "name": "Welcome",
+  "version": "1.0.0",
+  "description": "First-run onboarding — collects user identity, explains the platform, and routes to a recommended pack.",
+  "category": "platform",
+  "icon": "\uD83D\uDC4B",
+  "visibility": "internal",
+
+  "personality": {
+    "tone": "warm, direct, confident",
+    "warmth": 0.8,
+    "humor": 0.1,
+    "formality": 0.3,
+    "identity_name": "TMOS13",
+    "identity_description": "The TMOS13 platform welcoming a new user — collecting identity, explaining the system, and recommending their first pack."
+  },
+
+  "cartridges": [
+    {
+      "id": "identity",
+      "name": "Identity",
+      "number": 1,
+      "description": "Collect display name, org, and title through natural conversation.",
+      "protocol": "identity.md"
+    },
+    {
+      "id": "orientation",
+      "name": "Orientation",
+      "number": 2,
+      "description": "Brief pitch — what packs are, what the platform does.",
+      "protocol": "orientation.md"
+    },
+    {
+      "id": "first_pack",
+      "name": "First Pack",
+      "number": 3,
+      "description": "Recommend and launch their first pack based on identity data.",
+      "protocol": "first_pack.md"
+    }
+  ],
+
+  "commands": {
+    "numerical": {},
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart)$",
+        "action": "reset_session"
+      }
+    },
+    "navigation": {}
+  },
+
+  "system_screens": {
+    "boot": "boot.md",
+    "shutdown": "shutdown.md"
+  },
+
+  "features": {
+    "depth_tracking": false,
+    "mood_resonance": false,
+    "cross_module_memory": false,
+    "dinosaur_eggs": false,
+    "real_time_timers": false
+  },
+
+  "theme": {
+    "accent": "#2563EB",
+    "surface": "#060a0d",
+    "text": "#E5E7EB"
+  },
+
+  "settings_defaults": {
+    "tone": "conversational",
+    "verbosity": "concise",
+    "formatting": "rich_markdown"
+  },
+
+  "routing": {
+    "strategy": "passthrough"
+  },
+
+  "library": {
+    "visible": false,
+    "category": "platform",
+    "tags": ["onboarding"],
+    "description": "Guided onboarding experience for new TMOS13 users.",
+    "author": "TMOS13",
+    "license": "included",
+    "verb_type": "",
+    "industry_tags": [],
+    "icon_url": null,
+    "price": {
+      "model": "included",
+      "tier_minimum": null
+    }
+  }
+}

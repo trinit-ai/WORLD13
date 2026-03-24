@@ -1,0 +1,9 @@
+id: nutrition_coaching
+name: Nutrition Coaching Intake
+category: personal
+status: active
+description: Nutrition coaching intake for nutrition coaches and individuals seeking dietary guidance. Evaluates the current eating patterns, health goals, relationship with food, dietary restrictions, lifestyle context, and coaching focus to produce a nutrition coaching intake profile with goal clarity and priority areas. Not medical or clinical nutrition advice.
+deliverable: nutrition_coaching_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

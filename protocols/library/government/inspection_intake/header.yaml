@@ -1,0 +1,9 @@
+id: inspection_intake
+name: Government Inspection Intake
+category: government
+status: active
+description: Government inspection intake for inspectors, compliance officers, and regulated entities preparing for or responding to a government inspection. Evaluates the inspection type, scope, regulatory framework, documentation readiness, prior findings, and response preparation to produce an inspection intake profile with readiness assessment and risk flags.
+deliverable: inspection_intake_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

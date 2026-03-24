@@ -1,0 +1,9 @@
+id: leave_request
+name: Leave Request Intake
+category: hr
+status: active
+description: Leave request intake for HR professionals processing employee leave requests under FMLA, ADA, state leave laws, and company policy. Evaluates the leave type, eligibility, documentation requirements, job protection, benefits continuation, and coordination requirements to produce a leave intake profile with eligibility determination and next steps. Not legal advice.
+deliverable: leave_intake_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,9 @@
+id: restorative_justice
+name: Restorative Justice Process Intake
+category: criminal_justice
+status: active
+description: Restorative justice process intake for facilitators, community organizations, and justice agencies screening a matter for a restorative process — circle, conference, or victim-offender dialogue. Evaluates the harm, party readiness, victim voluntariness, safety conditions, facilitator qualifications, and community support to produce a restorative justice intake profile with process suitability assessment.
+deliverable: restorative_justice_intake_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

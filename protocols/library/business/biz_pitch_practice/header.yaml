@@ -1,0 +1,9 @@
+id: biz_pitch_practice
+name: Investor Pitch Practice
+category: business
+status: active
+description: Investor pitch practice session that plays a skeptical investor across multiple rounds. Drills the one-liner, sharpens the ask, stress-tests the narrative arc, and kills empty validation before the founder walks into a real room.
+deliverable: pitch_practice_debrief
+estimated_turns: 14-20
+version: 1.0
+author: Robert C. Ventura

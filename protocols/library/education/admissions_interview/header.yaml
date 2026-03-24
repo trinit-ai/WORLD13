@@ -1,0 +1,9 @@
+id: admissions_interview
+name: Admissions Interview Intake
+category: education
+status: active
+description: Admissions interview intake for admissions officers, faculty reviewers, and institutions conducting applicant interviews for academic programs. Evaluates interview structure, evaluation criteria, interviewer training, bias mitigation, documentation requirements, and legal compliance to produce an admissions interview profile with process assessment and risk flags.
+deliverable: admissions_interview_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

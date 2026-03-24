@@ -1,0 +1,9 @@
+id: threat_assessment
+name: Behavioral Threat Assessment Intake
+category: criminal_justice
+status: active
+description: Behavioral threat assessment intake for threat assessment teams, school administrators, HR professionals, and security personnel initiating a structured threat assessment on an individual of concern. Evaluates the threat type, pathway indicators, precipitating stressors, target identification, leakage, access to means, and inhibitors to produce a threat assessment intake profile with risk level, intervention recommendations, and safety planning.
+deliverable: threat_assessment_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

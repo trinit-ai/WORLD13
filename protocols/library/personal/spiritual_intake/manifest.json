@@ -1,0 +1,46 @@
+{
+  "id": "spiritual_intake",
+  "name": "Spiritual Life Coaching Intake",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "personal",
+  "description": "Spiritual life coaching intake for spiritual directors, coaches, and individuals exploring their spiritual life. Evaluates the person's spiritual background, current practice, the presenting question or concern, what they are seeking, and the coaching focus to produce a spiritual coaching intake profile with exploration priorities. Inclusive of all traditions and none.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "professional, direct",
+    "warmth": 0.5,
+    "humor": 0.0,
+    "formality": 0.7
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 20,
+    "estimated_turns": "10-16"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  }
+}

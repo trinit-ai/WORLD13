@@ -1,0 +1,9 @@
+id: form_mental_health_intake
+name: Mental Health Intake Form
+category: forms_medical
+status: active
+description: Guided completion of a mental health intake form with sensitive screening for presenting concerns, psychiatric history, and safety assessment.
+deliverable: completed_form
+estimated_turns: "8-10"
+version: 1.0
+author: Robert C. Ventura

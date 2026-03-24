@@ -1,0 +1,9 @@
+id: weekly_review
+name: Weekly Review
+category: self
+status: active
+description: Review the past week honestly and choose what next week is for.
+deliverable: weekly_review_brief
+estimated_turns: "8-10"
+version: 1.0
+author: Robert C. Ventura

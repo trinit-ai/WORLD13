@@ -1,0 +1,9 @@
+id: translation_intake
+name: Legal and Diplomatic Translation Intake
+category: diplomatic
+status: active
+description: Legal and diplomatic translation intake for translators, interpreters, translation agencies, and organizations commissioning translation of legal, diplomatic, or official documents. Evaluates the translation scope, language pair, document type, certification requirements, legal equivalence considerations, and quality assurance framework to produce a translation intake profile with scope definition and risk flags.
+deliverable: translation_intake_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

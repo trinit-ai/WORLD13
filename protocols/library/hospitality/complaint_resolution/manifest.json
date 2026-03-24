@@ -1,0 +1,46 @@
+{
+  "id": "complaint_resolution",
+  "name": "Hospitality Complaint Resolution Intake",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "hospitality",
+  "description": "Hospitality complaint resolution intake for hotel managers, restaurant general managers, and guest relations staff handling a guest complaint. Evaluates the complaint type, service failure root cause, guest impact, resolution options, and service recovery approach to produce a complaint resolution profile with recommended response and recovery action.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "professional, direct",
+    "warmth": 0.5,
+    "humor": 0.0,
+    "formality": 0.7
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 14,
+    "estimated_turns": "6-10"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  }
+}

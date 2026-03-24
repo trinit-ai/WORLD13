@@ -1,0 +1,46 @@
+{
+  "id": "life_transition_arc",
+  "name": "Life Transition Arc",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "chains",
+  "description": "Multi-session arc for navigating major life transitions — career changes, relocations, relationship shifts, identity evolution. Sequences values clarification through grief processing to goal setting, carrying forward what matters across sessions.",
+  "base": "library_arc",
+  "personality": {
+    "tone": "warm, grounded, steady",
+    "warmth": 0.8,
+    "humor": 0.1,
+    "formality": 0.4
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": false,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "arc",
+    "sessions_in_arc": 5,
+    "estimated_total_turns": "40-70"
+  },
+  "privacy": {
+    "disclosure": "Session content carries forward across arc sessions via vault inheritance.",
+    "data_tier": "personal_arc",
+    "transcript_available": true
+  }
+}

@@ -1,0 +1,9 @@
+id: game_logic_puzzles
+name: Logic Puzzles
+category: oracle_puzzles
+status: active
+description: Classic logic puzzles — zebra puzzles, knights and knaves, river crossings, grid deduction, and constraint satisfaction. The session presents, the person solves, hints available on request.
+consequence_class: ZERO
+estimated_turns: 10-20
+version: 1.0
+author: Robert C. Ventura

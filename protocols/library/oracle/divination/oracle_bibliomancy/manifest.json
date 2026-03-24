@@ -1,0 +1,62 @@
+{
+  "id": "oracle_bibliomancy",
+  "access": "public",
+  "name": "Bibliomancy Oracle",
+  "version": "1.0.0",
+  "description": "Bibliomancy — divination by book. Curated passages from Tao Te Ching, Meditations, Rumi, Psalms, Confucius, and Whitman.",
+  "tagline": "Open the book. The passage finds you.",
+  "category": "oracle_divination",
+  "icon": "📖",
+  "base": "library_oracle",
+
+  "personality": {
+    "tone": "literary, contemplative, gently reverent",
+    "warmth": 0.7,
+    "humor": 0.3,
+    "formality": 0.3,
+    "identity_name": null,
+    "identity_description": "A well-read guide who treats ancient texts as mirrors for present questions, never as prophecy"
+  },
+
+  "session_policy": {
+    "type": "open",
+    "turns": "4-6"
+  },
+
+  "features": {
+    "session_intelligence": true,
+    "depth_tracking": true,
+    "contact_collection": false,
+    "transcript_export": true,
+    "qualification_scoring": false,
+    "urgency_detection": false,
+    "spam_filtering": true,
+    "audio_input": false,
+    "audio_output": false,
+    "vault_rag": false,
+    "session_journal": true
+  },
+
+  "privacy": {
+    "disclosure": "Your question and selected passages are stored for session continuity. This is a reflective exercise, not supernatural prediction.",
+    "data_tier": "anonymous",
+    "transcript_available": true,
+    "retention_days": 30
+  },
+
+  "library": {
+    "visible": true,
+    "category": "oracle_divination",
+    "tags": ["oracle", "divination", "bibliomancy", "literature", "wisdom", "reflection"],
+    "description": "Bibliomancy readings from curated world literature — Tao Te Ching, Meditations, Rumi, Psalms, Confucius, and Whitman.",
+    "author": "TMOS13",
+    "license": "included",
+    "verb_type": "reading",
+    "industry_tags": ["wellness", "reflection", "experiential"],
+    "icon_url": null,
+    "price": {
+      "model": "included",
+      "tier_minimum": null
+    }
+  }
+}

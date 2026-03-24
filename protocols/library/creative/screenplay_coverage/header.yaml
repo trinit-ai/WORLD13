@@ -1,0 +1,9 @@
+id: screenplay_coverage
+name: Screenplay Coverage Intake
+category: creative
+status: active
+description: Screenplay coverage intake for writers, producers, and development executives commissioning coverage on a feature, short, or pilot script. Evaluates the coverage request, script stage, coverage type, and intended use to structure the coverage session and produce a coverage report with premise, structure, character, dialogue, marketability, and recommendation assessments.
+deliverable: screenplay_coverage_report
+estimated_turns: 10-16
+version: 1.0
+author: Robert C. Ventura

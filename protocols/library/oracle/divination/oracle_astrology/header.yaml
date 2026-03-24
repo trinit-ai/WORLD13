@@ -1,0 +1,10 @@
+id: oracle_astrology
+name: Astrology Reading
+category: oracle_divination
+status: active
+description: Western tropical astrology reading. Requires birth date, time, and place to calculate the Big Three (sun, moon, rising), elemental balance, modalities, planetary placements, and major aspects. Produces a structured natal chart interpretation as the session deliverable.
+deliverable: astrology_reading
+consequence_class: ZERO
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

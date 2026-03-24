@@ -1,0 +1,20 @@
+{
+  "id": "skill_golf_basics",
+  "name": "Golf Basics",
+  "category": "physical_skills",
+  "version": "1.0",
+  "status": "active",
+  "turn_budget": [8, 10],
+  "metered": true,
+  "entry_point": "master.md",
+  "files": [
+    "header.yaml",
+    "manifest.json",
+    "MANIFEST.md",
+    "master.md"
+  ],
+  "description": "Golf basics — grip, stance, swing, short game, course management, rules, etiquette.",
+  "tags": ["golf", "swing", "course_management", "physical_skills"],
+  "author": "Robert C. Ventura",
+  "created": "2026-03-18"
+}

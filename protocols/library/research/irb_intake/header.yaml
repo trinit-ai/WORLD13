@@ -1,0 +1,9 @@
+id: irb_intake
+name: IRB Application Intake
+category: research
+status: active
+description: IRB application intake for researchers preparing a human subjects research protocol for Institutional Review Board submission. Evaluates the research design, the human subjects involvement, the risk-benefit analysis, the consent process, the vulnerable population considerations, and the documentation requirements to produce an IRB intake profile with protocol review priorities and submission checklist.
+deliverable: irb_intake_profile
+estimated_turns: 12-16
+version: 1.0
+author: Robert C. Ventura

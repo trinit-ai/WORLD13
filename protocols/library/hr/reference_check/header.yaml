@@ -1,0 +1,9 @@
+id: reference_check
+name: Reference Check Intake
+category: hr
+status: active
+description: Reference check intake for HR professionals and hiring managers conducting employment reference checks. Evaluates the reference relationship, the questions asked, the information obtained, the legal boundaries, and the documentation quality to produce a reference check profile with findings and hiring recommendation context. Not legal advice.
+deliverable: reference_check_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

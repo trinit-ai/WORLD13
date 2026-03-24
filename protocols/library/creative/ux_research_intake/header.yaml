@@ -1,0 +1,9 @@
+id: ux_research_intake
+name: UX Research Intake
+category: creative
+status: active
+description: UX research intake for product teams, designers, and researchers planning a user research study. Evaluates research question clarity, methodology alignment, participant definition, study design, and synthesis plan to produce a UX research intake profile with gap analysis, methodology recommendations, and risk flags.
+deliverable: ux_research_intake_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

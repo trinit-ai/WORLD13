@@ -1,0 +1,9 @@
+id: program_evaluation
+name: Program Evaluation Intake
+category: social_work
+status: active
+description: Program evaluation intake for nonprofit program managers and evaluators planning or conducting a program evaluation. Evaluates the evaluation questions, the program theory of change, the data available, the evaluation design, the stakeholder needs, and the utilization plan to produce a program evaluation intake profile with evaluation design priorities and data plan.
+deliverable: program_evaluation_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

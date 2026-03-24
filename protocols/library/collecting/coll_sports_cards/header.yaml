@@ -1,0 +1,17 @@
+id: coll_sports_cards
+name: Sports Card Collecting
+slug: sports-cards
+category: collecting
+version: "1.0"
+status: active
+turn_budget: 10
+metered: true
+description: >
+  Sports card collecting companion covering grading, rookies, parallels,
+  PSA/BGS certification, and market dynamics.
+tags:
+  - collecting
+  - sports cards
+  - grading
+  - PSA
+  - rookies

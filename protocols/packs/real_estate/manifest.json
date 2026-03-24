@@ -1,0 +1,395 @@
+{
+  "pack_id": "real_estate",
+  "access": "paid",
+  "tier_gate": "V7",
+  "name": "Real Estate Advisor",
+  "version": "1.1.0",
+  "status": "assembled",
+  "assembly_mode": "assembled",
+  "description": "Your real estate numbers person. Property analysis, investment calculators, market comparison, buyer profiling, and advisor briefs — with every assumption visible and adjustable.",
+  "tagline": "Run the numbers. Make the move.",
+  "philosophy": "Good real estate decisions start with good math and honest context. The Advisor runs the numbers, shows the assumptions, tells you when something doesn't add up, and helps you move with confidence.",
+  "category": "quantitative",
+  "icon": "🏠",
+
+  "personality": {
+    "tone": "knowledgeable, practical, numbers-driven, approachable",
+    "warmth": 0.6,
+    "humor": 0.1,
+    "formality": 0.5,
+    "identity_name": "Advisor",
+    "identity_description": "A knowledgeable real estate advisor who runs the numbers, shows the assumptions, and helps you make confident property decisions"
+  },
+
+  "cartridges": {
+    "rental": {
+      "file": "rental.md",
+      "name": "Property Analysis",
+      "number": 1,
+      "description": "Analyze any property — cap rate, cash flow, cash-on-cash return, and long-term projections with every assumption visible.",
+      "state_class": "RentalState"
+    },
+    "flip": {
+      "file": "flip.md",
+      "name": "Investment Calculator",
+      "number": 2,
+      "description": "Run the numbers on rehabs, flips, and short-term plays — ARV, holding costs, profit margin, and timeline sensitivity.",
+      "state_class": "FlipState"
+    },
+    "mortgage": {
+      "file": "mortgage.md",
+      "name": "Market Comparison",
+      "number": 3,
+      "description": "Compare loan options, rate scenarios, and financing structures side by side with total cost breakdowns.",
+      "state_class": "MortgageState"
+    },
+    "rent_vs_buy": {
+      "file": "rent_vs_buy.md",
+      "name": "Buyer Profile",
+      "number": 4,
+      "description": "Build your buyer profile — affordability, timing, rent-vs-buy break-even, and opportunity cost analysis.",
+      "state_class": "RentVsBuyState"
+    },
+    "portfolio": {
+      "file": "portfolio.md",
+      "name": "Advisor Brief",
+      "number": 5,
+      "description": "Structured output — property summary, financial analysis, risk factors, and recommended next steps.",
+      "state_class": "PortfolioState"
+    },
+    "company_profile": {
+      "name": "Company Profile",
+      "number": 6,
+      "description": "Your business identity, hours, contact info, FAQs, disclaimers, and policies — automatically woven into every interaction.",
+      "passive": true
+    }
+  },
+
+  "system_screens": {
+    "boot": "boot.md",
+    "menu": "menu.md"
+  },
+
+  "commands": {
+    "numerical": {},
+    "session": {
+      "reset": {
+        "action": "reset_session",
+        "label": "Clear Analysis"
+      },
+      "menu": {
+        "action": "menu",
+        "label": "All Calculators"
+      },
+      "status": {
+        "action": "status",
+        "label": "Session Summary"
+      }
+    },
+    "navigation": {
+      "rent(al)?\\s*(property|analysis|income|invest)?|buy.?and.?hold|landlord|cap\\s*rate|cash.?flow|noi": {
+        "action": "navigate",
+        "target": "rental"
+      },
+      "flip|rehab|arv|fix.?and|renovation|resale": {
+        "action": "navigate",
+        "target": "flip"
+      },
+      "mortgage|loan|interest\\s*rate|refinanc|points|amortiz": {
+        "action": "navigate",
+        "target": "mortgage"
+      },
+      "rent\\s*vs|buy\\s*vs|should\\s*i\\s*(rent|buy)|renting|buying\\s*a\\s*home": {
+        "action": "navigate",
+        "target": "rent_vs_buy"
+      },
+      "portfolio|properties|holdings|aggregate|all\\s*my|summary": {
+        "action": "navigate",
+        "target": "portfolio"
+      }
+    }
+  },
+
+  "features": {
+    "session_intelligence": true,
+    "depth_tracking": true,
+    "mood_resonance": false,
+    "cross_module_memory": true,
+    "contact_collection": false,
+    "transcript_export": true,
+    "qualification_scoring": false,
+    "urgency_detection": false,
+    "spam_filtering": true,
+    "audio_input": false,
+    "audio_output": false,
+    "vault_rag": true,
+    "multi_pack_session": true,
+    "session_journal": true
+  },
+
+  "delivery": {
+    "default_mode": "staged",
+    "allowed_recipients": ["email", "internal"],
+    "require_approval_for_ai_sessions": true
+  },
+
+  "privacy": {
+    "disclosure": "Property data you enter is used for calculations only. No financial data is stored permanently or shared.",
+    "data_tier": "anonymous",
+    "transcript_available": true,
+    "retention_days": 30
+  },
+
+  "settings_defaults": {
+    "formatting": "conversational",
+    "currency": "USD",
+    "show_formulas": true
+  },
+
+  "theme": {
+    "accent": "#2563EB",
+    "surface": "#0D0B09",
+    "text": "#E5E2DC"
+  },
+
+  "deliverables": {
+    "enabled": true,
+    "types": [
+      {
+        "id": "investment_report",
+        "name": "Investment Analysis Report",
+        "description": "Auto-generated property investment analysis from calculator conversation",
+        "trigger": {
+          "cartridges_required": [],
+          "min_turns": 3,
+          "contact_required": false
+        },
+        "channels": ["download"],
+        "fields": [
+          {
+            "id": "property_value",
+            "name": "Property Value / Purchase Price",
+            "category": "financials",
+            "required": true,
+            "patterns": [
+              { "pattern": "(?:purchase|asking|list|property)\\s*(?:price|value|cost)?\\s*(?:is|of|was|at)?\\s*\\$?([\\d,]+)", "transform": "currency" },
+              { "pattern": "\\$([\\d,]+(?:\\.\\d{2})?)", "transform": "currency" }
+            ]
+          },
+          {
+            "id": "monthly_rent",
+            "name": "Monthly Rent",
+            "category": "financials",
+            "required": false,
+            "patterns": [
+              { "pattern": "(?:rent|rental|income)\\s*(?:is|of|at|per month)?\\s*\\$?([\\d,]+)", "transform": "currency" },
+              { "pattern": "\\$([\\d,]+)\\s*(?:per|/|a)\\s*month", "transform": "currency" }
+            ]
+          },
+          {
+            "id": "location",
+            "name": "Property Location",
+            "category": "property",
+            "required": false,
+            "patterns": [
+              { "pattern": "(?:property|house|building|unit|located|address)\\s+(?:is |at |in )?(.{5,80}?)(?:\\.|,|$)", "case_insensitive": true }
+            ]
+          },
+          {
+            "id": "num_units",
+            "name": "Number of Units",
+            "category": "property",
+            "required": false,
+            "patterns": [
+              { "pattern": "(\\d+)\\s*(?:unit|apartment|bedroom|bed|door)s?", "transform": "number" }
+            ]
+          },
+          {
+            "id": "square_footage",
+            "name": "Square Footage",
+            "category": "property",
+            "required": false,
+            "patterns": [
+              { "pattern": "([\\d,]+)\\s*(?:sq\\.?\\s*(?:ft|feet)|square\\s*(?:feet|foot)|sf|sqft)", "transform": "number" }
+            ]
+          },
+          {
+            "id": "down_payment",
+            "name": "Down Payment",
+            "category": "financing",
+            "required": false,
+            "patterns": [
+              { "pattern": "(?:down payment|down)\\s*(?:is|of)?\\s*\\$?([\\d,]+)", "transform": "currency" },
+              { "pattern": "(\\d+)\\s*%\\s*down" }
+            ]
+          },
+          {
+            "id": "interest_rate",
+            "name": "Interest Rate",
+            "category": "financing",
+            "required": false,
+            "patterns": [
+              { "pattern": "(?:interest|rate|apr)\\s*(?:is|of|at)?\\s*(\\d+\\.?\\d*)\\s*%" }
+            ]
+          },
+          {
+            "id": "rehab_budget",
+            "name": "Rehab / Renovation Budget",
+            "category": "financials",
+            "required": false,
+            "patterns": [
+              { "pattern": "(?:rehab|renovation|repair|improve|fix)\\s*(?:budget|cost|estimate)?\\s*(?:is|of|around)?\\s*\\$?([\\d,]+)", "transform": "currency" }
+            ]
+          }
+        ],
+        "template": {
+          "title": "Investment Analysis — {{location}} — {{date}}",
+          "sections": [
+            {
+              "id": "property_overview",
+              "heading": "Property Overview",
+              "body": "**Location:** {{location}}\n**Purchase Price:** {{property_value}}\n**Square Footage:** {{square_footage}}\n**Units:** {{num_units}}",
+              "order": 1
+            },
+            {
+              "id": "financials",
+              "heading": "Financial Summary",
+              "body": "**Monthly Rent:** {{monthly_rent}}\n**Down Payment:** {{down_payment}}\n**Interest Rate:** {{interest_rate}}%\n**Rehab Budget:** {{rehab_budget}}",
+              "order": 2
+            },
+            {
+              "id": "next_steps",
+              "heading": "Recommended Next Steps",
+              "body": "1. Verify property details and comparable sales\n2. Get pre-approval for financing\n3. Schedule property inspection\n4. Review with investment advisor",
+              "order": 3
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "state": {
+    "session": {
+      "active_cartridge": null,
+      "turn_count": 0,
+      "depth": 0,
+      "analyses_completed": 0
+    },
+    "defaults": {
+      "mortgage_rate_30yr": 0.060,
+      "mortgage_rate_15yr": 0.055,
+      "hard_money_rate": 0.12,
+      "tax_rate": 0.25,
+      "insurance_rate": 0.005,
+      "vacancy_rate": 0.08,
+      "management_fee": 0.10,
+      "maintenance_reserve": 0.05,
+      "appreciation_rate": 0.03,
+      "rent_growth_rate": 0.02,
+      "inflation_rate": 0.025,
+      "discount_rate": 0.08,
+      "closing_cost_buy_pct": 0.03,
+      "closing_cost_sell_pct": 0.06
+    },
+    "rental": {
+      "property_entered": false,
+      "purchase_price": null,
+      "down_payment_pct": null,
+      "interest_rate": null,
+      "loan_term": null,
+      "monthly_rent": null,
+      "monthly_expenses": null,
+      "noi": null,
+      "cap_rate": null,
+      "cash_on_cash": null,
+      "dscr": null,
+      "monthly_cash_flow": null,
+      "irr_5yr": null,
+      "irr_10yr": null
+    },
+    "flip": {
+      "property_entered": false,
+      "purchase_price": null,
+      "rehab_budget": null,
+      "arv": null,
+      "holding_months": null,
+      "holding_costs_monthly": null,
+      "closing_costs": null,
+      "profit": null,
+      "roi": null,
+      "annualized_roi": null
+    },
+    "mortgage": {
+      "loans_entered": 0,
+      "loans": [],
+      "comparison_generated": false
+    },
+    "rent_vs_buy": {
+      "analysis_complete": false,
+      "monthly_rent": null,
+      "purchase_price": null,
+      "break_even_year": null,
+      "recommendation": null
+    },
+    "portfolio": {
+      "properties": [],
+      "total_equity": null,
+      "total_monthly_cash_flow": null,
+      "portfolio_cap_rate": null,
+      "properties_count": 0
+    }
+  },
+
+  "data_rail": {
+    "tabs": [
+      {
+        "id": "auth",
+        "label": "Auth",
+        "icon": "key",
+        "type": "infrastructure"
+      },
+      {
+        "id": "pricing",
+        "label": "Pricing",
+        "icon": "sparkles",
+        "type": "infrastructure"
+      },
+      {
+        "id": "property_info",
+        "label": "Property Info",
+        "icon": "Home",
+        "type": "pack",
+        "title": "Property Information",
+        "description": "Captured securely. Encrypted at rest. Never sent to AI.",
+        "submit_label": "Save to Vault",
+        "success_message": "Property info saved.",
+        "endpoint": "/api/datarail/submit",
+        "fields": [
+          { "id": "client_name", "type": "text", "label": "Client Name", "placeholder": "Full name", "required": true, "pii": true },
+          { "id": "client_email", "type": "email", "label": "Email", "placeholder": "client@example.com", "required": true, "pii": true },
+          { "id": "client_phone", "type": "tel", "label": "Phone", "placeholder": "(555) 555-5555", "required": false, "pii": true },
+          { "id": "transaction_type", "type": "select", "label": "Transaction Type", "required": true, "options": ["Buy", "Sell", "Lease", "Investment", "Appraisal"] },
+          { "id": "property_type", "type": "select", "label": "Property Type", "required": false, "options": ["Residential", "Commercial", "Industrial", "Land", "Multi-Family"] },
+          { "id": "location", "type": "text", "label": "Location", "placeholder": "City, state, or address", "required": false, "pii": false }
+        ]
+      }
+    ]
+  },
+
+  "library": {
+    "visible": true,
+    "category": "real-estate",
+    "tags": ["scenario", "intake", "quantitative"],
+    "description": "Property analysis, investment calculators, market comparison, and buyer profiling. Every number shows its work, every assumption is adjustable.",
+    "author": "TMOS13",
+    "license": "included",
+    "verb_type": "scenario",
+    "industry_tags": ["real_estate", "investment", "property"],
+    "icon_url": null,
+    "price": {
+      "model": "included",
+      "tier_minimum": null
+    }
+  }
+}

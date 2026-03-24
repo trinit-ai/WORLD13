@@ -1,0 +1,9 @@
+id: crisis_management_sim
+name: Crisis Management Simulation
+category: simulations
+status: active
+description: A live crisis management simulation for executives, communications teams, and organizational leaders practicing response to a rapidly evolving organizational crisis. The session plays the role of a dynamic crisis environment — media, stakeholders, and evolving facts — and produces a crisis response performance debrief.
+deliverable: crisis_response_debrief
+estimated_turns: 15-25
+version: 1.0
+author: Robert C. Ventura

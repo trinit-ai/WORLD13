@@ -1,0 +1,9 @@
+id: foreclosure_intake
+name: Foreclosure Intake
+category: real_estate
+status: active
+description: Foreclosure intake for homeowners facing foreclosure, housing counselors, and attorneys assessing a foreclosure situation. Evaluates the loan status, the foreclosure stage, the available options, the timeline, and the immediate actions required to produce a foreclosure intake profile with option assessment and priority actions. Not legal or financial advice.
+deliverable: foreclosure_intake_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

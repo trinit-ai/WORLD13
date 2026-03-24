@@ -1,0 +1,20 @@
+{
+  "id": "sci_mathematics",
+  "name": "Mathematics Beauty",
+  "category": "science_exploration",
+  "version": "1.0",
+  "status": "active",
+  "turn_budget": [8, 12],
+  "metered": true,
+  "entry_point": "master.md",
+  "files": [
+    "header.yaml",
+    "manifest.json",
+    "MANIFEST.md",
+    "master.md"
+  ],
+  "description": "The beauty and wonder of mathematics — infinity, proof, primes, Euler, Godel, topology — for curious minds.",
+  "tags": ["mathematics", "math", "logic", "proof", "science"],
+  "author": "Robert C. Ventura",
+  "created": "2026-03-18"
+}

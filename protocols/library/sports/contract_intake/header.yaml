@@ -1,0 +1,9 @@
+id: contract_intake
+name: Sports Contract Intake
+category: sports
+status: active
+description: Sports contract intake for athletes, agents, and sports administrators reviewing or preparing a sports contract. Evaluates the key terms, compensation structure, performance incentives, exclusivity, termination provisions, and obligations to produce a contract intake profile with key terms summary and review priorities. Not legal advice.
+deliverable: contract_intake_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

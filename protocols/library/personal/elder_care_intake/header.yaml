@@ -1,0 +1,9 @@
+id: elder_care_intake
+name: Elder Care Planning Intake
+category: personal
+status: active
+description: Elder care planning intake for care coordinators, family members, and individuals planning care for an aging parent or loved one. Evaluates the elder's current situation, care needs, family dynamics, financial context, available resources, and the planning priorities to produce an elder care planning profile with care gap assessment and priority actions.
+deliverable: elder_care_planning_profile
+estimated_turns: 12-16
+version: 1.0
+author: Robert C. Ventura

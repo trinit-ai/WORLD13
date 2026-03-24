@@ -1,0 +1,9 @@
+id: proposal_review
+name: Proposal Review Intake
+category: sales
+status: active
+description: Proposal review intake for sales professionals preparing or reviewing a sales proposal. Evaluates the proposal's alignment with the prospect's stated priorities, the strength of the value proposition, the competitive differentiation, the commercial terms, and the presentation approach to produce a proposal review profile with improvement priorities before submission.
+deliverable: proposal_review_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

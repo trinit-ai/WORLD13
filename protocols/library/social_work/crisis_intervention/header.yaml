@@ -1,0 +1,9 @@
+id: crisis_intervention
+name: Crisis Intervention Intake
+category: social_work
+status: active
+description: Crisis intervention intake for social workers and crisis counselors responding to a person in acute crisis. Evaluates the crisis type, the immediate safety, the precipitating event, the coping resources, and the stabilization plan to produce a crisis intervention intake profile with safety assessment and stabilization priorities. Immediate safety threats route to emergency services unconditionally.
+deliverable: crisis_intervention_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,46 @@
+{
+  "id": "life_fitness_start",
+  "name": "Fitness Starting Point",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "lifestyle",
+  "description": "Fitness starting point session for people beginning or restarting physical activity — 12-week realistic goal setting, not optimization. Kills extreme plans and body image content.",
+  "base": "library_lifestyle",
+  "personality": {
+    "tone": "encouraging, realistic, grounded",
+    "warmth": 0.7,
+    "humor": 0.2,
+    "formality": 0.2
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": false,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 14,
+    "estimated_turns": "8-10"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_session",
+    "transcript_available": true
+  }
+}

@@ -1,0 +1,9 @@
+id: housing_intake
+name: Housing Services Intake
+category: social_work
+status: active
+description: Housing services intake for social workers and housing specialists assessing a client's housing situation. Evaluates the housing status, the risk factors, the barriers to stable housing, the eligibility for programs, and the service needs to produce a housing intake profile with stability assessment and program pathway.
+deliverable: housing_intake_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

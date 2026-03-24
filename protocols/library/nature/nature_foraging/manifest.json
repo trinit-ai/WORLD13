@@ -1,0 +1,13 @@
+{
+  "id": "nature_foraging",
+  "name": "Foraging",
+  "slug": "foraging",
+  "category": "nature",
+  "version": "1.0",
+  "status": "active",
+  "turn_budget": 12,
+  "metered": true,
+  "description": "Wild food foraging companion with safety-first design. Never guarantees identification safety from text alone. Always recommends field guides and experienced foragers.",
+  "tags": ["nature", "foraging", "wild food", "plants", "safety"],
+  "files": ["header.yaml", "manifest.json", "MANIFEST.md", "master.md"]
+}

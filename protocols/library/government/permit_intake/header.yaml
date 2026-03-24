@@ -1,0 +1,9 @@
+id: permit_intake
+name: Government Permit Application Intake
+category: government
+status: active
+description: Government permit application intake for property owners, contractors, and project managers applying for a building, land use, or special use permit. Evaluates the project scope, permit type, zoning compliance, documentation requirements, review process, and timeline to produce a permit intake profile with application guidance and risk flags.
+deliverable: permit_intake_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

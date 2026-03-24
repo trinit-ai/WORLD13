@@ -1,0 +1,9 @@
+id: expense_audit
+name: Expense Audit Intake
+category: finance
+status: active
+description: Expense audit intake for finance teams, internal auditors, and controllers conducting a review of business expenses or employee expense reports. Evaluates the expense population, policy compliance, documentation quality, exception patterns, approval controls, and fraud indicators to produce an expense audit intake profile with findings and risk flags.
+deliverable: expense_audit_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

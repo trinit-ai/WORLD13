@@ -1,0 +1,13 @@
+{
+  "id": "coll_rare_books",
+  "name": "Rare Books",
+  "slug": "rare-books",
+  "category": "collecting",
+  "version": "1.0",
+  "status": "active",
+  "turn_budget": 12,
+  "metered": true,
+  "description": "Rare book collecting companion covering condition grading, first editions, provenance, binding, and authentication.",
+  "tags": ["collecting", "books", "rare books", "first editions", "bibliography"],
+  "files": ["header.yaml", "manifest.json", "MANIFEST.md", "master.md"]
+}

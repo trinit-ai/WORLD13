@@ -1,0 +1,65 @@
+{
+  "id": "urban_planning_intake",
+  "name": "Urban Planning & Entitlement Intake",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "architecture",
+  "description": "Urban planning and entitlement intake for development projects requiring discretionary approval. Evaluates a project's zoning compliance, entitlement pathway, community context, political landscape, CEQA or NEPA environmental review exposure, affordable housing obligations, and team readiness to produce an entitlement strategy profile with gap analysis, risk flags, and recommended pre-application actions.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "grounded, literate, strategic",
+    "warmth": 0.5,
+    "humor": 0.0,
+    "formality": 0.8
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": true,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 20,
+    "estimated_turns": "12-16"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  },
+  "deliverables": {
+    "enabled": true,
+    "types": [
+      {
+        "id": "entitlement_strategy_profile",
+        "name": "Entitlement Strategy Profile",
+        "description": "Generated entitlement strategy profile from intake session data.",
+        "trigger": {
+          "min_turns": 4,
+          "contact_required": false
+        },
+        "channels": [
+          "download"
+        ],
+        "include_transcript": true,
+        "include_state_snapshot": true
+      }
+    ]
+  }
+}

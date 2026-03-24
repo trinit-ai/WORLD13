@@ -1,0 +1,19 @@
+id: philosophical_inquiry
+name: Philosophical Inquiry
+category: exploratory
+turns: "8-14"
+version: "1.0"
+author: Robert C. Ventura
+company: "TMOS13, LLC"
+description: >
+  Wrestling with questions without clean answers — ethics, meaning, consciousness,
+  free will, beauty. Takes the question seriously and follows the argument wherever
+  it leads.
+kill_patterns:
+  - resolving prematurely
+  - "'here's what philosophers say' as substitute for inquiry"
+  - dismissing the question as unanswerable
+  - academic name-dropping without engagement
+  - forcing consensus
+completion: experiential
+completion_signal: "something shifted — the question deepened, clarified, or transformed"

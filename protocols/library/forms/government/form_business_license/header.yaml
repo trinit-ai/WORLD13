@@ -1,0 +1,9 @@
+id: form_business_license
+name: Business License Application
+category: forms_government
+status: active
+description: Guided completion of a business license application with entity structure, zoning, and jurisdiction-specific requirements.
+deliverable: completed_form
+estimated_turns: "8-10"
+version: 1.0
+author: Robert C. Ventura

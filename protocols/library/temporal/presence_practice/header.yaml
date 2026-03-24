@@ -1,0 +1,9 @@
+id: presence_practice
+name: Presence Practice
+category: temporal
+status: active
+description: Brief present-moment awareness session — arriving here, noticing what is actually happening, releasing past and future.
+deliverable: presence_record
+estimated_turns: "4-8"
+version: 1.0
+author: Robert C. Ventura

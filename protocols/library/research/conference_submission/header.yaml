@@ -1,0 +1,9 @@
+id: conference_submission
+name: Conference Submission Intake
+category: research
+status: active
+description: Conference submission intake for researchers preparing an abstract or paper for conference submission. Evaluates the research contribution, the conference fit, the abstract quality, the submission requirements, and the presentation format to produce a conference submission intake profile with fit assessment and submission preparation priorities.
+deliverable: conference_submission_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

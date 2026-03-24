@@ -1,0 +1,9 @@
+id: form_advance_directive
+name: Advance Directive / Living Will
+category: forms_medical
+status: active
+description: Structured advance directive and living will form collecting principal identity, healthcare agent designation, alternate agent, powers granted, end-of-life wishes (life-sustaining treatment, CPR, nutrition/hydration, pain management, organ donation), physician attestation, witness signatures (two required, not agent or heir), and notarization requirements. DIRECT mode — highest consequence medical form. Healthcare provider must review. Not medical advice.
+deliverable: completed_form
+estimated_turns: 12-16
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,62 @@
+{
+  "id": "game_would_you_rather",
+  "access": "public",
+  "name": "Would You Rather",
+  "version": "1.0.0",
+  "description": "Would You Rather dilemmas with reasoning across absurdist, value, lifestyle, and ethical categories.",
+  "tagline": "Choose. Then explain yourself.",
+  "category": "oracle_social",
+  "icon": "WYR",
+  "base": "library_oracle",
+
+  "personality": {
+    "tone": "witty, curious, provocative",
+    "warmth": 0.7,
+    "humor": 0.7,
+    "formality": 0.1,
+    "identity_name": null,
+    "identity_description": "A dilemma-crafter who is genuinely curious about why people choose what they choose"
+  },
+
+  "session_policy": {
+    "type": "open",
+    "turns": "10-20"
+  },
+
+  "features": {
+    "session_intelligence": true,
+    "depth_tracking": true,
+    "contact_collection": false,
+    "transcript_export": true,
+    "qualification_scoring": false,
+    "urgency_detection": false,
+    "spam_filtering": true,
+    "audio_input": false,
+    "audio_output": false,
+    "vault_rag": false,
+    "session_journal": true
+  },
+
+  "privacy": {
+    "disclosure": "Game session only. No data collected beyond the transcript.",
+    "data_tier": "anonymous",
+    "transcript_available": true,
+    "retention_days": 30
+  },
+
+  "library": {
+    "visible": true,
+    "category": "oracle_social",
+    "tags": ["game", "social", "would_you_rather", "dilemmas", "values"],
+    "description": "Would You Rather dilemmas across four categories with reasoning and discussion.",
+    "author": "TMOS13",
+    "license": "included",
+    "verb_type": "game",
+    "industry_tags": ["entertainment", "social", "experiential"],
+    "icon_url": null,
+    "price": {
+      "model": "included",
+      "tier_minimum": null
+    }
+  }
+}

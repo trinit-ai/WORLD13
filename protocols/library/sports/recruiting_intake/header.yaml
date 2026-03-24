@@ -1,0 +1,9 @@
+id: recruiting_intake
+name: Athlete Recruiting Intake
+category: sports
+status: active
+description: Athlete recruiting intake for coaches and recruiting staff evaluating a prospective athlete. Evaluates the athletic profile, the academic status, the character indicators, the fit with the program, and the recruiting compliance requirements to produce a recruiting intake profile with evaluation summary and compliance checklist. Not legal advice.
+deliverable: recruiting_intake_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

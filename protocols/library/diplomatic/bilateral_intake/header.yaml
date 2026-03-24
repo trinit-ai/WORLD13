@@ -1,0 +1,9 @@
+id: bilateral_intake
+name: Bilateral Engagement Intake
+category: diplomatic
+status: active
+description: Bilateral engagement intake for diplomats, foreign ministry officials, and policy professionals preparing or assessing a bilateral relationship or negotiation. Evaluates the relationship history, current status, core interests, areas of agreement and dispute, domestic constraints, and engagement objectives to produce a bilateral intake profile with relationship assessment and engagement strategy framework.
+deliverable: bilateral_intake_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

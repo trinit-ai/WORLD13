@@ -1,0 +1,9 @@
+id: fork_builder
+name: Fork Builder
+category: _meta
+status: active
+description: "Governs customization of an existing pack. Takes a source pack as archetype and produces a forked version with user-specific modifications."
+deliverable: forked_pack_manifest
+estimated_turns: "8-14"
+version: 1.0
+author: Robert C. Ventura

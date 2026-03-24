@@ -1,0 +1,9 @@
+id: form_ach_authorization
+name: ACH Authorization
+category: forms_financial
+status: active
+description: Guided completion of an ACH authorization form capturing account holder details, bank routing and account numbers, authorization type, amount, and recurring payment terms.
+deliverable: completed_form
+estimated_turns: "4-6"
+version: 1.0
+author: Robert C. Ventura

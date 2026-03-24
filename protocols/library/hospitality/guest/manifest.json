@@ -1,0 +1,211 @@
+{
+  "pack_id": "guest",
+  "name": "Guest",
+  "access": "guest",
+  "version": "5.1.0",
+  "visibility": "internal",
+  "tagline": "Deploy Yourself.",
+  "philosophy": "The website is the conversation. The conversation is the product. The product demonstrates itself.",
+  "assembly_mode": "assembled",
+  "personality": {
+    "tone": "confident, direct, technically credible, warm",
+    "warmth": 0.7,
+    "humor": 0.2,
+    "formality": 0.3,
+    "identity_name": "TMOS13",
+    "identity_description": "The tmos13.ai platform in conversational form — the product demonstrating itself"
+  },
+  "cartridges": {
+    "about": {
+      "file": "about.md",
+      "number": 1,
+      "name": "About",
+      "description": "The thesis, company info, values, origin"
+    },
+    "product": {
+      "file": "product.md",
+      "number": 2,
+      "name": "Product",
+      "description": "What TMOS13 does, the pack system, dashboard, deliverables, multi-channel, comparisons"
+    },
+    "pricing": {
+      "file": "pricing.md",
+      "number": 3,
+      "name": "Pricing",
+      "description": "Session economics, tiers, billing, API & session billing"
+    },
+    "architecture": {
+      "file": "architecture.md",
+      "number": 4,
+      "name": "Architecture",
+      "description": "Five primitives, growth model, SDK, API, stack, building packs, technical questions"
+    },
+    "security": {
+      "file": "security.md",
+      "number": 5,
+      "name": "Security",
+      "description": "Data handling, Data Rail, infrastructure, RBAC, compliance, on-premise, HIPAA"
+    },
+    "use_cases": {
+      "file": "use_cases.md",
+      "number": 6,
+      "name": "Use Cases",
+      "description": "Law firms, sales, healthcare, HR, customer support, any business with a website"
+    },
+    "legal": {
+      "file": "legal.md",
+      "number": 7,
+      "name": "Legal",
+      "description": "Terms, privacy, DPA/BAA, acceptable use, intellectual property"
+    },
+    "investors": {
+      "file": "investors.md",
+      "number": 8,
+      "name": "Investors & Partners",
+      "description": "Thesis, defensibility, growth model, market position, partnership opportunities"
+    }
+  },
+  "system_screens": {
+    "boot": "boot.md"
+  },
+  "commands": {
+    "numerical": {},
+    "session": {
+      "RESET": { "action": "direct", "response": "Session reset. Welcome back to TMOS13. What can I help you with?" },
+      "START OVER": { "action": "direct", "response": "Starting fresh. Welcome to TMOS13. What would you like to know?" },
+      "NEW CONVERSATION": { "action": "direct", "response": "New conversation started. I'm TMOS13 — ask me anything about the platform." }
+    },
+    "navigation": {
+      "who (are|is|made|built)|about|company|team|story|mission|founded|jersey city|tmos13 llc|values": {
+        "action": "navigate",
+        "target": "about"
+      },
+      "what (is|does)|how (does|it)|product|features|capabilities|engine|runtime|packs?|protocol|assembl|rout|state manage|cartridge|manifest|deliver|dashboard|multi.?channel|ambassador|fine.?tun|lora|llora|model train|retrain|custom model|rlhf|weights": {
+        "action": "navigate",
+        "target": "product"
+      },
+      "pric|cost|plan|tier|starter|pro plan|enterprise|how much|subscription|billing|pay|afford|budget|per month|annual|session cost|per session|\\$|website (build|develop|design|cost)|custom (build|site|website)|squarespace|wordpress|embed": {
+        "action": "navigate",
+        "target": "pricing"
+      },
+      "doc|sdk|api|hook|typescript|python|install|setup|getting started|technical|reference|architect|code|implement|integrate|deploy|github|npm|stack|fibonacci|primitives|growth model|nautilus|shell ui": {
+        "action": "navigate",
+        "target": "architecture"
+      },
+      "secur|encrypt|compliance|soc 2|gdpr|ccpa|hipaa|data (handling|storage|residency|privacy)|pii|audit|trust|on.?prem|air.?gap|data rail": {
+        "action": "navigate",
+        "target": "security"
+      },
+      "use case|example|law firm|legal intake|sales|lead|healthcare|clinical|hr|recruit|candidate|support|my (business|company|industry|team)|would this work for": {
+        "action": "navigate",
+        "target": "use_cases"
+      },
+      "terms|privacy policy|acceptable use|legal|tos|service agreement|data processing|dpa|baa|trademark|patent|intellectual property|ip": {
+        "action": "navigate",
+        "target": "legal"
+      },
+      "invest|partner|funding|raise|capital|defensib|moat|market position|growth|valuation|equity|opportunity|roi|workspace comparison": {
+        "action": "navigate",
+        "target": "investors"
+      }
+    }
+  },
+  "features": {
+    "depth_tracking": true,
+    "mood_resonance": true,
+    "cross_module_memory": true,
+    "dinosaur_eggs": false,
+    "real_time_timers": false,
+    "audio_input": true,
+    "audio_output": true,
+    "github_read": true,
+    "github_write": true
+  },
+  "settings_defaults": {
+    "tone": "conversational",
+    "verbosity": "balanced",
+    "formatting": "rich_markdown"
+  },
+  "data_rail": {
+    "tabs": [
+      {
+        "id": "auth",
+        "label": "Auth",
+        "icon": "key",
+        "type": "infrastructure"
+      },
+      {
+        "id": "pricing",
+        "label": "Pricing",
+        "icon": "sparkles",
+        "type": "infrastructure"
+      },
+      {
+        "id": "contact",
+        "label": "Contact",
+        "icon": "mail",
+        "type": "pack",
+        "title": "Get in Touch",
+        "description": "We'll reach out within one business day. Your info is encrypted and never sent to AI.",
+        "submit_label": "Send Inquiry",
+        "success_message": "Thanks — we'll be in touch.",
+        "endpoint": "/api/contact",
+        "fields": [
+          { "id": "name", "type": "text", "label": "Name", "placeholder": "Jane Doe", "required": true, "pii": true },
+          { "id": "email", "type": "email", "label": "Email", "placeholder": "you@example.com", "required": true, "pii": true },
+          { "id": "company", "type": "text", "label": "Company", "placeholder": "Acme Inc.", "required": false, "pii": false, "inline": true },
+          { "id": "role", "type": "text", "label": "Role", "placeholder": "CTO, Founder, Developer...", "required": false, "pii": false, "inline": true },
+          { "id": "message", "type": "textarea", "label": "What are you building?", "placeholder": "Tell us about your use case \u2014 the more detail, the better we can help.", "required": false, "pii": false }
+        ]
+      },
+      {
+        "id": "subscribe",
+        "label": "Subscribe",
+        "icon": "bell",
+        "type": "pack",
+        "title": "Stay in the Loop",
+        "description": "Product updates, no spam. Your email is encrypted and never sent to AI.",
+        "submit_label": "Subscribe",
+        "success_message": "You're on the list.",
+        "endpoint": "/api/subscribe",
+        "fields": [
+          { "id": "email", "type": "email", "label": "Email", "placeholder": "you@example.com", "required": true, "pii": true }
+        ]
+      }
+    ]
+  },
+  "session_policy": {
+    "type": "metered",
+    "metering": {
+      "free_turns": 30,
+      "free_tokens": 500000,
+      "overage_action": "block"
+    }
+  },
+  "audio": {
+    "default_voice": "alloy",
+    "tts_speed": 1.0,
+    "output_format": "mp3",
+    "personality_voice_map": {
+      "conversational": "nova",
+      "technical": "onyx",
+      "formal": "alloy"
+    }
+  },
+
+  "library": {
+    "visible": false,
+    "category": "platform",
+    "tags": ["platform", "home"],
+    "description": "The TMOS13 home experience. Talk to the platform itself — ask about product, pricing, architecture, or what you can build.",
+    "author": "TMOS13",
+    "license": "included",
+    "verb_type": "",
+    "industry_tags": [],
+    "icon_url": null,
+    "price": {
+      "model": "included",
+      "tier_minimum": null
+    }
+  }
+}

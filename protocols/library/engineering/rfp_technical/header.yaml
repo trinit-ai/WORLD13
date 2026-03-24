@@ -1,0 +1,9 @@
+id: rfp_technical
+name: Technical RFP Assessment Intake
+category: engineering
+status: active
+description: Technical RFP assessment intake for engineering leads and solution architects evaluating a request for proposal from a technical perspective. Evaluates the technical requirements, evaluation criteria, proposal quality, integration complexity, vendor capability evidence, and risk assessment to produce a technical RFP assessment profile with scoring and recommendation.
+deliverable: rfp_technical_assessment_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

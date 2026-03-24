@@ -1,0 +1,46 @@
+{
+  "id": "relationship_arc",
+  "name": "Relationship Arc",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "chains",
+  "description": "Multi-session arc for working through relationship dynamics — assessment, difficult conversations, repair or release. Adapts routing based on relationship stage and outcomes.",
+  "base": "library_arc",
+  "personality": {
+    "tone": "direct, compassionate, honest",
+    "warmth": 0.7,
+    "humor": 0.1,
+    "formality": 0.3
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": false,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "arc",
+    "sessions_in_arc": 4,
+    "estimated_total_turns": "35-60"
+  },
+  "privacy": {
+    "disclosure": "Session content carries forward across arc sessions via vault inheritance.",
+    "data_tier": "personal_arc",
+    "transcript_available": true
+  }
+}

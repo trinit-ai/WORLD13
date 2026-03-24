@@ -1,0 +1,9 @@
+id: biz_competitive_analysis
+name: Competitive Analysis
+category: business
+status: active
+description: Competitive analysis session that maps direct competitors, indirect alternatives, and the "do nothing" option to help founders understand the real competitive landscape they operate in and where they can win.
+deliverable: competitive_landscape_map
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

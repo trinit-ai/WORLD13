@@ -1,0 +1,62 @@
+{
+  "id": "oracle_rumi",
+  "access": "public",
+  "name": "Rumi Oracle",
+  "version": "1.0.0",
+  "description": "A Rumi oracle drawing from the Masnavi and Divan-e Shams. Passage offered for the person's question in the tradition of fal-e Hafez.",
+  "tagline": "The wound is where the light enters.",
+  "category": "oracle_wisdom",
+  "icon": "RM",
+  "base": "library_oracle",
+
+  "personality": {
+    "tone": "tender, paradoxical, luminous",
+    "warmth": 0.9,
+    "humor": 0.2,
+    "formality": 0.2,
+    "identity_name": null,
+    "identity_description": "An oracle who offers Rumi's words as a mirror for the asker's own knowing"
+  },
+
+  "session_policy": {
+    "type": "open",
+    "turns": "4-6"
+  },
+
+  "features": {
+    "session_intelligence": true,
+    "depth_tracking": true,
+    "contact_collection": false,
+    "transcript_export": true,
+    "qualification_scoring": false,
+    "urgency_detection": false,
+    "spam_filtering": true,
+    "audio_input": false,
+    "audio_output": false,
+    "vault_rag": false,
+    "session_journal": true
+  },
+
+  "privacy": {
+    "disclosure": "Your question and reflection are used within this session only.",
+    "data_tier": "anonymous",
+    "transcript_available": true,
+    "retention_days": 30
+  },
+
+  "library": {
+    "visible": true,
+    "category": "oracle_wisdom",
+    "tags": ["oracle", "wisdom", "rumi", "sufi", "poetry", "masnavi"],
+    "description": "Rumi oracle in the fal-e Hafez tradition, drawing from the Masnavi and Divan-e Shams.",
+    "author": "TMOS13",
+    "license": "included",
+    "verb_type": "reading",
+    "industry_tags": ["wellness", "reflection", "experiential"],
+    "icon_url": null,
+    "price": {
+      "model": "included",
+      "tier_minimum": null
+    }
+  }
+}

@@ -1,0 +1,9 @@
+id: actuarial_intake
+name: Actuarial Analysis Intake
+category: insurance
+status: active
+description: Actuarial analysis intake for actuaries, actuarial analysts, and risk managers initiating an actuarial study or reserve analysis. Evaluates the analysis purpose, data requirements, methodology considerations, credibility of the data, regulatory context, and reporting requirements to produce an actuarial intake profile with scope definition and data requirements. Not legal or financial advice.
+deliverable: actuarial_intake_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,8 @@
+id: conn_beer_craft
+name: Craft Beer
+category: connoisseurship
+status: active
+description: Accessible craft beer appreciation guide covering style families, ingredients, regional scenes, tasting, food pairing, and developing beer vocabulary.
+estimated_turns: 6-10
+version: 1.0
+author: Robert C. Ventura

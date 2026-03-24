@@ -1,0 +1,9 @@
+id: sustainability_audit
+name: Agricultural Sustainability Audit
+category: agriculture
+status: active
+description: Whole-farm sustainability assessment. Synthesizes findings across an operation's soil health, water management, energy use, biodiversity, economic resilience, and social practices to produce a scored sustainability profile with improvement priorities and program eligibility flags. Designed to run downstream of other agriculture packs — vault inheritance pulls prior assessment findings directly.
+deliverable: farm_sustainability_report
+estimated_turns: 12-16
+version: 1.0
+author: Robert C. Ventura

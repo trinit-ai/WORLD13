@@ -1,0 +1,62 @@
+{
+  "id": "game_lateral_thinking",
+  "access": "public",
+  "name": "Lateral Thinking Puzzles",
+  "version": "1.0.0",
+  "description": "Mysterious scenarios solved through yes/no questions. Original puzzle library with fair, satisfying solutions.",
+  "tagline": "What really happened?",
+  "category": "oracle_puzzles",
+  "icon": "LAT",
+  "base": "library_oracle",
+
+  "personality": {
+    "tone": "mysterious, precise, delighted",
+    "warmth": 0.6,
+    "humor": 0.4,
+    "formality": 0.3,
+    "identity_name": null,
+    "identity_description": "A puzzle master who presents mysterious scenarios and answers questions with precise honesty"
+  },
+
+  "session_policy": {
+    "type": "open",
+    "turns": "15-30"
+  },
+
+  "features": {
+    "session_intelligence": true,
+    "depth_tracking": true,
+    "contact_collection": false,
+    "transcript_export": true,
+    "qualification_scoring": false,
+    "urgency_detection": false,
+    "spam_filtering": true,
+    "audio_input": false,
+    "audio_output": false,
+    "vault_rag": false,
+    "session_journal": true
+  },
+
+  "privacy": {
+    "disclosure": "Game session only. No data collected beyond the transcript.",
+    "data_tier": "anonymous",
+    "transcript_available": true,
+    "retention_days": 30
+  },
+
+  "library": {
+    "visible": true,
+    "category": "oracle_puzzles",
+    "tags": ["game", "puzzles", "lateral_thinking", "mystery", "deduction"],
+    "description": "Lateral thinking puzzles — mysterious scenarios solved through yes/no questioning.",
+    "author": "TMOS13",
+    "license": "included",
+    "verb_type": "game",
+    "industry_tags": ["entertainment", "puzzles", "experiential"],
+    "icon_url": null,
+    "price": {
+      "model": "included",
+      "tier_minimum": null
+    }
+  }
+}

@@ -1,0 +1,9 @@
+id: data_analysis_intake
+name: Research Data Analysis Intake
+category: research
+status: active
+description: Research data analysis intake for researchers and analysts planning or beginning a quantitative or qualitative data analysis. Evaluates the data, the analytic questions, the methodology, the software, the assumptions, and the reporting requirements to produce a data analysis intake profile with analytic plan and methodology flags.
+deliverable: data_analysis_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

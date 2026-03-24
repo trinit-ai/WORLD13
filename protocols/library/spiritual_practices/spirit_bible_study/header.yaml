@@ -1,0 +1,9 @@
+id: spirit_bible_study
+name: Bible Study
+category: spiritual_practices
+status: active
+description: Bible study session covering historical context, original language insights (Hebrew, Aramaic, Greek), interpretive traditions, and serious textual engagement across Old and New Testaments. Non-denominational. Engages the text without advocacy.
+deliverable: bible_study_session_summary
+estimated_turns: 8-14
+version: 1.0
+author: Robert C. Ventura

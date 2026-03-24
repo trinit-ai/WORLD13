@@ -1,0 +1,9 @@
+id: form_voter_registration
+name: Voter Registration
+category: forms_government
+status: active
+description: Guided completion of a voter registration form with citizenship verification and non-partisan administration.
+deliverable: completed_form
+estimated_turns: "4-6"
+version: 1.0
+author: Robert C. Ventura

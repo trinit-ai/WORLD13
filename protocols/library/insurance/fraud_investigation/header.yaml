@@ -1,0 +1,9 @@
+id: fraud_investigation
+name: Insurance Fraud Investigation Intake
+category: insurance
+status: active
+description: Insurance fraud investigation intake for Special Investigations Unit (SIU) examiners and claims professionals initiating a fraud investigation. Evaluates the fraud indicators, the investigation scope, evidence preservation requirements, regulatory reporting obligations, and law enforcement coordination to produce a fraud investigation intake profile with investigation scope and immediate action requirements. Not legal advice.
+deliverable: fraud_investigation_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

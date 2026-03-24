@@ -1,0 +1,9 @@
+id: case_intake
+name: Social Work Case Intake
+category: social_work
+status: active
+description: Social work case intake for licensed social workers conducting an initial client assessment. Evaluates the presenting concerns, the client's situation across life domains, the safety risks, the strengths and resources, and the service needs to produce a case intake profile with needs assessment and service plan priorities. Not clinical advice.
+deliverable: case_intake_profile
+estimated_turns: 12-16
+version: 1.0
+author: Robert C. Ventura

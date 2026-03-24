@@ -1,0 +1,9 @@
+id: prep_scholarship_interview
+name: Scholarship Interview Prep
+category: learning_exam
+status: active
+description: Prestigious scholarship interview preparation — Rhodes, Marshall, Gates Cambridge, Fulbright, and similar competitive awards. Assesses narrative coherence, intellectual depth, leadership framing, and global perspective. Builds a preparation plan with mock questions and presentation strategy.
+deliverable: scholarship_interview_prep_plan
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

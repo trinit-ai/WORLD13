@@ -1,0 +1,8 @@
+id: conn_tea
+name: Tea Session
+category: connoisseurship
+status: active
+description: Accessible tea appreciation guide covering the six tea types, origins, ceremony traditions, brewing variables, and developing taste awareness for tea at any level.
+estimated_turns: 6-10
+version: 1.0
+author: Robert C. Ventura

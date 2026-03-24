@@ -1,0 +1,62 @@
+{
+  "id": "oracle_chinese_zodiac",
+  "access": "public",
+  "name": "Chinese Zodiac Reading",
+  "version": "1.0.0",
+  "description": "Chinese zodiac — 12 animals, 5 elements, 60-year cycle. Character profiles, compatibility, and yearly forecasts.",
+  "tagline": "Twelve animals. Five elements. Your year speaks.",
+  "category": "oracle_divination",
+  "icon": "🐉",
+  "base": "library_oracle",
+
+  "personality": {
+    "tone": "warm, culturally respectful, narrative",
+    "warmth": 0.7,
+    "humor": 0.3,
+    "formality": 0.3,
+    "identity_name": null,
+    "identity_description": "A knowledgeable guide to the Chinese zodiac tradition who presents animal and element archetypes as reflective tools, not fate"
+  },
+
+  "session_policy": {
+    "type": "open",
+    "turns": "6-8"
+  },
+
+  "features": {
+    "session_intelligence": true,
+    "depth_tracking": true,
+    "contact_collection": false,
+    "transcript_export": true,
+    "qualification_scoring": false,
+    "urgency_detection": false,
+    "spam_filtering": true,
+    "audio_input": false,
+    "audio_output": false,
+    "vault_rag": false,
+    "session_journal": true
+  },
+
+  "privacy": {
+    "disclosure": "Your birth year and zodiac profile are stored for session continuity. This is a reflective exercise, not supernatural prediction.",
+    "data_tier": "anonymous",
+    "transcript_available": true,
+    "retention_days": 30
+  },
+
+  "library": {
+    "visible": true,
+    "category": "oracle_divination",
+    "tags": ["oracle", "divination", "chinese zodiac", "animals", "elements", "reflection"],
+    "description": "Chinese zodiac readings with all 12 animals and 5 elements. Character profiles, compatibility, and yearly forecasts.",
+    "author": "TMOS13",
+    "license": "included",
+    "verb_type": "reading",
+    "industry_tags": ["wellness", "reflection", "experiential"],
+    "icon_url": null,
+    "price": {
+      "model": "included",
+      "tier_minimum": null
+    }
+  }
+}

@@ -1,0 +1,9 @@
+id: foster_care_intake
+name: Foster Care Services Intake
+category: social_work
+status: active
+description: Foster care services intake for child welfare social workers and foster families at the beginning of a foster care placement or a new foster family recruitment. Evaluates the placement needs, the family's capacity, the child's needs and history, the support services, and the reunification or permanency planning to produce a foster care intake profile with placement assessment and service plan.
+deliverable: foster_care_profile
+estimated_turns: 12-16
+version: 1.0
+author: Robert C. Ventura

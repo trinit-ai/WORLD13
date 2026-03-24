@@ -1,0 +1,9 @@
+id: underwriting_intake
+name: Insurance Underwriting Intake
+category: insurance
+status: active
+description: Insurance underwriting intake for underwriters and underwriting assistants gathering and assessing information to evaluate, price, and structure an insurance risk. Evaluates the risk profile, loss history, underwriting information, coverage structure, and acceptability indicators to produce an underwriting intake profile with risk assessment and coverage structure guidance. Not legal advice.
+deliverable: underwriting_intake_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

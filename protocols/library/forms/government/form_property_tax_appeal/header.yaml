@@ -1,0 +1,9 @@
+id: form_property_tax_appeal
+name: Property Tax Appeal
+category: forms_government
+status: active
+description: Guided completion of a property tax appeal with jurisdiction-specific deadlines, comparable property analysis, and appeal basis documentation.
+deliverable: completed_form
+estimated_turns: "8-10"
+version: 1.0
+author: Robert C. Ventura

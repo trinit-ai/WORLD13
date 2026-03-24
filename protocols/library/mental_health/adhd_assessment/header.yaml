@@ -1,0 +1,9 @@
+id: adhd_assessment
+name: ADHD Assessment Intake
+category: mental_health
+status: active
+description: ADHD assessment intake for licensed mental health professionals and physicians conducting an initial ADHD evaluation. Evaluates inattentive and hyperactive/impulsive symptom domains, onset and duration, cross-setting impairment, rule-out considerations, and functional impact to produce an ADHD assessment profile with symptom profile and clinical considerations for the treating provider. Not clinical advice.
+deliverable: adhd_assessment_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

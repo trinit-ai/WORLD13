@@ -1,0 +1,64 @@
+{
+  "id": "prep_real_estate_license",
+  "name": "Real Estate License Prep",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "learning_exam",
+  "description": "Real estate licensing exam preparation and diagnostic assessment. Covers national and state-specific content areas including property ownership, land use, valuation, financing, contracts, agency, and real estate math. Builds a focused study plan with math skill assessment.",
+  "base": "library_session",
+  "personality": {
+    "tone": "direct, coaching-oriented",
+    "warmth": 0.4,
+    "humor": 0.0,
+    "formality": 0.6
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": true,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 16,
+    "estimated_turns": "8-12",
+    "consequence": "zero"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_session",
+    "transcript_available": true
+  },
+  "deliverables": {
+    "enabled": true,
+    "types": [
+      {
+        "id": "real_estate_study_plan",
+        "name": "Real Estate License Study Plan",
+        "description": "Generated real estate license study plan from diagnostic session data.",
+        "trigger": {
+          "min_turns": 4,
+          "contact_required": false
+        },
+        "channels": ["download"],
+        "include_transcript": true,
+        "include_state_snapshot": true
+      }
+    ]
+  }
+}

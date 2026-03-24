@@ -1,0 +1,9 @@
+id: ai_adversary
+name: "Adversary / Debate"
+category: ai_interaction
+status: active
+description: A governed adversarial debate session. A genuine adversary trying to win with the strongest opposing position. No mercy, no softening. Explicit release for debrief after the debate phase.
+consequence_class: ZERO
+estimated_turns: 10-20
+version: 1.0
+author: Robert C. Ventura

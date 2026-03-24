@@ -1,0 +1,174 @@
+{
+  "id": "campaign_builder",
+  "access": "paid",
+  "tier_gate": "V7",
+  "name": "Campaign Builder",
+  "version": "1.0.0",
+  "description": "Turn an idea into a launch plan. Audience profiling, positioning, channel strategy, content planning, and a ready-to-execute campaign brief — from concept to calendar.",
+  "tagline": "Idea in. Campaign out.",
+  "philosophy": "Great campaigns start with clarity — who you're reaching, why they should care, and where to find them. The Campaign Builder takes you from a rough idea to a structured, actionable plan with positioning, channels, content, and timelines.",
+  "category": "marketing",
+  "icon": "📣",
+  "base": "public_facing",
+  "assembly_mode": "assembled",
+
+  "personality": {
+    "tone": "creative, strategic, direct, energetic",
+    "warmth": 0.6,
+    "humor": 0.3,
+    "formality": 0.4,
+    "identity_name": "Strategist",
+    "identity_description": "A strategic marketing partner that helps you go from rough idea to actionable campaign plan — audience, positioning, channels, content, and timelines"
+  },
+
+  "cartridges": [
+    { "id": "audience", "name": "Audience", "description": "Define who you're reaching — segmentation, persona building, and validation of your target market.", "protocol": "audience.md" },
+    { "id": "positioning", "name": "Positioning", "description": "Find your angle — competitive landscape, differentiation, and a message hierarchy that cuts through noise.", "protocol": "positioning.md" },
+    { "id": "channel_mix", "name": "Channel Mix", "description": "Pick the right channels — budget allocation, channel assessment, timeline, and a mix that matches your audience.", "protocol": "channel_mix.md" },
+    { "id": "content_plan", "name": "Content Plan", "description": "Plan the content — themes, formats, cadence, editorial calendar, and an asset list ready for production.", "protocol": "content_plan.md" },
+    { "id": "campaign_brief", "name": "Campaign Brief", "description": "The deliverable — strategy synthesis, creative direction, metrics, timeline, and a brief you can hand to your team.", "protocol": "campaign_brief.md" },
+    { "id": "company_profile", "name": "Company Profile", "description": "Your business identity, hours, contact info, FAQs, disclaimers, and policies — automatically woven into every interaction.", "passive": true }
+  ],
+
+  "commands": {
+    "session": {
+      "reset": { "pattern": "^(reset|start over|restart|new campaign|clear)$", "action": "reset_session" },
+      "menu": { "pattern": "^(menu|help|options|what can you do|commands)$", "action": "show_menu" },
+      "status": { "pattern": "^(status|progress|where am i|summary)$", "action": "show_status" },
+      "transcript": { "pattern": "^(transcript|download|export|save|brief)$", "action": "show_transcript" }
+    },
+    "navigation": {
+      "audience": { "pattern": "(audience|target|customer|persona|segment|who|demographic|ICP)", "cartridge": "audience" },
+      "positioning": { "pattern": "(position|differentiat|message|value prop|competitive|angle|story)", "cartridge": "positioning" },
+      "channel": { "pattern": "(channel|media|platform|distribute|where|paid|organic|social|email|ads)", "cartridge": "channel_mix" },
+      "content": { "pattern": "(content|editorial|calendar|blog|video|copy|asset|creative|format)", "cartridge": "content_plan" },
+      "brief": { "pattern": "(brief|plan|output|deliverable|final|summary|wrap up|strategy doc)", "cartridge": "campaign_brief" }
+    }
+  },
+
+  "system_screens": { "boot": "boot.md", "menu": "menu.md" },
+
+  "features": {
+    "session_intelligence": true,
+    "depth_tracking": true,
+    "mood_resonance": true,
+    "cross_module_memory": true,
+    "contact_collection": false,
+    "transcript_export": true,
+    "qualification_scoring": false,
+    "urgency_detection": false,
+    "spam_filtering": true,
+    "audio_input": false,
+    "audio_output": false,
+    "session_journal": true,
+    "vault_rag": true
+  },
+
+  "privacy": {
+    "disclosure": "Your campaign details and session history are used to build your marketing plan. No data is shared externally.",
+    "data_tier": "session_only",
+    "transcript_available": true,
+    "retention_days": 90
+  },
+
+  "notifications": {},
+
+  "settings": {
+    "response_depth": {
+      "default": "balanced",
+      "options": ["concise", "balanced", "detailed"]
+    },
+    "campaign_scope": {
+      "default": "standard",
+      "options": ["quick_launch", "standard", "enterprise"]
+    }
+  },
+
+  "state": {
+    "session": {
+      "active_cartridge": null,
+      "turn_count": 0,
+      "depth": 0,
+      "campaign_name": null,
+      "product_or_service": null
+    },
+    "campaign": {
+      "audience_defined": false,
+      "positioning_complete": false,
+      "channels_selected": false,
+      "content_planned": false,
+      "brief_generated": false,
+      "target_audience": null,
+      "key_message": null,
+      "channels": [],
+      "budget_range": null,
+      "timeline": null
+    }
+  },
+
+  "theme": {
+    "accent": "#EC4899",
+    "surface": "#0D0B09",
+    "text": "#E5E2DC"
+  },
+
+  "transcript": {
+    "format": "markdown",
+    "include_metadata": true,
+    "include_summary": true,
+    "include_scoring": false,
+    "download_label": "Download Campaign Brief"
+  },
+
+  "data_rail": {
+    "tabs": [
+      {
+        "id": "auth",
+        "label": "Auth",
+        "icon": "key",
+        "type": "infrastructure"
+      },
+      {
+        "id": "pricing",
+        "label": "Pricing",
+        "icon": "sparkles",
+        "type": "infrastructure"
+      },
+      {
+        "id": "campaign_info",
+        "label": "Campaign Info",
+        "icon": "Target",
+        "type": "pack",
+        "title": "Campaign Information",
+        "description": "Captured securely. Encrypted at rest. Never sent to AI.",
+        "submit_label": "Save to Vault",
+        "success_message": "Campaign info saved.",
+        "endpoint": "/api/datarail/submit",
+        "fields": [
+          { "id": "contact_name", "type": "text", "label": "Contact Name", "placeholder": "Full name", "required": true, "pii": true },
+          { "id": "contact_email", "type": "email", "label": "Email", "placeholder": "you@example.com", "required": true, "pii": true },
+          { "id": "brand_name", "type": "text", "label": "Brand", "placeholder": "Brand or product name", "required": false, "pii": false },
+          { "id": "campaign_type", "type": "select", "label": "Campaign Type", "required": true, "options": ["Product Launch", "Brand Awareness", "Lead Gen", "Event", "Seasonal", "Other"] },
+          { "id": "target_audience", "type": "text", "label": "Target Audience", "placeholder": "Who are you trying to reach?", "required": false, "pii": false },
+          { "id": "budget_range", "type": "select", "label": "Budget Range", "required": false, "options": ["Under $10K", "$10K\u2013$50K", "$50K\u2013$250K", "$250K+", "Not Set"] }
+        ]
+      }
+    ]
+  },
+
+  "library": {
+    "visible": true,
+    "category": "marketing",
+    "tags": ["compose", "strategy"],
+    "description": "Turn an idea into a launch plan — audience profiling, positioning strategy, channel mix, content calendar, and a ready-to-execute campaign brief from conversation.",
+    "author": "TMOS13",
+    "license": "included",
+    "verb_type": "compose",
+    "industry_tags": ["marketing", "advertising", "growth", "startup"],
+    "icon_url": null,
+    "price": {
+      "model": "included",
+      "tier_minimum": null
+    }
+  }
+}

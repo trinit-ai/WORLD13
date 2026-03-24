@@ -1,0 +1,9 @@
+id: friendship_deepening
+name: Friendship Deepening
+category: dyadic
+status: active
+description: Guided exploration for moving a friendship past surface-level into genuine platonic intimacy.
+deliverable: friendship_brief
+estimated_turns: "8-12"
+version: 1.0
+author: Robert C. Ventura

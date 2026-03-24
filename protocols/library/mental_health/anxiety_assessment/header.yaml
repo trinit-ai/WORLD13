@@ -1,0 +1,9 @@
+id: anxiety_assessment
+name: Anxiety Assessment Intake
+category: mental_health
+status: active
+description: Anxiety assessment intake for clinicians conducting a structured anxiety evaluation. Evaluates the anxiety presentation across GAD-7 domains, the panic and phobic features, the functional impact, the avoidance patterns, the comorbid conditions, and the treatment history to produce an anxiety assessment profile with severity classification and clinical considerations.
+deliverable: anxiety_assessment_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

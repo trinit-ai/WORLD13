@@ -1,0 +1,9 @@
+id: op_ed_intake
+name: Op-Ed Development Intake
+category: media
+status: active
+description: Op-ed development intake for writers, communications professionals, and publicists developing an op-ed or commentary piece for publication. Evaluates the argument, the author's standing, the target publication, the news hook, the evidence, and the structure to produce an op-ed development profile with argument assessment and revision priorities.
+deliverable: op_ed_development_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,9 @@
+id: security_audit
+name: Application Security Audit Intake
+category: engineering
+status: active
+description: Application security audit intake for security engineers and engineering leads initiating a security review of an application or system. Evaluates the audit scope, threat model, OWASP coverage, authentication and authorization design, data handling, dependency risk, and penetration testing requirements to produce a security audit intake profile with risk assessment and recommended audit scope.
+deliverable: security_audit_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

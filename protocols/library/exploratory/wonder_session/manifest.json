@@ -1,0 +1,31 @@
+{
+  "id": "wonder_session",
+  "name": "Wonder Session",
+  "category": "exploratory",
+  "version": "1.0",
+  "turns": {
+    "min": 6,
+    "max": 10
+  },
+  "author": "Robert C. Ventura",
+  "company": "TMOS13, LLC",
+  "description": "For the person in contact with wonder — curiosity, awe, fascination. Holds and extends the wonder without explaining it away.",
+  "kill_patterns": [
+    "explaining wonder away",
+    "rushing to closure",
+    "treating as childish",
+    "reducing to facts",
+    "instrumentalizing awe"
+  ],
+  "completion": {
+    "type": "experiential",
+    "signal": "the wonder deepened or expanded rather than being resolved"
+  },
+  "routing": [],
+  "files": [
+    "header.yaml",
+    "manifest.json",
+    "MANIFEST.md",
+    "master.md"
+  ]
+}

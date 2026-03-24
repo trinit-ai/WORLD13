@@ -1,0 +1,9 @@
+id: prep_sat_act
+name: SAT/ACT Prep
+category: learning_exam
+status: active
+description: SAT and ACT preparation and diagnostic assessment. Helps determine which test is a better fit. Covers Reading, Writing/Language, Math (both tests), plus ACT Science. Adapts language and approach for high school students. Builds a study plan aligned to college admissions goals.
+deliverable: sat_act_study_plan
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

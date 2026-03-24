@@ -1,0 +1,9 @@
+id: celebration_session
+name: Celebration Session
+category: temporal
+status: active
+description: Mark something that matters — achievement, milestone, or completion — with deliberate witnessing of what happened, what it cost, and what it means.
+deliverable: celebration_record
+estimated_turns: "6-10"
+version: 1.0
+author: Robert C. Ventura

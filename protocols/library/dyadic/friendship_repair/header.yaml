@@ -1,0 +1,9 @@
+id: friendship_repair
+name: Friendship Repair
+category: dyadic
+status: active
+description: Guided session for understanding and navigating repair of a friendship damaged by conflict, silence, betrayal, or distance.
+deliverable: repair_brief
+estimated_turns: "10-14"
+version: 1.0
+author: Robert C. Ventura

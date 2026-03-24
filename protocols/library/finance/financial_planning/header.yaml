@@ -1,0 +1,9 @@
+id: financial_planning
+name: Personal Financial Planning Intake
+category: finance
+status: active
+description: Personal financial planning intake for individuals and households beginning a financial planning engagement. Evaluates current financial position, goals, risk tolerance, protection gaps, tax situation awareness, and professional coordination to produce a financial planning intake profile with priority areas and referral guidance. Not financial advice.
+deliverable: financial_planning_intake_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

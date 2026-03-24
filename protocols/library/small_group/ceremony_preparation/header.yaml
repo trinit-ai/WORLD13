@@ -1,0 +1,9 @@
+id: ceremony_preparation
+name: Ceremony Preparation
+category: small_group
+status: active
+description: Prepare to participate in or facilitate a group ceremony or ritual with presence and substance.
+deliverable: ceremony_brief
+estimated_turns: "6-10"
+version: 1.0
+author: Robert C. Ventura

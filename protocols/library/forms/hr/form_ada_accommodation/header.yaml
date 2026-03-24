@@ -1,0 +1,9 @@
+id: form_ada_accommodation
+name: ADA Accommodation Request
+category: forms_hr
+status: active
+description: Guided completion of an ADA reasonable accommodation request focusing on functional limitations and job duties without requiring diagnosis disclosure.
+deliverable: completed_form
+estimated_turns: "8-10"
+version: 1.0
+author: Robert C. Ventura

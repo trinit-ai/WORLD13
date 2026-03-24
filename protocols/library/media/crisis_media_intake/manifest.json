@@ -1,0 +1,46 @@
+{
+  "id": "crisis_media_intake",
+  "name": "Crisis Media Response Intake",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "media",
+  "description": "Crisis media response intake for communications professionals, PR teams, and executives managing an organizational crisis with media attention. Evaluates the crisis type, the media exposure, the stakeholder map, the response strategy, and the messaging to produce a crisis response profile with immediate action requirements and communications framework. Not legal advice.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "professional, direct",
+    "warmth": 0.5,
+    "humor": 0.0,
+    "formality": 0.7
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 18,
+    "estimated_turns": "10-14"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  }
+}

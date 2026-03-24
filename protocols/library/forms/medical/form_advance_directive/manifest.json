@@ -1,0 +1,46 @@
+{
+  "id": "form_advance_directive",
+  "name": "Advance Directive / Living Will",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "forms_medical",
+  "description": "Structured advance directive and living will form collecting principal identity, healthcare agent designation, alternate agent, powers granted, end-of-life wishes (life-sustaining treatment, CPR, nutrition/hydration, pain management, organ donation), physician attestation, witness signatures (two required, not agent or heir), and notarization requirements. DIRECT mode — highest consequence medical form. Healthcare provider must review. Not medical advice.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "clear, precise, careful",
+    "warmth": 0.65,
+    "humor": 0.0,
+    "formality": 0.6
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 20,
+    "estimated_turns": "12-16"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  }
+}

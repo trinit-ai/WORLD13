@@ -1,0 +1,20 @@
+{
+  "id": "sci_neuroscience",
+  "name": "Neuroscience Exploration",
+  "category": "science_exploration",
+  "version": "1.0",
+  "status": "active",
+  "turn_budget": [8, 12],
+  "metered": true,
+  "entry_point": "master.md",
+  "files": [
+    "header.yaml",
+    "manifest.json",
+    "MANIFEST.md",
+    "master.md"
+  ],
+  "description": "Exploration of the brain, consciousness, memory, and the hard problem of conscious experience.",
+  "tags": ["neuroscience", "brain", "consciousness", "memory", "science"],
+  "author": "Robert C. Ventura",
+  "created": "2026-03-18"
+}

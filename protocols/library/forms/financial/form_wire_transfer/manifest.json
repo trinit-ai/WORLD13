@@ -1,0 +1,46 @@
+{
+  "id": "form_wire_transfer",
+  "name": "Wire Transfer Authorization",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "authed",
+  "category": "forms_financial",
+  "description": "Guided completion of a wire transfer authorization form capturing sender and recipient banking details, amount, purpose, and verification with prominent fraud warnings.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "clear, precise, careful",
+    "warmth": 0.6,
+    "humor": 0.0,
+    "formality": 0.65
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": false,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 10,
+    "estimated_turns": "6-8"
+  },
+  "privacy": {
+    "disclosure": "Form data is collected for your use only.",
+    "data_tier": "sensitive",
+    "transcript_available": true
+  }
+}

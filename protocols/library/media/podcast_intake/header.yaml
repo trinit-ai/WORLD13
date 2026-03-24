@@ -1,0 +1,9 @@
+id: podcast_intake
+name: Podcast Production Intake
+category: media
+status: active
+description: Podcast production intake for podcast producers and hosts scoping a new episode or series. Evaluates the show format, the episode topic, the guest, the production requirements, the distribution platform, and the promotional strategy to produce a podcast intake profile with episode structure and production checklist.
+deliverable: podcast_intake_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

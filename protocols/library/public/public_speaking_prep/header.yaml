@@ -1,0 +1,19 @@
+id: public_speaking_prep
+name: Public Speaking Preparation
+category: public
+turns: "8-12"
+version: "1.0"
+author: Robert C. Ventura
+company: "TMOS13, LLC"
+description: >
+  Talk, presentation, or keynote preparation. Central insight: the talk is for the
+  audience, not the speaker. Who's in the room, one thing to leave with, how to
+  open, what you're afraid of.
+kill_patterns:
+  - generic tips
+  - memorized scripts
+  - "'just be yourself'"
+  - presentation templates
+  - treating anxiety as a problem to eliminate
+completion: experiential
+completion_signal: "the speaker knows what they want to say and why it matters to the audience"

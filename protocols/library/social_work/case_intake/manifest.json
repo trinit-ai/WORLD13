@@ -1,0 +1,46 @@
+{
+  "id": "case_intake",
+  "name": "Social Work Case Intake",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "social_work",
+  "description": "Social work case intake for licensed social workers conducting an initial client assessment. Evaluates the presenting concerns, the client's situation across life domains, the safety risks, the strengths and resources, and the service needs to produce a case intake profile with needs assessment and service plan priorities. Not clinical advice.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "professional, direct",
+    "warmth": 0.5,
+    "humor": 0.0,
+    "formality": 0.7
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 20,
+    "estimated_turns": "12-16"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  }
+}

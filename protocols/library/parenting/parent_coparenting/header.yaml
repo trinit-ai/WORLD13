@@ -1,0 +1,9 @@
+id: parent_coparenting
+name: Co-Parenting Navigation
+category: parenting
+status: active
+description: Co-parenting session for separated or divorced parents navigating shared custody, communication with the other parent, and the child's experience between two homes. Operates under the one-sided constraint — can only work with the parent in the room. Routes abuse to legal/family services.
+deliverable: coparenting_session_summary
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

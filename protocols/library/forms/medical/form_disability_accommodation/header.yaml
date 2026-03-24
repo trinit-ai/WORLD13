@@ -1,0 +1,9 @@
+id: form_disability_accommodation
+name: Disability Accommodation Request
+category: forms_medical
+status: active
+description: Structured disability accommodation request form collecting employee or student identity, employer or institution, position or program, functional limitations (diagnosis disclosure NOT required per ADA), accommodations requested, why each accommodation is needed, prior accommodations, and requested start date. Information collection only — healthcare provider must review. Not medical advice.
+deliverable: completed_form
+estimated_turns: 8-10
+version: 1.0
+author: Robert C. Ventura

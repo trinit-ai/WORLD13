@@ -1,0 +1,9 @@
+id: construction_intake
+name: Construction Project Intake
+category: architecture
+status: active
+description: Construction project intake and pre-construction assessment. Evaluates a project's scope, delivery method, contract structure, schedule, budget, team, and risk posture to produce a construction project profile with gap analysis, risk flags, and recommended pre-construction actions.
+deliverable: construction_project_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

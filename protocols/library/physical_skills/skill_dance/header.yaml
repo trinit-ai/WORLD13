@@ -1,0 +1,19 @@
+id: skill_dance
+name: Dance Fundamentals
+category: physical_skills
+version: "1.0"
+status: active
+turn_budget: [8, 10]
+metered: true
+description: >
+  Dance fundamentals — salsa, tango, swing, waltz. Theory, counting,
+  musicality, and partner dance concepts. Honest about text limitations.
+tags:
+  - dance
+  - salsa
+  - tango
+  - swing
+  - waltz
+  - physical_skills
+author: Robert C. Ventura
+created: "2026-03-18"

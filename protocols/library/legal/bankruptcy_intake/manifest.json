@@ -1,0 +1,46 @@
+{
+  "id": "bankruptcy_intake",
+  "name": "Bankruptcy Intake",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "legal",
+  "description": "Bankruptcy intake for bankruptcy attorneys and paralegals conducting an initial bankruptcy consultation. Evaluates the client's financial situation, the applicable chapter, the means test, the asset and exemption profile, the priority debts, and the timing considerations to produce a bankruptcy intake profile with chapter recommendation framework and immediate action requirements. Not legal advice.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "professional, direct",
+    "warmth": 0.5,
+    "humor": 0.0,
+    "formality": 0.7
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 22,
+    "estimated_turns": "12-18"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  }
+}

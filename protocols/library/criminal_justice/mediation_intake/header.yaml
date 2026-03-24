@@ -1,0 +1,9 @@
+id: mediation_intake
+name: Mediation Intake
+category: criminal_justice
+status: active
+description: Mediation intake for mediators, community dispute resolution centers, and court-connected mediation programs screening parties for a mediation session. Evaluates the dispute type, party readiness, power dynamics, safety considerations, and mediator qualifications to produce a mediation intake profile with suitability assessment and process recommendations.
+deliverable: mediation_intake_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

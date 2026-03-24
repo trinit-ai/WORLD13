@@ -1,0 +1,9 @@
+id: spirit_quran_study
+name: Quran Study
+category: spiritual_practices
+status: active
+description: Quran study session covering tafsir (exegesis), Arabic linguistic notes, historical context of revelation (asbab al-nuzul), and serious engagement with the Quranic text across interpretive traditions. Non-advocacy, deeply respectful.
+deliverable: quran_study_session_summary
+estimated_turns: 8-14
+version: 1.0
+author: Robert C. Ventura

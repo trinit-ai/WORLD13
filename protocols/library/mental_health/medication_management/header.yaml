@@ -1,0 +1,9 @@
+id: medication_management
+name: Psychiatric Medication Management Intake
+category: mental_health
+status: active
+description: Psychiatric medication management intake for prescribing clinicians conducting a medication management visit. Evaluates the current psychiatric medication regimen, treatment response, side effects, adherence, safety indicators, and medication adjustment considerations to produce a medication management intake profile with treatment response summary and clinical flags for the prescriber. Not medical or clinical advice.
+deliverable: medication_management_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

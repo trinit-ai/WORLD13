@@ -1,0 +1,9 @@
+id: staffing_intake
+name: Hospitality Staffing Intake
+category: hospitality
+status: active
+description: Hospitality staffing intake for hotel HR managers, F&B directors, and event operators scoping a staffing requirement. Evaluates the role type, headcount, skill requirements, event context, timeline, and compliance requirements to produce a staffing intake profile with position specifications and sourcing guidance.
+deliverable: staffing_intake_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

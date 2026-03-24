@@ -1,0 +1,46 @@
+{
+  "id": "study_skills_assessment",
+  "name": "Study Skills Assessment Intake",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "education",
+  "description": "Study skills assessment intake for academic coaches, learning specialists, and advisors assessing a student's study and learning strategies. Evaluates time management, note-taking, reading comprehension strategies, test preparation, self-regulation, and the learning environment to produce a study skills assessment profile with targeted skill development recommendations.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "professional, direct",
+    "warmth": 0.5,
+    "humor": 0.0,
+    "formality": 0.7
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 16,
+    "estimated_turns": "8-12"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  }
+}

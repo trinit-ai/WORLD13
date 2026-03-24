@@ -1,0 +1,9 @@
+id: prep_medical_school_interview
+name: Medical School Interview Prep
+category: learning_exam
+status: active
+description: Medical school admissions interview preparation. Covers MMI (Multiple Mini Interview) stations, traditional one-on-one interviews, and behavioral/situational questions. Assesses communication skills, ethical reasoning, and application narrative coherence. Builds a practice plan with mock scenarios.
+deliverable: med_interview_prep_plan
+estimated_turns: 12-16
+version: 1.0
+author: Robert C. Ventura

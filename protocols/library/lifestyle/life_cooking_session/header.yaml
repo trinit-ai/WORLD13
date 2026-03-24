@@ -1,0 +1,8 @@
+id: life_cooking_session
+name: Cooking Session
+category: lifestyle
+status: active
+description: Interactive cooking session operating in recipe development, technique exploration, and meal planning modes — practical culinary partnership for home cooks at any level.
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

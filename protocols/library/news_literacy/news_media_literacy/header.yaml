@@ -1,0 +1,19 @@
+id: news_media_literacy
+name: Media Literacy
+category: news_literacy
+version: "1.0"
+status: active
+turn_budget: [8, 10]
+metered: true
+description: >
+  Media literacy — incentives, sourcing, framing, and an evaluation
+  framework for consuming news critically. Non-partisan. Teaches skills,
+  not opinions.
+tags:
+  - media
+  - literacy
+  - news
+  - critical_thinking
+  - news_literacy
+author: Robert C. Ventura
+created: "2026-03-18"

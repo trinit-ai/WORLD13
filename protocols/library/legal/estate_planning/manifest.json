@@ -1,0 +1,46 @@
+{
+  "id": "estate_planning",
+  "name": "Estate Planning Intake",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "legal",
+  "description": "Estate planning intake for estate planning attorneys and paralegals conducting an initial estate planning consultation. Evaluates the client's family situation, asset profile, current estate plan status, estate tax exposure, healthcare and incapacity planning, and estate planning objectives to produce an estate planning intake profile with planning priorities and document requirements. Not legal advice.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "professional, direct",
+    "warmth": 0.5,
+    "humor": 0.0,
+    "formality": 0.7
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 22,
+    "estimated_turns": "12-18"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  }
+}

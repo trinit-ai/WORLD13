@@ -1,0 +1,18 @@
+id: music_ear_training
+name: Ear Training
+category: music_learning
+version: "1.0"
+status: active
+turn_budget: [8, 12]
+metered: true
+description: >
+  Ear training concepts — interval recognition, chord quality identification,
+  rhythmic dictation. Conceptual framework with pointers to audio practice tools.
+tags:
+  - ear_training
+  - intervals
+  - chords
+  - listening
+  - music_learning
+author: Robert C. Ventura
+created: "2026-03-18"

@@ -1,0 +1,20 @@
+{
+  "id": "music_ear_training",
+  "name": "Ear Training",
+  "category": "music_learning",
+  "version": "1.0",
+  "status": "active",
+  "turn_budget": [8, 12],
+  "metered": true,
+  "entry_point": "master.md",
+  "files": [
+    "header.yaml",
+    "manifest.json",
+    "MANIFEST.md",
+    "master.md"
+  ],
+  "description": "Ear training — interval recognition, chord quality, rhythmic patterns. Framework plus audio tool recommendations.",
+  "tags": ["ear_training", "intervals", "chords", "listening", "music_learning"],
+  "author": "Robert C. Ventura",
+  "created": "2026-03-18"
+}

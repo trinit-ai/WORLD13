@@ -1,0 +1,9 @@
+id: code_enforcement
+name: Code Enforcement Intake
+category: government
+status: active
+description: Code enforcement intake for municipal code enforcement officers and compliance coordinators documenting a code violation complaint or inspection finding. Evaluates the violation type, property identification, evidence documentation, notice requirements, compliance timeline, and enforcement pathway to produce a code enforcement intake profile with action plan and documentation checklist.
+deliverable: code_enforcement_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

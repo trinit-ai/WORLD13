@@ -1,0 +1,9 @@
+id: tax_assessment
+name: Property Tax Assessment Appeal Intake
+category: government
+status: active
+description: Property tax assessment appeal intake for property owners seeking to appeal a property tax assessment. Evaluates the basis for appeal, assessment methodology, comparable sales evidence, appeal deadline, and procedural requirements to produce a tax assessment appeal profile with evidence guidance and filing requirements. Not legal or tax advice.
+deliverable: tax_assessment_appeal_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

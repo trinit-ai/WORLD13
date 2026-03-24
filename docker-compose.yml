@@ -1,0 +1,41 @@
+# 13TMOS — Self-Contained Deployment
+#
+# Usage:
+#   cp .env.example .env   # fill in your keys
+#   docker compose up -d
+#
+# This runs the full 13TMOS engine with persistent vault storage.
+# No external database required — SQLite + flat JSON vault.
+
+services:
+  engine:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: 13tmos-engine
+    ports:
+      - "${PORT:-8000}:${PORT:-8000}"
+    env_file:
+      - .env
+    volumes:
+      - vault_data:/app/vault
+      - output_data:/app/output
+      - ./protocols/private:/app/protocols/private:ro
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:${PORT:-8000}/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+volumes:
+  vault_data:
+    driver: local
+  output_data:
+    driver: local

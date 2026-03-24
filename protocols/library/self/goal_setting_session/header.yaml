@@ -1,0 +1,9 @@
+id: goal_setting_session
+name: Goal Setting Session
+category: self
+status: active
+description: Honest conversation about what you actually want, what it costs, and whether you're willing to pay.
+deliverable: goal_brief
+estimated_turns: "10-14"
+version: 1.0
+author: Robert C. Ventura

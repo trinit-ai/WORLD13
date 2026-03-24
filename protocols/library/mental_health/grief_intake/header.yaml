@@ -1,0 +1,9 @@
+id: grief_intake
+name: Grief and Bereavement Intake
+category: mental_health
+status: active
+description: Grief and bereavement intake for licensed mental health professionals and grief counselors conducting an initial grief assessment. Evaluates the nature of the loss, the grief response, the complicated grief indicators, the support system, the comorbid conditions, and the cultural and spiritual context to produce a grief intake profile with grief response assessment and clinical considerations. Not clinical advice.
+deliverable: grief_intake_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

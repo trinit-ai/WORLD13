@@ -1,0 +1,9 @@
+id: spiritual_intake
+name: Spiritual Life Coaching Intake
+category: personal
+status: active
+description: Spiritual life coaching intake for spiritual directors, coaches, and individuals exploring their spiritual life. Evaluates the person's spiritual background, current practice, the presenting question or concern, what they are seeking, and the coaching focus to produce a spiritual coaching intake profile with exploration priorities. Inclusive of all traditions and none.
+deliverable: spiritual_coaching_profile
+estimated_turns: 10-16
+version: 1.0
+author: Robert C. Ventura

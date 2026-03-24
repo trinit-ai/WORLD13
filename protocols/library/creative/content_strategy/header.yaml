@@ -1,0 +1,9 @@
+id: content_strategy
+name: Content Strategy Intake
+category: creative
+status: active
+description: Content strategy engagement intake for organizations building, auditing, or resetting a content program. Evaluates content goals, audience alignment, channel strategy, production capacity, measurement approach, and editorial governance to produce a content strategy profile with gap analysis, risk flags, and recommended pre-strategy actions.
+deliverable: content_strategy_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

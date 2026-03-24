@@ -1,0 +1,9 @@
+id: appeals_intake
+name: Insurance Claims Appeal Intake
+category: insurance
+status: active
+description: Insurance claims appeal intake for policyholders, public adjusters, and attorneys initiating a formal appeal of an insurance claim denial or underpayment. Evaluates the denial basis, the appeal grounds, the evidence available, the applicable appeal process, and deadlines to produce an appeal intake profile with appeal strategy and filing requirements. Not legal advice.
+deliverable: appeals_intake_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,9 @@
+id: parent_special_needs
+name: Special Needs Parenting
+category: parenting
+status: active
+description: Session for parents of children with disabilities or special needs. Covers IEP/504 plan navigation, advocacy skills, caregiver burnout, sibling dynamics, and the daily reality of parenting a child whose needs exceed typical systems. NOT clinical — does not diagnose or treat.
+deliverable: special_needs_parenting_summary
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,31 @@
+{
+  "id": "open_inquiry",
+  "name": "Open Inquiry",
+  "category": "exploratory",
+  "version": "1.0",
+  "turns": {
+    "min": 8,
+    "max": 14
+  },
+  "author": "Robert C. Ventura",
+  "company": "TMOS13, LLC",
+  "description": "Following a question wherever it goes. The person can't quite articulate it, keeps returning to something. Facilitator follows and asks real questions.",
+  "kill_patterns": [
+    "directing",
+    "imposing framework",
+    "ending prematurely",
+    "naming it for them",
+    "categorizing the inquiry"
+  ],
+  "completion": {
+    "type": "experiential",
+    "signal": "the question clarified, or the person recognized what they keep returning to"
+  },
+  "routing": [],
+  "files": [
+    "header.yaml",
+    "manifest.json",
+    "MANIFEST.md",
+    "master.md"
+  ]
+}

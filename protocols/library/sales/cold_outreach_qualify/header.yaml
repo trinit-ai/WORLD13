@@ -1,0 +1,9 @@
+id: cold_outreach_qualify
+name: Cold Outreach Qualification Intake
+category: sales
+status: active
+description: Cold outreach qualification intake for sales development representatives and account executives assessing whether a prospect is worth pursuing. Evaluates the prospect's fit across ICP criteria, the trigger for outreach, the likely pain, the decision-making context, and the outreach angle to produce a cold outreach qualification profile with fit score and recommended approach.
+deliverable: cold_outreach_qualify_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,9 @@
+id: form_irb_consent
+name: Research Consent Form (IRB)
+category: forms_medical
+status: active
+description: Structured research consent form for IRB-approved studies collecting study and principal investigator details, study purpose, participation requirements, specific risks, benefits, alternatives, confidentiality protections, voluntary participation and withdrawal rights, compensation, contact information, and signatures. IRB approval required before use. Information collection only — healthcare provider must review. Not medical advice.
+deliverable: completed_form
+estimated_turns: 10-12
+version: 1.0
+author: Robert C. Ventura

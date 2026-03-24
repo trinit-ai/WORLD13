@@ -1,0 +1,9 @@
+id: tech_home_network
+name: Home Network
+category: technology
+status: active
+description: Home network session covering router configuration, Wi-Fi optimization, smart home device management, and network troubleshooting. Practical guidance for the non-technical homeowner who wants reliable connectivity and reasonable security.
+deliverable: home_network_summary
+estimated_turns: 6-10
+version: 1.0
+author: Robert C. Ventura

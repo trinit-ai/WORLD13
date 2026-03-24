@@ -1,0 +1,65 @@
+{
+  "id": "historic_preservation",
+  "name": "Historic Preservation Intake",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "architecture",
+  "description": "Historic preservation project intake and compliance assessment. Evaluates a project's historic designation status, Secretary of the Interior's Standards compliance posture, tax credit eligibility, and proposed scope to produce a preservation profile with gap analysis, risk flags, and recommended actions before design or regulatory submission.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "precise",
+    "warmth": 0.5,
+    "humor": 0.0,
+    "formality": 0.8
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": true,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 18,
+    "estimated_turns": "10-14"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  },
+  "deliverables": {
+    "enabled": true,
+    "types": [
+      {
+        "id": "historic_preservation_report",
+        "name": "Historic Preservation Report",
+        "description": "Generated historic preservation report from intake session data.",
+        "trigger": {
+          "min_turns": 4,
+          "contact_required": false
+        },
+        "channels": [
+          "download"
+        ],
+        "include_transcript": true,
+        "include_state_snapshot": true
+      }
+    ]
+  }
+}

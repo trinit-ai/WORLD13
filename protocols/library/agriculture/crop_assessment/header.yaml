@@ -1,0 +1,9 @@
+id: crop_assessment
+name: Crop Assessment
+category: agriculture
+status: active
+description: Crop health and yield intake assessment. Evaluates in-season or post-season crop performance — stand establishment, pest and disease pressure, nutrient status, yield expectations, and loss events. Produces a crop performance report with agronomic observations and recommended actions.
+deliverable: crop_performance_report
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

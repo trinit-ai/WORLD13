@@ -1,0 +1,9 @@
+id: biz_customer_discovery
+name: Customer Discovery
+category: business
+status: active
+description: Customer discovery session that applies the Mom Test methodology to help founders design and analyze customer conversations that produce truth instead of validation. Includes interview design, synthesis mode, and pattern identification.
+deliverable: customer_discovery_synthesis
+estimated_turns: 10-12
+version: 1.0
+author: Robert C. Ventura

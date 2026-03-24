@@ -1,0 +1,9 @@
+id: ethics_complaint
+name: Government Ethics Complaint Intake
+category: government
+status: active
+description: Government ethics complaint intake for individuals and organizations filing a complaint about a public official's conduct. Evaluates the alleged violation, the applicable ethics code, the jurisdiction of the ethics body, evidence requirements, filing process, and confidentiality considerations to produce an ethics complaint intake profile with filing guidance and risk flags.
+deliverable: ethics_complaint_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

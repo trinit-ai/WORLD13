@@ -1,0 +1,9 @@
+id: venue_intake
+name: Venue Selection Intake
+category: hospitality
+status: active
+description: Venue selection intake for event planners and clients selecting a venue for an event. Evaluates the event type, the guest count, the functional requirements, the aesthetic priorities, the budget, the logistical considerations, and the contract requirements to produce a venue selection intake profile with fit assessment and evaluation criteria.
+deliverable: venue_selection_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

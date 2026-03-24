@@ -1,0 +1,9 @@
+id: form_community_service
+name: Community Service Verification
+category: forms_social
+status: active
+description: Guided completion of a community service verification form documenting volunteer hours, organization details, and supervisor confirmation for court, school, or organizational requirements.
+deliverable: completed_form
+estimated_turns: "4-6"
+version: 1.0
+author: Robert C. Ventura

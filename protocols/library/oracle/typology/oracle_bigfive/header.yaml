@@ -1,0 +1,9 @@
+id: oracle_bigfive
+name: Big Five Personality Session
+category: oracle_typology
+status: active
+description: Guided Big Five (OCEAN) personality exploration using behavioral questions rather than self-rating scales. The most empirically validated personality model in psychology. Covers Openness, Conscientiousness, Extraversion, Agreeableness, and Neuroticism with nuanced trait-level interpretation.
+consequence_class: ZERO
+estimated_turns: 10-12
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,9 @@
+id: exhibition_planning
+name: Exhibition Planning Intake
+category: creative
+status: active
+description: Exhibition planning intake for curators, artists, and institutions planning an exhibition. Evaluates the concept, the works, the spatial requirements, the institutional context, the budget, and the timeline to produce an exhibition planning profile with curatorial priorities and production requirements.
+deliverable: exhibition_planning_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

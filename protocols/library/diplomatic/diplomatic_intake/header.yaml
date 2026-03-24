@@ -1,0 +1,9 @@
+id: diplomatic_intake
+name: Diplomatic Mission Intake
+category: diplomatic
+status: active
+description: Diplomatic mission intake for foreign service officers, embassy staff, and diplomatic advisors preparing for a diplomatic assignment, mission, or posting. Evaluates mission objectives, country context, key stakeholder mapping, protocol requirements, security environment, and reporting obligations to produce a diplomatic mission profile with preparation assessment and risk flags.
+deliverable: diplomatic_mission_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,9 @@
+id: french_beginner
+name: French Beginner
+category: language_french
+status: active
+description: Beginner French language practice session (A1-A2). High scaffolding with English support. Focuses on basic vocabulary, present tense, essential phrases, and foundational grammar. Session conducted partially in French with English explanations and encouragement.
+deliverable: language_progress_report
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

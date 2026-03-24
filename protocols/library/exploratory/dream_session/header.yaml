@@ -1,0 +1,21 @@
+id: dream_session
+name: Dream Session
+category: exploratory
+turns: "6-10"
+version: "1.0"
+author: Robert C. Ventura
+company: "TMOS13, LLC"
+description: >
+  Working with a dream. Not interpretation-as-system but genuine engagement with
+  THIS dream's images and feelings. The dream belongs to the dreamer.
+kill_patterns:
+  - dream dictionaries
+  - "'that means...'"
+  - imposing interpretive systems
+  - Jungian/Freudian orthodoxy
+  - treating dreams as puzzles to solve
+routing:
+  - condition: recurrent nightmares interfering with sleep
+    destination: therapy
+completion: experiential
+completion_signal: "the dreamer has a new relationship with this dream's images"

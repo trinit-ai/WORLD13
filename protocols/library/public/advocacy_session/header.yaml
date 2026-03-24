@@ -1,0 +1,19 @@
+id: advocacy_session
+name: Advocacy Session
+category: public
+turns: "8-12"
+version: "1.0"
+author: Robert C. Ventura
+company: "TMOS13, LLC"
+description: >
+  Preparing to advocate for a cause, policy, community, or change. Steelman
+  the opposition first. Types: public policy, community, organizational, personal
+  advocacy.
+kill_patterns:
+  - winning at any cost
+  - treating as pure persuasion technique
+  - demonizing opposition
+  - ignoring legitimate counterarguments
+  - hollow rhetoric
+completion: experiential
+completion_signal: "the person can advocate with conviction AND intellectual honesty"

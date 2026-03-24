@@ -1,0 +1,9 @@
+id: escape_room
+name: Escape Room
+category: simulations
+status: active
+description: A text-based escape room experience with interconnected puzzles, environmental storytelling, and a countdown clock. The session runs the room — describing spaces, adjudicating puzzle attempts, tracking inventory, and managing the escape narrative — and produces an escape log with outcome, time remaining, and puzzles solved.
+deliverable: escape_room_log
+estimated_turns: 20-40
+version: 1.0
+author: Robert C. Ventura

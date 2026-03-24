@@ -1,0 +1,9 @@
+id: customer_success_intake
+name: Customer Success Intake
+category: sales
+status: active
+description: Customer success intake for customer success managers onboarding a new customer or conducting a first success engagement. Evaluates the customer's goals, their definition of success, the deployment plan, the adoption risks, and the stakeholder map to produce a customer success intake profile with success plan and early warning indicators.
+deliverable: customer_success_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

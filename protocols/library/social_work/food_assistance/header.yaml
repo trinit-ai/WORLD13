@@ -1,0 +1,9 @@
+id: food_assistance
+name: Food Assistance Intake
+category: social_work
+status: active
+description: Food assistance intake for social workers and benefits navigators assessing a client's food security needs. Evaluates the food security status, the immediate need, the program eligibility, the barriers to food access, and the connection to benefits to produce a food assistance intake profile with immediate resource connection and benefits enrollment priorities.
+deliverable: food_assistance_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

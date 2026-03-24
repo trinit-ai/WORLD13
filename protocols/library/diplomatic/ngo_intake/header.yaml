@@ -1,0 +1,9 @@
+id: ngo_intake
+name: NGO Registration and Operations Intake
+category: diplomatic
+status: active
+description: NGO registration and operations intake for international and local NGOs navigating host country registration requirements, operational compliance, and legal status in a foreign jurisdiction. Evaluates registration status, legal framework, operational permissions, funding compliance, and staff legal status to produce an NGO operations profile with gap analysis and risk flags.
+deliverable: ngo_operations_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

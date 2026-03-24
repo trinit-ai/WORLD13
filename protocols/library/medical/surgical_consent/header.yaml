@@ -1,0 +1,9 @@
+id: surgical_consent
+name: Surgical Consent Intake
+category: medical
+status: active
+description: Surgical consent intake for clinical staff supporting the informed consent process for a surgical procedure. Evaluates the procedure, the patient's understanding of the risks and alternatives, the consent documentation, and the pre-operative requirements to produce a surgical consent intake profile with documentation checklist and patient understanding flags for the treating surgeon. Not medical advice.
+deliverable: surgical_consent_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

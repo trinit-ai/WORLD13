@@ -1,0 +1,9 @@
+id: creative_brief
+name: Creative Brief Intake
+category: creative
+status: active
+description: Creative brief intake for agencies, in-house creative teams, and independent practitioners receiving a creative assignment. Evaluates brief completeness, problem definition, audience clarity, mandatories and constraints, success metrics, and approval process to produce a creative brief profile with gap analysis and risk flags.
+deliverable: creative_brief_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,9 @@
+id: livestock_intake
+name: Livestock Intake
+category: agriculture
+status: active
+description: Livestock operation health and management assessment. Evaluates a livestock operation's herd health status, nutrition program, housing and handling infrastructure, biosecurity practices, and production performance to produce a livestock management profile with prioritized recommendations.
+deliverable: livestock_management_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

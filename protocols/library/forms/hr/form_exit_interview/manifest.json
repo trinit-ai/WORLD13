@@ -1,0 +1,27 @@
+{
+  "pack_id": "form_exit_interview",
+  "pack_name": "Exit Interview",
+  "category": "forms_hr",
+  "tone": "clear, professional, helpful",
+  "warmth": 0.6,
+  "formality": 0.6,
+  "autonomy": "zero",
+  "turn_budget": 10,
+  "deliverable": "completed_form",
+  "version": "1.0",
+  "fields": [
+    "employee_name",
+    "employee_title",
+    "department",
+    "hire_date",
+    "last_day",
+    "tenure",
+    "reason_for_leaving",
+    "what_worked_well",
+    "areas_for_improvement",
+    "manager_feedback",
+    "would_return",
+    "would_recommend",
+    "additional_comments"
+  ]
+}

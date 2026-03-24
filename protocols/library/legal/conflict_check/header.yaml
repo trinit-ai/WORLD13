@@ -1,0 +1,9 @@
+id: conflict_check
+name: Conflicts of Interest Check Intake
+category: legal
+status: active
+description: Conflicts of interest check intake for law firm intake staff, paralegals, and attorneys conducting a conflicts check before accepting a new client or matter. Evaluates the parties, related entities, adverse parties, prior representations, and concurrent representations to produce a conflicts check profile with cleared or flagged status and required attorney review. Not legal advice.
+deliverable: conflict_check_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

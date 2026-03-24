@@ -1,0 +1,46 @@
+{
+  "id": "cognitive_assessment",
+  "name": "Cognitive Function Assessment Intake",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "mental_health",
+  "description": "Cognitive function assessment intake for licensed clinicians conducting an initial cognitive assessment. Evaluates the presenting cognitive concerns, the domains affected, the onset and trajectory, the functional impact, the contributing factors, and the differential considerations to produce a cognitive assessment profile with domain summary and clinical considerations for the treating provider. Not clinical advice.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "professional, direct",
+    "warmth": 0.5,
+    "humor": 0.0,
+    "formality": 0.7
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 18,
+    "estimated_turns": "10-14"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  }
+}

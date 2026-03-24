@@ -1,0 +1,9 @@
+id: form_patient_intake
+name: Patient Intake Form
+category: forms_medical
+status: active
+description: Structured patient intake form collecting demographics, insurance, emergency contact, chief complaint, medical history, current medications with dose and frequency, allergies with reaction type, family history, social history, and review of systems. Information collection only — healthcare provider must review. Not medical advice.
+deliverable: completed_form
+estimated_turns: 8-10
+version: 1.0
+author: Robert C. Ventura

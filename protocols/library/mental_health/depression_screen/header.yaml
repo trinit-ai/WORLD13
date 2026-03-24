@@ -1,0 +1,9 @@
+id: depression_screen
+name: Depression Screening Intake
+category: mental_health
+status: active
+description: Depression screening intake for clinicians conducting a structured depression assessment. Evaluates the symptom profile across PHQ-9 domains, the functional impact, the duration and trajectory, the comorbid conditions, the safety assessment, and the treatment history to produce a depression screening profile with severity classification and clinical considerations.
+deliverable: depression_screen_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

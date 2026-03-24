@@ -1,0 +1,9 @@
+id: disability_intake
+name: Disability Insurance Claims Intake
+category: insurance
+status: active
+description: Disability insurance claims intake for claims examiners and policyholders initiating a short-term or long-term disability claim. Evaluates the disabling condition, the policy definition of disability, the elimination period, the benefit structure, medical documentation requirements, and return-to-work considerations to produce a disability claims intake profile with coverage indicators and next steps. Not legal advice.
+deliverable: disability_claims_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

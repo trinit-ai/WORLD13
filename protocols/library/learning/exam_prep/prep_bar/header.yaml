@@ -1,0 +1,9 @@
+id: prep_bar
+name: Bar Exam Prep
+category: learning_exam
+status: active
+description: Bar exam preparation and diagnostic assessment. Covers MBE (7 subjects), MEE (essay), and MPT (performance test) components. Differentiates first-time takers from repeat takers. Builds a jurisdiction-aware study plan with subject-by-subject diagnostic findings.
+deliverable: bar_study_plan
+estimated_turns: 12-16
+version: 1.0
+author: Robert C. Ventura

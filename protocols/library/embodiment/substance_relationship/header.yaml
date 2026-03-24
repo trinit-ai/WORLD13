@@ -1,0 +1,9 @@
+id: substance_relationship
+name: Substance Relationship Session
+category: embodiment
+status: active
+description: Examining relationship with a substance — honest, non-judgmental exploration of what it does and what it costs.
+deliverable: substance_brief
+estimated_turns: "8-12"
+version: 1.0
+author: Robert C. Ventura

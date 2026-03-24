@@ -1,0 +1,9 @@
+id: wedding_intake
+name: Wedding Planning Intake
+category: hospitality
+status: active
+description: Wedding planning intake for wedding planners and couples beginning wedding planning. Evaluates the couple's vision, the guest count, the budget, the vendor priorities, and the logistical requirements to produce a wedding planning intake profile with vision summary and planning priorities.
+deliverable: wedding_planning_profile
+estimated_turns: 12-16
+version: 1.0
+author: Robert C. Ventura

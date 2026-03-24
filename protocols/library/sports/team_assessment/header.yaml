@@ -1,0 +1,9 @@
+id: team_assessment
+name: Team Assessment Intake
+category: sports
+status: active
+description: Team assessment intake for coaches and sports administrators conducting a comprehensive evaluation of a team's performance, cohesion, culture, and development needs. Evaluates the team's tactical performance, physical capacity, cohesion and culture, individual contributions, and development priorities to produce a team assessment profile with strengths, gaps, and priority focus areas.
+deliverable: team_assessment_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

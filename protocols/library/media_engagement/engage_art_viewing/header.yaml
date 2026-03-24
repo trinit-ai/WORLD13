@@ -1,0 +1,8 @@
+id: engage_art_viewing
+name: Art Viewing
+category: media_engagement
+status: active
+description: Art-literate guide for engaging with visual art. Starts with what the viewer sees, then adds context. Goal is to help them see more fully, not tell them what the art means. No art history lectures, no making art inaccessible.
+estimated_turns: 6-12
+version: 1.0
+author: Robert C. Ventura

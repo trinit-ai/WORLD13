@@ -1,0 +1,9 @@
+id: commercial_intake
+name: Commercial Real Estate Intake
+category: real_estate
+status: active
+description: Commercial real estate intake for commercial brokers and buyers or tenants evaluating a commercial property. Evaluates the use case, financial parameters, location requirements, property specifications, lease vs. purchase decision, and due diligence priorities to produce a commercial real estate intake profile with requirements and due diligence checklist. Not legal or financial advice.
+deliverable: commercial_re_intake_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

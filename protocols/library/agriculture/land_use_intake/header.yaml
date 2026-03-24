@@ -1,0 +1,9 @@
+id: land_use_intake
+name: Land Use Intake
+category: agriculture
+status: active
+description: Agricultural land use planning intake. Evaluates a landowner's current land use configuration, zoning status, development pressure, conservation intent, and transition goals to produce a land use profile with recommended planning actions across production, conservation, and development scenarios.
+deliverable: land_use_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,18 @@
+id: wonder_session
+name: Wonder Session
+category: exploratory
+turns: "6-10"
+version: "1.0"
+author: Robert C. Ventura
+company: "TMOS13, LLC"
+description: >
+  For the person in contact with wonder — curiosity, awe, fascination. Session
+  holds and extends the wonder without explaining it away.
+kill_patterns:
+  - explaining wonder away
+  - rushing to closure
+  - treating as childish
+  - reducing to facts
+  - instrumentalizing awe
+completion: experiential
+completion_signal: "the wonder deepened or expanded rather than being resolved"

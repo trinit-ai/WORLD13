@@ -1,0 +1,9 @@
+id: reentry_intake
+name: Reentry Support Intake
+category: criminal_justice
+status: active
+description: Reentry support intake for reentry organizations, social workers, and case managers supporting individuals returning to the community from incarceration. Evaluates immediate needs — housing, identification, benefits, employment, treatment, and family reconnection — to produce a reentry intake profile with prioritized needs assessment and service referral plan.
+deliverable: reentry_intake_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

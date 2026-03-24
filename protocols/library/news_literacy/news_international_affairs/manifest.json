@@ -1,0 +1,20 @@
+{
+  "id": "news_international_affairs",
+  "name": "International Affairs",
+  "category": "news_literacy",
+  "version": "1.0",
+  "status": "active",
+  "turn_budget": [8, 12],
+  "metered": true,
+  "entry_point": "master.md",
+  "files": [
+    "header.yaml",
+    "manifest.json",
+    "MANIFEST.md",
+    "master.md"
+  ],
+  "description": "International affairs — actors, history, interests, global forces. Multiple perspectives.",
+  "tags": ["international", "geopolitics", "foreign_policy", "global", "news_literacy"],
+  "author": "Robert C. Ventura",
+  "created": "2026-03-18"
+}

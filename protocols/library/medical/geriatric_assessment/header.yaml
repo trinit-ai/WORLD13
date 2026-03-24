@@ -1,0 +1,9 @@
+id: geriatric_assessment
+name: Geriatric Clinical Assessment Intake
+category: medical
+status: active
+description: Geriatric clinical assessment intake for clinical staff conducting an intake for an older adult patient. Evaluates functional status, cognitive screening indicators, fall risk, polypharmacy, social support, advanced care planning, and the presenting complaint to produce a geriatric assessment profile with functional and safety flags for the treating provider. Not medical advice.
+deliverable: geriatric_assessment_profile
+estimated_turns: 12-16
+version: 1.0
+author: Robert C. Ventura

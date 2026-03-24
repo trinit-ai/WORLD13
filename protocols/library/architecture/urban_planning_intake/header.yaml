@@ -1,0 +1,9 @@
+id: urban_planning_intake
+name: Urban Planning & Entitlement Intake
+category: architecture
+status: active
+description: Urban planning and entitlement intake for development projects requiring discretionary approval. Evaluates a project's zoning compliance, entitlement pathway, community context, political landscape, CEQA or NEPA environmental review exposure, affordable housing obligations, and team readiness to produce an entitlement strategy profile with gap analysis, risk flags, and recommended pre-application actions.
+deliverable: entitlement_strategy_profile
+estimated_turns: 12-16
+version: 1.0
+author: Robert C. Ventura

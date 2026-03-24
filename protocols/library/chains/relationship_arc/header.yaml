@@ -1,0 +1,18 @@
+id: relationship_arc
+name: Relationship Arc
+category: chains
+status: active
+description: Multi-session arc for working through relationship dynamics — assessment, difficult conversations, repair or release. Adapts routing based on relationship stage and outcomes. Vault carries forward relationship patterns and communication needs across sessions.
+type: arc
+sessions_in_arc: 4
+estimated_total_turns: "35-60"
+packs_in_arc:
+  - compatibility_session
+  - relationship_check_in
+  - difficult_conversation_prep
+  - apology_session
+  - forgiveness_session
+  - commitment_conversation_prep
+  - breakup_processing
+version: 1.0
+author: Robert C. Ventura

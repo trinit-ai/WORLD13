@@ -1,0 +1,9 @@
+id: landscape_intake
+name: Landscape Design Project Intake
+category: architecture
+status: active
+description: Landscape design project intake for landscape architects and designers beginning a residential or commercial landscape project. Evaluates the site, the program, the aesthetic direction, the budget, the maintenance expectations, and the ecological context to produce a landscape design intake profile with program priorities and site assessment.
+deliverable: landscape_design_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

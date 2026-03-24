@@ -1,0 +1,46 @@
+{
+  "id": "language_immersion",
+  "name": "Language Immersion Session",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "simulations",
+  "description": "A conversational language immersion session for language learners at any level. The session conducts an extended conversation in the target language, calibrates difficulty to the learner's level, provides in-context corrections without breaking immersion, and produces a session log with vocabulary, grammar patterns, and progress notes.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "professional, direct",
+    "warmth": 0.5,
+    "humor": 0.0,
+    "formality": 0.5
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 34,
+    "estimated_turns": "15-30"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  }
+}

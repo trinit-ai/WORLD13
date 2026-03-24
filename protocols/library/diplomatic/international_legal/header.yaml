@@ -1,0 +1,9 @@
+id: international_legal
+name: International Legal Matter Intake
+category: diplomatic
+status: active
+description: International legal matter intake for international lawyers, legal advisors, and organizations addressing a cross-border legal issue. Evaluates the jurisdictional framework, applicable international law, enforcement mechanisms, conflict of laws, and procedural requirements to produce an international legal intake profile with jurisdictional analysis and risk flags.
+deliverable: international_legal_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

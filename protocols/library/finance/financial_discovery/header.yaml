@@ -1,0 +1,9 @@
+id: financial_discovery
+name: Financial Discovery Intake
+category: finance
+status: active
+description: Financial discovery intake for attorneys, mediators, and financial professionals conducting financial discovery in litigation, divorce, or dispute proceedings. Evaluates the discovery scope, asset identification, income documentation, disclosure completeness, hidden asset indicators, and professional coordination to produce a financial discovery intake profile with scope definition and risk flags.
+deliverable: financial_discovery_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

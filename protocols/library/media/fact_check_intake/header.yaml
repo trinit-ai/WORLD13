@@ -1,0 +1,9 @@
+id: fact_check_intake
+name: Fact-Check Intake
+category: media
+status: active
+description: Fact-check intake for journalists, editors, and fact-checkers initiating a fact-check of a specific claim, article, or public statement. Evaluates the claim, the source, the verification methodology, the evidence, and the rating framework to produce a fact-check intake profile with verification priorities and source requirements.
+deliverable: fact_check_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

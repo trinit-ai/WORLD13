@@ -1,0 +1,9 @@
+id: apology_session
+name: Apology Session
+category: dyadic
+status: active
+description: Guided session for preparing a genuine apology rooted in accountability, impact awareness, and behavioral change rather than self-relief.
+deliverable: apology_brief
+estimated_turns: "10-14"
+version: 1.0
+author: Robert C. Ventura

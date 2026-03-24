@@ -1,0 +1,9 @@
+id: vendor_assessment
+name: Technical Vendor Assessment Intake
+category: engineering
+status: active
+description: Technical vendor assessment intake for engineering leads and procurement teams evaluating a technology vendor relationship. Evaluates technical fit, integration requirements, support quality, SLA structure, vendor stability, data handling practices, and exit strategy to produce a vendor assessment profile with scoring and recommendation.
+deliverable: vendor_assessment_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

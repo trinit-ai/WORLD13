@@ -1,0 +1,40 @@
+{
+  "id": "commitment_conversation_prep",
+  "name": "Commitment Conversation Preparation",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "authed",
+  "category": "dyadic",
+  "description": "Preparing for a significant commitment conversation — moving in, engagement, marriage, children, or the question of where this relationship is going.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "warm, direct, honest",
+    "warmth": 0.75,
+    "humor": 0.05,
+    "formality": 0.4
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": { "pattern": "^(reset|start over|restart|new session|clear)$", "action": "reset_session" },
+      "status": { "pattern": "^(status|progress|where am i|summary)$", "action": "show_status" }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": false,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 18,
+    "estimated_turns": "10-14"
+  },
+  "privacy": {
+    "disclosure": "This session is private. A summary is available for your records.",
+    "data_tier": "personal",
+    "transcript_available": true
+  }
+}

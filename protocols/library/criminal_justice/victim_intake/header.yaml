@@ -1,0 +1,9 @@
+id: victim_intake
+name: Victim Services Intake
+category: criminal_justice
+status: active
+description: Victim services intake for victim advocates, victim service organizations, and criminal justice agencies conducting an initial needs assessment for a crime victim. Evaluates immediate safety, crisis needs, legal rights, service needs, and victim preferences to produce a victim intake profile with prioritized service plan and safety considerations.
+deliverable: victim_intake_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

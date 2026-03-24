@@ -1,0 +1,9 @@
+id: socratic_seminar
+name: Socratic Seminar
+category: simulations
+status: active
+description: A Socratic seminar experience for students, intellectuals, and curious people exploring a text, idea, or question through structured inquiry. The session plays the role of a Socratic interlocutor — never lecturing, always questioning — and produces a seminar log with the ideas explored, positions examined, and intellectual progress made.
+deliverable: seminar_log
+estimated_turns: 15-30
+version: 1.0
+author: Robert C. Ventura

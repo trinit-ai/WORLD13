@@ -1,0 +1,9 @@
+id: form_expense_report
+name: Expense Report
+category: forms_financial
+status: active
+description: Guided completion of an expense report capturing employee details, expense line items with dates, categories, amounts, business purpose, and approver information.
+deliverable: completed_form
+estimated_turns: "6-8"
+version: 1.0
+author: Robert C. Ventura

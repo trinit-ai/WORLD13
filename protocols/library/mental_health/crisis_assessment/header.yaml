@@ -1,0 +1,9 @@
+id: crisis_assessment
+name: Crisis Assessment Intake
+category: mental_health
+status: active
+description: Crisis assessment intake for clinicians evaluating a person in acute psychological crisis. Evaluates the presenting crisis, the suicide and self-harm risk, the safety factors, the protective factors, the immediate needs, and the disposition to produce a crisis assessment profile with risk classification and safety plan framework.
+deliverable: crisis_assessment_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

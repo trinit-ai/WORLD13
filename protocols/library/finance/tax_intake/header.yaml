@@ -1,0 +1,9 @@
+id: tax_intake
+name: Tax Situation Intake
+category: finance
+status: active
+description: Tax situation intake for individuals and businesses beginning a tax planning or tax preparation engagement. Evaluates income sources, deduction opportunities, life and business events, prior year issues, estimated payment status, and professional coordination needs to produce a tax intake profile with priority areas and professional referral guidance. Not tax advice.
+deliverable: tax_intake_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

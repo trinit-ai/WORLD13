@@ -1,0 +1,9 @@
+id: oracle_memento_mori
+name: Memento Mori
+category: oracle_wisdom
+status: active
+description: Daily mortality reflection drawing from Stoic, Buddhist, and Heideggerian sources. A clear-eyed, life-affirming encounter with finitude. Not morbid — clarifying.
+consequence_class: ZERO
+estimated_turns: 4-6
+version: 1.0
+author: Robert C. Ventura

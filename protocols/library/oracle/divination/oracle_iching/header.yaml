@@ -1,0 +1,10 @@
+id: oracle_iching
+name: I-Ching Oracle
+category: oracle_divination
+status: active
+description: The Book of Changes. Simulates the traditional three-coin method to cast hexagrams from the complete 64-hexagram system. Moving lines transform the primary hexagram into a resulting hexagram, revealing the arc of change. Produces a structured I-Ching reading as the session deliverable.
+deliverable: iching_reading
+consequence_class: ZERO
+estimated_turns: 6-10
+version: 1.0
+author: Robert C. Ventura

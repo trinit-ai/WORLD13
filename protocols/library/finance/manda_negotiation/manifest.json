@@ -1,0 +1,317 @@
+{
+  "id": "manda_negotiation",
+  "access": "paid",
+  "tier_gate": "V7",
+  "name": "Strategy Room",
+  "version": "1.1.0",
+  "description": "Pressure-test any high-stakes decision. Scenario modeling, negotiation prep, risk analysis, and strategy briefs — for deals, partnerships, launches, or pivots.",
+  "tagline": "Pressure-test every decision.",
+  "philosophy": "Every high-stakes decision deserves a stress test. The Strategy Room helps you model scenarios, anticipate pushback, quantify risk, and walk into the room with a plan — whether it's a deal, a launch, a pivot, or a difficult conversation.",
+  "category": "scenarios",
+  "icon": "🎯",
+  "base": "strategic_simulation",
+  "assembly_mode": "assembled",
+
+  "personality": {
+    "tone": "sharp, analytical, direct, constructive",
+    "warmth": 0.4,
+    "humor": 0.1,
+    "formality": 0.7,
+    "identity_name": "Strategist",
+    "identity_description": "A strategic advisor that pressure-tests decisions, builds scenarios, and helps you think through high-stakes moves before you make them"
+  },
+
+  "cartridges": [
+    { "id": "briefing", "name": "Decision Framework", "description": "Define the decision, the stakes, and the players. System builds the strategic scenario.", "protocol": "briefing.md" },
+    { "id": "negotiation", "name": "Scenario Builder", "description": "Model outcomes, test assumptions, and explore what-if branches for your strategy.", "protocol": "negotiation.md" },
+    { "id": "due_diligence", "name": "Negotiation Prep", "description": "Prepare for the conversation — anticipate objections, map leverage, plan your moves.", "protocol": "due_diligence.md" },
+    { "id": "board_room", "name": "Risk Analysis", "description": "Stress-test your plan — surface blind spots, quantify downside, and build contingencies.", "protocol": "board_room.md" },
+    { "id": "debrief", "name": "Strategy Brief", "description": "Structured output — decision summary, scenario analysis, risk matrix, and recommended path.", "protocol": "debrief.md" },
+    { "id": "company_profile", "name": "Company Profile", "description": "Your business identity, hours, contact info, FAQs, disclaimers, and policies — automatically woven into every interaction.", "passive": true }
+  ],
+
+  "commands": {
+    "session": {
+      "reset": { "pattern": "^(reset|start over|restart|new deal|clear)$", "action": "reset_session" },
+      "menu": { "pattern": "^(menu|help|options|commands|back)$", "action": "show_menu" },
+      "status": { "pattern": "^(status|position|terms|board|deal status|where are we|summary)$", "action": "show_status" },
+      "branch": { "pattern": "^(what if|alternative|other option|branch|fork|explore|counter)$", "action": "explore_branch" },
+      "debrief": { "pattern": "^(debrief|analysis|review|assess|score|how did I do|close)$", "action": "enter_debrief" },
+      "transcript": { "pattern": "^(transcript|download|export|save|deal memo)$", "action": "show_transcript" }
+    },
+    "navigation": {
+      "negotiation": { "pattern": "(offer|propose|counter|terms|price|valuation|structure|bid|negotiate|LOI)", "cartridge": "negotiation" },
+      "due_diligence": { "pattern": "(diligence|investigate|financials|audit|risk|contracts|IP|customers|liabilities|data room)", "cartridge": "due_diligence" },
+      "board_room": { "pattern": "(board|shareholders|vote|approval|management|communicate|announce|regulatory|antitrust|HSR)", "cartridge": "board_room" }
+    }
+  },
+
+  "system_screens": { "boot": "boot.md", "menu": "menu.md" },
+
+  "features": {
+    "session_intelligence": true,
+    "dual_state": true,
+    "persona_engine": true,
+    "branching_tree": true,
+    "outcome_scoring": true,
+    "counterfactual_analysis": true,
+    "contact_collection": false,
+    "transcript_export": true,
+    "depth_tracking": true,
+    "mood_resonance": true,
+    "cross_module_memory": true,
+    "vault_rag": true,
+    "multi_pack_session": true,
+    "session_journal": true
+  },
+
+  "delivery": {
+    "default_mode": "staged",
+    "allowed_recipients": ["email", "internal"],
+    "require_approval_for_ai_sessions": true
+  },
+
+  "privacy": {
+    "disclosure": "Strategic simulation for deal preparation. Scenario inputs used only to generate simulation.",
+    "data_tier": "session_only",
+    "transcript_available": true,
+    "retention_days": 90
+  },
+
+  "notifications": {},
+
+  "settings": {
+    "difficulty": { "default": "balanced", "options": ["guided", "balanced", "adversarial", "adaptive"] },
+    "persona_realism": { "default": "realistic", "options": ["cooperative", "realistic", "aggressive"] },
+    "branching_mode": { "default": "interactive", "options": ["linear", "interactive", "exhaustive"] },
+    "response_depth": { "default": "detailed", "options": ["concise", "balanced", "detailed"] },
+    "deal_complexity": { "default": "standard", "options": ["simple", "standard", "complex", "hostile"] }
+  },
+
+  "state": {
+    "session": {
+      "phase": null,
+      "outcome": null,
+      "turn_count": 0,
+      "active_cartridge": null,
+      "depth": 0,
+      "mode": "simulation",
+      "difficulty": "balanced",
+      "branches_explored": 0,
+      "current_branch": "main"
+    },
+    "scenario": {
+      "title": null,
+      "domain": "m_and_a",
+      "deal_type": null,
+      "stakes": null,
+      "time_horizon": null,
+      "complexity": null,
+      "parties": [],
+      "market_context": null,
+      "regulatory_environment": null
+    },
+    "deal": {
+      "type": null,
+      "target_company": null,
+      "target_industry": null,
+      "target_revenue": null,
+      "target_ebitda": null,
+      "target_employees": null,
+      "acquirer_company": null,
+      "deal_rationale": null,
+      "synergy_thesis": null,
+      "estimated_synergies": null,
+      "valuation_range": [],
+      "comparable_transactions": [],
+      "financing_structure": null,
+      "regulatory_requirements": [],
+      "key_contracts": [],
+      "key_employees": [],
+      "integration_complexity": null,
+      "exclusivity": false,
+      "competing_bidders": []
+    },
+    "user_position": {
+      "role": null,
+      "side": null,
+      "objectives": [],
+      "constraints": [],
+      "leverage": [],
+      "vulnerabilities": [],
+      "information_advantage": [],
+      "information_gaps": [],
+      "walk_away_point": null,
+      "best_alternative": null,
+      "board_alignment": null,
+      "max_price": null,
+      "min_price": null,
+      "preferred_structure": null,
+      "deal_breakers": []
+    },
+    "counterparty": {
+      "name": null,
+      "role": null,
+      "side": null,
+      "persona_type": null,
+      "objectives": [],
+      "constraints": [],
+      "leverage": [],
+      "vulnerabilities": [],
+      "hidden_state": {
+        "real_floor_price": null,
+        "real_ceiling_price": null,
+        "hidden_liabilities": [],
+        "undisclosed_bidders": [],
+        "management_agenda": null,
+        "board_dynamics": null,
+        "time_pressure": null,
+        "emotional_attachment": null,
+        "regulatory_risk": null,
+        "customer_concentration": null,
+        "pending_litigation": [],
+        "ip_encumbrances": []
+      },
+      "behavior_rules": {
+        "negotiation_style": null,
+        "concession_pattern": null,
+        "bluff_tendency": null,
+        "emotional_triggers": [],
+        "trust_threshold": null,
+        "walk_away_signals": []
+      },
+      "revealed_information": [],
+      "withheld_information": []
+    },
+    "terms": {
+      "current_offer": null,
+      "offer_history": [],
+      "total_consideration": null,
+      "premium_to_market": null,
+      "cash_component": null,
+      "stock_component": null,
+      "earnout_component": null,
+      "escrow_holdback": null,
+      "reps_and_warranties": null,
+      "indemnification_cap": null,
+      "closing_conditions": [],
+      "employee_retention": [],
+      "closing_timeline": null,
+      "termination_fee": null
+    },
+    "decision_tree": {
+      "moves": [],
+      "current_node": null,
+      "branch_points": [],
+      "paths_explored": [],
+      "critical_moments": []
+    },
+    "outcome": {
+      "result": null,
+      "score": 0,
+      "dimensions": {
+        "value_capture": 0,
+        "risk_management": 0,
+        "deal_structure": 0,
+        "negotiation_execution": 0
+      },
+      "optimal_play_delta": null,
+      "key_decisions": [],
+      "missed_opportunities": [],
+      "strategic_grade": null,
+      "deal_closed": false,
+      "final_price": null,
+      "value_left_on_table": null
+    }
+  },
+
+  "theme": {
+    "accent": "#DC2626",
+    "surface": "#0D0B09",
+    "text": "#E5E2DC"
+  },
+
+  "transcript": {
+    "format": "markdown",
+    "include_metadata": true,
+    "include_summary": true,
+    "include_scoring": true,
+    "include_decision_tree": true,
+    "include_counterfactuals": true,
+    "include_term_sheet_evolution": true,
+    "download_label": "Download Deal Analysis"
+  },
+
+  "battle": {
+    "enabled": true,
+    "domain_type": "financial",
+    "default_authority": {
+      "max_concession_value": null,
+      "auto_authorize_moves": ["assert", "counter", "request", "propose", "confirm", "concede"],
+      "trainer_required_moves": ["withdraw", "switch", "use_item", "run", "anchor"],
+      "escalate_if": {
+        "concession_exceeds_boundary": true,
+        "protected_information_requested": true
+      }
+    },
+    "pp_overrides": {
+      "anchor": 2,
+      "escalate": 2
+    },
+    "stall_threshold": 3,
+    "max_turns": 40,
+    "move_instructions": "When engaged in a negotiation battle, select your move type carefully. Use [MOVE:type] marker at the start of each response."
+  },
+
+  "data_rail": {
+    "tabs": [
+      {
+        "id": "auth",
+        "label": "Auth",
+        "icon": "key",
+        "type": "infrastructure"
+      },
+      {
+        "id": "pricing",
+        "label": "Pricing",
+        "icon": "sparkles",
+        "type": "infrastructure"
+      },
+      {
+        "id": "deal_info",
+        "label": "Deal Info",
+        "icon": "Handshake",
+        "type": "pack",
+        "title": "Deal Information",
+        "description": "Captured securely. Encrypted at rest. Never sent to AI.",
+        "submit_label": "Save to Vault",
+        "success_message": "Deal info saved.",
+        "endpoint": "/api/datarail/submit",
+        "fields": [
+          { "id": "contact_name", "type": "text", "label": "Contact Name", "placeholder": "Full name", "required": true, "pii": true },
+          { "id": "contact_email", "type": "email", "label": "Email", "placeholder": "you@example.com", "required": true, "pii": true },
+          { "id": "deal_type", "type": "select", "label": "Deal Type", "required": true, "options": ["Acquisition", "Merger", "Joint Venture", "Partnership", "Divestiture", "Other"] },
+          { "id": "deal_stage", "type": "select", "label": "Stage", "required": false, "options": ["Preliminary", "LOI", "Due Diligence", "Negotiation", "Closing"] },
+          { "id": "estimated_value", "type": "text", "label": "Estimated Value", "placeholder": "Deal size or range", "required": false, "pii": false },
+          { "id": "confidentiality", "type": "select", "label": "Confidentiality", "required": false, "options": ["Standard", "High", "Maximum"] }
+        ]
+      }
+    ]
+  },
+
+  "library": {
+    "visible": true,
+    "category": "strategy",
+    "tags": ["scenario", "compose", "negotiation"],
+    "description": "Stress-test any high-stakes decision against AI counterparties. Scenario modeling, negotiation prep, risk analysis, and strategy briefs for deals, partnerships, or pivots.",
+    "author": "TMOS13",
+    "license": "included",
+    "verb_type": "scenario",
+    "industry_tags": ["consulting", "finance", "management"],
+    "icon_url": null,
+    "price": {
+      "model": "included",
+      "tier_minimum": null
+    }
+  }
+}

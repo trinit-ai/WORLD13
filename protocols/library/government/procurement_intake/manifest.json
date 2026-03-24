@@ -1,0 +1,46 @@
+{
+  "id": "procurement_intake",
+  "name": "Government Procurement Intake",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "government",
+  "description": "Government procurement intake for vendors, contractors, and government procurement officers assessing a procurement opportunity or managing a solicitation. Evaluates solicitation requirements, vendor eligibility, proposal components, evaluation criteria, and compliance requirements to produce a procurement intake profile with bid/no-bid guidance and compliance checklist. Not legal advice.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "professional, direct",
+    "warmth": 0.5,
+    "humor": 0.0,
+    "formality": 0.7
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 18,
+    "estimated_turns": "10-14"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  }
+}

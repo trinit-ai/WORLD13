@@ -1,0 +1,9 @@
+id: friendship_ending
+name: Friendship Ending
+category: dyadic
+status: active
+description: Guided session for holding the loss of a friendship honestly — whether chosen, experienced, or gradually faded.
+deliverable: friendship_record
+estimated_turns: "8-12"
+version: 1.0
+author: Robert C. Ventura

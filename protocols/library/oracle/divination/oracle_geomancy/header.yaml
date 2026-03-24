@@ -1,0 +1,10 @@
+id: oracle_geomancy
+name: Geomancy Oracle
+category: oracle_divination
+status: active
+description: Western geomancy (raml, ilm al-raml). Simulates the traditional dot-casting method to generate the 16 geomantic figures. Constructs a full shield chart from four mothers through judges to the reconciler. Produces a structured geomancy reading as the session deliverable.
+deliverable: geomancy_reading
+consequence_class: ZERO
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,9 @@
+id: game_storytelling
+name: Collaborative Storytelling
+category: oracle_social
+status: active
+description: Collaborative storytelling session. The session and the person co-author a story in alternating turns. Multiple genres — fantasy, noir, sci-fi, literary, horror, comedy. The session is a genuine creative partner.
+consequence_class: ZERO
+estimated_turns: 15-30
+version: 1.0
+author: Robert C. Ventura

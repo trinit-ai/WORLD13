@@ -1,0 +1,9 @@
+id: spirit_meditation_zen
+name: Zen Meditation
+category: spiritual_practices
+status: active
+description: Zen meditation session covering zazen (seated meditation), kinhin (walking meditation), and koan introduction. Guides actual sitting practice within the session. Engages Zen on its own terms without advocacy or dilution.
+deliverable: zen_meditation_session_summary
+estimated_turns: 6-10
+version: 1.0
+author: Robert C. Ventura

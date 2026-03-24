@@ -1,0 +1,9 @@
+id: investment_property
+name: Investment Property Analysis Intake
+category: real_estate
+status: active
+description: Investment property analysis intake for real estate investors evaluating a potential investment property. Evaluates the investment strategy, the property financials, the market context, the financing structure, and the risk factors to produce an investment property intake profile with financial metrics and due diligence priorities. Not financial or legal advice.
+deliverable: investment_property_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

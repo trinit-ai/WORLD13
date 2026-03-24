@@ -1,0 +1,9 @@
+id: spirit_meditation_vipassana
+name: Vipassana
+category: spiritual_practices
+status: active
+description: Vipassana (insight meditation) session covering body scan, noting technique, RAIN method, and the cultivation of clear seeing. Guides actual practice within the session. Engages the Theravada insight tradition seriously without advocacy.
+deliverable: vipassana_session_summary
+estimated_turns: 6-10
+version: 1.0
+author: Robert C. Ventura

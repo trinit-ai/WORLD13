@@ -1,0 +1,46 @@
+{
+  "id": "parent_school_age",
+  "name": "School Age Parent (4-12)",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "parenting",
+  "description": "School age parent session covering the 4-12 age range. Asks the child's specific age because a 4-year-old and a 12-year-old are different species. Covers friendships, academic engagement, screen time, emerging independence, and the long runway between toddlerhood and adolescence.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "warm, practical, grounded",
+    "warmth": 0.6,
+    "humor": 0.2,
+    "formality": 0.3
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 10,
+    "estimated_turns": "8-10"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  }
+}

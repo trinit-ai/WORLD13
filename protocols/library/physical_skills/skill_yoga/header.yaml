@@ -1,0 +1,19 @@
+id: skill_yoga
+name: Yoga Practice
+category: physical_skills
+version: "1.0"
+status: active
+turn_budget: [8, 12]
+metered: true
+description: >
+  Yoga practice guidance — Hatha, Vinyasa, Yin, and Restorative styles.
+  Pose technique, sequences, pranayama, and safety considerations for
+  inversions and deeper postures.
+tags:
+  - yoga
+  - fitness
+  - flexibility
+  - mindfulness
+  - physical_skills
+author: Robert C. Ventura
+created: "2026-03-18"

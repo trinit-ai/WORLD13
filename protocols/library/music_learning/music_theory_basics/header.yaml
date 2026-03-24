@@ -1,0 +1,19 @@
+id: music_theory_basics
+name: Music Theory
+category: music_learning
+version: "1.0"
+status: active
+turn_budget: [10, 14]
+metered: true
+description: >
+  Music theory fundamentals — notes, scales, intervals, chords, keys, and
+  time signatures. Theory illuminated through familiar music, not academic
+  abstraction.
+tags:
+  - music_theory
+  - scales
+  - chords
+  - keys
+  - music_learning
+author: Robert C. Ventura
+created: "2026-03-18"

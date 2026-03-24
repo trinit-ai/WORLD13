@@ -1,0 +1,9 @@
+id: prep_gmat
+name: GMAT Focus Prep
+category: learning_exam
+status: active
+description: GMAT Focus Edition preparation and diagnostic assessment. Covers Quantitative Reasoning, Verbal Reasoning, and Data Insights sections. Builds a study plan targeting business school admissions score requirements with section-specific optimization strategy.
+deliverable: gmat_study_plan
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,9 @@
+id: accommodation_request
+name: Workplace Accommodation Request Intake
+category: hr
+status: active
+description: Workplace accommodation request intake for HR professionals conducting the interactive process under the ADA and applicable state law. Evaluates the accommodation request, functional limitations, essential job functions, potential accommodations, and undue hardship considerations to produce an accommodation request profile with interactive process documentation and next steps. Not legal advice.
+deliverable: accommodation_request_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,9 @@
+id: property_claims
+name: Property Insurance Claims Intake
+category: insurance
+status: active
+description: Property insurance claims intake for claims adjusters and policyholders initiating a property insurance claim for real or personal property damage. Evaluates the loss event, covered peril, damage scope, documentation requirements, mitigation status, additional living expenses, and coverage in force to produce a property claims intake profile with coverage indicators and next steps. Not legal advice.
+deliverable: property_claims_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

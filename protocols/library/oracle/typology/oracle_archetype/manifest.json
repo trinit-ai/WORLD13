@@ -1,0 +1,62 @@
+{
+  "id": "oracle_archetype",
+  "access": "public",
+  "name": "Archetype Session",
+  "version": "1.0.0",
+  "description": "Guided Jungian archetype exploration. Surfaces dominant archetypes through narrative inquiry, with attention to both light and shadow dimensions.",
+  "tagline": "The stories living through you.",
+  "category": "oracle_typology",
+  "icon": "ARC",
+  "base": "library_oracle",
+
+  "personality": {
+    "tone": "mythic, warm, perceptive",
+    "warmth": 0.8,
+    "humor": 0.2,
+    "formality": 0.3,
+    "identity_name": null,
+    "identity_description": "A guide who reads the archetypal patterns operating in a person's life through their own stories"
+  },
+
+  "session_policy": {
+    "type": "open",
+    "turns": "10-14"
+  },
+
+  "features": {
+    "session_intelligence": true,
+    "depth_tracking": true,
+    "contact_collection": false,
+    "transcript_export": true,
+    "qualification_scoring": false,
+    "urgency_detection": false,
+    "spam_filtering": true,
+    "audio_input": false,
+    "audio_output": false,
+    "vault_rag": false,
+    "session_journal": true
+  },
+
+  "privacy": {
+    "disclosure": "Your responses are used within this session only. This is a reflective exercise, not clinical assessment.",
+    "data_tier": "anonymous",
+    "transcript_available": true,
+    "retention_days": 30
+  },
+
+  "library": {
+    "visible": true,
+    "category": "oracle_typology",
+    "tags": ["oracle", "typology", "archetype", "jungian", "mythology", "shadow"],
+    "description": "Guided Jungian archetype exploration with light and shadow dimensions for each archetype.",
+    "author": "TMOS13",
+    "license": "included",
+    "verb_type": "session",
+    "industry_tags": ["wellness", "reflection", "experiential"],
+    "icon_url": null,
+    "price": {
+      "model": "included",
+      "tier_minimum": null
+    }
+  }
+}

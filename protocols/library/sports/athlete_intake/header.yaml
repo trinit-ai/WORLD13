@@ -1,0 +1,9 @@
+id: athlete_intake
+name: Athlete Onboarding Intake
+category: sports
+status: active
+description: Athlete onboarding intake for sports organizations, coaches, and athletic programs onboarding a new athlete. Evaluates the athlete's background, sport history, physical status, academic situation, goals, and administrative requirements to produce an athlete intake profile with onboarding priorities and development baseline.
+deliverable: athlete_intake_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

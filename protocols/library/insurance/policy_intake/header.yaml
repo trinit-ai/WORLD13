@@ -1,0 +1,9 @@
+id: policy_intake
+name: Insurance Policy Intake
+category: insurance
+status: active
+description: Insurance policy intake for insurance agents, brokers, and underwriters gathering information to quote, bind, or renew an insurance policy. Evaluates the risk profile, coverage requirements, prior loss history, and underwriting information to produce a policy intake profile with coverage specifications and underwriting data requirements. Not legal advice.
+deliverable: policy_intake_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

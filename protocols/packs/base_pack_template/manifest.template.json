@@ -1,0 +1,162 @@
+{
+  "_template_version": "1.0.0",
+  "_template_notes": "Fork this file as manifest.json. Replace all CUSTOMIZE markers. Remove _template fields before deployment.",
+
+  "id": "CUSTOMIZE_pack_id",
+  "name": "CUSTOMIZE Pack Display Name",
+  "version": "1.0.0",
+  "description": "CUSTOMIZE — One-liner for marketplace/discovery",
+  "category": "CUSTOMIZE — showcase | enterprise | vertical | custom",
+  "icon": "CUSTOMIZE_emoji",
+  "base": "public_facing",
+
+  "cartridges": [
+    {
+      "id": "CUSTOMIZE_slug",
+      "name": "CUSTOMIZE Display Label",
+      "description": "CUSTOMIZE — What this cartridge does",
+      "protocol": "CUSTOMIZE_slug.md"
+    }
+  ],
+
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "menu": {
+        "pattern": "^(menu|help|options|what can you do|commands)$",
+        "action": "show_menu"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      },
+      "transcript": {
+        "pattern": "^(transcript|download|export|save)$",
+        "action": "show_transcript"
+      }
+    },
+    "navigation": {
+      "_CUSTOMIZE_example": {
+        "pattern": "(regex matching natural language for this cartridge)",
+        "cartridge": "cartridge_slug"
+      }
+    }
+  },
+
+  "system_screens": {
+    "boot": "boot.md",
+    "menu": "menu.md"
+  },
+
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "transcript_export": true,
+    "qualification_scoring": true,
+    "urgency_detection": true,
+    "spam_filtering": true,
+    "depth_tracking": true,
+    "mood_resonance": true,
+    "cross_module_memory": true,
+    "dinosaur_eggs": false,
+    "real_time_timers": false,
+    "audio_input": false,
+    "audio_output": false
+  },
+
+  "privacy": {
+    "disclosure": "CUSTOMIZE — A summary of this conversation will be shared with [Business Name] so they can follow up with you.",
+    "data_tier": "contact_form",
+    "transcript_available": true,
+    "retention_days": 90
+  },
+
+  "notifications": {
+    "new_qualified_lead": {
+      "condition": "qualification.score >= 70",
+      "channels": ["email"],
+      "template": "qualified_lead"
+    },
+    "urgent_intake": {
+      "condition": "qualification.urgency == 'high'",
+      "channels": ["sms", "email"],
+      "template": "urgent_lead",
+      "priority": "immediate"
+    },
+    "spam_detected": {
+      "condition": "qualification.spam_score >= 0.8",
+      "channels": ["log"],
+      "template": "spam_flag"
+    }
+  },
+
+  "settings": {
+    "response_depth": {
+      "default": "balanced",
+      "options": ["concise", "balanced", "detailed"]
+    },
+    "tone": {
+      "default": "professional",
+      "options": ["CUSTOMIZE — warm", "professional", "casual", "formal"]
+    }
+  },
+
+  "state": {
+    "session": {
+      "category": null,
+      "outcome": null,
+      "turn_count": 0,
+      "active_cartridge": null,
+      "depth": 0,
+      "started_at": null,
+      "last_activity": null
+    },
+    "contact": {
+      "name": null,
+      "email": null,
+      "phone": null,
+      "preferred_method": null,
+      "company": null,
+      "role": null,
+      "collected_at": null
+    },
+    "qualification": {
+      "score": 0,
+      "urgency": "normal",
+      "flags": [],
+      "disqualifiers": [],
+      "spam_score": 0.0,
+      "sentiment": "neutral",
+      "intent": null
+    },
+    "summary": {
+      "auto_summary": null,
+      "key_facts": [],
+      "decisions": [],
+      "action_items": [],
+      "entities_extracted": {},
+      "recommended_actions": []
+    },
+    "_CUSTOMIZE_domain_state": {
+      "_note": "Add pack-specific state fields here"
+    }
+  },
+
+  "theme": {
+    "accent": "#CUSTOMIZE",
+    "surface": "#0D0B09",
+    "text": "#E5E2DC"
+  },
+
+  "transcript": {
+    "format": "markdown",
+    "include_metadata": true,
+    "include_summary": true,
+    "include_scoring": true,
+    "include_extractions": true,
+    "download_label": "Download Transcript"
+  }
+}

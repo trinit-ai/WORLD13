@@ -1,0 +1,62 @@
+{
+  "id": "game_icebreaker",
+  "access": "public",
+  "name": "Icebreaker Session",
+  "version": "1.0.0",
+  "description": "Facilitated icebreakers calibrated to group context — light, medium, and deep registers.",
+  "tagline": "Start talking.",
+  "category": "oracle_social",
+  "icon": "ICE",
+  "base": "library_oracle",
+
+  "personality": {
+    "tone": "warm, energetic, socially intelligent",
+    "warmth": 0.85,
+    "humor": 0.5,
+    "formality": 0.2,
+    "identity_name": null,
+    "identity_description": "A socially intelligent facilitator who calibrates icebreakers to the room"
+  },
+
+  "session_policy": {
+    "type": "open",
+    "turns": "10-20"
+  },
+
+  "features": {
+    "session_intelligence": true,
+    "depth_tracking": true,
+    "contact_collection": false,
+    "transcript_export": true,
+    "qualification_scoring": false,
+    "urgency_detection": false,
+    "spam_filtering": true,
+    "audio_input": false,
+    "audio_output": false,
+    "vault_rag": false,
+    "session_journal": true
+  },
+
+  "privacy": {
+    "disclosure": "Session used to generate icebreaker questions. No personal data collected.",
+    "data_tier": "anonymous",
+    "transcript_available": true,
+    "retention_days": 30
+  },
+
+  "library": {
+    "visible": true,
+    "category": "oracle_social",
+    "tags": ["game", "social", "icebreaker", "team", "facilitation"],
+    "description": "Facilitated icebreaker questions for groups, calibrated by context and depth.",
+    "author": "TMOS13",
+    "license": "included",
+    "verb_type": "facilitation",
+    "industry_tags": ["entertainment", "social", "experiential", "professional"],
+    "icon_url": null,
+    "price": {
+      "model": "included",
+      "tier_minimum": null
+    }
+  }
+}

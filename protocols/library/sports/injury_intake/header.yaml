@@ -1,0 +1,9 @@
+id: injury_intake
+name: Sports Injury Intake
+category: sports
+status: active
+description: Sports injury intake for athletic trainers, sports medicine staff, and coaches documenting an athlete's injury. Evaluates the injury mechanism, location and severity, prior history, return-to-play considerations, and referral requirements to produce a sports injury intake profile with immediate action requirements and referral pathway. Not medical advice.
+deliverable: injury_intake_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

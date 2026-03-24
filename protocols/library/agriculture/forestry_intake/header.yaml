@@ -1,0 +1,9 @@
+id: forestry_intake
+name: Forestry Intake
+category: agriculture
+status: active
+description: Forest land management intake. Evaluates a woodland or timber operation's management objectives, timber inventory status, harvesting history, and conservation obligations to produce a forest management profile with recommended next steps across timber, wildlife, carbon, and cost-share programs.
+deliverable: forest_management_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,18 @@
+id: music_guitar_concepts
+name: Guitar Concepts
+category: music_learning
+version: "1.0"
+status: active
+turn_budget: [8, 10]
+metered: true
+description: >
+  Guitar concepts — fretboard logic, open and barre chords, scale patterns,
+  strumming and picking, and practice efficiency for guitar learners.
+tags:
+  - guitar
+  - fretboard
+  - chords
+  - technique
+  - music_learning
+author: Robert C. Ventura
+created: "2026-03-18"

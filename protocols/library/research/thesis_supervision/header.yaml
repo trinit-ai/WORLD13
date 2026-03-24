@@ -1,0 +1,9 @@
+id: thesis_supervision
+name: Thesis Supervision Intake
+category: research
+status: active
+description: Thesis supervision intake for advisors and graduate students beginning or reviewing a thesis supervision relationship. Evaluates the research project, the student's progress, the supervision structure, the timeline to completion, the committee composition, and the professional development goals to produce a thesis supervision intake profile with milestone plan and supervision agreement.
+deliverable: thesis_supervision_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

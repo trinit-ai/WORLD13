@@ -1,0 +1,9 @@
+id: referral_intake
+name: Medical Referral Intake
+category: medical
+status: active
+description: Medical referral intake for clinical staff processing a referral to a specialist or ancillary service. Evaluates the referral indication, the urgency, the referring provider's clinical question, the required documentation, and the patient's insurance and access status to produce a referral intake profile with documentation requirements and scheduling priority. Not medical advice.
+deliverable: referral_intake_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

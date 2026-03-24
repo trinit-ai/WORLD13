@@ -1,0 +1,27 @@
+{
+  "pack_id": "form_non_compete",
+  "pack_name": "Non-Compete Agreement",
+  "category": "forms_hr",
+  "tone": "clear, professional, helpful",
+  "warmth": 0.6,
+  "formality": 0.6,
+  "autonomy": "mediated",
+  "turn_budget": 10,
+  "deliverable": "completed_form",
+  "version": "1.0",
+  "fields": [
+    "employee_name",
+    "employer_name",
+    "effective_date",
+    "employee_position",
+    "restricted_activities",
+    "geographic_scope",
+    "duration",
+    "consideration",
+    "employee_state",
+    "governing_law",
+    "severability_clause",
+    "employee_signature",
+    "employer_signature"
+  ]
+}

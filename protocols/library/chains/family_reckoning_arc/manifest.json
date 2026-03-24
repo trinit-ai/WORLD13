@@ -1,0 +1,46 @@
+{
+  "id": "family_reckoning_arc",
+  "name": "Family Reckoning Arc",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "chains",
+  "description": "Multi-session arc for family of origin work — navigating conflict, processing memories, handling regret and forgiveness, clarifying values, and preparing for family conversations. Sensitive material may surface.",
+  "base": "library_arc",
+  "personality": {
+    "tone": "steady, honest, careful",
+    "warmth": 0.8,
+    "humor": 0.0,
+    "formality": 0.3
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": false,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "arc",
+    "sessions_in_arc": 5,
+    "estimated_total_turns": "45-70"
+  },
+  "privacy": {
+    "disclosure": "Session content carries forward across arc sessions via vault inheritance.",
+    "data_tier": "personal_arc",
+    "transcript_available": true
+  }
+}

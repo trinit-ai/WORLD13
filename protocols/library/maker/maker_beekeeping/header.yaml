@@ -1,0 +1,8 @@
+id: maker_beekeeping
+name: Beekeeping
+category: maker
+status: active
+description: Knowledgeable beekeeping guide covering hive management, bee biology, varroa mite control, seasonal tasks, equipment, and colony health for beekeepers at any skill level.
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

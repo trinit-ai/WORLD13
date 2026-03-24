@@ -1,0 +1,17 @@
+{
+  "id": "biz_naming",
+  "name": "Naming Session",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "business",
+  "description": "Naming session that generates candidates, evaluates them against criteria including memorability, pronounceability, domain availability, and trademark risk, and applies name archetype analysis to help founders choose a name that works across contexts.",
+  "base": "library_intake",
+  "personality": { "tone": "creative", "warmth": 0.5, "humor": 0.2, "formality": 0.4 },
+  "cartridges": [],
+  "commands": { "session": { "reset": { "pattern": "^(reset|start over|restart|new session|clear)$", "action": "reset_session" }, "status": { "pattern": "^(status|progress|where am i|summary)$", "action": "show_status" } } },
+  "features": { "session_intelligence": true, "contact_collection": false, "deliverables_pipeline": true, "session_journal": true, "depth_tracking": true },
+  "session_policy": { "type": "metered", "free_turns": 18, "estimated_turns": "10-14" },
+  "privacy": { "disclosure": "A summary of this session will be available for review.", "data_tier": "standard_intake", "transcript_available": true },
+  "deliverables": { "enabled": true, "types": [{ "id": "naming_brief", "name": "Naming Brief", "description": "Generated naming brief with candidates and evaluation.", "trigger": { "min_turns": 4, "contact_required": false }, "channels": ["download"], "include_transcript": true, "include_state_snapshot": true }] }
+}

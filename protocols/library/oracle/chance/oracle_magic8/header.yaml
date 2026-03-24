@@ -1,0 +1,9 @@
+id: oracle_magic8
+name: Magic 8-Ball
+category: oracle_chance
+status: active
+description: The classic Magic 8-Ball oracle. All 20 traditional responses. Ask a yes-or-no question, receive a deadpan answer from the void.
+consequence_class: ZERO
+estimated_turns: 1-4
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,9 @@
+id: engagement_scoping
+name: Consulting Engagement Scoping
+category: consulting
+status: active
+description: Consulting engagement scoping for professional services firms and independent consultants defining the boundaries, deliverables, timeline, commercials, and governance of a new client engagement. Evaluates scope definition quality, deliverable specificity, client-side accountability, change order exposure, and contract structure to produce an engagement scope profile with gap analysis, risk flags, and a recommended scope of work framework.
+deliverable: engagement_scope_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,9 @@
+id: project_intake
+name: Design Project Intake
+category: architecture
+status: active
+description: General design project intake and scope definition. The foundational design pack — establishes project identity, client structure, scope type, budget, timeline, team, and decision-making framework before any specialized design assessment begins. Produces a project intake record that downstream design packs inherit as their starting context.
+deliverable: design_project_record
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

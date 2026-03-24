@@ -1,0 +1,46 @@
+{
+  "id": "tech_spreadsheets",
+  "name": "Spreadsheet Session",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "technology",
+  "description": "Spreadsheet session covering real formulas (VLOOKUP, INDEX/MATCH, SUMIF, COUNTIF, pivot tables), data organization, and practical problem-solving in Excel and Google Sheets. Works through the visitor's actual data scenarios.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "practical, precise, patient",
+    "warmth": 0.5,
+    "humor": 0.1,
+    "formality": 0.4
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 12,
+    "estimated_turns": "8-12"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  }
+}

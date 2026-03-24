@@ -1,0 +1,10 @@
+id: oracle_vedic
+name: Vedic Astrology (Jyotish)
+category: oracle_divination
+status: active
+description: Vedic astrology (Jyotish) reading using the sidereal zodiac. Calculates Lagna (ascendant), Moon sign, and nakshatra from birth data. Covers all 27 nakshatras, planetary periods (dashas), and Vedic house system. Produces a structured Vedic reading as the session deliverable.
+deliverable: vedic_reading
+consequence_class: ZERO
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

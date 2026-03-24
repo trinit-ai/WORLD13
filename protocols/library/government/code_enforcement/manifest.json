@@ -1,0 +1,46 @@
+{
+  "id": "code_enforcement",
+  "name": "Code Enforcement Intake",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "government",
+  "description": "Code enforcement intake for municipal code enforcement officers and compliance coordinators documenting a code violation complaint or inspection finding. Evaluates the violation type, property identification, evidence documentation, notice requirements, compliance timeline, and enforcement pathway to produce a code enforcement intake profile with action plan and documentation checklist.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "professional, direct",
+    "warmth": 0.5,
+    "humor": 0.0,
+    "formality": 0.7
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 16,
+    "estimated_turns": "8-12"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  }
+}

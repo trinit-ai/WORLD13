@@ -1,0 +1,42 @@
+{
+  "pack_id": "pack_builder",
+  "name": "Pack Builder",
+  "version": "1.0.0",
+  "description": "Governs the creation of new protocol packs. Produces a complete MANIFEST.md and header.yaml as its deliverable.",
+  "category": "_meta",
+  "visibility": "system",
+  "deliverable_type": "pack_manifest",
+
+  "state": {
+    "capture": {
+      "pack_id": null,
+      "pack_name": null,
+      "category": null,
+      "domain_expert": null,
+      "purpose": null,
+      "authorized_actions": [],
+      "prohibited_actions": [],
+      "authorized_questions": [],
+      "intake_fields": [],
+      "routing_rules": [],
+      "completion_criteria": [],
+      "estimated_turns": null,
+      "deliverable_type": null,
+      "deliverable_format": null,
+      "deliverable_fields": [],
+      "upstream_packs": [],
+      "downstream_packs": [],
+      "vault_reads": [],
+      "vault_writes": []
+    },
+    "flags": {
+      "block": 1,
+      "status": "in_progress"
+    }
+  },
+
+  "features": {
+    "session_intelligence": true,
+    "transcript_export": true
+  }
+}

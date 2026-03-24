@@ -1,0 +1,9 @@
+id: scenario_planning
+name: Scenario Planning Session
+category: simulations
+status: active
+description: A structured scenario planning session for leaders and strategists exploring the future consequences of a decision, trend, or uncertainty. The session facilitates the construction of multiple plausible futures, surfaces second-order effects, and produces a scenario planning output with named scenarios, key uncertainties, and strategic implications.
+deliverable: scenario_planning_output
+estimated_turns: 15-25
+version: 1.0
+author: Robert C. Ventura

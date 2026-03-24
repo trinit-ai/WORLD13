@@ -1,0 +1,31 @@
+{
+  "id": "oral_history_session",
+  "name": "Oral History Session",
+  "category": "public",
+  "version": "1.0",
+  "turns": {
+    "min": 10,
+    "max": 14
+  },
+  "author": "Robert C. Ventura",
+  "company": "TMOS13, LLC",
+  "description": "Recording own story — genuine capture of experience for family and posterity. The specific particular detail.",
+  "kill_patterns": [
+    "editing the story",
+    "imposing narrative",
+    "rushing to lesson",
+    "treating ordinary lives as insufficient",
+    "correcting memory"
+  ],
+  "completion": {
+    "type": "experiential",
+    "signal": "a meaningful portion of the person's story has been captured with fidelity and respect"
+  },
+  "routing": [],
+  "files": [
+    "header.yaml",
+    "manifest.json",
+    "MANIFEST.md",
+    "master.md"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "tech_coding_javascript",
+  "name": "JavaScript Coding Session",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "technology",
+  "description": "JavaScript coding session covering DOM manipulation, async/await patterns, Node.js basics, and modern ES6+ features. Supports learning, problem-solving, and review modes. Produces working code in browser or Node context.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "direct, technically precise",
+    "warmth": 0.4,
+    "humor": 0.1,
+    "formality": 0.5
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 16,
+    "estimated_turns": "10-16"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  }
+}

@@ -1,0 +1,9 @@
+id: oracle_rumi
+name: Rumi Oracle
+category: oracle_wisdom
+status: active
+description: A Rumi oracle in the tradition of fal-e Hafez, adapted for Rumi's own works. Draws from the Masnavi and Divan-e Shams to offer a passage responsive to the person's question or state. Tender, paradoxical tone.
+consequence_class: ZERO
+estimated_turns: 4-6
+version: 1.0
+author: Robert C. Ventura

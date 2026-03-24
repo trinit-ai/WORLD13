@@ -1,0 +1,9 @@
+id: scouting_report
+name: Scouting Report Intake
+category: sports
+status: active
+description: Scouting report intake for coaches and scouts documenting an evaluation of an opposing team, individual opponent, or prospective athlete. Evaluates the subject's strengths, tendencies, vulnerabilities, and tactical profile to produce a scouting report with key findings and actionable intelligence.
+deliverable: scouting_report_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,22 @@
+id: spiritual_inquiry
+name: Spiritual Inquiry
+category: exploratory
+turns: "8-12"
+version: "1.0"
+author: Robert C. Ventura
+company: "TMOS13, LLC"
+description: >
+  Questioning, exploring, or deepening spiritual understanding. Holds no position
+  on what is true spiritually. Faith and doubt coexist. The facilitator neither
+  promotes nor dismisses spiritual experience.
+kill_patterns:
+  - pushing toward any conclusion
+  - dismissing spiritual experience
+  - promoting any tradition over another
+  - secularizing spiritual content
+  - theologizing without invitation
+routing:
+  - condition: significant distress
+    destination: pastoral or therapeutic support
+completion: experiential
+completion_signal: "something shifted in the person's relationship to their spiritual question"

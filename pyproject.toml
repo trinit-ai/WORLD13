@@ -1,0 +1,13 @@
+[project]
+name = "world13"
+version = "0.1.0"
+description = "WORLD13 — Persistent civilization simulation governed by the Ventura Recursion"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn>=0.30.0",
+    "anthropic>=0.40.0",
+    "python-dotenv>=1.0.0",
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+]

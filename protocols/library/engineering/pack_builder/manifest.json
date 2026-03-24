@@ -1,0 +1,65 @@
+{
+  "id": "pack_builder",
+  "name": "Pack Builder",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "_meta",
+  "description": "Governs the creation of new protocol packs. Use when a domain expert wants to author a new pack, develop a stub into a full manifest, or refine an existing pack. Produces a complete MANIFEST.md and header.yaml as its deliverable. Do NOT use for running operational sessions \u2014 this pack builds other packs, it does not run them.\n",
+  "base": "library_intake",
+  "personality": {
+    "tone": "direct, precise",
+    "warmth": 0.5,
+    "humor": 0.0,
+    "formality": 0.5
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": true,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 22,
+    "estimated_turns": "12-18"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  },
+  "deliverables": {
+    "enabled": true,
+    "types": [
+      {
+        "id": "pack_manifest",
+        "name": "Pack Manifest",
+        "description": "Generated pack manifest from intake session data.",
+        "trigger": {
+          "min_turns": 4,
+          "contact_required": false
+        },
+        "channels": [
+          "download"
+        ],
+        "include_transcript": true,
+        "include_state_snapshot": true
+      }
+    ]
+  }
+}

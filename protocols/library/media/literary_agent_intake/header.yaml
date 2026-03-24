@@ -1,0 +1,9 @@
+id: literary_agent_intake
+name: Literary Agent Submission Intake
+category: media
+status: active
+description: Literary agent submission intake for authors preparing to query literary agents. Evaluates the manuscript, the query letter, the synopsis, the comparable titles, the author platform, and the submission strategy to produce a literary agent submission profile with query assessment and submission priorities.
+deliverable: literary_agent_submission_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,13 @@
+{
+  "id": "coll_art_collecting",
+  "name": "Art Collecting Basics",
+  "slug": "art-collecting",
+  "category": "collecting",
+  "version": "1.0",
+  "status": "active",
+  "turn_budget": 10,
+  "metered": true,
+  "description": "Art collecting companion covering galleries, fairs, editions vs originals, value drivers, and building a collection.",
+  "tags": ["collecting", "art", "galleries", "prints", "contemporary"],
+  "files": ["header.yaml", "manifest.json", "MANIFEST.md", "master.md"]
+}

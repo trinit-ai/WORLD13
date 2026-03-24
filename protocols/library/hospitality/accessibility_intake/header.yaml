@@ -1,0 +1,9 @@
+id: accessibility_intake
+name: Accessibility Requirements Intake
+category: hospitality
+status: active
+description: Accessibility requirements intake for event planners, venue managers, and hospitality professionals assessing the accessibility needs of a group or event. Evaluates mobility, sensory, cognitive, dietary, and communication accessibility requirements to produce an accessibility requirements brief with venue assessment criteria and service accommodation plan.
+deliverable: accessibility_requirements_brief
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

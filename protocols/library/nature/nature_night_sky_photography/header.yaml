@@ -1,0 +1,17 @@
+id: nature_night_sky_photography
+name: Astrophotography
+slug: astrophotography
+category: nature
+version: "1.0"
+status: active
+turn_budget: 10
+metered: true
+description: >
+  Astrophotography companion covering camera settings, equipment, planning,
+  and post-processing for night sky imaging.
+tags:
+  - nature
+  - astrophotography
+  - photography
+  - night sky
+  - cameras

@@ -1,0 +1,46 @@
+{
+  "id": "peer_review",
+  "name": "Peer Review Intake",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "research",
+  "description": "Peer review intake for researchers conducting a peer review of a manuscript submitted to a journal. Evaluates the manuscript's contribution, methodology, analysis, reporting quality, and alignment with the journal's scope to produce a peer review intake profile with structured review priorities and recommendation framework.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "professional, direct",
+    "warmth": 0.5,
+    "humor": 0.0,
+    "formality": 0.7
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 16,
+    "estimated_turns": "8-12"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  }
+}

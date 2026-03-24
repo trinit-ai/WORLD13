@@ -1,0 +1,37 @@
+departments:
+  legal:
+    name: Legal
+    packs:
+      - legal_intake
+      - manda_negotiation
+
+  sales:
+    name: Sales
+    packs:
+      - lead_qualification
+      - campaign_builder
+      - customer_support
+
+  ops:
+    name: Operations
+    packs:
+      - desk
+      - operator
+      - welcome
+      - onboarding
+
+  games:
+    name: Games
+    packs:
+      - enlightened_duck
+      - rpg_dungeon
+      - gaming
+
+  platform:
+    name: Platform
+    packs:
+      - pack_builder
+      - pack_finder
+      - vault_audit
+      - feed_portal
+      - ink

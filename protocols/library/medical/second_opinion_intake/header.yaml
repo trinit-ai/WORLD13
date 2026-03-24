@@ -1,0 +1,9 @@
+id: second_opinion_intake
+name: Medical Second Opinion Intake
+category: medical
+status: active
+description: Medical second opinion intake for clinical staff and patients initiating a second opinion consultation. Evaluates the diagnosis or treatment recommendation being reviewed, the clinical records needed, the second opinion provider, and the patient's specific questions to produce a second opinion intake profile with records preparation checklist and consultation focus areas. Not medical advice.
+deliverable: second_opinion_intake_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

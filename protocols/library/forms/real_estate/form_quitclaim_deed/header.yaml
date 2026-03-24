@@ -1,0 +1,9 @@
+pack_id: form_quitclaim_deed
+pack_name: "Quitclaim Deed"
+category: forms_real_estate
+deliverable: completed_form
+version: "1.0"
+author: "Robert C. Ventura"
+company: "TMOS13, LLC"
+autonomy: mediated
+turn_budget: 8

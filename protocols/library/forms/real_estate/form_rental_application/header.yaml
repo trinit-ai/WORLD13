@@ -1,0 +1,9 @@
+pack_id: form_rental_application
+pack_name: "Rental Application"
+category: forms_real_estate
+deliverable: completed_form
+version: "1.0"
+author: "Robert C. Ventura"
+company: "TMOS13, LLC"
+autonomy: mediated
+turn_budget: 10

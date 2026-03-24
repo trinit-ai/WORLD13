@@ -1,0 +1,9 @@
+id: licensing_intake
+name: Professional and Business Licensing Intake
+category: government
+status: active
+description: Professional and business licensing intake for individuals and businesses applying for or renewing a government-issued license. Evaluates license type, eligibility requirements, examination requirements, documentation readiness, and application completeness to produce a licensing intake profile with gap analysis and deadline flags. Not legal advice.
+deliverable: licensing_intake_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

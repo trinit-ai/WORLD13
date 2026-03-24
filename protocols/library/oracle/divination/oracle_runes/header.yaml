@@ -1,0 +1,10 @@
+id: oracle_runes
+name: Rune Reading
+category: oracle_divination
+status: active
+description: Elder Futhark rune casting with all 24 runes, upright and reversed meanings. Supports single-rune, three-rune, and runic cross spreads. Simulates drawing from a rune pouch with positional interpretation. Produces a structured rune reading as the session deliverable.
+deliverable: rune_reading
+consequence_class: ZERO
+estimated_turns: 6-8
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,9 @@
+id: fin_investing_basics
+name: Investing Basics
+category: personal_finance
+status: active
+description: Investing basics session that covers compound interest, index funds, retirement accounts (401k, IRA), asset allocation, and the behavioral pitfalls that cause most investors to underperform. NOT financial advice.
+deliverable: investing_foundations_summary
+estimated_turns: 10-12
+version: 1.0
+author: Robert C. Ventura

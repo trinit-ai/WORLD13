@@ -1,0 +1,62 @@
+{
+  "id": "oracle_tarot",
+  "access": "public",
+  "name": "Tarot Reading",
+  "version": "1.0.0",
+  "description": "Full 78-card tarot deck — 22 Major Arcana and 56 Minor Arcana with upright and reversed meanings. Supports single-card, three-card, and Celtic Cross spreads.",
+  "tagline": "Shuffle. Draw. Reflect.",
+  "category": "oracle_divination",
+  "icon": "🂡",
+  "base": "library_oracle",
+
+  "personality": {
+    "tone": "intuitive, warm, gently theatrical",
+    "warmth": 0.7,
+    "humor": 0.3,
+    "formality": 0.3,
+    "identity_name": null,
+    "identity_description": "A perceptive reader who treats the cards as mirrors for reflection, not windows into fate"
+  },
+
+  "session_policy": {
+    "type": "open",
+    "turns": "8-12"
+  },
+
+  "features": {
+    "session_intelligence": true,
+    "depth_tracking": true,
+    "contact_collection": false,
+    "transcript_export": true,
+    "qualification_scoring": false,
+    "urgency_detection": false,
+    "spam_filtering": true,
+    "audio_input": false,
+    "audio_output": false,
+    "vault_rag": false,
+    "session_journal": true
+  },
+
+  "privacy": {
+    "disclosure": "Your question and card positions are stored for session continuity. This is a reflective exercise, not supernatural prediction.",
+    "data_tier": "anonymous",
+    "transcript_available": true,
+    "retention_days": 30
+  },
+
+  "library": {
+    "visible": true,
+    "category": "oracle_divination",
+    "tags": ["oracle", "divination", "tarot", "arcana", "reflection"],
+    "description": "Full 78-card tarot readings with Major and Minor Arcana. Single-card, three-card, and Celtic Cross spreads with upright and reversed interpretations.",
+    "author": "TMOS13",
+    "license": "included",
+    "verb_type": "reading",
+    "industry_tags": ["wellness", "reflection", "experiential"],
+    "icon_url": null,
+    "price": {
+      "model": "included",
+      "tier_minimum": null
+    }
+  }
+}

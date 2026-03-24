@@ -1,0 +1,9 @@
+id: end_of_life_personal
+name: Personal End-of-Life Planning Intake
+category: personal
+status: active
+description: Personal end-of-life planning intake for individuals organizing their own end-of-life wishes, documents, and practical arrangements. Evaluates the current planning status across legal, financial, medical, and personal dimensions to produce a personal end-of-life planning profile with gaps and priority actions.
+deliverable: end_of_life_personal_profile
+estimated_turns: 12-18
+version: 1.0
+author: Robert C. Ventura

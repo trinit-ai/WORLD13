@@ -1,0 +1,46 @@
+{
+  "id": "trauma_intake",
+  "name": "Trauma Assessment Intake",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "mental_health",
+  "description": "Trauma assessment intake for licensed mental health professionals conducting an initial trauma assessment. Evaluates the trauma history, current PTSD symptoms across the four DSM-5 clusters, functional impairment, safety, and comorbid conditions to produce a trauma assessment profile with symptom profile and clinical considerations for the treating provider. Not clinical advice. Requires trauma-informed approach throughout.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "professional, direct",
+    "warmth": 0.5,
+    "humor": 0.0,
+    "formality": 0.7
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 20,
+    "estimated_turns": "10-16"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  }
+}

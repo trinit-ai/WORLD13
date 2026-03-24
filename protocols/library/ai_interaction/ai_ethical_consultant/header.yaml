@@ -1,0 +1,9 @@
+id: ai_ethical_consultant
+name: Ethical Consultation
+category: ai_interaction
+status: active
+description: A governed ethical consultation session. Surfaces ethical dimensions using four frameworks — consequentialist, deontological, virtue ethics, and care ethics. Non-prescriptive. The person decides; the facilitator illuminates.
+consequence_class: ZERO
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

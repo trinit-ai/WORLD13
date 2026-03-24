@@ -1,0 +1,9 @@
+id: form_school_enrollment
+name: School Enrollment
+category: forms_social
+status: active
+description: Guided completion of a school enrollment form covering student information, guardian details, residency, immunization records, and special needs documentation.
+deliverable: completed_form
+estimated_turns: "8-10"
+version: 1.0
+author: Robert C. Ventura

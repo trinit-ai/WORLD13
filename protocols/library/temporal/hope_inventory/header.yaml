@@ -1,0 +1,9 @@
+id: hope_inventory
+name: Hope Inventory
+category: temporal
+status: active
+description: Identify what you hope for — what animates you about the future, what you're still moving toward, what you haven't given up on.
+deliverable: hope_map
+estimated_turns: "8-10"
+version: 1.0
+author: Robert C. Ventura

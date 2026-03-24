@@ -1,0 +1,9 @@
+id: disability_services
+name: Disability Services Intake
+category: social_work
+status: active
+description: Disability services intake for social workers and disability specialists assessing a client's disability-related service needs. Evaluates the disability, the functional limitations, the services currently in place, the gaps, the benefits and eligibility, and the goals to produce a disability services intake profile with needs assessment and service plan priorities.
+deliverable: disability_services_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

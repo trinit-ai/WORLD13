@@ -1,0 +1,9 @@
+id: customer_research
+name: Customer Research Engagement Intake
+category: consulting
+status: active
+description: Customer research engagement intake for organizations seeking to understand buyer behavior, unmet needs, decision criteria, churn drivers, or market perception. Evaluates research objectives, methodology fit, sample design, internal bias risk, existing data utilization, and actioning plan to produce a customer research profile with gap analysis, risk flags, and recommended research design.
+deliverable: customer_research_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

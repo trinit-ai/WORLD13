@@ -1,0 +1,46 @@
+{
+  "id": "contract_review_intake",
+  "name": "Contract Review Intake",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "legal",
+  "description": "Contract review intake for attorneys, paralegals, and business professionals initiating a contract review. Evaluates the contract type, the reviewing party's role, key provisions of concern, negotiation context, deadline, and the review objectives to produce a contract review intake profile with review scope and priority provisions checklist. Not legal advice.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "professional, direct",
+    "warmth": 0.5,
+    "humor": 0.0,
+    "formality": 0.7
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 16,
+    "estimated_turns": "8-12"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  }
+}

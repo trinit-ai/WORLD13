@@ -1,0 +1,9 @@
+id: water_rights_intake
+name: Water Rights Intake
+category: agriculture
+status: active
+description: Agricultural water rights assessment. Evaluates an operation's water rights portfolio — doctrine, priority dates, decreed volumes, permitted uses, transfer history, and current adequacy — to produce a water rights profile with gap analysis, risk flags, and recommended professional actions. Jurisdiction-sensitive — prior appropriation and riparian doctrine handled distinctly.
+deliverable: water_rights_profile
+estimated_turns: 12-16
+version: 1.0
+author: Robert C. Ventura

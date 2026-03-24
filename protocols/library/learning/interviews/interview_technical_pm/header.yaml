@@ -1,0 +1,9 @@
+id: interview_technical_pm
+name: PM Interview Prep
+category: learning_interviews
+status: active
+description: Product manager interview preparation session covering product sense, analytical, execution, and leadership question types. Practices structured responses with real-world product scenarios.
+deliverable: pm_interview_prep_brief
+estimated_turns: 12-16
+version: 1.0
+author: Robert C. Ventura

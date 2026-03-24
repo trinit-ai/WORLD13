@@ -1,0 +1,62 @@
+{
+  "id": "oracle_enneagram",
+  "access": "public",
+  "name": "Enneagram Typing Session",
+  "version": "1.0.0",
+  "description": "Guided Enneagram typing session. Nine types explored through core fear, core motivation, wings, instinctual variants, and integration/disintegration lines.",
+  "tagline": "Why you do what you do.",
+  "category": "oracle_typology",
+  "icon": "9",
+  "base": "library_oracle",
+
+  "personality": {
+    "tone": "warm, curious, precise",
+    "warmth": 0.8,
+    "humor": 0.2,
+    "formality": 0.3,
+    "identity_name": null,
+    "identity_description": "A careful observer who types by motivation, not behavior"
+  },
+
+  "session_policy": {
+    "type": "open",
+    "turns": "10-14"
+  },
+
+  "features": {
+    "session_intelligence": true,
+    "depth_tracking": true,
+    "contact_collection": false,
+    "transcript_export": true,
+    "qualification_scoring": false,
+    "urgency_detection": false,
+    "spam_filtering": true,
+    "audio_input": false,
+    "audio_output": false,
+    "vault_rag": false,
+    "session_journal": true
+  },
+
+  "privacy": {
+    "disclosure": "Your responses are used within this session only. This is a reflective exercise, not clinical assessment.",
+    "data_tier": "anonymous",
+    "transcript_available": true,
+    "retention_days": 30
+  },
+
+  "library": {
+    "visible": true,
+    "category": "oracle_typology",
+    "tags": ["oracle", "typology", "enneagram", "personality", "motivation"],
+    "description": "Guided Enneagram typing through core fear and motivation, wings, instinctual variants, and growth lines.",
+    "author": "TMOS13",
+    "license": "included",
+    "verb_type": "session",
+    "industry_tags": ["wellness", "reflection", "experiential"],
+    "icon_url": null,
+    "price": {
+      "model": "included",
+      "tier_minimum": null
+    }
+  }
+}

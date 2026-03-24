@@ -1,0 +1,349 @@
+{
+  "id": "customer_support",
+  "access": "paid",
+  "tier_gate": "S1",
+  "name": "Customer Support",
+  "version": "1.1.0",
+  "description": "AI-powered tier-1 customer support — issue resolution, intelligent escalation, structured handoff summaries.",
+  "tagline": "Resolve, route, report.",
+  "category": "verticals",
+  "icon": "🎧",
+  "base": "public_facing",
+
+  "personality": {
+    "tone": "helpful, warm, empathetic, solution-oriented",
+    "warmth": 0.8,
+    "humor": 0.05,
+    "formality": 0.5,
+    "identity_name": "Support Agent",
+    "identity_description": "A tier-1 support agent who listens, diagnoses, solves, and when necessary escalates with clear context"
+  },
+
+  "cartridges": [
+    {
+      "id": "triage",
+      "name": "General Support",
+      "description": "First-contact triage — identify the issue, route to the right track, or resolve simple questions directly.",
+      "protocol": "triage.md"
+    },
+    {
+      "id": "billing",
+      "name": "Billing & Payments",
+      "description": "Charges, refunds, invoices, payment methods, subscription changes, billing disputes.",
+      "protocol": "billing.md"
+    },
+    {
+      "id": "technical",
+      "name": "Technical & Product",
+      "description": "Product issues, bugs, how-to questions, troubleshooting, feature requests.",
+      "protocol": "technical.md"
+    },
+    {
+      "id": "account",
+      "name": "Account Management",
+      "description": "Account access, profile changes, security concerns, cancellation, plan changes.",
+      "protocol": "account.md"
+    },
+    {
+      "id": "orders",
+      "name": "Orders & Shipping",
+      "description": "Order status, shipping issues, returns, exchanges, delivery problems, tracking.",
+      "protocol": "orders.md"
+    },
+    {
+      "id": "company_profile",
+      "name": "Company Profile",
+      "description": "Your business identity, hours, contact info, FAQs, disclaimers, and policies — automatically woven into every interaction.",
+      "passive": true
+    }
+  ],
+
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new issue|clear)$",
+        "action": "reset_session"
+      },
+      "menu": {
+        "pattern": "^(menu|help|options|what can you do|commands|back)$",
+        "action": "show_menu"
+      },
+      "status": {
+        "pattern": "^(status|my ticket|case|where am i|summary)$",
+        "action": "show_status"
+      },
+      "transcript": {
+        "pattern": "^(transcript|download|export|save)$",
+        "action": "show_transcript"
+      },
+      "agent": {
+        "pattern": "^(agent|human|person|talk to someone|representative|speak to someone|real person|live agent)$",
+        "action": "escalate_to_agent"
+      }
+    },
+    "navigation": {
+      "billing": {
+        "pattern": "(bill(ing|ed)?|charge[ds]?|invoice|refund ?(me|my|this|request)?|subscription|payment (fail|issue|method|declined)|price|cost|receipt|credit card|overcharge|double charge|fee|renewal|autopay|was charged|didn't authorize|unauthorized charge|cancel.*(subscription|plan|membership))",
+        "cartridge": "billing"
+      },
+      "technical": {
+        "pattern": "(not working|broken|error( message| code)?|bug|crash(es|ing|ed)?|slow(ness)?|glitch|stuck|freez(e|ing|es)|won't load|can't access|how do [iI]|how to|setup|configure|install|update ?(app|software|version)?|white screen|blank page|timeout|404|500|loading forever)",
+        "cartridge": "technical"
+      },
+      "account": {
+        "pattern": "(can't (log|sign|get) in|login (issue|problem|fail)|password (reset|forgot|change|doesn't work)|email change|profile (update|change|edit)|security (concern|breach|alert)|hack(ed)?|compromis(e|ed)|locked out|two factor|2FA|MFA|cancel.*(account|service)|close (my )?account|delete (my )?account|deactivate|downgrade (my )?(plan|account)|upgrade (my )?(plan|account|tier))",
+        "cartridge": "account"
+      },
+      "orders": {
+        "pattern": "(order (status|number|#|tracking|delayed|late|missing|wrong)|shipping (issue|delay|status|problem)|deliver(y|ed|ing)|tracking (number|info|update)|return (this|my|the|an|request)|exchange (this|my|the|an)|package (missing|damaged|lost|stolen|never|arrived)|wrong item|where is my (order|package|shipment|stuff)|hasn't (arrived|shipped|come)|damaged (item|product|package)|address change.*(order|ship))",
+        "cartridge": "orders"
+      }
+    }
+  },
+
+  "system_screens": {
+    "boot": "boot.md",
+    "menu": "menu.md"
+  },
+
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "transcript_export": true,
+    "qualification_scoring": true,
+    "urgency_detection": true,
+    "spam_filtering": true,
+    "depth_tracking": true,
+    "mood_resonance": true,
+    "cross_module_memory": true,
+    "dinosaur_eggs": false,
+    "real_time_timers": false,
+    "audio_input": false,
+    "audio_output": false,
+    "vault_rag": true,
+    "multi_pack_session": true,
+    "session_journal": true
+  },
+
+  "delivery": {
+    "default_mode": "staged",
+    "allowed_recipients": ["email", "internal"],
+    "require_approval_for_ai_sessions": true
+  },
+
+  "privacy": {
+    "disclosure": "This conversation may be reviewed by our support team to help resolve your issue and improve our service.",
+    "data_tier": "contact_form",
+    "transcript_available": true,
+    "retention_days": 90
+  },
+
+  "notifications": {
+    "escalation_needed": {
+      "condition": "qualification.urgency in ['high', 'critical'] or session.escalation_requested == true",
+      "channels": ["email", "push"],
+      "template": "escalation_alert",
+      "priority": "immediate"
+    },
+    "churn_risk": {
+      "condition": "qualification.flags contains 'churn_risk' and qualification.score >= 60",
+      "channels": ["sms", "email"],
+      "template": "churn_risk_alert",
+      "priority": "immediate"
+    },
+    "vip_customer": {
+      "condition": "ticket.customer_tier == 'vip' or ticket.customer_tier == 'enterprise'",
+      "channels": ["sms", "email"],
+      "template": "vip_contact",
+      "priority": "immediate"
+    },
+    "resolved_no_escalation": {
+      "condition": "session.outcome == 'resolved' and session.escalated == false",
+      "channels": ["log"],
+      "template": "auto_resolved"
+    },
+    "spam_detected": {
+      "condition": "qualification.spam_score >= 0.8",
+      "channels": ["log"],
+      "template": "spam_flag"
+    }
+  },
+
+  "settings": {
+    "response_depth": {
+      "default": "concise",
+      "options": ["concise", "balanced", "detailed"]
+    },
+    "tone": {
+      "default": "helpful_warm",
+      "options": ["helpful_warm", "professional_formal", "casual_friendly"]
+    }
+  },
+
+  "state": {
+    "session": {
+      "category": null,
+      "outcome": null,
+      "turn_count": 0,
+      "active_cartridge": null,
+      "depth": 0,
+      "started_at": null,
+      "last_activity": null,
+      "escalated": false,
+      "escalation_requested": false,
+      "escalation_reason": null,
+      "resolution_type": null,
+      "resolution_summary": null,
+      "csat_prompted": false
+    },
+    "contact": {
+      "name": null,
+      "email": null,
+      "phone": null,
+      "account_id": null,
+      "customer_tier": null,
+      "preferred_method": null,
+      "collected_at": null
+    },
+    "qualification": {
+      "score": 0,
+      "urgency": "normal",
+      "flags": [],
+      "disqualifiers": [],
+      "spam_score": 0.0,
+      "sentiment": "neutral",
+      "intent": null
+    },
+    "summary": {
+      "auto_summary": null,
+      "key_facts": [],
+      "decisions": [],
+      "action_items": [],
+      "entities_extracted": {},
+      "recommended_actions": []
+    },
+    "ticket": {
+      "issue_type": null,
+      "issue_category": null,
+      "issue_subcategory": null,
+      "product_area": null,
+      "severity": null,
+      "customer_tier": null,
+      "account_age": null,
+      "previous_contacts": null,
+      "steps_attempted": [],
+      "steps_resolved": [],
+      "steps_remaining": [],
+      "error_codes": [],
+      "environment": null,
+      "order_id": null,
+      "transaction_id": null,
+      "amount_disputed": null,
+      "screenshots_mentioned": false,
+      "reproducible": null,
+      "workaround_available": null
+    },
+    "sentiment_tracking": {
+      "initial_sentiment": null,
+      "current_sentiment": null,
+      "sentiment_trajectory": null,
+      "frustration_level": 0,
+      "escalation_signals": [],
+      "satisfaction_signals": []
+    },
+    "resolution": {
+      "resolved": false,
+      "resolution_type": null,
+      "resolution_steps": [],
+      "follow_up_needed": false,
+      "follow_up_action": null,
+      "knowledge_gap": null,
+      "feedback_collected": false,
+      "csat_score": null
+    }
+  },
+
+  "theme": {
+    "accent": "#7C3AED",
+    "surface": "#0D0B09",
+    "text": "#E5E2DC"
+  },
+
+  "transcript": {
+    "format": "markdown",
+    "include_metadata": true,
+    "include_summary": true,
+    "include_scoring": false,
+    "include_extractions": true,
+    "download_label": "Download Support Transcript"
+  },
+
+  "schedule": {
+    "entries": [
+      {
+        "id": "after_hours_pause",
+        "action": "pause",
+        "pattern": "daily_at 17:00",
+        "reason": "Support team offline — after business hours"
+      },
+      {
+        "id": "morning_resume",
+        "action": "play",
+        "pattern": "daily_at 09:00",
+        "reason": "Support team online — business hours started"
+      }
+    ]
+  },
+
+  "data_rail": {
+    "tabs": [
+      {
+        "id": "auth",
+        "label": "Auth",
+        "icon": "key",
+        "type": "infrastructure"
+      },
+      {
+        "id": "pricing",
+        "label": "Pricing",
+        "icon": "sparkles",
+        "type": "infrastructure"
+      },
+      {
+        "id": "ticket_info",
+        "label": "Ticket Info",
+        "icon": "Headphones",
+        "type": "pack",
+        "title": "Support Ticket",
+        "description": "Captured securely. Encrypted at rest. Never sent to AI.",
+        "submit_label": "Save to Vault",
+        "success_message": "Ticket info saved.",
+        "endpoint": "/api/datarail/submit",
+        "fields": [
+          { "id": "customer_name", "type": "text", "label": "Customer Name", "placeholder": "Full name", "required": true, "pii": true },
+          { "id": "customer_email", "type": "email", "label": "Email", "placeholder": "customer@example.com", "required": true, "pii": true },
+          { "id": "customer_phone", "type": "tel", "label": "Phone", "placeholder": "(555) 555-5555", "required": false, "pii": true },
+          { "id": "issue_type", "type": "select", "label": "Issue Type", "required": true, "options": ["Billing", "Technical", "Account", "Product", "General"] },
+          { "id": "priority", "type": "select", "label": "Priority", "required": false, "options": ["Low", "Medium", "High", "Urgent"] },
+          { "id": "description", "type": "text", "label": "Description", "placeholder": "Brief description of the issue", "required": false, "pii": false }
+        ]
+      }
+    ]
+  },
+
+  "library": {
+    "visible": true,
+    "category": "support",
+    "tags": ["support", "routing", "resolution"],
+    "description": "Tier-1 support that resolves what it can, routes what it can't, and hands off with full context. Issue resolution, escalation paths, and structured summaries from every interaction.",
+    "author": "TMOS13",
+    "license": "included",
+    "verb_type": "intake",
+    "industry_tags": ["customer-service", "saas", "e-commerce"],
+    "icon_url": null,
+    "price": {
+      "model": "included",
+      "tier_minimum": null
+    }
+  }
+}

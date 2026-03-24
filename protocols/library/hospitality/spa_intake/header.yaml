@@ -1,0 +1,9 @@
+id: spa_intake
+name: Spa and Wellness Intake
+category: hospitality
+status: active
+description: Spa and wellness intake for spa directors, therapists, and wellness coordinators conducting a pre-treatment guest assessment. Evaluates health considerations, treatment preferences, areas of focus, contraindications, and wellness goals to produce a spa intake profile with treatment recommendations and contraindication flags.
+deliverable: spa_intake_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

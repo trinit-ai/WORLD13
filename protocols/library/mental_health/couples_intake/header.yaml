@@ -1,0 +1,9 @@
+id: couples_intake
+name: Couples Therapy Intake
+category: mental_health
+status: active
+description: Couples therapy intake for licensed therapists conducting an initial couples assessment. Evaluates the presenting concerns, relationship history, communication patterns, individual histories, safety screening, and treatment goals to produce a couples intake profile with relationship assessment and treatment planning considerations. Not clinical advice.
+deliverable: couples_intake_profile
+estimated_turns: 12-18
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,65 @@
+{
+  "id": "supply_chain_ag",
+  "name": "Agricultural Supply Chain Intake",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "agriculture",
+  "description": "Agricultural supply chain and market access assessment. Evaluates a farm operation's current buyer relationships, contract structure, market channel mix, input sourcing dependencies, and logistics constraints to produce a supply chain profile with diversification recommendations and risk flags.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "professional, direct",
+    "warmth": 0.5,
+    "humor": 0.0,
+    "formality": 0.7
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": true,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 18,
+    "estimated_turns": "10-14"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  },
+  "deliverables": {
+    "enabled": true,
+    "types": [
+      {
+        "id": "agricultural_supply_chain_profile",
+        "name": "Agricultural Supply Chain Profile",
+        "description": "Generated agricultural supply chain profile from intake session data.",
+        "trigger": {
+          "min_turns": 4,
+          "contact_required": false
+        },
+        "channels": [
+          "download"
+        ],
+        "include_transcript": true,
+        "include_state_snapshot": true
+      }
+    ]
+  }
+}

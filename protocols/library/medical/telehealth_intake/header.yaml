@@ -1,0 +1,9 @@
+id: telehealth_intake
+name: Telehealth Visit Intake
+category: medical
+status: active
+description: Telehealth visit intake for clinical staff conducting pre-visit intake for a telehealth encounter. Evaluates the chief complaint, technology readiness, the appropriateness of telehealth for the presenting concern, patient consent, and clinical documentation requirements to produce a telehealth intake profile with visit appropriateness assessment and pre-visit checklist. Not medical advice.
+deliverable: telehealth_intake_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

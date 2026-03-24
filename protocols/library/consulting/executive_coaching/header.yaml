@@ -1,0 +1,9 @@
+id: executive_coaching
+name: Executive Coaching Intake
+category: consulting
+status: active
+description: Executive coaching engagement intake for leaders seeking performance improvement, leadership transition support, or development in a specific capability area. Evaluates coaching mandate, development goal specificity, coachee readiness, sponsor alignment, confidentiality structure, and measurement approach to produce an executive coaching profile with gap analysis, risk flags, and recommended engagement structure.
+deliverable: executive_coaching_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

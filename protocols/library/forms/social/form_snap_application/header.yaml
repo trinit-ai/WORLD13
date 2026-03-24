@@ -1,0 +1,9 @@
+id: form_snap_application
+name: SNAP Application
+category: forms_social
+status: active
+description: Guided completion of a Supplemental Nutrition Assistance Program application covering household composition, income, assets, expenses, and eligibility factors.
+deliverable: completed_form
+estimated_turns: "10-12"
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,9 @@
+id: form_public_comment
+name: Public Comment Submission
+category: forms_government
+status: active
+description: Guided completion of a public comment for submission to a federal or state agency rulemaking docket.
+deliverable: completed_form
+estimated_turns: "6-8"
+version: 1.0
+author: Robert C. Ventura

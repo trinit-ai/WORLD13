@@ -1,0 +1,9 @@
+id: regret_processing
+name: Regret Processing
+category: temporal
+status: active
+description: Work through specific regret with honest accounting — what was chosen, what resulted, and what to do with what remains.
+deliverable: regret_record
+estimated_turns: "10-14"
+version: 1.0
+author: Robert C. Ventura

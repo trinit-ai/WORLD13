@@ -1,0 +1,9 @@
+id: prep_gre
+name: GRE Prep
+category: learning_exam
+status: active
+description: GRE preparation and diagnostic assessment. Covers Verbal Reasoning, Quantitative Reasoning, and Analytical Writing (AWA). Includes vocabulary assessment and section-specific strategy. Builds a study plan calibrated to target programs and score requirements.
+deliverable: gre_study_plan
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

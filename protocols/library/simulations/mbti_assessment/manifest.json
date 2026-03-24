@@ -1,0 +1,46 @@
+{
+  "id": "mbti_assessment",
+  "name": "Personality Type Assessment",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "games",
+  "description": "A conversational Myers-Briggs Type Indicator (MBTI) assessment that discovers your 4-letter personality type through behavioral questions and real-world scenarios rather than abstract self-ratings. Produces a full personality profile with type description, strengths, blind spots, and how you show up in work and relationships.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "direct, warm",
+    "warmth": 0.7,
+    "humor": 0.0,
+    "formality": 0.7
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 18,
+    "estimated_turns": "10-14"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  }
+}

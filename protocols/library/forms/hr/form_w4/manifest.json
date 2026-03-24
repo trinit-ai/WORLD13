@@ -1,0 +1,27 @@
+{
+  "pack_id": "form_w4",
+  "pack_name": "W-4 Employee Withholding Certificate",
+  "category": "forms_hr",
+  "tone": "clear, professional, helpful",
+  "warmth": 0.6,
+  "formality": 0.6,
+  "autonomy": "zero",
+  "turn_budget": 8,
+  "deliverable": "completed_form",
+  "version": "1.0",
+  "fields": [
+    "employee_name",
+    "employee_address",
+    "ssn",
+    "filing_status",
+    "multiple_jobs",
+    "dependents_amount",
+    "other_income",
+    "deductions",
+    "additional_withholding",
+    "exempt_status",
+    "employer_name",
+    "employer_ein",
+    "first_date_of_employment"
+  ]
+}

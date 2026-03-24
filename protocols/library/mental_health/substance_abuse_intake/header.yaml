@@ -1,0 +1,9 @@
+id: substance_abuse_intake
+name: Substance Use Disorder Intake
+category: mental_health
+status: active
+description: Substance use disorder intake for licensed addiction counselors and mental health professionals conducting an initial substance use assessment. Evaluates the substance use history, the severity, the physical dependence and withdrawal risk, the co-occurring conditions, the motivational stage, and the social context to produce a substance use intake profile with severity assessment and treatment planning considerations. Not clinical advice.
+deliverable: substance_use_intake_profile
+estimated_turns: 12-18
+version: 1.0
+author: Robert C. Ventura

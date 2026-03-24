@@ -1,0 +1,20 @@
+{
+  "id": "news_media_literacy",
+  "name": "Media Literacy",
+  "category": "news_literacy",
+  "version": "1.0",
+  "status": "active",
+  "turn_budget": [8, 10],
+  "metered": true,
+  "entry_point": "master.md",
+  "files": [
+    "header.yaml",
+    "manifest.json",
+    "MANIFEST.md",
+    "master.md"
+  ],
+  "description": "Media literacy — incentives, sourcing, framing, evaluation framework. Non-partisan skill building.",
+  "tags": ["media", "literacy", "news", "critical_thinking", "news_literacy"],
+  "author": "Robert C. Ventura",
+  "created": "2026-03-18"
+}

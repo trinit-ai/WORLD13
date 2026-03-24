@@ -1,0 +1,13 @@
+{
+  "id": "nature_hiking_trail",
+  "name": "Hiking and Trail Planning",
+  "slug": "hiking-trail",
+  "category": "nature",
+  "version": "1.0",
+  "status": "active",
+  "turn_budget": 10,
+  "metered": true,
+  "description": "Trail planning companion covering trail selection, difficulty assessment, gear, navigation, and outdoor safety.",
+  "tags": ["nature", "hiking", "trails", "outdoors", "fitness"],
+  "files": ["header.yaml", "manifest.json", "MANIFEST.md", "master.md"]
+}

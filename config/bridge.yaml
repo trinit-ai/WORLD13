@@ -1,0 +1,26 @@
+# 13TMOS Bridge Configuration
+# Sync layer between local 13TMOS and production platform
+
+remote:
+  url: https://joyful-dream-production-792d.up.railway.app
+  # TMOS13_REMOTE_KEY read from .env — never hardcoded here
+
+sync:
+  push:
+    default: unsynced_only   # all | unsynced_only | manual
+    exclude_packs:
+      - robert_c_ventura     # private packs never push
+      - vault_audit          # meta packs never push
+      - pack_builder
+    exclude_vault_behavior:
+      - none                 # sessions with vault.write: none never push
+      - metadata_only        # metadata-only sessions stay local
+
+  pull:
+    default: manual          # manual | on_boot | scheduled
+    pack_filter: all
+    since: "2026-03-01"
+
+  conflict_resolution: local_wins   # local_wins | remote_wins | skip
+
+state_file: config/bridge_state.json

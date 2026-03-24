@@ -1,0 +1,9 @@
+id: benefits_navigator
+name: Benefits Navigation
+category: professional_consumer
+status: active
+description: Helps individuals understand and optimize employer benefits including health insurance, retirement contributions, and enrollment decisions.
+deliverable: benefits_decision_brief
+estimated_turns: "8-12"
+version: 1.0
+author: Robert C. Ventura

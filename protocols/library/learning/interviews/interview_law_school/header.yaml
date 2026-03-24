@@ -1,0 +1,9 @@
+id: interview_law_school
+name: Law School Interview
+category: learning_interviews
+status: active
+description: Law school interview preparation session that helps applicants articulate their motivation for law, discuss their experiences with analytical depth, and navigate questions about specific legal interests and career goals.
+deliverable: law_school_interview_prep_brief
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

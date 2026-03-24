@@ -1,0 +1,20 @@
+{
+  "id": "sci_biology_cells",
+  "name": "Cell Biology",
+  "category": "science_exploration",
+  "version": "1.0",
+  "status": "active",
+  "turn_budget": [8, 10],
+  "metered": true,
+  "entry_point": "master.md",
+  "files": [
+    "header.yaml",
+    "manifest.json",
+    "MANIFEST.md",
+    "master.md"
+  ],
+  "description": "Cells as wonder — DNA, proteins, cellular machinery, and the astonishing complexity of life's basic unit.",
+  "tags": ["biology", "cells", "DNA", "proteins", "science"],
+  "author": "Robert C. Ventura",
+  "created": "2026-03-18"
+}

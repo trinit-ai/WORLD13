@@ -1,0 +1,9 @@
+id: parent_teen
+name: Teen Parent (13-18)
+category: parenting
+status: active
+description: Teen parent session covering the second individuation, identity formation, risk-taking, digital life, and the renegotiation of the parent-child relationship. Routes teen crisis (suicidal ideation, substance abuse, self-harm) to professional services.
+deliverable: teen_parent_session_summary
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

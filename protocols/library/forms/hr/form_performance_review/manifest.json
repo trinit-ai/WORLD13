@@ -1,0 +1,33 @@
+{
+  "pack_id": "form_performance_review",
+  "pack_name": "Employee Performance Review",
+  "category": "forms_hr",
+  "tone": "clear, professional, helpful",
+  "warmth": 0.6,
+  "formality": 0.6,
+  "autonomy": "mediated",
+  "turn_budget": 12,
+  "deliverable": "completed_form",
+  "version": "1.0",
+  "fields": [
+    "employee_name",
+    "employee_title",
+    "department",
+    "reviewer_name",
+    "reviewer_title",
+    "review_period_start",
+    "review_period_end",
+    "competency_ratings",
+    "competency_examples",
+    "goal_achievement",
+    "strengths",
+    "development_areas",
+    "next_period_goals",
+    "overall_rating",
+    "employee_comments",
+    "reviewer_comments",
+    "employee_signature",
+    "reviewer_signature",
+    "review_date"
+  ]
+}

@@ -1,0 +1,8 @@
+id: engage_news_story
+name: News Story Analysis
+category: media_engagement
+status: active
+description: Non-partisan news analysis partner. Context first, then stakeholder mapping, evidence assessment, and significance. Multiple credible perspectives presented. Factual consensus noted where it exists.
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

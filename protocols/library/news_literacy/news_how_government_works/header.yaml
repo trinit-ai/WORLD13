@@ -1,0 +1,18 @@
+id: news_how_government_works
+name: How Government Works
+category: news_literacy
+version: "1.0"
+status: active
+turn_budget: [8, 12]
+metered: true
+description: >
+  How government actually works — mechanics, processes, institutions, and
+  power structures. Strictly non-partisan. Mechanics, not advocacy.
+tags:
+  - government
+  - civics
+  - institutions
+  - process
+  - news_literacy
+author: Robert C. Ventura
+created: "2026-03-18"

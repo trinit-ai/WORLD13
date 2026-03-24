@@ -1,0 +1,9 @@
+id: parent_toddler
+name: Toddler Parent (1-3 Years)
+category: parenting
+status: active
+description: Toddler parent session covering tantrums as healthy individuation, language explosion, boundary setting, toilet training, and the daily reality of parenting a small human whose primary developmental task is asserting autonomy. Not clinical.
+deliverable: toddler_parent_session_summary
+estimated_turns: 8-10
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,9 @@
+id: it_consulting_intake
+name: IT Consulting Engagement Intake
+category: consulting
+status: active
+description: IT consulting engagement intake for technology assessment, system selection, implementation oversight, and digital transformation mandates. Evaluates an engagement's technical scope, current-state architecture, vendor and procurement posture, security and compliance exposure, build vs. buy decision status, and team composition to produce an IT engagement profile with gap analysis, risk flags, and recommended pre-engagement actions.
+deliverable: it_engagement_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

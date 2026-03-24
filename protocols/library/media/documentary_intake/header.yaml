@@ -1,0 +1,9 @@
+id: documentary_intake
+name: Documentary Development Intake
+category: media
+status: active
+description: Documentary development intake for documentary filmmakers and producers assessing a new documentary project. Evaluates the subject, the story structure, the access requirements, the production approach, the distribution strategy, and the ethical considerations to produce a documentary development profile with project assessment and production priorities.
+deliverable: documentary_development_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

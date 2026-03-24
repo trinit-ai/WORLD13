@@ -1,0 +1,324 @@
+{
+  "pack_id": "business_case",
+  "access": "paid",
+  "tier_gate": "V7",
+  "name": "Business Case Builder",
+  "version": "1.1.0",
+  "tagline": "Business decisions, modeled. Every assumption visible. Every variable testable.",
+  "philosophy": "Structure the ambiguity. Show the math. Name what matters most.",
+  "description": "Turn business decisions into transparent models. Headcount, build vs buy, pricing, market sizing, and ROI — all with visible assumptions and sensitivity analysis.",
+  "category": "quantitative",
+  "icon": "📊",
+
+  "personality": {
+    "tone": "sharp, consultative, structured, honest",
+    "warmth": 0.3,
+    "humor": 0.1,
+    "formality": 0.4,
+    "identity_name": null,
+    "identity_description": "A strategy consultant who builds models in front of you and tells you which assumptions matter most"
+  },
+
+  "cartridges": {
+    "headcount": {
+      "file": "headcount.md",
+      "name": "Headcount Planning",
+      "number": 1,
+      "description": "Hire, outsource, or automate? Fully-loaded cost comparison with productivity modeling.",
+      "state_class": "HeadcountState"
+    },
+    "build_vs_buy": {
+      "file": "build_vs_buy.md",
+      "name": "Build vs Buy",
+      "number": 2,
+      "description": "Total cost of ownership: building in-house vs. buying a solution. Hidden costs exposed.",
+      "state_class": "BuildVsBuyState"
+    },
+    "pricing": {
+      "file": "pricing.md",
+      "name": "Pricing Strategy",
+      "number": 3,
+      "description": "Price change impact modeling. Elasticity, break-even volume, revenue curve.",
+      "state_class": "PricingState"
+    },
+    "market_sizing": {
+      "file": "market_sizing.md",
+      "name": "Market Sizing",
+      "number": 4,
+      "description": "TAM, SAM, SOM — top-down and bottoms-up. How big is the opportunity, really?",
+      "state_class": "MarketSizingState"
+    },
+    "roi": {
+      "file": "roi.md",
+      "name": "ROI Model",
+      "number": 5,
+      "description": "Will this investment pay off? Payback period, NPV, and the assumptions that matter.",
+      "state_class": "ROIState"
+    },
+    "company_profile": {
+      "name": "Company Profile",
+      "number": 6,
+      "description": "Your business identity, hours, contact info, FAQs, disclaimers, and policies — automatically woven into every interaction.",
+      "passive": true
+    }
+  },
+
+  "system_screens": {
+    "boot": "boot.md",
+    "menu": "menu.md"
+  },
+
+  "commands": {
+    "numerical": {},
+    "session": {
+      "reset": {
+        "action": "reset_session",
+        "label": "Clear Model"
+      },
+      "menu": {
+        "action": "menu",
+        "label": "All Builders"
+      },
+      "status": {
+        "action": "status",
+        "label": "Session Summary"
+      }
+    },
+    "navigation": {
+      "headcount|hire|hiring|outsourc|staff|team\\s*size|contractor|automat|FTE|fully.?loaded": {
+        "action": "navigate",
+        "target": "headcount"
+      },
+      "build\\s*vs|buy\\s*vs|make\\s*or|build\\s*or|vendor|in.?house|TCO|total\\s*cost": {
+        "action": "navigate",
+        "target": "build_vs_buy"
+      },
+      "pric(e|ing)|elasticity|raise\\s*price|lower\\s*price|discount|margin|markup|revenue\\s*impact": {
+        "action": "navigate",
+        "target": "pricing"
+      },
+      "market\\s*siz|TAM|SAM|SOM|addressable|opportunity|how\\s*big|total\\s*market": {
+        "action": "navigate",
+        "target": "market_sizing"
+      },
+      "ROI|return\\s*on|payback|NPV|net\\s*present|break.?even|business\\s*case|initiative|invest": {
+        "action": "navigate",
+        "target": "roi"
+      }
+    }
+  },
+
+  "features": {
+    "session_intelligence": true,
+    "depth_tracking": true,
+    "mood_resonance": false,
+    "cross_module_memory": true,
+    "contact_collection": false,
+    "transcript_export": true,
+    "qualification_scoring": false,
+    "urgency_detection": false,
+    "spam_filtering": true,
+    "audio_input": false,
+    "audio_output": false,
+    "vault_rag": true,
+    "multi_pack_session": true,
+    "session_journal": true
+  },
+
+  "delivery": {
+    "default_mode": "staged",
+    "allowed_recipients": ["email", "internal"],
+    "require_approval_for_ai_sessions": true
+  },
+
+  "security": {
+    "require_turnstile": true,
+    "max_messages_per_session": 100,
+    "max_messages_per_minute": 4,
+    "bot_response_mode": "challenge"
+  },
+
+  "privacy": {
+    "disclosure": "Business data you share is used for calculations only. Nothing is stored permanently or shared.",
+    "data_tier": "anonymous",
+    "transcript_available": true,
+    "retention_days": 30
+  },
+
+  "deliverables": {
+    "types": [
+      {
+        "id": "executive_summary",
+        "name": "Executive Summary",
+        "trigger": {
+          "cartridges_required": [],
+          "min_cartridges_visited": 1,
+          "model_complete": true,
+          "min_turns": 6
+        },
+        "fields": [
+          { "id": "model_type", "category": "session", "required": true },
+          { "id": "decision_question", "category": "session", "required": true },
+          { "id": "recommendation", "category": "model", "required": false },
+          { "id": "swing_variable", "category": "model", "required": true },
+          { "id": "three_cases", "category": "model", "required": true },
+          { "id": "key_assumptions", "category": "model", "required": true },
+          { "id": "sensitivity_results", "category": "model", "required": false }
+        ],
+        "template": {
+          "title": "Executive Summary — {{model_type}} — {{date}}",
+          "sections": [
+            { "id": "decision", "heading": "The Decision", "order": 1 },
+            { "id": "model_summary", "heading": "Model Summary", "order": 2 },
+            { "id": "three_cases", "heading": "Scenario Analysis", "order": 3 },
+            { "id": "swing_variable", "heading": "What Matters Most", "order": 4 },
+            { "id": "sensitivity", "heading": "Sensitivity Analysis", "condition": "sensitivity_results", "order": 5 },
+            { "id": "assumptions", "heading": "Key Assumptions", "order": 6 },
+            { "id": "verdict", "heading": "The Verdict", "order": 7 },
+            { "id": "transcript", "heading": "Session Transcript", "order": 8 }
+          ]
+        }
+      },
+      {
+        "id": "model_comparison",
+        "name": "Multi-Model Comparison",
+        "trigger": {
+          "cartridges_required": [],
+          "min_cartridges_visited": 2,
+          "model_complete": true,
+          "min_turns": 10
+        },
+        "fields": [
+          { "id": "models_built", "category": "session", "required": true },
+          { "id": "comparison_matrix", "category": "model", "required": true },
+          { "id": "cross_model_insights", "category": "model", "required": false }
+        ],
+        "template": {
+          "title": "Model Comparison — {{date}}",
+          "sections": [
+            { "id": "overview", "heading": "Models Built", "order": 1 },
+            { "id": "comparison", "heading": "Head-to-Head", "order": 2 },
+            { "id": "insights", "heading": "Cross-Model Insights", "condition": "cross_model_insights", "order": 3 },
+            { "id": "transcript", "heading": "Session Transcript", "order": 4 }
+          ]
+        }
+      }
+    ]
+  },
+
+  "settings_defaults": {
+    "formatting": "rich",
+    "currency": "USD",
+    "show_formulas": true
+  },
+
+  "theme": {
+    "accent": "#F59E0B",
+    "surface": "#0D0B09",
+    "text": "#E5E2DC"
+  },
+
+  "state": {
+    "session": {
+      "active_cartridge": null,
+      "turn_count": 0,
+      "depth": 0,
+      "models_built": 0,
+      "decision_question": null,
+      "model_types_used": []
+    },
+    "headcount": {
+      "model_complete": false,
+      "scenarios": [],
+      "recommendation": null,
+      "fully_loaded_costs": {},
+      "swing_variable": null
+    },
+    "build_vs_buy": {
+      "model_complete": false,
+      "build_tco": null,
+      "buy_tco": null,
+      "break_even_month": null,
+      "recommendation": null,
+      "swing_variable": null
+    },
+    "pricing": {
+      "model_complete": false,
+      "current_price": null,
+      "current_volume": null,
+      "scenarios": [],
+      "optimal_price": null,
+      "swing_variable": null
+    },
+    "market_sizing": {
+      "model_complete": false,
+      "tam": null,
+      "sam": null,
+      "som": null,
+      "method": null,
+      "assumptions": [],
+      "swing_variable": null
+    },
+    "roi": {
+      "model_complete": false,
+      "investment": null,
+      "payback_months": null,
+      "npv": null,
+      "irr": null,
+      "break_even_point": null,
+      "swing_variable": null
+    }
+  },
+
+  "data_rail": {
+    "tabs": [
+      {
+        "id": "auth",
+        "label": "Auth",
+        "icon": "key",
+        "type": "infrastructure"
+      },
+      {
+        "id": "pricing",
+        "label": "Pricing",
+        "icon": "sparkles",
+        "type": "infrastructure"
+      },
+      {
+        "id": "project_info",
+        "label": "Project Info",
+        "icon": "Briefcase",
+        "type": "pack",
+        "title": "Project Information",
+        "description": "Captured securely. Encrypted at rest. Never sent to AI.",
+        "submit_label": "Save to Vault",
+        "success_message": "Project info saved.",
+        "endpoint": "/api/datarail/submit",
+        "fields": [
+          { "id": "contact_name", "type": "text", "label": "Contact Name", "placeholder": "Full name", "required": true, "pii": true },
+          { "id": "contact_email", "type": "email", "label": "Email", "placeholder": "you@example.com", "required": true, "pii": true },
+          { "id": "company", "type": "text", "label": "Company", "placeholder": "Organization name", "required": false, "pii": false },
+          { "id": "project_type", "type": "select", "label": "Project Type", "required": true, "options": ["Headcount Plan", "Build vs Buy", "Pricing Strategy", "Market Sizing", "ROI Model", "Other"] },
+          { "id": "budget_range", "type": "select", "label": "Budget Range", "required": false, "options": ["Under $50K", "$50K\u2013$250K", "$250K\u2013$1M", "$1M+", "Not Sure"] },
+          { "id": "timeline", "type": "text", "label": "Timeline", "placeholder": "Target deadline or timeframe", "required": false, "pii": false }
+        ]
+      }
+    ]
+  },
+
+  "library": {
+    "visible": true,
+    "category": "finance",
+    "tags": ["analysis", "business-plan", "financial"],
+    "description": "Three-case decision modeling with visible assumptions and sensitivity analysis. Headcount planning, build vs buy, pricing strategy, market sizing, and ROI.",
+    "author": "TMOS13",
+    "license": "included",
+    "verb_type": "compose",
+    "industry_tags": ["consulting", "finance", "strategy"],
+    "icon_url": null,
+    "price": {
+      "model": "included",
+      "tier_minimum": null
+    }
+  }
+}

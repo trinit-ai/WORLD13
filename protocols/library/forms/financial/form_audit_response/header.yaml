@@ -1,0 +1,9 @@
+id: form_audit_response
+name: IRS Audit Response Letter
+category: forms_financial
+status: active
+description: Guided completion of an IRS audit response letter with item-by-item position documentation, deadline tracking, and professional representation advisory.
+deliverable: completed_form
+estimated_turns: "10-12"
+version: 1.0
+author: Robert C. Ventura

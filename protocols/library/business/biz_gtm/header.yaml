@@ -1,0 +1,9 @@
+id: biz_gtm
+name: Go-To-Market Planning
+category: business
+status: active
+description: Go-to-market planning session that helps founders define their ideal customer profile, form channel hypotheses, plan for their first 100 customers, and internalize that distribution beats product in early-stage growth.
+deliverable: gtm_plan
+estimated_turns: 12-16
+version: 1.0
+author: Robert C. Ventura

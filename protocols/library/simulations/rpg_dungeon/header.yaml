@@ -1,0 +1,9 @@
+id: rpg_dungeon
+name: RPG Dungeon Crawl
+category: simulations
+status: active
+description: A text-based RPG dungeon crawl where the player explores procedurally described environments, encounters NPCs, solves puzzles, and engages in turn-based combat — navigating deeper into the dungeon until the boss is defeated or the character falls. The session runs the dungeon world completely, tracks character state across turns, and produces an adventure log at conclusion.
+deliverable: adventure_log
+estimated_turns: 20-40
+version: 1.0
+author: Robert C. Ventura

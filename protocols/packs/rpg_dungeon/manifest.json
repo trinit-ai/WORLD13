@@ -1,0 +1,14 @@
+{
+  "pack_id": "rpg_dungeon",
+  "name": "RPG Dungeon",
+  "version": "1.0.0",
+  "description": "Governs text-based RPG dungeon crawl sessions where the player explores procedurally described environments, encounters NPCs, solves puzzles, and engages in turn-based combat.",
+  "category": "games",
+  "state": {
+    "capture": {
+      "character_name": null,
+      "character_class": null,
+      "difficulty": null
+    }
+  }
+}

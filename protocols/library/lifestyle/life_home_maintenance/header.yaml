@@ -1,0 +1,8 @@
+id: life_home_maintenance
+name: Home Maintenance Triage
+category: lifestyle
+status: active
+description: Home maintenance triage session for diagnosing household issues and routing between DIY solutions and professional help — with safety as the primary routing criterion.
+estimated_turns: 6-10
+version: 1.0
+author: Robert C. Ventura

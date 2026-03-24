@@ -1,0 +1,46 @@
+{
+  "id": "interview_sim",
+  "name": "Job Interview Simulation",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "simulations",
+  "description": "A live job interview simulation for candidates preparing for professional interviews. The session plays the role of a realistic interviewer \u2014 behavioral, competency-based, or technical \u2014 and produces a performance debrief with answer quality assessment, communication effectiveness, and specific improvement recommendations.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "professional, direct",
+    "warmth": 0.5,
+    "humor": 0.0,
+    "formality": 0.7
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 24,
+    "estimated_turns": "10-20"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  }
+}

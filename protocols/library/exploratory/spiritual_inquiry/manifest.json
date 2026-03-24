@@ -1,0 +1,36 @@
+{
+  "id": "spiritual_inquiry",
+  "name": "Spiritual Inquiry",
+  "category": "exploratory",
+  "version": "1.0",
+  "turns": {
+    "min": 8,
+    "max": 12
+  },
+  "author": "Robert C. Ventura",
+  "company": "TMOS13, LLC",
+  "description": "Questioning, exploring, or deepening spiritual understanding. Holds no position on what is true spiritually. Faith and doubt coexist.",
+  "kill_patterns": [
+    "pushing toward any conclusion",
+    "dismissing spiritual experience",
+    "promoting any tradition over another",
+    "secularizing spiritual content",
+    "theologizing without invitation"
+  ],
+  "completion": {
+    "type": "experiential",
+    "signal": "something shifted in the person's relationship to their spiritual question"
+  },
+  "routing": [
+    {
+      "condition": "significant distress",
+      "destination": "pastoral or therapeutic support"
+    }
+  ],
+  "files": [
+    "header.yaml",
+    "manifest.json",
+    "MANIFEST.md",
+    "master.md"
+  ]
+}

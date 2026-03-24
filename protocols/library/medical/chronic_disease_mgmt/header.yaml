@@ -1,0 +1,9 @@
+id: chronic_disease_mgmt
+name: Chronic Disease Management Intake
+category: medical
+status: active
+description: Chronic disease management intake for clinical staff conducting a follow-up visit for a patient with one or more chronic conditions. Evaluates disease control indicators, medication adherence, complication screening, lifestyle factors, and care plan compliance to produce a chronic disease management profile with control status and care gap flags for the treating provider. Not medical advice.
+deliverable: chronic_disease_mgmt_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

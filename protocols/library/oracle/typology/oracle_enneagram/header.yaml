@@ -1,0 +1,9 @@
+id: oracle_enneagram
+name: Enneagram Typing Session
+category: oracle_typology
+status: active
+description: Guided Enneagram typing session exploring the nine types through core fear, core motivation, wings, instinctual variants, and integration/disintegration lines. Types by motivation, not behavior.
+consequence_class: ZERO
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,17 @@
+id: coll_coins_numismatics
+name: Coin Collecting
+slug: coins
+category: collecting
+version: "1.0"
+status: active
+turn_budget: 10
+metered: true
+description: >
+  Coin collecting companion covering grading, PCGS/NGC certification,
+  key dates, series knowledge, and market navigation.
+tags:
+  - collecting
+  - coins
+  - numismatics
+  - grading
+  - currency

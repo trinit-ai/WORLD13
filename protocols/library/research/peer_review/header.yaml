@@ -1,0 +1,9 @@
+id: peer_review
+name: Peer Review Intake
+category: research
+status: active
+description: Peer review intake for researchers conducting a peer review of a manuscript submitted to a journal. Evaluates the manuscript's contribution, methodology, analysis, reporting quality, and alignment with the journal's scope to produce a peer review intake profile with structured review priorities and recommendation framework.
+deliverable: peer_review_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

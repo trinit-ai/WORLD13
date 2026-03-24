@@ -1,0 +1,17 @@
+{
+  "id": "interview_technical_pm",
+  "name": "PM Interview Prep",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "learning_interviews",
+  "description": "Product manager interview preparation session covering product sense, analytical, execution, and leadership question types. Practices structured responses with real-world product scenarios.",
+  "base": "library_intake",
+  "personality": { "tone": "precise", "warmth": 0.4, "humor": 0.1, "formality": 0.5 },
+  "cartridges": [],
+  "commands": { "session": { "reset": { "pattern": "^(reset|start over|restart|new session|clear)$", "action": "reset_session" }, "status": { "pattern": "^(status|progress|where am i|summary)$", "action": "show_status" } } },
+  "features": { "session_intelligence": true, "contact_collection": false, "deliverables_pipeline": true, "session_journal": true, "depth_tracking": true },
+  "session_policy": { "type": "metered", "free_turns": 20, "estimated_turns": "12-16" },
+  "privacy": { "disclosure": "A summary of this session will be available for review.", "data_tier": "standard_intake", "transcript_available": true },
+  "deliverables": { "enabled": true, "types": [{ "id": "pm_interview_prep_brief", "name": "PM Interview Prep Brief", "description": "Generated PM interview prep brief.", "trigger": { "min_turns": 5, "contact_required": false }, "channels": ["download"], "include_transcript": true, "include_state_snapshot": true }] }
+}

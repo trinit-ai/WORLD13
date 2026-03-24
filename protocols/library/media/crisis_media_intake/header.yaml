@@ -1,0 +1,9 @@
+id: crisis_media_intake
+name: Crisis Media Response Intake
+category: media
+status: active
+description: Crisis media response intake for communications professionals, PR teams, and executives managing an organizational crisis with media attention. Evaluates the crisis type, the media exposure, the stakeholder map, the response strategy, and the messaging to produce a crisis response profile with immediate action requirements and communications framework. Not legal advice.
+deliverable: crisis_response_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

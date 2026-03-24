@@ -1,0 +1,9 @@
+id: discovery_call
+name: Discovery Call Intake
+category: sales
+status: active
+description: Discovery call intake for sales professionals conducting or preparing for a discovery conversation. Evaluates the prospect's current situation, the pain and its business impact, the decision-making process, the timeline, the budget context, and the competitive landscape to produce a discovery call profile with qualification assessment and next step recommendations.
+deliverable: discovery_call_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

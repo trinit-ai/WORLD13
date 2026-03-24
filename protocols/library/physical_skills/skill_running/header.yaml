@@ -1,0 +1,19 @@
+id: skill_running
+name: Running Session
+category: physical_skills
+version: "1.0"
+status: active
+turn_budget: [8, 10]
+metered: true
+description: >
+  Running guidance — form, training plans, injury prevention, the mental
+  side of running, and race preparation. From beginner joggers to
+  experienced runners seeking improvement.
+tags:
+  - running
+  - fitness
+  - endurance
+  - form
+  - physical_skills
+author: Robert C. Ventura
+created: "2026-03-18"

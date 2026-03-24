@@ -1,0 +1,9 @@
+id: job_seeker_intake
+name: Job Seeker Session
+category: professional_consumer
+status: active
+description: Supports individuals navigating job search, interview preparation, and offer evaluation.
+deliverable: job_search_profile
+estimated_turns: "10-14"
+version: 1.0
+author: Robert C. Ventura

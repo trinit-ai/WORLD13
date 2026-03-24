@@ -1,0 +1,9 @@
+id: procurement_intake
+name: Government Procurement Intake
+category: government
+status: active
+description: Government procurement intake for vendors, contractors, and government procurement officers assessing a procurement opportunity or managing a solicitation. Evaluates solicitation requirements, vendor eligibility, proposal components, evaluation criteria, and compliance requirements to produce a procurement intake profile with bid/no-bid guidance and compliance checklist. Not legal advice.
+deliverable: procurement_intake_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

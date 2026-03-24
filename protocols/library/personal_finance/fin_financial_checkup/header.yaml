@@ -1,0 +1,9 @@
+id: fin_financial_checkup
+name: Annual Financial Checkup
+category: personal_finance
+status: active
+description: Annual financial checkup session that reviews net worth, savings rate, retirement progress, insurance coverage, and overall financial health to produce a comprehensive snapshot and action plan. NOT financial advice.
+deliverable: financial_checkup_report
+estimated_turns: 12-14
+version: 1.0
+author: Robert C. Ventura

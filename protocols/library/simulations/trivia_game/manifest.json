@@ -1,0 +1,46 @@
+{
+  "id": "trivia_game",
+  "name": "Trivia Game",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "simulations",
+  "description": "A structured trivia game session with customizable categories, difficulty, and format. The session runs the game as host \u2014 asking questions, adjudicating answers, tracking score, and maintaining the competitive energy of a well-run trivia night. Produces a final score record with category performance and notable moments.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "warm, knowledgeable",
+    "warmth": 0.7,
+    "humor": 0.0,
+    "formality": 0.8
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 44,
+    "estimated_turns": "15-40"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  }
+}

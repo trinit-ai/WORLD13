@@ -1,0 +1,9 @@
+id: oracle_love_type
+name: Love Type Session
+category: oracle_typology
+status: active
+description: Guided attachment style exploration covering secure, anxious-preoccupied, dismissive-avoidant, and fearful-avoidant (disorganized) patterns. Behavioral assessment through relationship scenarios, not self-rating.
+consequence_class: ZERO
+estimated_turns: 10-12
+version: 1.0
+author: Robert C. Ventura

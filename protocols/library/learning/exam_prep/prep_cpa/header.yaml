@@ -1,0 +1,9 @@
+id: prep_cpa
+name: CPA Exam Prep
+category: learning_exam
+status: active
+description: CPA Exam preparation and diagnostic assessment. Covers all four sections — FAR (Financial Accounting and Reporting), AUD (Auditing and Attestation), REG (Regulation), and BEC (Business Environment and Concepts). Includes section order strategy and 18-month window planning.
+deliverable: cpa_study_plan
+estimated_turns: 12-16
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,9 @@
+id: tenant_intake
+name: Tenant Advocacy Session
+category: professional_consumer
+status: active
+description: Guides tenants navigating rental situations — rights, disputes, lease interpretation, and landlord response.
+deliverable: tenant_brief
+estimated_turns: "8-12"
+version: 1.0
+author: Robert C. Ventura

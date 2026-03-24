@@ -1,0 +1,9 @@
+id: fin_student_loan
+name: Student Loan Navigation
+category: personal_finance
+status: active
+description: Student loan navigation session that helps borrowers understand repayment options including standard, income-driven (IDR), and Public Service Loan Forgiveness (PSLF), and build a strategy aligned with their career and financial situation. NOT financial advice.
+deliverable: student_loan_strategy
+estimated_turns: 10-12
+version: 1.0
+author: Robert C. Ventura

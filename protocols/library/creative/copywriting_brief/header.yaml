@@ -1,0 +1,9 @@
+id: copywriting_brief
+name: Copywriting Brief Intake
+category: creative
+status: active
+description: Copywriting brief intake for organizations or practitioners commissioning copy — advertising, web, email, product, or long-form. Evaluates the brief quality, audience definition, tone and voice parameters, call to action clarity, approval process, and usage rights to produce a copywriting brief profile with gap analysis and risk flags.
+deliverable: copywriting_brief_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

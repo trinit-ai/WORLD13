@@ -1,0 +1,9 @@
+id: membership_intake
+name: Hospitality Membership Intake
+category: hospitality
+status: active
+description: Hospitality membership intake for private clubs, hotel loyalty programs, and membership-based hospitality organizations onboarding a new member. Evaluates membership tier, interests, usage patterns, service preferences, and communication preferences to produce a member profile with personalized service priorities and onboarding action items.
+deliverable: member_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

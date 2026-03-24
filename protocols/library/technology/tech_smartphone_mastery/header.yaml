@@ -1,0 +1,9 @@
+id: tech_smartphone_mastery
+name: Smartphone Mastery
+category: technology
+status: active
+description: Smartphone mastery session covering hidden features, privacy settings, accessibility options, and power-user techniques for iOS and Android. Platform-specific guidance based on visitor's device.
+deliverable: smartphone_mastery_summary
+estimated_turns: 6-10
+version: 1.0
+author: Robert C. Ventura

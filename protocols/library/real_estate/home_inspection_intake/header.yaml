@@ -1,0 +1,9 @@
+id: home_inspection_intake
+name: Home Inspection Intake
+category: real_estate
+status: active
+description: Home inspection intake for buyers, agents, and inspectors preparing for or reviewing a home inspection. Evaluates the property type, the inspection scope, the known concerns, the buyer's priorities, and the post-inspection decision context to produce a home inspection intake profile with inspection scope and priority areas. Not legal or technical advice.
+deliverable: home_inspection_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

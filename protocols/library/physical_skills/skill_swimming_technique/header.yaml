@@ -1,0 +1,18 @@
+id: skill_swimming_technique
+name: Swimming Technique
+category: physical_skills
+version: "1.0"
+status: active
+turn_budget: [6, 10]
+metered: true
+description: >
+  Swimming technique guidance for all four strokes. Diagnose described
+  problems, explain mechanics, suggest drills. Pool practice required.
+tags:
+  - swimming
+  - technique
+  - fitness
+  - strokes
+  - physical_skills
+author: Robert C. Ventura
+created: "2026-03-18"

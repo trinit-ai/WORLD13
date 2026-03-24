@@ -1,0 +1,397 @@
+{
+  "id": "candidate_screener",
+  "access": "paid",
+  "tier_gate": "S1",
+  "name": "Candidate Screener",
+  "version": "1.1.0",
+  "description": "AI-powered first-round candidate screening — structured interviews, scored evaluations, hiring manager summaries.",
+  "tagline": "Your best interviewer, available 24/7.",
+  "philosophy": "The screening IS the audition — for both sides. A great first-round screen respects the candidate's time, draws out the information hiring managers actually need, and produces a deliverable that makes the next decision easy.",
+  "category": "verticals",
+  "icon": "👔",
+  "base": "public_facing",
+
+  "personality": {
+    "tone": "professional, friendly, perceptive",
+    "warmth": 0.6,
+    "humor": 0.1,
+    "formality": 0.6,
+    "identity_name": "Screening Interviewer",
+    "identity_description": "A first-round screening interviewer who builds rapport, asks smart follow-up questions, and produces scored candidate summaries for hiring managers"
+  },
+
+  "cartridges": [
+    {
+      "id": "screening",
+      "name": "General Screening",
+      "number": 1,
+      "description": "Standard first-round screen for any role — background, motivation, fit, availability.",
+      "file": "screening.md"
+    },
+    {
+      "id": "technical",
+      "name": "Technical Roles",
+      "number": 2,
+      "description": "Engineering, data, IT, and technical specialist screening.",
+      "file": "technical.md"
+    },
+    {
+      "id": "sales",
+      "name": "Sales & Business Development",
+      "number": 3,
+      "description": "Sales, account management, and business development screening.",
+      "file": "sales.md"
+    },
+    {
+      "id": "customer_facing",
+      "name": "Customer-Facing Roles",
+      "number": 4,
+      "description": "Support, service, retail, and client-facing position screening.",
+      "file": "customer_facing.md"
+    },
+    {
+      "id": "leadership",
+      "name": "Management & Leadership",
+      "number": 5,
+      "description": "Manager, director, and executive-level screening.",
+      "file": "leadership.md"
+    },
+    {
+      "id": "company_profile",
+      "name": "Company Profile",
+      "description": "Your business identity, hours, contact info, FAQs, disclaimers, and policies — automatically woven into every interaction.",
+      "passive": true
+    }
+  ],
+
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "menu": {
+        "pattern": "^(menu|help|options|what can you do|commands|back)$",
+        "action": "show_menu"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      },
+      "transcript": {
+        "pattern": "^(transcript|download|export|save)$",
+        "action": "show_transcript"
+      }
+    },
+    "navigation": {
+      "screening": {
+        "pattern": "(apply|application|interested|position|role|job|opportunity|general|screen)",
+        "cartridge": "screening"
+      },
+      "technical": {
+        "pattern": "(engineer|developer|software|data|IT|technical|devops|infrastructure|architect|programmer|coding|backend|frontend|fullstack|QA|testing)",
+        "cartridge": "technical"
+      },
+      "sales": {
+        "pattern": "(sales|account|business development|BDR|SDR|AE|revenue|quota|pipeline|closing|prospecting|partnerships)",
+        "cartridge": "sales"
+      },
+      "customer_facing": {
+        "pattern": "(support|service|customer|client|retail|hospitality|help desk|call center|representative|associate|advisor|concierge)",
+        "cartridge": "customer_facing"
+      },
+      "leadership": {
+        "pattern": "(manager|director|VP|executive|lead|head of|chief|C-suite|management|leadership|supervisor|principal)",
+        "cartridge": "leadership"
+      }
+    }
+  },
+
+  "system_screens": {
+    "boot": "boot.md",
+    "menu": "menu.md"
+  },
+
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "transcript_export": true,
+    "qualification_scoring": true,
+    "urgency_detection": true,
+    "spam_filtering": true,
+    "depth_tracking": true,
+    "mood_resonance": true,
+    "cross_module_memory": true,
+    "dinosaur_eggs": false,
+    "real_time_timers": false,
+    "audio_input": false,
+    "audio_output": false,
+    "vault_rag": true,
+    "multi_pack_session": true,
+    "session_journal": true
+  },
+
+  "delivery": {
+    "default_mode": "staged",
+    "allowed_recipients": ["email", "internal"],
+    "require_approval_for_ai_sessions": true
+  },
+
+  "privacy": {
+    "disclosure": "Your responses will be reviewed by our hiring team as part of the application process. You can download a copy of this conversation anytime.",
+    "data_tier": "contact_form",
+    "transcript_available": true,
+    "retention_days": 180
+  },
+
+  "deliverables": {
+    "types": [
+      {
+        "id": "candidate_evaluation",
+        "name": "Candidate Evaluation Summary",
+        "trigger": {
+          "cartridges_required": ["screening"],
+          "min_turns": 8,
+          "contact_required": false
+        },
+        "deliverable_schema": {
+          "type": "object",
+          "properties": {
+            "candidate_name": { "type": "string", "description": "Full name of the candidate" },
+            "role_applied": { "type": "string", "description": "Position the candidate applied for" },
+            "overall_rating": { "type": "number", "minimum": 1, "maximum": 5, "description": "Overall candidate rating 1-5" },
+            "strengths": { "type": "array", "items": { "type": "string" }, "description": "Key strengths observed" },
+            "concerns": { "type": "array", "items": { "type": "string" }, "description": "Concerns or red flags" },
+            "recommendation": { "type": "string", "enum": ["advance", "hold", "reject"], "description": "Hiring recommendation" },
+            "summary": { "type": "string", "description": "Executive summary of the candidate evaluation" }
+          },
+          "required": ["candidate_name", "role_applied", "overall_rating", "recommendation", "summary"]
+        },
+        "fields": [
+          { "id": "candidate_name", "category": "contact", "required": true },
+          { "id": "candidate_email", "category": "contact" },
+          { "id": "candidate_phone", "category": "contact" },
+          { "id": "role_applied", "category": "candidate", "required": true },
+          { "id": "role_category", "category": "candidate" },
+          { "id": "current_title", "category": "candidate" },
+          { "id": "current_company", "category": "candidate" },
+          { "id": "years_experience", "category": "candidate" },
+          { "id": "education", "category": "candidate" },
+          { "id": "skills", "category": "candidate", "type": "array" },
+          { "id": "salary_range", "category": "logistics" },
+          { "id": "availability_start", "category": "logistics" },
+          { "id": "work_authorization", "category": "logistics" },
+          { "id": "remote_preference", "category": "logistics" },
+          { "id": "composite_score", "category": "scoring", "required": true },
+          { "id": "experience_fit", "category": "scoring" },
+          { "id": "skill_match", "category": "scoring" },
+          { "id": "communication", "category": "scoring" },
+          { "id": "motivation", "category": "scoring" },
+          { "id": "culture_logistics_fit", "category": "scoring" },
+          { "id": "red_flags", "category": "scoring", "type": "array" },
+          { "id": "green_flags", "category": "scoring", "type": "array" },
+          { "id": "recommendation", "category": "evaluation", "required": true },
+          { "id": "overall_impression", "category": "evaluation" },
+          { "id": "strengths_observed", "category": "evaluation", "type": "array" },
+          { "id": "concerns_noted", "category": "evaluation", "type": "array" }
+        ],
+        "template": {
+          "title": "Candidate Evaluation — {{candidate_name}} — {{role_applied}} — {{date}}",
+          "sections": [
+            { "id": "overview", "heading": "Candidate Overview", "order": 1 },
+            { "id": "background", "heading": "Background & Experience", "order": 2 },
+            { "id": "scoring", "heading": "Evaluation Scorecard", "order": 3 },
+            { "id": "strengths", "heading": "Strengths & Green Flags", "condition": "green_flags", "order": 4 },
+            { "id": "concerns", "heading": "Concerns & Red Flags", "condition": "red_flags", "order": 5 },
+            { "id": "role_specific", "heading": "Role-Specific Assessment", "condition": "role_category", "order": 6 },
+            { "id": "logistics", "heading": "Logistics & Availability", "order": 7 },
+            { "id": "recommendation", "heading": "Recommendation & Next Steps", "order": 8 },
+            { "id": "transcript", "heading": "Interview Transcript", "order": 9 }
+          ]
+        }
+      }
+    ]
+  },
+
+  "notifications": {
+    "strong_candidate": {
+      "condition": "qualification.score >= 75",
+      "channels": ["email"],
+      "template": "strong_candidate"
+    },
+    "exceptional_candidate": {
+      "condition": "qualification.score >= 90",
+      "channels": ["sms", "email"],
+      "template": "exceptional_candidate",
+      "priority": "immediate"
+    },
+    "urgent_backfill": {
+      "condition": "qualification.urgency == 'high' and qualification.score >= 70",
+      "channels": ["sms", "email"],
+      "template": "urgent_backfill_match",
+      "priority": "immediate"
+    },
+    "spam_detected": {
+      "condition": "qualification.spam_score >= 0.8",
+      "channels": ["log"],
+      "template": "spam_flag"
+    }
+  },
+
+  "settings_defaults": {
+    "response_depth": "balanced",
+    "tone": "professional_friendly"
+  },
+
+  "settings": {
+    "response_depth": {
+      "default": "balanced",
+      "options": ["concise", "balanced", "detailed"]
+    },
+    "tone": {
+      "default": "professional_friendly",
+      "options": ["professional_friendly", "formal", "casual_startup"]
+    }
+  },
+
+  "state": {
+    "session": {
+      "category": null,
+      "outcome": null,
+      "turn_count": 0,
+      "active_cartridge": null,
+      "depth": 0,
+      "started_at": null,
+      "last_activity": null,
+      "role_category": null,
+      "screening_phase": null
+    },
+    "contact": {
+      "name": null,
+      "email": null,
+      "phone": null,
+      "preferred_method": null,
+      "linkedin": null,
+      "portfolio": null,
+      "location": null,
+      "collected_at": null
+    },
+    "qualification": {
+      "score": 0,
+      "urgency": "normal",
+      "flags": [],
+      "disqualifiers": [],
+      "spam_score": 0.0,
+      "sentiment": "neutral",
+      "intent": null
+    },
+    "summary": {
+      "auto_summary": null,
+      "key_facts": [],
+      "decisions": [],
+      "action_items": [],
+      "entities_extracted": {},
+      "recommended_actions": []
+    },
+    "candidate": {
+      "role_applied": null,
+      "role_category": null,
+      "years_experience": null,
+      "current_title": null,
+      "current_company": null,
+      "education": null,
+      "skills": [],
+      "certifications": [],
+      "salary_range": null,
+      "availability_start": null,
+      "notice_period": null,
+      "work_authorization": null,
+      "relocation": null,
+      "remote_preference": null,
+      "why_interested": null,
+      "why_leaving": null,
+      "strengths_observed": [],
+      "concerns_noted": [],
+      "culture_signals": [],
+      "communication_quality": null,
+      "overall_impression": null
+    },
+    "scoring": {
+      "experience_fit": 0,
+      "skill_match": 0,
+      "communication": 0,
+      "motivation": 0,
+      "culture_fit": 0,
+      "logistics_fit": 0,
+      "red_flags": [],
+      "green_flags": []
+    }
+  },
+
+  "theme": {
+    "accent": "#059669",
+    "surface": "#0D0B09",
+    "text": "#E5E2DC"
+  },
+
+  "transcript": {
+    "format": "markdown",
+    "include_metadata": true,
+    "include_summary": true,
+    "include_scoring": true,
+    "include_extractions": true,
+    "download_label": "Download Interview Summary"
+  },
+
+  "data_rail": {
+    "tabs": [
+      {
+        "id": "auth",
+        "label": "Auth",
+        "icon": "key",
+        "type": "infrastructure"
+      },
+      {
+        "id": "pricing",
+        "label": "Pricing",
+        "icon": "sparkles",
+        "type": "infrastructure"
+      },
+      {
+        "id": "candidate_info",
+        "label": "Candidate Info",
+        "icon": "UserPlus",
+        "type": "pack",
+        "title": "Candidate Information",
+        "description": "Captured securely. Encrypted at rest. Never sent to AI.",
+        "submit_label": "Save to Vault",
+        "success_message": "Candidate info saved.",
+        "endpoint": "/api/datarail/submit",
+        "fields": [
+          { "id": "candidate_name", "type": "text", "label": "Candidate Name", "placeholder": "Full name", "required": true, "pii": true },
+          { "id": "candidate_email", "type": "email", "label": "Email", "placeholder": "candidate@example.com", "required": true, "pii": true },
+          { "id": "candidate_phone", "type": "tel", "label": "Phone", "placeholder": "(555) 555-5555", "required": false, "pii": true },
+          { "id": "position", "type": "text", "label": "Position Applied", "placeholder": "Role title", "required": true, "pii": false },
+          { "id": "experience_level", "type": "select", "label": "Experience Level", "required": false, "options": ["Entry", "Mid", "Senior", "Executive"] },
+          { "id": "source", "type": "select", "label": "Source", "required": false, "options": ["LinkedIn", "Referral", "Job Board", "Direct Application", "Other"] }
+        ]
+      }
+    ]
+  },
+
+  "library": {
+    "visible": true,
+    "category": "hr",
+    "tags": ["recruiting", "screening", "assessment"],
+    "description": "First-round screening through structured interviews. Behavioral and technical tracks, scored evaluations, and hiring manager summaries. Consistent, fair, always available.",
+    "author": "TMOS13",
+    "license": "included",
+    "verb_type": "intake",
+    "industry_tags": ["human-resources", "recruiting", "staffing"],
+    "icon_url": null,
+    "price": {
+      "model": "included",
+      "tier_minimum": null
+    }
+  }
+}

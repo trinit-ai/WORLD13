@@ -1,0 +1,9 @@
+id: devops_intake
+name: DevOps Assessment Intake
+category: engineering
+status: active
+description: DevOps assessment intake for engineering leads and platform teams assessing or improving a software delivery pipeline. Evaluates CI/CD maturity, deployment frequency, change failure rate, mean time to recovery, environment parity, observability, and on-call health to produce a DevOps assessment profile with maturity assessment and improvement recommendations.
+deliverable: devops_assessment_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

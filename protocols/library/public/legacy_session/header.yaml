@@ -1,0 +1,18 @@
+id: legacy_session
+name: Legacy Session
+category: public
+turns: "10-12"
+version: "1.0"
+author: Robert C. Ventura
+company: "TMOS13, LLC"
+description: >
+  Thinking about what to leave behind — impact, trace, what matters. Adapts
+  to age (30s aspirational, 50s urgent, 70s accounting).
+kill_patterns:
+  - forcing grand narrative
+  - treating legacy as requiring fame
+  - minimizing ordinary lives
+  - morbidity without purpose
+  - toxic positivity about mortality
+completion: experiential
+completion_signal: "the person has a clearer sense of what they want to leave behind and why it matters"

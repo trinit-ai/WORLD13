@@ -1,0 +1,105 @@
+{
+  "id": "operator",
+  "access": "authed",
+  "name": "Operator",
+  "version": "1.0.0",
+  "description": "Platform operator agent. Action-first command surface for inbox, contacts, packs, automation, and observability.",
+  "category": "platform",
+  "icon": "~",
+  "visibility": "internal",
+
+  "personality": {
+    "tone": "terse, action-oriented, direct",
+    "warmth": 0.3,
+    "humor": 0.0,
+    "formality": 0.6,
+    "identity_name": null,
+    "identity_description": "The platform operator — executes commands, reads platform state, reports results. No small talk."
+  },
+
+  "cartridges": [
+    {
+      "id": "conversation",
+      "name": "Operations",
+      "description": "Platform operations: inbox, contacts, packs, automation, observability.",
+      "protocol": "conversation.md"
+    }
+  ],
+
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|clear)$",
+        "action": "reset_session"
+      }
+    },
+    "navigation": {}
+  },
+
+  "system_screens": {
+    "boot": "boot.md"
+  },
+
+  "routing": {
+    "strategy": "passthrough"
+  },
+
+  "knowledge": {
+    "enabled": false
+  },
+
+  "tools": {
+    "platform": {
+      "provider": "platform",
+      "description": "Read and manage platform state — inbox, contacts, packs, automation, observability.",
+      "scopes": [
+        "inbox_list", "inbox_stats", "inbox_update_status",
+        "contacts_list", "contacts_search",
+        "loop_status", "loop_ratify",
+        "pipeline_list", "pack_catalog", "session_stats"
+      ],
+      "requires_confirmation": false,
+      "confirmation_scopes": ["inbox_update_status", "loop_ratify"],
+      "config": {}
+    }
+  },
+
+  "features": {
+    "session_intelligence": false,
+    "depth_tracking": false,
+    "mood_resonance": false,
+    "contact_collection": false,
+    "cross_session_persistence": false,
+    "session_journal": false,
+    "user_identity": true,
+    "session_memory": false
+  },
+
+  "settings_defaults": {
+    "show_cartridge_numbers": false,
+    "show_depth": false,
+    "show_mood": false
+  },
+
+  "theme": {
+    "accent": "#2563EB",
+    "surface": "#060a0d",
+    "text": "#E5E7EB"
+  },
+
+  "library": {
+    "visible": false,
+    "category": "platform",
+    "tags": ["operator", "automation", "platform"],
+    "description": "Platform operator agent for managing inbox, contacts, packs, and automations.",
+    "author": "TMOS13",
+    "license": "included",
+    "verb_type": "",
+    "industry_tags": [],
+    "icon_url": null,
+    "price": {
+      "model": "included",
+      "tier_minimum": null
+    }
+  }
+}

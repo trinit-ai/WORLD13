@@ -1,0 +1,9 @@
+id: asylum_intake
+name: Asylum and Refugee Protection Intake
+category: diplomatic
+status: active
+description: Asylum and refugee protection intake for immigration attorneys, legal aid organizations, and asylum officers conducting an initial assessment of a protection claim. Evaluates the basis for protection, credibility indicators, procedural status, country conditions, and legal options to produce an asylum intake profile with protection analysis and recommended next steps.
+deliverable: asylum_intake_profile
+estimated_turns: 12-16
+version: 1.0
+author: Robert C. Ventura

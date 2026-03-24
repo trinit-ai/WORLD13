@@ -1,0 +1,65 @@
+{
+  "id": "strategy_intake",
+  "name": "Strategy Engagement Intake",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "consulting",
+  "description": "Strategy engagement intake for organizations defining direction, making resource allocation choices, or resolving a strategic inflection point. Evaluates the strategic question, decision-maker clarity, information base, competitive context, constraint map, and implementation ownership to produce a strategy engagement profile with gap analysis, risk flags, and recommended pre-strategy actions.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "direct, serious, precise",
+    "warmth": 0.3,
+    "humor": 0.0,
+    "formality": 0.8
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": true,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 18,
+    "estimated_turns": "10-14"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  },
+  "deliverables": {
+    "enabled": true,
+    "types": [
+      {
+        "id": "strategy_engagement_profile",
+        "name": "Strategy Engagement Profile",
+        "description": "Generated strategy engagement profile from intake session data.",
+        "trigger": {
+          "min_turns": 4,
+          "contact_required": false
+        },
+        "channels": [
+          "download"
+        ],
+        "include_transcript": true,
+        "include_state_snapshot": true
+      }
+    ]
+  }
+}

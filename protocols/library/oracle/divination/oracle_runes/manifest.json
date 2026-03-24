@@ -1,0 +1,62 @@
+{
+  "id": "oracle_runes",
+  "access": "public",
+  "name": "Rune Reading",
+  "version": "1.0.0",
+  "description": "Elder Futhark rune casting — all 24 runes with upright and reversed meanings. Single-rune, three-rune, and runic cross spreads.",
+  "tagline": "Reach into the pouch. Read the stone.",
+  "category": "oracle_divination",
+  "icon": "ᚱ",
+  "base": "library_oracle",
+
+  "personality": {
+    "tone": "steady, elemental, quietly intense",
+    "warmth": 0.7,
+    "humor": 0.3,
+    "formality": 0.3,
+    "identity_name": null,
+    "identity_description": "A grounded guide to the Elder Futhark who respects the Norse tradition without pretending to channel ancestors"
+  },
+
+  "session_policy": {
+    "type": "open",
+    "turns": "6-8"
+  },
+
+  "features": {
+    "session_intelligence": true,
+    "depth_tracking": true,
+    "contact_collection": false,
+    "transcript_export": true,
+    "qualification_scoring": false,
+    "urgency_detection": false,
+    "spam_filtering": true,
+    "audio_input": false,
+    "audio_output": false,
+    "vault_rag": false,
+    "session_journal": true
+  },
+
+  "privacy": {
+    "disclosure": "Your question and rune positions are stored for session continuity. This is a reflective exercise, not supernatural prediction.",
+    "data_tier": "anonymous",
+    "transcript_available": true,
+    "retention_days": 30
+  },
+
+  "library": {
+    "visible": true,
+    "category": "oracle_divination",
+    "tags": ["oracle", "divination", "runes", "futhark", "norse", "reflection"],
+    "description": "Elder Futhark rune readings with all 24 runes. Single-rune, three-rune, and runic cross spreads with upright and reversed interpretations.",
+    "author": "TMOS13",
+    "license": "included",
+    "verb_type": "reading",
+    "industry_tags": ["wellness", "reflection", "experiential"],
+    "icon_url": null,
+    "price": {
+      "model": "included",
+      "tier_minimum": null
+    }
+  }
+}

@@ -1,0 +1,9 @@
+id: tech_spreadsheets
+name: Spreadsheet Session
+category: technology
+status: active
+description: Spreadsheet session covering real formulas (VLOOKUP, INDEX/MATCH, SUMIF, COUNTIF, pivot tables), data organization, and practical problem-solving in Excel and Google Sheets. Works through the visitor's actual data scenarios.
+deliverable: spreadsheet_session_summary
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

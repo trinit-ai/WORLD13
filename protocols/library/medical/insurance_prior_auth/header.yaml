@@ -1,0 +1,9 @@
+id: insurance_prior_auth
+name: Insurance Prior Authorization Intake
+category: medical
+status: active
+description: Insurance prior authorization intake for clinical staff initiating a prior authorization request. Evaluates the procedure or medication requiring authorization, the clinical indication, the documentation required, the insurance requirements, and the urgency to produce a prior authorization intake profile with submission requirements and timeline. Not medical advice.
+deliverable: prior_auth_intake_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

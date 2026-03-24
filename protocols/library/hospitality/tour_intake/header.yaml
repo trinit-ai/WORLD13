@@ -1,0 +1,9 @@
+id: tour_intake
+name: Tour and Experience Intake
+category: hospitality
+status: active
+description: Tour and experience intake for tour operators, destination management companies, and travel experience designers scoping a guided tour or curated experience. Evaluates group composition, interests, physical capabilities, duration, budget, and special requirements to produce a tour brief with experience direction and operational requirements.
+deliverable: tour_experience_brief
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,46 @@
+{
+  "id": "spirit_torah_study",
+  "name": "Torah Study",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "spiritual_practices",
+  "description": "Torah study session covering the weekly parasha, classical commentators, interpretive methods, and Jewish textual engagement. Non-denominational.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "intellectually engaged, warm, respectful of tradition",
+    "warmth": 0.6,
+    "humor": 0.1,
+    "formality": 0.5
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 14,
+    "estimated_turns": "8-14"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  }
+}

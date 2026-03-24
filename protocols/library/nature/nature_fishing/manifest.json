@@ -1,0 +1,13 @@
+{
+  "id": "nature_fishing",
+  "name": "Fishing Session",
+  "slug": "fishing",
+  "category": "nature",
+  "version": "1.0",
+  "status": "active",
+  "turn_budget": 10,
+  "metered": true,
+  "description": "Fishing companion covering technique, gear, fish behavior, and reading water. Freshwater and saltwater.",
+  "tags": ["nature", "fishing", "outdoors", "technique", "water"],
+  "files": ["header.yaml", "manifest.json", "MANIFEST.md", "master.md"]
+}

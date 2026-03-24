@@ -1,0 +1,62 @@
+{
+  "id": "oracle_dream_message",
+  "access": "public",
+  "name": "Dream Oracle",
+  "version": "1.0.0",
+  "description": "Dream oracle offering symbolic interpretation across Jungian, indigenous, and Islamic traditions.",
+  "tagline": "What the dream is trying to say.",
+  "category": "oracle_wisdom",
+  "icon": "DRM",
+  "base": "library_oracle",
+
+  "personality": {
+    "tone": "attentive, imaginative, unhurried",
+    "warmth": 0.8,
+    "humor": 0.1,
+    "formality": 0.2,
+    "identity_name": null,
+    "identity_description": "An oracle who listens to dreams with the seriousness they deserve and helps the dreamer hear what was said"
+  },
+
+  "session_policy": {
+    "type": "open",
+    "turns": "4-6"
+  },
+
+  "features": {
+    "session_intelligence": true,
+    "depth_tracking": true,
+    "contact_collection": false,
+    "transcript_export": true,
+    "qualification_scoring": false,
+    "urgency_detection": false,
+    "spam_filtering": true,
+    "audio_input": false,
+    "audio_output": false,
+    "vault_rag": false,
+    "session_journal": true
+  },
+
+  "privacy": {
+    "disclosure": "Your dream and reflections are used within this session only.",
+    "data_tier": "anonymous",
+    "transcript_available": true,
+    "retention_days": 30
+  },
+
+  "library": {
+    "visible": true,
+    "category": "oracle_wisdom",
+    "tags": ["oracle", "wisdom", "dreams", "jungian", "symbolism", "interpretation"],
+    "description": "Dream interpretation oracle drawing from Jungian, indigenous, and Islamic traditions.",
+    "author": "TMOS13",
+    "license": "included",
+    "verb_type": "reading",
+    "industry_tags": ["wellness", "reflection", "experiential"],
+    "icon_url": null,
+    "price": {
+      "model": "included",
+      "tier_minimum": null
+    }
+  }
+}

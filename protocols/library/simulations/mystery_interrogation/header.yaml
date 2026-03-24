@@ -1,0 +1,9 @@
+id: mystery_interrogation
+name: Mystery Interrogation
+category: simulations
+status: active
+description: A mystery investigation experience in which the player interrogates suspects, examines evidence, and solves a crime through logical deduction. The session plays all characters in the mystery, manages the evidence and alibi system, and produces a case outcome record with the solution and the player's deduction path.
+deliverable: case_outcome_record
+estimated_turns: 20-40
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,9 @@
+id: ai_learning_coach
+name: Learning Coach
+category: ai_interaction
+status: active
+description: A governed learning coach session. Works on HOW the person learns, not WHAT. Metacognition, study strategies, relationship with not-knowing. Grounded in spaced repetition, retrieval practice, and interleaving science.
+consequence_class: ZERO
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

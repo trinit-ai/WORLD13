@@ -1,0 +1,9 @@
+id: ai_output_evaluator
+name: AI Output Evaluation
+category: ai_interaction
+status: active
+description: A governed AI output evaluation session. Critically evaluates AI-generated content for hallucination, bias, source reliability, and quality. Meta-aware — an AI evaluating AI output.
+consequence_class: ZERO
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

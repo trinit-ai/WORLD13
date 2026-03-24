@@ -1,0 +1,9 @@
+id: fin_life_insurance_basics
+name: Life Insurance Basics
+category: personal_finance
+status: active
+description: Life insurance basics session that explains term vs whole life, helps individuals estimate appropriate coverage amounts, and separates insurance education from insurance sales. NOT financial advice.
+deliverable: life_insurance_overview
+estimated_turns: 8-10
+version: 1.0
+author: Robert C. Ventura

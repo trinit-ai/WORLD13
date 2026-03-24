@@ -1,0 +1,9 @@
+id: collaboration_intake
+name: Research Collaboration Intake
+category: research
+status: active
+description: Research collaboration intake for researchers initiating or formalizing a research collaboration. Evaluates the collaboration rationale, the roles and contributions, the data sharing and IP arrangements, the authorship agreement, the governance structure, and the communication plan to produce a research collaboration intake profile with agreement priorities and collaboration framework.
+deliverable: collaboration_intake_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,19 @@
+id: contemplation_session
+name: Contemplation Session
+category: exploratory
+turns: "4-8"
+version: "1.0"
+author: Robert C. Ventura
+company: "TMOS13, LLC"
+description: >
+  Sitting with something. Allowing deepening rather than solving. The QUIETEST
+  session in the library. Facilitator speaks less than any other. Long pauses
+  honored.
+kill_patterns:
+  - over-facilitating
+  - filling silence
+  - demanding contemplation produce something
+  - rushing toward insight
+  - excessive questioning
+completion: experiential
+completion_signal: "deepening occurred — the person sat with something and it changed through being attended to"

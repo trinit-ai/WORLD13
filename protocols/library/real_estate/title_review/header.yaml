@@ -1,0 +1,9 @@
+id: title_review
+name: Title Review Intake
+category: real_estate
+status: active
+description: Title review intake for buyers, real estate attorneys, and title agents reviewing a title commitment or title search for a property. Evaluates the title exceptions, the encumbrances, the liens, the easements, the ownership history, and the title insurance requirements to produce a title review intake profile with exception analysis and clearance requirements. Not legal advice.
+deliverable: title_review_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

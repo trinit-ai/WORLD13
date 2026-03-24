@@ -1,0 +1,46 @@
+{
+  "id": "publishing_intake",
+  "name": "Book Publishing Intake",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "media",
+  "description": "Book publishing intake for authors, editors, and publishing professionals scoping a new book project. Evaluates the concept, the market positioning, the author platform, the competitive landscape, the publishing path, and the timeline to produce a publishing intake profile with market assessment and publishing path recommendation.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "professional, direct",
+    "warmth": 0.5,
+    "humor": 0.0,
+    "formality": 0.7
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 18,
+    "estimated_turns": "10-14"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  }
+}

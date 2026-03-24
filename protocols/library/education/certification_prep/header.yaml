@@ -1,0 +1,9 @@
+id: certification_prep
+name: Certification Preparation Intake
+category: education
+status: active
+description: Certification preparation intake for candidates preparing for a professional or academic certification exam. Evaluates the target certification, current knowledge baseline, study timeline, learning style, content gap analysis, and preparation strategy to produce a certification prep profile with personalized study plan and risk flags.
+deliverable: certification_prep_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

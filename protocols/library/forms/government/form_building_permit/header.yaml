@@ -1,0 +1,9 @@
+id: form_building_permit
+name: Building Permit Application
+category: forms_government
+status: active
+description: Guided completion of a building permit application with scope of work, contractor details, and variance documentation.
+deliverable: completed_form
+estimated_turns: "8-10"
+version: 1.0
+author: Robert C. Ventura

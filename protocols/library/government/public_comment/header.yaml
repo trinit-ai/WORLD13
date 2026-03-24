@@ -1,0 +1,9 @@
+id: public_comment
+name: Public Comment Intake
+category: government
+status: active
+description: Public comment intake for individuals and organizations preparing a comment on a proposed government rule, regulation, environmental review, or policy decision. Evaluates the proceeding type, comment period deadline, substantive issues, technical standing, and comment strategy to produce a public comment intake profile with drafting guidance and submission requirements.
+deliverable: public_comment_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

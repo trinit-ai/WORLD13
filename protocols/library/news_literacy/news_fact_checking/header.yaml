@@ -1,0 +1,18 @@
+id: news_fact_checking
+name: Fact-Checking
+category: news_literacy
+version: "1.0"
+status: active
+turn_budget: [8, 10]
+metered: true
+description: >
+  Fact-checking skills — the SIFT method and practical claim evaluation.
+  Teaches by doing with real-world claim types. Non-partisan.
+tags:
+  - fact_checking
+  - verification
+  - SIFT
+  - critical_thinking
+  - news_literacy
+author: Robert C. Ventura
+created: "2026-03-18"

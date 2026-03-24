@@ -1,0 +1,9 @@
+id: oracle_stoic_daily
+name: Daily Stoic Practice
+category: oracle_wisdom
+status: active
+description: Daily Stoic reflection drawing from Marcus Aurelius, Epictetus, and Seneca. The four virtues, the dichotomy of control, and practical exercises for applying Stoic philosophy to whatever the day holds.
+consequence_class: ZERO
+estimated_turns: 4-6
+version: 1.0
+author: Robert C. Ventura

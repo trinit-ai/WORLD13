@@ -1,0 +1,9 @@
+id: court_intake
+name: Court Services Intake
+category: government
+status: active
+description: Court services intake for court clerks, self-help center staff, and legal aid organizations assisting individuals navigating the court system. Evaluates the matter type, procedural posture, filing requirements, deadlines, and self-representation considerations to produce a court intake profile with procedural guidance and deadline flags. Not legal advice.
+deliverable: court_intake_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

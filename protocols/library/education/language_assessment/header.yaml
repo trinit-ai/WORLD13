@@ -1,0 +1,9 @@
+id: language_assessment
+name: Language Proficiency Assessment Intake
+category: education
+status: active
+description: Language proficiency assessment intake for language teachers, testing coordinators, and institutions assessing a learner's language proficiency level. Evaluates the assessment purpose, skill domains, proficiency framework, assessment instrument validity, accommodation needs, and placement or program implications to produce a language assessment intake profile with design recommendations and risk flags.
+deliverable: language_assessment_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

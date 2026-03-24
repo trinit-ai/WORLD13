@@ -1,0 +1,17 @@
+id: coll_photography_collecting
+name: Photography Collecting
+slug: photography-collecting
+category: collecting
+version: "1.0"
+status: active
+turn_budget: 10
+metered: true
+description: >
+  Photography collecting companion covering limited editions, vintage prints,
+  authentication, major photographers, and market navigation.
+tags:
+  - collecting
+  - photography
+  - prints
+  - fine art
+  - editions

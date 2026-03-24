@@ -1,0 +1,9 @@
+id: relationship_check_in
+name: Relationship Check-In
+category: dyadic
+status: active
+description: Periodic assessment of a romantic relationship — where it is, what's working, what isn't, and what needs attention before small things become big ones.
+deliverable: relationship_snapshot
+estimated_turns: "10-14"
+version: 1.0
+author: Robert C. Ventura

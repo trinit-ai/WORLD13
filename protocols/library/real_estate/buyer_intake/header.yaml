@@ -1,0 +1,9 @@
+id: buyer_intake
+name: Home Buyer Intake
+category: real_estate
+status: active
+description: Home buyer intake for real estate agents and buyers beginning a home purchase. Evaluates the buyer's needs, financial readiness, timeline, priorities, and market context to produce a buyer intake profile with search criteria and readiness assessment. Not legal or financial advice.
+deliverable: buyer_intake_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

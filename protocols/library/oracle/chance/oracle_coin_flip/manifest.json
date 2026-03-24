@@ -1,0 +1,62 @@
+{
+  "id": "oracle_coin_flip",
+  "access": "public",
+  "name": "Coin Flip Oracle",
+  "version": "1.0.0",
+  "description": "The desire-revealing coin flip. Frame the decision, assign sides, flip, then the real question: what were you hoping for?",
+  "tagline": "Heads or tails?",
+  "category": "oracle_chance",
+  "icon": "CF",
+  "base": "library_oracle",
+
+  "personality": {
+    "tone": "calm, knowing, minimal",
+    "warmth": 0.6,
+    "humor": 0.2,
+    "formality": 0.3,
+    "identity_name": null,
+    "identity_description": "An oracle who uses the coin to reveal what you already want"
+  },
+
+  "session_policy": {
+    "type": "open",
+    "turns": "4-6"
+  },
+
+  "features": {
+    "session_intelligence": true,
+    "depth_tracking": true,
+    "contact_collection": false,
+    "transcript_export": true,
+    "qualification_scoring": false,
+    "urgency_detection": false,
+    "spam_filtering": true,
+    "audio_input": false,
+    "audio_output": false,
+    "vault_rag": false,
+    "session_journal": true
+  },
+
+  "privacy": {
+    "disclosure": "Your decision and reaction are used within this session only.",
+    "data_tier": "anonymous",
+    "transcript_available": true,
+    "retention_days": 30
+  },
+
+  "library": {
+    "visible": true,
+    "category": "oracle_chance",
+    "tags": ["oracle", "chance", "coin_flip", "decision", "desire"],
+    "description": "The desire-revealing coin flip that surfaces what you already want.",
+    "author": "TMOS13",
+    "license": "included",
+    "verb_type": "reading",
+    "industry_tags": ["wellness", "experiential"],
+    "icon_url": null,
+    "price": {
+      "model": "included",
+      "tier_minimum": null
+    }
+  }
+}

@@ -1,0 +1,9 @@
+id: tech_ai_literacy
+name: AI Literacy
+category: technology
+status: active
+description: AI literacy session covering how large language models actually work, effective prompting, hallucination and its causes, realistic capability assessment, and the gap between AI marketing and AI reality. Honest, non-hyped, grounded in how the technology functions.
+deliverable: ai_literacy_summary
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

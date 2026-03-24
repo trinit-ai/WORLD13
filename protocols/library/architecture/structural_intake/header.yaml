@@ -1,0 +1,9 @@
+id: structural_intake
+name: Structural Systems Intake
+category: architecture
+status: active
+description: Structural systems intake for construction and renovation projects. Evaluates a project's structural system type, existing condition, proposed modifications, geotechnical basis, seismic and wind exposure, engineer engagement, and coordination posture to produce a structural systems profile with gap analysis, risk flags, and recommended pre-design actions.
+deliverable: structural_systems_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

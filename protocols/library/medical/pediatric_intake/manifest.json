@@ -1,0 +1,46 @@
+{
+  "id": "pediatric_intake",
+  "name": "Pediatric Patient Intake",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "medical",
+  "description": "Pediatric patient intake for clinical staff conducting intake for a pediatric patient. Evaluates the chief complaint, developmental history, immunization status, growth parameters, feeding and nutrition, relevant family history, and caregiver information to produce a pediatric intake profile with age-appropriate clinical documentation and priority flags. Not medical advice.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "professional, direct",
+    "warmth": 0.5,
+    "humor": 0.0,
+    "formality": 0.7
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 18,
+    "estimated_turns": "10-14"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  }
+}

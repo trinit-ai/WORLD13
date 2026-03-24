@@ -1,0 +1,9 @@
+id: eating_disorder_intake
+name: Eating Disorder Assessment Intake
+category: mental_health
+status: active
+description: Eating disorder assessment intake for licensed mental health professionals and medical clinicians conducting an initial eating disorder assessment. Evaluates the eating and weight history, the behavioral and cognitive symptoms, the medical risk indicators, the co-occurring conditions, and the level of care considerations to produce an eating disorder intake profile with medical risk assessment and clinical considerations. Not clinical advice.
+deliverable: eating_disorder_intake_profile
+estimated_turns: 12-18
+version: 1.0
+author: Robert C. Ventura

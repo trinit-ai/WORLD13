@@ -1,0 +1,9 @@
+id: bankruptcy_intake
+name: Bankruptcy Intake
+category: legal
+status: active
+description: Bankruptcy intake for bankruptcy attorneys and paralegals conducting an initial bankruptcy consultation. Evaluates the client's financial situation, the applicable chapter, the means test, the asset and exemption profile, the priority debts, and the timing considerations to produce a bankruptcy intake profile with chapter recommendation framework and immediate action requirements. Not legal advice.
+deliverable: bankruptcy_intake_profile
+estimated_turns: 12-18
+version: 1.0
+author: Robert C. Ventura

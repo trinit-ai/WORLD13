@@ -1,0 +1,310 @@
+{
+  "id": "rituals",
+  "access": "authed",
+  "name": "Daily Rituals",
+  "version": "1.1.0",
+  "description": "Daily mood tracking, gratitude, affirmations, readings, breathwork, and therapeutic techniques. Nine rituals that reward showing up.",
+  "tagline": "Show up. The practice remembers.",
+  "category": "experiences",
+  "icon": "🌿",
+
+  "personality": {
+    "tone": "warm, grounded, unhurried, present",
+    "warmth": 0.95,
+    "humor": 0.2,
+    "formality": 0.1,
+    "identity_name": null,
+    "identity_description": "A warm, grounded presence that remembers your patterns and meets you where you are"
+  },
+
+  "cartridges": {
+    "mood": {
+      "file": "mood.md",
+      "name": "Mood Check-in",
+      "number": 1,
+      "description": "How are you? Quick check-in that tracks your mood over time and routes you to what you need.",
+      "state_class": "MoodState"
+    },
+    "gratitude": {
+      "file": "gratitude.md",
+      "name": "Gratitude Journal",
+      "number": 2,
+      "description": "Guided reflection that remembers your themes and tracks growth across sessions.",
+      "state_class": "GratitudeState"
+    },
+    "affirmations": {
+      "file": "affirmations.md",
+      "name": "Daily Affirmations",
+      "number": 3,
+      "description": "Personalized affirmations based on your mood, goals, and what you've been working through.",
+      "state_class": "AffirmationsState"
+    },
+    "horoscope": {
+      "file": "horoscope.md",
+      "name": "Daily Horoscope",
+      "number": 4,
+      "description": "Personalized daily reading based on your zodiac sign.",
+      "state_class": "HoroscopeState"
+    },
+    "tarot": {
+      "file": "tarot.md",
+      "name": "Tarot",
+      "number": 5,
+      "description": "Archetypal readings. Choose a spread, ask a question, find the pattern.",
+      "state_class": "TarotState"
+    },
+    "iching": {
+      "file": "iching.md",
+      "name": "I-Ching",
+      "number": 6,
+      "description": "The Book of Changes. 64 hexagrams. Wisdom for moments of transition.",
+      "state_class": "IChingState"
+    },
+    "cbt": {
+      "file": "cbt.md",
+      "name": "Thought Challenger",
+      "number": 7,
+      "description": "Structured cognitive reframing. Name the thought, test it, reshape it.",
+      "state_class": "CBTState"
+    },
+    "inspiration": {
+      "file": "inspiration.md",
+      "name": "Daily Inspiration",
+      "number": 8,
+      "description": "Curated wisdom from world traditions. Stoic, Buddhist, Sufi, Indigenous, literary, scientific.",
+      "state_class": "InspirationState"
+    },
+    "breathwork": {
+      "file": "breathwork.md",
+      "name": "Breathwork",
+      "number": 9,
+      "description": "Guided breathing exercises with real timing. Box breathing, 4-7-8, and more.",
+      "state_class": "BreathworkState"
+    },
+    "company_profile": {
+      "name": "Company Profile",
+      "number": 10,
+      "description": "Your business identity, hours, contact info, FAQs, disclaimers, and policies — automatically woven into every interaction.",
+      "passive": true
+    }
+  },
+
+  "system_screens": {
+    "boot": "boot.md",
+    "menu": "menu.md"
+  },
+
+  "commands": {
+    "numerical": {},
+    "session": {
+      "reset": {
+        "action": "reset_session",
+        "label": "Start Fresh"
+      },
+      "menu": {
+        "action": "menu",
+        "label": "All Rituals"
+      },
+      "status": {
+        "action": "status",
+        "label": "My Journey"
+      }
+    },
+    "navigation": {
+      "mood|check.?in|how\\s+am\\s+i|feeling": {
+        "action": "navigate",
+        "target": "mood"
+      },
+      "gratitude|grateful|thankful|journal|blessings": {
+        "action": "navigate",
+        "target": "gratitude"
+      },
+      "affirm|mantra|positive|uplift|boost": {
+        "action": "navigate",
+        "target": "affirmations"
+      },
+      "horoscope|zodiac|stars?|sign|astrology": {
+        "action": "navigate",
+        "target": "horoscope"
+      },
+      "tarot|cards?|spread|reading|arcana": {
+        "action": "navigate",
+        "target": "tarot"
+      },
+      "i.?ching|hexagram|book\\s+of\\s+changes|oracle": {
+        "action": "navigate",
+        "target": "iching"
+      },
+      "cbt|thought|reframe|challenge|cognitive|anxious|worried|spiral": {
+        "action": "navigate",
+        "target": "cbt"
+      },
+      "inspir|wisdom|quote|stoic|buddhis|philosophy": {
+        "action": "navigate",
+        "target": "inspiration"
+      },
+      "breath|breathing|calm|meditat|relax|box\\s+breath": {
+        "action": "navigate",
+        "target": "breathwork"
+      }
+    }
+  },
+
+  "features": {
+    "session_intelligence": true,
+    "depth_tracking": true,
+    "mood_resonance": true,
+    "cross_module_memory": true,
+    "contact_collection": false,
+    "transcript_export": true,
+    "qualification_scoring": false,
+    "urgency_detection": false,
+    "spam_filtering": true,
+    "audio_input": false,
+    "audio_output": false,
+    "vault_rag": true,
+    "session_journal": true
+  },
+
+  "privacy": {
+    "disclosure": "Your mood, journal entries, and preferences are remembered between visits to personalize your experience. This is not therapy — no data is shared with healthcare providers.",
+    "data_tier": "anonymous",
+    "transcript_available": true,
+    "retention_days": 90
+  },
+
+  "settings_defaults": {
+    "formatting": "rich",
+    "mood_resonance": true
+  },
+
+  "state": {
+    "session": {
+      "active_cartridge": null,
+      "turn_count": 0,
+      "depth": 0
+    },
+    "profile": {
+      "visits": 0,
+      "current_streak": 0,
+      "best_streak": 0,
+      "last_visit_date": null,
+      "total_rituals_completed": 0,
+      "favorite_ritual": null,
+      "ritual_counts": {}
+    },
+    "mood": {
+      "current": null,
+      "current_energy": null,
+      "log": [],
+      "trend_7day": null,
+      "dominant_mood_week": null,
+      "check_ins_total": 0
+    },
+    "gratitude": {
+      "entries_total": 0,
+      "recent_themes": [],
+      "all_themes": [],
+      "last_entry_date": null,
+      "longest_streak": 0,
+      "current_streak": 0
+    },
+    "affirmations": {
+      "generated_total": 0,
+      "saved_favorites": [],
+      "themes_requested": [],
+      "last_date": null
+    },
+    "horoscope": {
+      "sign": null,
+      "birth_date": null,
+      "readings_total": 0,
+      "last_reading_date": null,
+      "streak": 0
+    },
+    "tarot": {
+      "readings_total": 0,
+      "spreads_used": {},
+      "cards_drawn_history": [],
+      "recurring_cards": [],
+      "last_reading_date": null
+    },
+    "iching": {
+      "consultations_total": 0,
+      "hexagrams_received": [],
+      "recurring_hexagrams": [],
+      "last_consultation_date": null
+    },
+    "cbt": {
+      "sessions_total": 0,
+      "thought_log": [],
+      "distortions_identified": {},
+      "reframes_completed": 0,
+      "recurring_patterns": []
+    },
+    "inspiration": {
+      "quotes_received": 0,
+      "traditions_explored": [],
+      "favorites_saved": [],
+      "last_date": null
+    },
+    "breathwork": {
+      "sessions_total": 0,
+      "total_minutes": 0,
+      "techniques_used": {},
+      "favorite_technique": null,
+      "last_session_date": null
+    }
+  },
+
+  "data_rail": {
+    "tabs": [
+      {
+        "id": "auth",
+        "label": "Auth",
+        "icon": "key",
+        "type": "infrastructure"
+      },
+      {
+        "id": "pricing",
+        "label": "Pricing",
+        "icon": "sparkles",
+        "type": "infrastructure"
+      },
+      {
+        "id": "checkin_info",
+        "label": "Check-In",
+        "icon": "Heart",
+        "type": "pack",
+        "title": "Check-In Information",
+        "description": "Captured securely. Encrypted at rest. Never sent to AI.",
+        "submit_label": "Save to Vault",
+        "success_message": "Check-in info saved.",
+        "endpoint": "/api/datarail/submit",
+        "fields": [
+          { "id": "participant_name", "type": "text", "label": "Name", "placeholder": "Full name", "required": true, "pii": true },
+          { "id": "participant_email", "type": "email", "label": "Email", "placeholder": "you@example.com", "required": true, "pii": true },
+          { "id": "practice_type", "type": "select", "label": "Practice Type", "required": false, "options": ["Meditation", "Journaling", "Breathwork", "Movement", "Reflection", "Other"] },
+          { "id": "frequency", "type": "select", "label": "Frequency", "required": false, "options": ["Daily", "Weekly", "As Needed"] },
+          { "id": "intention", "type": "text", "label": "Intention", "placeholder": "What are you working toward?", "required": false, "pii": false }
+        ]
+      }
+    ]
+  },
+
+  "library": {
+    "visible": true,
+    "category": "wellness",
+    "tags": ["wellness", "reflection", "routine"],
+    "description": "Nine daily rituals — mood tracking, gratitude, affirmations, breathwork, readings, and therapeutic techniques. Progress persists across sessions. The practice rewards showing up.",
+    "author": "TMOS13",
+    "license": "included",
+    "verb_type": "debrief",
+    "industry_tags": ["wellness", "mental-health"],
+    "icon_url": null,
+    "price": {
+      "model": "included",
+      "tier_minimum": null
+    }
+  }
+}

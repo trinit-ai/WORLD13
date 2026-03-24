@@ -1,0 +1,9 @@
+id: life_audit
+name: Life Audit
+category: self
+status: active
+description: Periodic honest assessment across eight life domains with evidence-based evaluation.
+deliverable: life_audit_snapshot
+estimated_turns: "12-16"
+version: 1.0
+author: Robert C. Ventura

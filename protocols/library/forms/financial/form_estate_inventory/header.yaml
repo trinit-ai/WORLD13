@@ -1,0 +1,9 @@
+id: form_estate_inventory
+name: Estate Inventory
+category: forms_financial
+status: active
+description: Guided completion of an estate inventory cataloging assets by category, liabilities, beneficiaries, and probate jurisdiction with non-probate asset identification.
+deliverable: completed_form
+estimated_turns: "10-12"
+version: 1.0
+author: Robert C. Ventura

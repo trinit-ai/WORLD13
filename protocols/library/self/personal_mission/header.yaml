@@ -1,0 +1,9 @@
+id: personal_mission
+name: Personal Mission
+category: self
+status: active
+description: Articulate what you're here to do in plain, honest language that works as a life filter.
+deliverable: mission_statement
+estimated_turns: "12-16"
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,19 @@
+id: open_inquiry
+name: Open Inquiry
+category: exploratory
+turns: "8-14"
+version: "1.0"
+author: Robert C. Ventura
+company: "TMOS13, LLC"
+description: >
+  Following a question wherever it goes. The person can't quite articulate it,
+  keeps returning to something. Facilitator follows, asks real questions, notices
+  what the person keeps returning to.
+kill_patterns:
+  - directing
+  - imposing framework
+  - ending prematurely
+  - naming it for them
+  - categorizing the inquiry
+completion: experiential
+completion_signal: "the question clarified, or the person recognized what they keep returning to"

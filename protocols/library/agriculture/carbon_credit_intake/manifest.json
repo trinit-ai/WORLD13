@@ -1,0 +1,65 @@
+{
+  "id": "carbon_credit_intake",
+  "name": "Carbon Credit Intake",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "agriculture",
+  "description": "Carbon credit program assessment for agricultural operations. Evaluates a farm's eligibility and readiness to enroll in carbon markets \u2014 soil carbon sequestration, cover cropping, reduced tillage, and related practices. Produces an enrollment readiness report with program fit recommendations.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "direct",
+    "warmth": 0.5,
+    "humor": 0.0,
+    "formality": 0.5
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": true,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 18,
+    "estimated_turns": "10-14"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  },
+  "deliverables": {
+    "enabled": true,
+    "types": [
+      {
+        "id": "carbon_enrollment_report",
+        "name": "Carbon Enrollment Report",
+        "description": "Generated carbon enrollment report from intake session data.",
+        "trigger": {
+          "min_turns": 4,
+          "contact_required": false
+        },
+        "channels": [
+          "download"
+        ],
+        "include_transcript": true,
+        "include_state_snapshot": true
+      }
+    ]
+  }
+}

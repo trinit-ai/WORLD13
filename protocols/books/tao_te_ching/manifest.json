@@ -1,0 +1,9 @@
+{
+  "pack_id": "book_tao_te_ching",
+  "type": "living_book",
+  "title": "Tao Te Ching",
+  "author": "Lao Tzu",
+  "book_id": "tao_te_ching",
+  "structure_type": "chapters",
+  "license": "public_domain"
+}

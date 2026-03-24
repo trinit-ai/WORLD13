@@ -1,0 +1,9 @@
+id: student_intake_consumer
+name: Learning Session
+category: professional_consumer
+status: active
+description: Helps learners identify gaps, build study plans, and prepare for exams or academic challenges.
+deliverable: study_plan
+estimated_turns: "8-12"
+version: 1.0
+author: Robert C. Ventura

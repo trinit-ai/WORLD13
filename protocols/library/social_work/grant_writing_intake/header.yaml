@@ -1,0 +1,9 @@
+id: grant_writing_intake
+name: Nonprofit Grant Writing Intake
+category: social_work
+status: active
+description: Nonprofit grant writing intake for development staff and grant writers preparing a grant application. Evaluates the funding opportunity, the program alignment, the organization's capacity and eligibility, the data and evidence base, the budget, and the narrative priorities to produce a grant writing intake profile with alignment assessment and proposal preparation priorities.
+deliverable: grant_writing_intake_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

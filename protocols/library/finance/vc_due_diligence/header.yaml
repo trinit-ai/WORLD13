@@ -1,0 +1,9 @@
+id: vc_due_diligence
+name: VC / Investor Due Diligence Intake
+category: finance
+status: active
+description: VC and investor due diligence intake for founders and startups preparing for an investor due diligence process. Evaluates data room readiness, financial documentation quality, cap table cleanliness, legal and IP status, team documentation, and diligence process readiness to produce a VC due diligence intake profile with preparation assessment and risk flags.
+deliverable: vc_due_diligence_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

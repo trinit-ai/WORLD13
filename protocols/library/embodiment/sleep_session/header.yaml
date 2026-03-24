@@ -1,0 +1,9 @@
+id: sleep_session
+name: Sleep Session
+category: embodiment
+status: active
+description: Guided exploration of sleep difficulties with honest assessment and realistic intervention planning.
+deliverable: sleep_brief
+estimated_turns: "8-10"
+version: 1.0
+author: Robert C. Ventura

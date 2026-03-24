@@ -1,0 +1,9 @@
+id: renovation_intake
+name: Renovation Project Intake
+category: architecture
+status: active
+description: Building renovation project intake and existing conditions assessment. Evaluates a renovation project's scope definition, existing building conditions, unknown condition exposure, permit history, hazardous materials, budget adequacy, and team readiness to produce a renovation project profile with gap analysis, risk flags, and recommended pre-design actions.
+deliverable: renovation_project_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

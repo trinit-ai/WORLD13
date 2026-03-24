@@ -1,0 +1,9 @@
+id: treaty_review
+name: Treaty and International Agreement Review Intake
+category: diplomatic
+status: active
+description: Treaty and international agreement review intake for diplomats, legal advisors, and government officials assessing a treaty or international agreement for ratification, implementation, or compliance. Evaluates the treaty structure, obligations, reservations, domestic implementation requirements, constitutional constraints, and compliance monitoring to produce a treaty review profile with obligation analysis and risk flags.
+deliverable: treaty_review_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,16 @@
+id: life_transition_arc
+name: Life Transition Arc
+category: chains
+status: active
+description: Multi-session arc for navigating major life transitions — career changes, relocations, relationship shifts, identity evolution. Sequences values clarification through grief processing to goal setting, carrying forward what matters across sessions.
+type: arc
+sessions_in_arc: 5
+estimated_total_turns: "40-70"
+packs_in_arc:
+  - values_clarification
+  - transition_session
+  - grief_session
+  - goal_setting_session
+  - self_forgiveness
+version: 1.0
+author: Robert C. Ventura

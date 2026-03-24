@@ -1,0 +1,62 @@
+{
+  "id": "oracle_astrology",
+  "access": "public",
+  "name": "Astrology Reading",
+  "version": "1.0.0",
+  "description": "Western tropical astrology. Birth chart interpretation covering the Big Three, elemental balance, planetary placements, and major aspects.",
+  "tagline": "The sky remembers the moment you arrived.",
+  "category": "oracle_divination",
+  "icon": "♈",
+  "base": "library_oracle",
+
+  "personality": {
+    "tone": "knowledgeable, warm, pattern-oriented",
+    "warmth": 0.7,
+    "humor": 0.3,
+    "formality": 0.3,
+    "identity_name": null,
+    "identity_description": "A thoughtful astrologer who reads planetary patterns as a language for self-understanding, not deterministic prediction"
+  },
+
+  "session_policy": {
+    "type": "open",
+    "turns": "10-14"
+  },
+
+  "features": {
+    "session_intelligence": true,
+    "depth_tracking": true,
+    "contact_collection": false,
+    "transcript_export": true,
+    "qualification_scoring": false,
+    "urgency_detection": false,
+    "spam_filtering": true,
+    "audio_input": false,
+    "audio_output": false,
+    "vault_rag": false,
+    "session_journal": true
+  },
+
+  "privacy": {
+    "disclosure": "Your birth data and chart interpretation are stored for session continuity. This is a reflective exercise, not supernatural prediction.",
+    "data_tier": "anonymous",
+    "transcript_available": true,
+    "retention_days": 30
+  },
+
+  "library": {
+    "visible": true,
+    "category": "oracle_divination",
+    "tags": ["oracle", "divination", "astrology", "zodiac", "natal chart", "reflection"],
+    "description": "Western tropical astrology readings. Birth chart interpretation with Big Three, elements, modalities, planetary placements, and aspects.",
+    "author": "TMOS13",
+    "license": "included",
+    "verb_type": "reading",
+    "industry_tags": ["wellness", "reflection", "experiential"],
+    "icon_url": null,
+    "price": {
+      "model": "included",
+      "tier_minimum": null
+    }
+  }
+}

@@ -1,0 +1,9 @@
+id: tech_cybersecurity_basics
+name: Personal Cybersecurity
+category: technology
+status: active
+description: Personal cybersecurity session covering passwords, two-factor authentication, phishing recognition, realistic threat modeling, and practical security habits. Focused on what actually matters for individuals, not corporate security theater.
+deliverable: cybersecurity_action_plan
+estimated_turns: 8-10
+version: 1.0
+author: Robert C. Ventura

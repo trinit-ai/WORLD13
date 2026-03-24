@@ -1,0 +1,9 @@
+id: management_consulting
+name: Management Consulting Engagement Intake
+category: consulting
+status: active
+description: Management consulting engagement intake for organizational diagnostic, strategy, and implementation mandates. Evaluates an engagement's problem definition, decision-maker access, scope boundaries, data availability, deliverable expectations, and team composition to produce a consulting engagement profile with gap analysis, risk flags, and recommended pre-engagement actions.
+deliverable: consulting_engagement_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,9 @@
+id: stress_management
+name: Stress Management Intake
+category: personal
+status: active
+description: Stress management intake for individuals experiencing chronic or acute stress. Evaluates the stress sources, the physical and emotional symptoms, the current coping strategies, the lifestyle factors, the support system, and the goals to produce a stress management intake profile with stress assessment and intervention priorities.
+deliverable: stress_management_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

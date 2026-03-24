@@ -1,0 +1,18 @@
+id: skill_martial_arts
+name: Martial Arts Fundamentals
+category: physical_skills
+version: "1.0"
+status: active
+turn_budget: [8, 10]
+metered: true
+description: >
+  Martial arts fundamentals — striking, grappling, kata concepts, styles
+  overview. Conceptual framework and theory. Live instructor required for
+  real technique development.
+tags:
+  - martial_arts
+  - fighting
+  - self_defense
+  - physical_skills
+author: Robert C. Ventura
+created: "2026-03-18"

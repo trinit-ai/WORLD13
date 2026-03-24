@@ -1,0 +1,9 @@
+id: site_assessment
+name: Site Assessment Intake
+category: architecture
+status: active
+description: Building site assessment for development and design projects. Evaluates a site's physical conditions, zoning and entitlement status, utility availability, environmental constraints, access and infrastructure, and development feasibility posture to produce a site assessment profile with gap analysis, risk flags, and recommended pre-design actions.
+deliverable: site_assessment_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

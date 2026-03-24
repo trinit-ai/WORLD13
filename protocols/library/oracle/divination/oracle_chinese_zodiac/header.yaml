@@ -1,0 +1,10 @@
+id: oracle_chinese_zodiac
+name: Chinese Zodiac Reading
+category: oracle_divination
+status: active
+description: Chinese zodiac reading based on the 12-animal cycle and 5-element system (60-year cycle). Complete character profiles for each animal-element combination, compatibility analysis, and yearly forecasts. Produces a structured zodiac reading as the session deliverable.
+deliverable: zodiac_reading
+consequence_class: ZERO
+estimated_turns: 6-8
+version: 1.0
+author: Robert C. Ventura

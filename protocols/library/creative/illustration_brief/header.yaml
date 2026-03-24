@@ -1,0 +1,9 @@
+id: illustration_brief
+name: Illustration Brief Intake
+category: creative
+status: active
+description: Illustration brief intake for clients commissioning original illustration and for illustrators receiving a commission. Evaluates brief completeness, style direction, usage rights, revision structure, and payment terms to produce an illustration brief profile with gap analysis and risk flags.
+deliverable: illustration_brief_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

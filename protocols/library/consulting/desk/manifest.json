@@ -1,0 +1,124 @@
+{
+  "id": "desk",
+  "access": "authed",
+  "name": "Desk",
+  "version": "1.0.0",
+  "description": "Neutral conversational ground state. Profile-aware, memory-loaded workspace — no funnel, no pack pitch. Just conversation.",
+  "category": "platform",
+  "icon": "~",
+  "visibility": "internal",
+
+  "personality": {
+    "tone": "professional, warm, direct",
+    "warmth": 0.7,
+    "humor": 0.15,
+    "formality": 0.35,
+    "identity_name": null,
+    "identity_description": "The workspace itself — knows the user, remembers prior sessions, converses naturally without pushing tools or features."
+  },
+
+  "cartridges": [
+    {
+      "id": "conversation",
+      "name": "Conversation",
+      "description": "Open-ended workspace conversation. No routing, no funnel.",
+      "protocol": "conversation.md"
+    },
+    {
+      "id": "company_profile",
+      "name": "Company Profile",
+      "description": "Your business identity, hours, contact info, FAQs, disclaimers, and policies — automatically woven into every interaction.",
+      "passive": true
+    }
+  ],
+
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|clear)$",
+        "action": "reset_session"
+      }
+    },
+    "navigation": {}
+  },
+
+  "system_screens": {
+    "boot": "boot.md"
+  },
+
+  "routing": {
+    "strategy": "passthrough"
+  },
+
+  "knowledge": {
+    "enabled": true,
+    "sources": ["notes", "prior_deliverables", "similar_sessions", "inbox", "contacts", "manifest", "entity_trace"],
+    "confidence_threshold": 0.3,
+    "max_injections": 10,
+    "max_tokens": 2500
+  },
+
+  "tools": {
+    "email": {
+      "provider": "internal",
+      "description": "Send an email on behalf of the deployer via Resend. Use this when the user asks you to write and send an email to someone.",
+      "scopes": ["send_email"],
+      "requires_confirmation": true,
+      "confirmation_message": "I have the email ready. Shall I send it?",
+      "config": {}
+    },
+    "desk_query": {
+      "provider": "internal",
+      "description": "Search inbox conversations and sessions by name, date, topic, or interest. Returns session summaries.",
+      "scopes": ["desk_query"],
+      "requires_confirmation": false,
+      "config": {}
+    },
+    "vault_query": {
+      "provider": "internal",
+      "description": "Query the operator's vault for files, deliverables, transcripts, and notes. Use when the operator references vault content mid-session.",
+      "scopes": ["vault_query"],
+      "requires_confirmation": false,
+      "config": {}
+    }
+  },
+
+  "features": {
+    "session_intelligence": false,
+    "depth_tracking": false,
+    "mood_resonance": false,
+    "contact_collection": false,
+    "cross_session_persistence": true,
+    "session_journal": true,
+    "user_identity": true,
+    "session_memory": true
+  },
+
+  "settings_defaults": {
+    "show_cartridge_numbers": false,
+    "show_depth": false,
+    "show_mood": false
+  },
+
+  "theme": {
+    "accent": "#2563EB",
+    "surface": "#060a0d",
+    "text": "#E5E7EB"
+  },
+
+  "library": {
+    "visible": false,
+    "category": "platform",
+    "tags": ["workspace", "conversation"],
+    "description": "Neutral workspace conversation. The default authenticated experience.",
+    "author": "TMOS13",
+    "license": "included",
+    "verb_type": "",
+    "industry_tags": [],
+    "icon_url": null,
+    "price": {
+      "model": "included",
+      "tier_minimum": null
+    }
+  }
+}

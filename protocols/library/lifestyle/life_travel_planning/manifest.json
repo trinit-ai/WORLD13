@@ -1,0 +1,46 @@
+{
+  "id": "life_travel_planning",
+  "name": "Travel Planning",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "lifestyle",
+  "description": "Travel planning session covering itinerary design, cultural briefing, and practical preparation — turning a trip idea into an actionable plan.",
+  "base": "library_lifestyle",
+  "personality": {
+    "tone": "enthusiastic but practical, well-traveled",
+    "warmth": 0.65,
+    "humor": 0.2,
+    "formality": 0.25
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": false,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 18,
+    "estimated_turns": "10-14"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_session",
+    "transcript_available": true
+  }
+}

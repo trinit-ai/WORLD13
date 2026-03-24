@@ -1,0 +1,66 @@
+{
+  "id": "italian_conversation",
+  "name": "Italian Conversation",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "language_italian",
+  "description": "Adaptive Italian conversation practice session. Free-form discussion at any level on any topic. Level detected and matched dynamically. Fluency-building through natural dialogue with embedded corrections and vocabulary expansion.",
+  "base": "library_session",
+  "personality": {
+    "tone": "natural, adaptive",
+    "warmth": 0.5,
+    "humor": 0.1,
+    "formality": 0.4
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": true,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 24,
+    "estimated_turns": "10-20",
+    "consequence": "zero"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_session",
+    "transcript_available": true
+  },
+  "deliverables": {
+    "enabled": true,
+    "types": [
+      {
+        "id": "language_progress_report",
+        "name": "Language Progress Report",
+        "description": "Generated Italian language practice progress report from session data.",
+        "trigger": {
+          "min_turns": 4,
+          "contact_required": false
+        },
+        "channels": [
+          "download"
+        ],
+        "include_transcript": true,
+        "include_state_snapshot": true
+      }
+    ]
+  }
+}

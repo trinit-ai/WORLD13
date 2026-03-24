@@ -1,0 +1,9 @@
+id: caregiver_navigation
+name: Caregiver Navigation
+category: professional_consumer
+status: active
+description: Supports family caregivers navigating care options, healthcare systems, legal instruments, and caregiver stress for aging, ill, or disabled loved ones.
+deliverable: care_coordination_plan
+estimated_turns: "10-14"
+version: 1.0
+author: Robert C. Ventura

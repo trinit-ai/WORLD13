@@ -1,0 +1,9 @@
+id: interview_sim
+name: Job Interview Simulation
+category: simulations
+status: active
+description: A live job interview simulation for candidates preparing for professional interviews. The session plays the role of a realistic interviewer — behavioral, competency-based, or technical — and produces a performance debrief with answer quality assessment, communication effectiveness, and specific improvement recommendations.
+deliverable: interview_performance_debrief
+estimated_turns: 10-20
+version: 1.0
+author: Robert C. Ventura

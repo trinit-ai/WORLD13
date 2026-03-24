@@ -1,0 +1,9 @@
+id: end_of_life_planning
+name: End-of-Life Care Planning Intake
+category: medical
+status: active
+description: End-of-life care planning intake for palliative care teams, social workers, and clinical staff supporting a patient and family through advance care planning and end-of-life care decisions. Evaluates the patient's prognosis, their values and goals, the current advance care planning status, the family support, and the care setting preferences to produce an end-of-life planning profile with goals of care summary and care coordination requirements. Not medical advice.
+deliverable: end_of_life_planning_profile
+estimated_turns: 12-18
+version: 1.0
+author: Robert C. Ventura

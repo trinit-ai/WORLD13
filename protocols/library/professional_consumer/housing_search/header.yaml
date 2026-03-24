@@ -1,0 +1,9 @@
+id: housing_search
+name: Housing Search Session
+category: professional_consumer
+status: active
+description: Guides individuals through housing search clarity — needs assessment, budget framing, option evaluation, and decision-making for rental or purchase.
+deliverable: housing_search_profile
+estimated_turns: "8-12"
+version: 1.0
+author: Robert C. Ventura

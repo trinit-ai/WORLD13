@@ -1,0 +1,352 @@
+book_id: tao_te_ching
+chunk_count: 81
+cross_references:
+  abide:
+  - tao_te_ching_ch028
+  - tao_te_ching_ch052
+  acts:
+  - tao_te_ching_ch029
+  - tao_te_ching_ch038
+  - tao_te_ching_ch064
+  - tao_te_ching_ch073
+  - tao_te_ching_ch079
+  although:
+  - tao_te_ching_ch007
+  - tao_te_ching_ch066
+  - tao_te_ching_ch080
+  appear:
+  - tao_te_ching_ch018
+  - tao_te_ching_ch041
+  becomes:
+  - tao_te_ching_ch002
+  - tao_te_ching_ch076
+  beings:
+  - tao_te_ching_ch016
+  - tao_te_ching_ch042
+  - tao_te_ching_ch060
+  benefit:
+  - tao_te_ching_ch019
+  - tao_te_ching_ch023
+  birth:
+  - tao_te_ching_ch042
+  - tao_te_ching_ch051
+  called:
+  - tao_te_ching_ch006
+  - tao_te_ching_ch014
+  - tao_te_ching_ch055
+  cannot:
+  - tao_te_ching_ch014
+  - tao_te_ching_ch023
+  - tao_te_ching_ch024
+  - tao_te_ching_ch027
+  - tao_te_ching_ch036
+  - tao_te_ching_ch056
+  chapter:
+  - tao_te_ching_ch006
+  - tao_te_ching_ch040
+  - tao_te_ching_ch071
+  death:
+  - tao_te_ching_ch050
+  - tao_te_ching_ch074
+  - tao_te_ching_ch075
+  desire:
+  - tao_te_ching_ch003
+  - tao_te_ching_ch036
+  - tao_te_ching_ch037
+  - tao_te_ching_ch046
+  - tao_te_ching_ch052
+  - tao_te_ching_ch063
+  - tao_te_ching_ch075
+  desires:
+  - tao_te_ching_ch048
+  - tao_te_ching_ch059
+  difficult:
+  - tao_te_ching_ch063
+  - tao_te_ching_ch075
+  earth:
+  - tao_te_ching_ch025
+  - tao_te_ching_ch039
+  easy:
+  - tao_te_ching_ch063
+  - tao_te_ching_ch064
+  essence:
+  - tao_te_ching_ch001
+  - tao_te_ching_ch021
+  - tao_te_ching_ch026
+  - tao_te_ching_ch055
+  - tao_te_ching_ch070
+  everlasting:
+  - tao_te_ching_ch007
+  - tao_te_ching_ch055
+  gives:
+  - tao_te_ching_ch011
+  - tao_te_ching_ch042
+  - tao_te_ching_ch051
+  good:
+  - tao_te_ching_ch027
+  - tao_te_ching_ch068
+  greatest:
+  - tao_te_ching_ch013
+  - tao_te_ching_ch046
+  hard:
+  - tao_te_ching_ch050
+  - tao_te_ching_ch076
+  heaven:
+  - tao_te_ching_ch025
+  - tao_te_ching_ch039
+  hence:
+  - tao_te_ching_ch007
+  - tao_te_ching_ch022
+  - tao_te_ching_ch038
+  - tao_te_ching_ch063
+  honor:
+  - tao_te_ching_ch013
+  - tao_te_ching_ch051
+  - tao_te_ching_ch062
+  infinite:
+  - tao_te_ching_ch025
+  - tao_te_ching_ch059
+  intangible:
+  - tao_te_ching_ch014
+  - tao_te_ching_ch021
+  kind:
+  - tao_te_ching_ch027
+  - tao_te_ching_ch049
+  - tao_te_ching_ch062
+  knowing:
+  - tao_te_ching_ch030
+  - tao_te_ching_ch052
+  knows:
+  - tao_te_ching_ch033
+  - tao_te_ching_ch071
+  life:
+  - tao_te_ching_ch044
+  - tao_te_ching_ch050
+  - tao_te_ching_ch051
+  - tao_te_ching_ch055
+  - tao_te_ching_ch075
+  - tao_te_ching_ch080
+  mystic:
+  - tao_te_ching_ch006
+  - tao_te_ching_ch010
+  - tao_te_ching_ch065
+  name:
+  - tao_te_ching_ch001
+  - tao_te_ching_ch025
+  nation:
+  - tao_te_ching_ch061
+  - tao_te_ching_ch065
+  - tao_te_ching_ch078
+  natural:
+  - tao_te_ching_ch023
+  - tao_te_ching_ch043
+  naturally:
+  - tao_te_ching_ch037
+  - tao_te_ching_ch057
+  nature:
+  - tao_te_ching_ch005
+  - tao_te_ching_ch006
+  - tao_te_ching_ch010
+  - tao_te_ching_ch016
+  - tao_te_ching_ch017
+  - tao_te_ching_ch028
+  - tao_te_ching_ch033
+  - tao_te_ching_ch036
+  - tao_te_ching_ch037
+  - tao_te_ching_ch038
+  - tao_te_ching_ch039
+  - tao_te_ching_ch040
+  - tao_te_ching_ch047
+  - tao_te_ching_ch052
+  - tao_te_ching_ch059
+  - tao_te_ching_ch065
+  - tao_te_ching_ch068
+  - tao_te_ching_ch073
+  - tao_te_ching_ch074
+  - tao_te_ching_ch077
+  oneness:
+  - tao_te_ching_ch014
+  - tao_te_ching_ch022
+  - tao_te_ching_ch039
+  - tao_te_ching_ch054
+  original:
+  - tao_te_ching_ch014
+  - tao_te_ching_ch016
+  - tao_te_ching_ch037
+  others:
+  - tao_te_ching_ch079
+  - tao_te_ching_ch081
+  overcome:
+  - tao_te_ching_ch033
+  - tao_te_ching_ch045
+  - tao_te_ching_ch078
+  peace:
+  - tao_te_ching_ch016
+  - tao_te_ching_ch057
+  people:
+  - tao_te_ching_ch003
+  - tao_te_ching_ch019
+  - tao_te_ching_ch020
+  - tao_te_ching_ch049
+  - tao_te_ching_ch050
+  - tao_te_ching_ch053
+  - tao_te_ching_ch057
+  - tao_te_ching_ch058
+  - tao_te_ching_ch061
+  - tao_te_ching_ch062
+  - tao_te_ching_ch064
+  - tao_te_ching_ch065
+  - tao_te_ching_ch066
+  - tao_te_ching_ch071
+  - tao_te_ching_ch072
+  - tao_te_ching_ch074
+  - tao_te_ching_ch075
+  - tao_te_ching_ch080
+  person:
+  - tao_te_ching_ch008
+  - tao_te_ching_ch015
+  - tao_te_ching_ch027
+  - tao_te_ching_ch071
+  - tao_te_ching_ch079
+  principle:
+  - tao_te_ching_ch028
+  - tao_te_ching_ch030
+  - tao_te_ching_ch058
+  reach:
+  - tao_te_ching_ch030
+  - tao_te_ching_ch055
+  represented:
+  - tao_te_ching_ch031
+  - tao_te_ching_ch042
+  result:
+  - tao_te_ching_ch044
+  - tao_te_ching_ch063
+  return:
+  - tao_te_ching_ch028
+  - tao_te_ching_ch052
+  right:
+  - tao_te_ching_ch031
+  - tao_te_ching_ch057
+  rule:
+  - tao_te_ching_ch048
+  - tao_te_ching_ch065
+  saint:
+  - tao_te_ching_ch002
+  - tao_te_ching_ch049
+  - tao_te_ching_ch063
+  - tao_te_ching_ch081
+  self:
+  - tao_te_ching_ch007
+  - tao_te_ching_ch024
+  - tao_te_ching_ch025
+  - tao_te_ching_ch036
+  - tao_te_ching_ch072
+  simplicity:
+  - tao_te_ching_ch028
+  - tao_te_ching_ch037
+  - tao_te_ching_ch059
+  - tao_te_ching_ch067
+  spirit:
+  - tao_te_ching_ch006
+  - tao_te_ching_ch010
+  - tao_te_ching_ch039
+  strong:
+  - tao_te_ching_ch076
+  - tao_te_ching_ch078
+  subtle:
+  - tao_te_ching_ch015
+  - tao_te_ching_ch081
+  superior:
+  - tao_te_ching_ch017
+  - tao_te_ching_ch038
+  - tao_te_ching_ch041
+  therefore:
+  - tao_te_ching_ch022
+  - tao_te_ching_ch048
+  - tao_te_ching_ch066
+  - tao_te_ching_ch072
+  - tao_te_ching_ch075
+  things:
+  - tao_te_ching_ch005
+  - tao_te_ching_ch034
+  - tao_te_ching_ch042
+  - tao_te_ching_ch043
+  - tao_te_ching_ch051
+  - tao_te_ching_ch064
+  thus:
+  - tao_te_ching_ch030
+  - tao_te_ching_ch054
+  - tao_te_ching_ch057
+  'true':
+  - tao_te_ching_ch019
+  - tao_te_ching_ch025
+  - tao_te_ching_ch028
+  - tao_te_ching_ch036
+  - tao_te_ching_ch037
+  - tao_te_ching_ch038
+  - tao_te_ching_ch039
+  - tao_te_ching_ch040
+  - tao_te_ching_ch042
+  - tao_te_ching_ch047
+  - tao_te_ching_ch049
+  - tao_te_ching_ch060
+  unkind:
+  - tao_te_ching_ch005
+  - tao_te_ching_ch027
+  valley:
+  - tao_te_ching_ch006
+  - tao_te_ching_ch028
+  virtue:
+  - tao_te_ching_ch010
+  - tao_te_ching_ch017
+  - tao_te_ching_ch038
+  - tao_te_ching_ch041
+  - tao_te_ching_ch049
+  - tao_te_ching_ch054
+  - tao_te_ching_ch059
+  - tao_te_ching_ch079
+  virtuous:
+  - tao_te_ching_ch008
+  - tao_te_ching_ch038
+  water:
+  - tao_te_ching_ch008
+  - tao_te_ching_ch015
+  - tao_te_ching_ch078
+  weapons:
+  - tao_te_ching_ch031
+  - tao_te_ching_ch069
+  - tao_te_ching_ch080
+  were:
+  - tao_te_ching_ch015
+  - tao_te_ching_ch053
+  - tao_te_ching_ch069
+  - tao_te_ching_ch079
+  whole:
+  - tao_te_ching_ch022
+  - tao_te_ching_ch023
+  wise:
+  - tao_te_ching_ch022
+  - tao_te_ching_ch047
+  - tao_te_ching_ch056
+  - tao_te_ching_ch081
+  words:
+  - tao_te_ching_ch070
+  - tao_te_ching_ch081
+  world:
+  - tao_te_ching_ch013
+  - tao_te_ching_ch022
+  - tao_te_ching_ch023
+  - tao_te_ching_ch028
+  - tao_te_ching_ch029
+  - tao_te_ching_ch035
+  - tao_te_ching_ch046
+  - tao_te_ching_ch048
+  - tao_te_ching_ch050
+  - tao_te_ching_ch078
+  worldly:
+  - tao_te_ching_ch003
+  - tao_te_ching_ch040
+  ying:
+  - tao_te_ching_ch031
+  - tao_te_ching_ch042
+title: Tao Te Ching

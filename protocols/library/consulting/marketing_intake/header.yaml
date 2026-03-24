@@ -1,0 +1,9 @@
+id: marketing_intake
+name: Marketing Engagement Intake
+category: consulting
+status: active
+description: Marketing strategy and execution intake for organizations seeking to diagnose marketing performance, define positioning, or build demand generation capability. Evaluates positioning clarity, channel mix, attribution, budget allocation, team composition, and funnel performance to produce a marketing engagement profile with gap analysis, risk flags, and recommended pre-engagement actions.
+deliverable: marketing_engagement_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,31 @@
+{
+  "pack_id": "form_home_inspection",
+  "pack_name": "Home Inspection Request",
+  "category": "forms_real_estate",
+  "tone": "clear, precise, helpful",
+  "warmth": 0.6,
+  "formality": 0.6,
+  "autonomy": "zero",
+  "turn_budget": 6,
+  "deliverable": "completed_form",
+  "version": "1.0",
+  "fields": [
+    "property_address",
+    "inspection_type",
+    "inspector_name",
+    "inspector_company",
+    "inspector_phone",
+    "preferred_date",
+    "preferred_time",
+    "alternate_date",
+    "access_instructions",
+    "lockbox_code",
+    "areas_of_concern",
+    "buyer_name",
+    "buyer_phone",
+    "buyer_email",
+    "agent_name",
+    "agent_phone",
+    "agent_email"
+  ]
+}

@@ -1,0 +1,9 @@
+id: organic_certification
+name: Organic Certification Intake
+category: agriculture
+status: active
+description: USDA National Organic Program certification readiness assessment. Evaluates a farm or handling operation's current practices, transition status, record system, and certifier relationship to produce an organic certification readiness profile with gap analysis and a preparation roadmap.
+deliverable: organic_certification_readiness_report
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

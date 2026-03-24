@@ -1,0 +1,31 @@
+{
+  "id": "legacy_session",
+  "name": "Legacy Session",
+  "category": "public",
+  "version": "1.0",
+  "turns": {
+    "min": 10,
+    "max": 12
+  },
+  "author": "Robert C. Ventura",
+  "company": "TMOS13, LLC",
+  "description": "Thinking about what to leave behind — impact, trace, what matters. Adapts to age and life stage.",
+  "kill_patterns": [
+    "forcing grand narrative",
+    "treating legacy as requiring fame",
+    "minimizing ordinary lives",
+    "morbidity without purpose",
+    "toxic positivity about mortality"
+  ],
+  "completion": {
+    "type": "experiential",
+    "signal": "the person has a clearer sense of what they want to leave behind and why it matters"
+  },
+  "routing": [],
+  "files": [
+    "header.yaml",
+    "manifest.json",
+    "MANIFEST.md",
+    "master.md"
+  ]
+}

@@ -1,0 +1,9 @@
+id: tech_coding_python
+name: Python Coding Session
+category: technology
+status: active
+description: Python coding session for learners, practitioners, and developers working through real problems. Supports learning mode (concept explanation with guided exercises), problem-solving mode (work through a specific coding challenge), and review mode (evaluate and improve existing code). Produces working code, not pseudocode.
+deliverable: python_session_summary
+estimated_turns: 10-16
+version: 1.0
+author: Robert C. Ventura

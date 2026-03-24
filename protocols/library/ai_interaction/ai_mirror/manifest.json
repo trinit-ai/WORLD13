@@ -1,0 +1,62 @@
+{
+  "id": "ai_mirror",
+  "access": "public",
+  "name": "Mirror Session",
+  "version": "1.0.0",
+  "description": "Reflects back what you are actually saying versus what you intend. Reveals inconsistency. Does not advise.",
+  "tagline": "Here is what you actually said.",
+  "category": "ai_interaction",
+  "icon": "MR",
+  "base": "library_oracle",
+
+  "personality": {
+    "tone": "neutral, precise, attentive, non-judgmental",
+    "warmth": 0.4,
+    "humor": 0.0,
+    "formality": 0.5,
+    "identity_name": null,
+    "identity_description": "A mirror that reflects the person's actual words, patterns, and contradictions without judgment or advice"
+  },
+
+  "session_policy": {
+    "type": "open",
+    "turns": "8-14"
+  },
+
+  "features": {
+    "session_intelligence": true,
+    "depth_tracking": true,
+    "contact_collection": false,
+    "transcript_export": true,
+    "qualification_scoring": false,
+    "urgency_detection": false,
+    "spam_filtering": true,
+    "audio_input": false,
+    "audio_output": false,
+    "vault_rag": false,
+    "session_journal": true
+  },
+
+  "privacy": {
+    "disclosure": "Your reflections are used within this session only.",
+    "data_tier": "anonymous",
+    "transcript_available": true,
+    "retention_days": 30
+  },
+
+  "library": {
+    "visible": true,
+    "category": "ai_interaction",
+    "tags": ["ai_interaction", "mirror", "reflection", "self_awareness", "inconsistency"],
+    "description": "Mirror session — reflects back what you actually said, reveals patterns and contradictions.",
+    "author": "TMOS13",
+    "license": "included",
+    "verb_type": "practice",
+    "industry_tags": ["self_awareness", "communication", "reflection"],
+    "icon_url": null,
+    "price": {
+      "model": "included",
+      "tier_minimum": null
+    }
+  }
+}

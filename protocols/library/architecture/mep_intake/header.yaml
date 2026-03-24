@@ -1,0 +1,9 @@
+id: mep_intake
+name: MEP Systems Intake
+category: architecture
+status: active
+description: Mechanical, electrical, and plumbing systems intake for construction and renovation projects. Evaluates a project's existing MEP conditions, proposed systems scope, coordination status, code compliance posture, and engineer engagement to produce an MEP systems profile with gap analysis, risk flags, and recommended pre-design and coordination actions.
+deliverable: mep_systems_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,9 @@
+id: background_check
+name: Background Check Intake
+category: criminal_justice
+status: active
+description: Background check intake for employers, landlords, and organizations initiating a background screening process. Evaluates the permissible purpose, applicable legal framework, scope of inquiry, adverse action procedures, and candidate notification requirements to produce a background check intake profile with compliance gap analysis and risk flags.
+deliverable: background_check_intake_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

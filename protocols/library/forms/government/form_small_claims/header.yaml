@@ -1,0 +1,9 @@
+id: form_small_claims
+name: Small Claims Court Filing
+category: forms_government
+status: active
+description: Guided completion of a small claims court filing with claim amount validation and jurisdiction-specific limits.
+deliverable: completed_form
+estimated_turns: "8-10"
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,46 @@
+{
+  "id": "cash_flow_review",
+  "name": "Cash Flow Review Intake",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "finance",
+  "description": "Cash flow review intake for CFOs, treasurers, and finance leaders assessing an organization's cash position, liquidity risk, and cash management practices. Evaluates operating cash flow, working capital, cash runway, liquidity reserves, cash forecasting, and covenant compliance to produce a cash flow review profile with liquidity assessment and risk flags.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "professional, direct",
+    "warmth": 0.5,
+    "humor": 0.0,
+    "formality": 0.7
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 16,
+    "estimated_turns": "8-12"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  }
+}

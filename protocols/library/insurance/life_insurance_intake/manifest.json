@@ -1,0 +1,46 @@
+{
+  "id": "life_insurance_intake",
+  "name": "Life Insurance Claims Intake",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "insurance",
+  "description": "Life insurance claims intake for beneficiaries, claims examiners, and estate administrators filing a life insurance death claim. Evaluates the policy in force, the cause of death, the contestability period, beneficiary verification, documentation requirements, and claims process timeline to produce a life insurance claims intake profile with coverage indicators and next steps. Not legal advice.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "professional, direct",
+    "warmth": 0.5,
+    "humor": 0.0,
+    "formality": 0.7
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 16,
+    "estimated_turns": "8-12"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  }
+}

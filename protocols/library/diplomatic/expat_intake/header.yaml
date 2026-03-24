@@ -1,0 +1,9 @@
+id: expat_intake
+name: Expatriate Relocation Intake
+category: diplomatic
+status: active
+description: Expatriate relocation intake for HR professionals, relocation coordinators, and international assignment managers preparing an employee for an international assignment. Evaluates assignment objectives, host country legal requirements, tax and compensation structure, family preparation, cultural readiness, and repatriation planning to produce an expatriate assignment profile with gap analysis and risk flags.
+deliverable: expat_assignment_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

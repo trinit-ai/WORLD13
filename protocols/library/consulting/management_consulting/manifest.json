@@ -1,0 +1,65 @@
+{
+  "id": "management_consulting",
+  "name": "Management Consulting Engagement Intake",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "consulting",
+  "description": "Management consulting engagement intake for organizational diagnostic, strategy, and implementation mandates. Evaluates an engagement's problem definition, decision-maker access, scope boundaries, data availability, deliverable expectations, and team composition to produce a consulting engagement profile with gap analysis, risk flags, and recommended pre-engagement actions.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "precise",
+    "warmth": 0.5,
+    "humor": 0.0,
+    "formality": 0.8
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": true,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 18,
+    "estimated_turns": "10-14"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  },
+  "deliverables": {
+    "enabled": true,
+    "types": [
+      {
+        "id": "consulting_engagement_profile",
+        "name": "Consulting Engagement Profile",
+        "description": "Generated consulting engagement profile from intake session data.",
+        "trigger": {
+          "min_turns": 4,
+          "contact_required": false
+        },
+        "channels": [
+          "download"
+        ],
+        "include_transcript": true,
+        "include_state_snapshot": true
+      }
+    ]
+  }
+}

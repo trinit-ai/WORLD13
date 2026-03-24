@@ -1,0 +1,9 @@
+id: estate_planning
+name: Estate Planning Intake
+category: legal
+status: active
+description: Estate planning intake for estate planning attorneys and paralegals conducting an initial estate planning consultation. Evaluates the client's family situation, asset profile, current estate plan status, estate tax exposure, healthcare and incapacity planning, and estate planning objectives to produce an estate planning intake profile with planning priorities and document requirements. Not legal advice.
+deliverable: estate_planning_intake_profile
+estimated_turns: 12-18
+version: 1.0
+author: Robert C. Ventura

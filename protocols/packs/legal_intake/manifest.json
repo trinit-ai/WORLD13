@@ -1,0 +1,673 @@
+{
+  "id": "legal_intake",
+  "access": "paid",
+  "tier_gate": "S1",
+  "name": "Legal Intake",
+  "version": "1.1.0",
+  "description": "AI-powered legal intake — qualify leads, capture case details, route to the right attorney. Generates attorney-grade case briefs from conversational data.",
+  "tagline": "Qualify before the call.",
+  "category": "verticals",
+  "icon": "⚖️",
+  "base": "public_facing",
+  "citations": true,
+
+  "personality": {
+    "tone": "professional, warm, reassuring",
+    "warmth": 0.7,
+    "humor": 0.0,
+    "formality": 0.7,
+    "identity_name": "Legal Intake Assistant",
+    "identity_description": "An intake assistant that helps potential clients understand whether they have a legal matter worth pursuing and connects them with the right attorney"
+  },
+
+  "cartridges": [
+    {
+      "id": "intake",
+      "name": "Case Evaluation",
+      "description": "Describe your situation and get a preliminary assessment.",
+      "protocol": "intake.md"
+    },
+    {
+      "id": "personal_injury",
+      "name": "Personal Injury",
+      "description": "Auto accidents, slip-and-fall, workplace injuries, medical malpractice.",
+      "protocol": "personal_injury.md"
+    },
+    {
+      "id": "family_law",
+      "name": "Family Law",
+      "description": "Divorce, custody, support, adoption, protective orders.",
+      "protocol": "family_law.md"
+    },
+    {
+      "id": "criminal_defense",
+      "name": "Criminal Defense",
+      "description": "Charges, arrests, court dates, and defense strategy.",
+      "protocol": "criminal_defense.md"
+    },
+    {
+      "id": "estate_planning",
+      "name": "Estate Planning",
+      "description": "Wills, trusts, power of attorney, probate.",
+      "protocol": "estate_planning.md"
+    },
+    {
+      "id": "company_profile",
+      "name": "Company Profile",
+      "description": "Your business identity, hours, contact info, FAQs, disclaimers, and policies — automatically woven into every interaction.",
+      "passive": true
+    }
+  ],
+
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "menu": {
+        "pattern": "^(menu|help|options|what can you do|commands|back)$",
+        "action": "show_menu"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary|my case)$",
+        "action": "show_status"
+      },
+      "transcript": {
+        "pattern": "^(transcript|download|export|save|record)$",
+        "action": "show_transcript"
+      }
+    },
+    "navigation": {
+      "intake": {
+        "pattern": "(case|evaluate|situation|what happened|new case|describe|tell you|need help|legal issue|problem|question)",
+        "cartridge": "intake"
+      },
+      "personal_injury": {
+        "pattern": "(injury|accident|car accident|auto|slip|fall|hurt|injured|crash|wreck|malpractice|workplace|workers comp|product|defective|dog bite|assault)",
+        "cartridge": "personal_injury"
+      },
+      "family_law": {
+        "pattern": "(divorce|custody|child support|alimony|separation|adoption|prenup|domestic|protective order|restraining|family|marriage|visitation|parenting)",
+        "cartridge": "family_law"
+      },
+      "criminal_defense": {
+        "pattern": "(criminal|arrest|charged|charges|dui|dwi|felony|misdemeanor|court date|bail|plea|defense|crime|ticket|violation|probation|parole)",
+        "cartridge": "criminal_defense"
+      },
+      "estate_planning": {
+        "pattern": "(estate|will|trust|probate|power of attorney|inheritance|beneficiary|executor|living will|advance directive|guardianship|elder law|died|death|passed away)",
+        "cartridge": "estate_planning"
+      }
+    }
+  },
+
+  "system_screens": {
+    "boot": "boot.md",
+    "menu": "menu.md"
+  },
+
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "transcript_export": true,
+    "qualification_scoring": true,
+    "urgency_detection": true,
+    "spam_filtering": true,
+    "depth_tracking": true,
+    "mood_resonance": true,
+    "cross_module_memory": true,
+    "deliverables_pipeline": true,
+    "dinosaur_eggs": false,
+    "real_time_timers": false,
+    "audio_input": false,
+    "audio_output": false,
+    "vault_rag": true,
+    "multi_pack_session": true,
+    "session_journal": true
+  },
+
+  "delivery": {
+    "default_mode": "staged",
+    "allowed_recipients": ["email", "internal"],
+    "require_approval_for_ai_sessions": true
+  },
+
+  "pipeline": {
+    "enabled": true,
+    "stage": 1,
+    "pipeline_id": "legal_client_onboard",
+    "next_pack": "lead_qualification",
+    "carry_fields": ["client_name", "client_email", "case_type", "practice_area"],
+    "carry_deliverable": true,
+    "auto_advance": false,
+    "advance_condition": "deliverable_complete"
+  },
+
+  "knowledge": {
+    "enabled": true,
+    "self_consulting": true,
+    "adaptation_level": "full",
+    "sources": ["prior_deliverables", "similar_sessions", "notes", "patterns"],
+    "confidence_threshold": 0.4,
+    "max_injections": 3,
+    "max_tokens": 1200,
+    "departments_scope": ["legal"]
+  },
+
+  "privacy": {
+    "disclosure": "A summary of this conversation will be shared with our legal team so they can evaluate your situation and follow up with you.",
+    "data_tier": "sensitive_intake",
+    "transcript_available": true,
+    "retention_days": 365
+  },
+
+  "notifications": {
+    "new_qualified_lead": {
+      "condition": "qualification.score >= 60",
+      "channels": ["email"],
+      "template": "qualified_lead"
+    },
+    "high_value_case": {
+      "condition": "qualification.score >= 80",
+      "channels": ["sms", "email"],
+      "template": "high_value_case"
+    },
+    "urgent_intake": {
+      "condition": "qualification.urgency in ['high', 'critical']",
+      "channels": ["sms", "email", "push"],
+      "template": "urgent_lead",
+      "priority": "immediate"
+    },
+    "statute_alert": {
+      "condition": "'statute_concern' in qualification.flags",
+      "channels": ["sms", "email"],
+      "template": "statute_deadline",
+      "priority": "immediate"
+    },
+    "spam_detected": {
+      "condition": "qualification.spam_score >= 0.8",
+      "channels": ["log"],
+      "template": "spam_flag"
+    }
+  },
+
+  "settings": {
+    "response_depth": {
+      "default": "balanced",
+      "options": ["concise", "balanced", "detailed"]
+    },
+    "tone": {
+      "default": "professional_warm",
+      "options": ["professional_warm", "formal", "empathetic"]
+    }
+  },
+
+  "state": {
+    "session": {
+      "category": null,
+      "outcome": null,
+      "turn_count": 0,
+      "active_cartridge": null,
+      "depth": 0,
+      "started_at": null,
+      "last_activity": null,
+      "practice_area": null,
+      "routed_from_intake": false
+    },
+    "contact": {
+      "name": null,
+      "email": null,
+      "phone": null,
+      "preferred_method": null,
+      "preferred_time": null,
+      "company": null,
+      "role": null,
+      "collected_at": null
+    },
+    "qualification": {
+      "score": 0,
+      "urgency": "normal",
+      "flags": [],
+      "disqualifiers": [],
+      "spam_score": 0.0,
+      "sentiment": "neutral",
+      "intent": null
+    },
+    "summary": {
+      "auto_summary": null,
+      "key_facts": [],
+      "decisions": [],
+      "action_items": [],
+      "entities_extracted": {},
+      "recommended_actions": []
+    },
+    "case": {
+      "practice_area": null,
+      "case_type": null,
+      "incident_date": null,
+      "incident_location": null,
+      "description": null,
+      "injuries": [],
+      "damages": [],
+      "medical_treatment": null,
+      "evidence_available": [],
+      "witnesses": [],
+      "opposing_party": null,
+      "insurance_contacted": null,
+      "attorney_retained": null,
+      "prior_legal_action": null,
+      "statute_deadline": null,
+      "jurisdiction": null,
+      "lost_wages": null,
+      "reporting_date": null,
+      "warning_signage": null
+    },
+    "family": {
+      "matter_type": null,
+      "married_years": null,
+      "children": [],
+      "children_ages": [],
+      "custody_preference": null,
+      "assets_complexity": null,
+      "domestic_violence": false,
+      "existing_orders": null,
+      "opposing_counsel": null,
+      "court_dates": []
+    },
+    "criminal": {
+      "charges": [],
+      "charge_level": null,
+      "arrest_date": null,
+      "court_date": null,
+      "bail_status": null,
+      "prior_record": null,
+      "attorney_appointed": null,
+      "evidence_concerns": [],
+      "plea_offered": null
+    },
+    "estate": {
+      "matter_type": null,
+      "existing_documents": [],
+      "estate_value_range": null,
+      "beneficiaries_count": null,
+      "special_circumstances": [],
+      "urgency_reason": null
+    }
+  },
+
+  "theme": {
+    "accent": "#34d399",
+    "surface": "#0D0B09",
+    "text": "#E5E2DC"
+  },
+
+  "transcript": {
+    "format": "markdown",
+    "include_metadata": true,
+    "include_summary": true,
+    "include_scoring": true,
+    "include_extractions": true,
+    "download_label": "Download Case Summary"
+  },
+
+  "deliverables": {
+    "enabled": true,
+    "reference_implementation": "case_brief_ventura.docx",
+    "types": [
+      {
+        "id": "case_brief",
+        "name": "Preliminary Case Brief",
+        "description": "Auto-generated case assessment from intake conversation data. Transforms casual intake conversation into attorney-grade work product.",
+        "trigger": {
+          "cartridges_required": ["intake"],
+          "min_turns": 4,
+          "contact_required": true
+        },
+        "channels": ["email", "download"],
+        "include_transcript": true,
+        "include_state_snapshot": true,
+        "fields": [
+          {
+            "id": "incident_date",
+            "name": "Incident Date",
+            "category": "case",
+            "required": false,
+            "patterns": [
+              { "pattern": "(?:happened|occurred|on|date|incident|was on)\\s+(?:on|was)?\\s*(\\d{1,2}[/-]\\d{1,2}[/-]\\d{2,4})" },
+              { "pattern": "(?:happened|occurred)\\s+(?:on)?\\s*((?:january|february|march|april|may|june|july|august|september|october|november|december)\\s+\\d{1,2}(?:,?\\s*\\d{4})?)", "case_insensitive": true },
+              { "pattern": "(\\d+)\\s*(?:days?|weeks?|months?)\\s*ago" }
+            ]
+          },
+          {
+            "id": "incident_description",
+            "name": "Incident Description",
+            "category": "case",
+            "required": true,
+            "patterns": [
+              { "pattern": "(?:what happened|situation|incident|problem|issue)\\s+(?:is|was)?\\s*(.{20,200}?)(?:\\.|$)", "case_insensitive": true }
+            ]
+          },
+          {
+            "id": "practice_area",
+            "name": "Practice Area",
+            "category": "case",
+            "required": false,
+            "patterns": [
+              { "pattern": "(?:personal injury|family law|criminal|estate|car accident|divorce|custody|dui|will|trust|slip and fall|malpractice|workers comp)" }
+            ]
+          },
+          {
+            "id": "injuries",
+            "name": "Injuries / Damages",
+            "category": "damages",
+            "required": false,
+            "patterns": [
+              { "pattern": "(?:injur|hurt|broke|broken|fracture|sprain|concussion|surgery|hospital|medical|treatment|pain|suffering)\\w*\\s+(.{10,150}?)(?:\\.|$)", "case_insensitive": true }
+            ]
+          },
+          {
+            "id": "damages",
+            "name": "Financial Damages",
+            "category": "damages",
+            "required": false,
+            "patterns": [
+              { "pattern": "(?:damages?|losses?|bills?|cost|expenses?)\\s+(?:of|totaling|around|about)?\\s*\\$?([\\d,]+(?:\\.\\d{2})?)", "transform": "currency" }
+            ]
+          },
+          {
+            "id": "lost_wages",
+            "name": "Lost Wages / Missed Work",
+            "category": "damages",
+            "required": false,
+            "patterns": [
+              { "pattern": "(?:missed|lost|off|out of)\\s+(?:work|job)\\s+(?:for)?\\s*(\\d+\\s*(?:days?|weeks?|months?|years?))", "case_insensitive": true },
+              { "pattern": "(?:haven't|can't|unable to)\\s+work\\w*\\s+(?:for|since)?\\s*(.{5,80}?)(?:\\.|$)", "case_insensitive": true }
+            ]
+          },
+          {
+            "id": "timeline",
+            "name": "Urgency / Timeline",
+            "category": "timeline",
+            "required": false,
+            "patterns": [
+              { "pattern": "(?:statute|deadline|filing|court date|hearing|urgent|immediately|asap|time sensitive)\\s*(.{5,100}?)(?:\\.|$)", "case_insensitive": true }
+            ]
+          },
+          {
+            "id": "opposing_party",
+            "name": "Opposing Party",
+            "category": "parties",
+            "required": false,
+            "patterns": [
+              { "pattern": "(?:other party|defendant|opposing|sued|suing|against|fault|responsible|liable)\\s+(?:is|was|named)?\\s*(.{5,80}?)(?:\\.|$)", "case_insensitive": true }
+            ]
+          },
+          {
+            "id": "incident_location",
+            "name": "Incident Location",
+            "category": "case",
+            "required": false,
+            "patterns": [
+              { "pattern": "(?:happened|occurred|took place|at the|near the|on the)\\s+(?:at|near|on)?\\s*(?:intersection|corner|crossing)?\\s*(?:of\\s+)?(.{5,100}?)(?:\\.|,|$)", "case_insensitive": true }
+            ]
+          },
+          {
+            "id": "witness_info",
+            "name": "Witness Information",
+            "category": "evidence",
+            "required": false,
+            "patterns": [
+              { "pattern": "(?:witness|witnesses|someone saw|people saw|bystander)\\w*\\s+(.{10,150}?)(?:\\.|$)", "case_insensitive": true }
+            ]
+          },
+          {
+            "id": "medical_treatment",
+            "name": "Medical Treatment",
+            "category": "damages",
+            "required": false,
+            "patterns": [
+              { "pattern": "(?:treated at|went to|taken to|admitted to|emergency|hospital|ER|doctor|physician|specialist|physical therapy|rehab)\\s+(.{5,150}?)(?:\\.|$)", "case_insensitive": true },
+              { "pattern": "(?:surgery|operation|procedure|stitches|cast|brace|medication)\\s+(.{5,100}?)(?:\\.|$)", "case_insensitive": true }
+            ]
+          },
+          {
+            "id": "warning_signage",
+            "name": "Warning Signs / Hazard Markers",
+            "category": "evidence",
+            "required": false,
+            "patterns": [
+              { "pattern": "(?:no|no\\s+wet|wasn't any|wasn't a|no\\s+warning|no\\s+sign|no\\s+cone|unmarked|not marked)\\s*(.{5,80}?)(?:\\.|$)", "case_insensitive": true },
+              { "pattern": "(?:wet floor|caution|warning)\\s+(?:sign|cone|marker|tape)\\s*(.{0,60}?)(?:\\.|$)", "case_insensitive": true }
+            ]
+          },
+          {
+            "id": "reporting_delay",
+            "name": "Reporting Timeline",
+            "category": "timeline",
+            "required": false,
+            "patterns": [
+              { "pattern": "(?:reported|told|notified|informed)\\s+(?:them|it|the|management|police|employer)?\\s*(?:about)?\\s*(\\d+\\s*(?:days?|weeks?|months?)\\s*(?:later|after))", "case_insensitive": true }
+            ]
+          },
+          {
+            "id": "insurance_status",
+            "name": "Insurance Contact Status",
+            "category": "parties",
+            "required": false,
+            "patterns": [
+              { "pattern": "(?:insurance|adjuster|claims?)\\s+(?:company|carrier|agent)?\\s*(?:contacted|called|reached out|sent|received)", "case_insensitive": true }
+            ]
+          }
+        ],
+        "template": {
+          "title": "Case Brief — {{contact_name}} — {{date}}",
+          "sections": [
+            { "id": "cover", "heading": "Preliminary Case Brief", "order": 1 },
+            { "id": "overview", "heading": "Case Overview", "order": 2 },
+            { "id": "narrative", "heading": "Incident Narrative", "order": 3 },
+            { "id": "liability", "heading": "Liability Analysis", "order": 4 },
+            { "id": "damages", "heading": "Damages Summary", "condition": "injuries || damages || lost_wages", "order": 5 },
+            { "id": "scoring", "heading": "Qualification Scoring Breakdown", "order": 6 },
+            { "id": "contact", "heading": "Contact Information", "order": 7 },
+            { "id": "action_plan", "heading": "Recommended Action Plan", "order": 8 },
+            {
+              "id": "followup_emails",
+              "heading": "Recommended Follow-Up Communications",
+              "type": "llm_generated",
+              "prompt": "Generate two attorney-to-client follow-up emails: (1) Initial outreach within 24 hours referencing case specifics, preferred contact time, and time-sensitive actions. (2) A 3-day follow-up if no response. Keep it under 200 words, warm but professional.",
+              "body": "**To:** {{contact_name}} ({{contact_email}})\n**Subject:** Your {{practice_area}} Case — Next Steps\n\nThank you for sharing the details of your case. We will review the information provided and follow up within 24-48 hours.\n\nPlease preserve any evidence, documentation, or records related to your case.",
+              "order": 9
+            },
+            { "id": "transcript", "heading": "Session Transcript", "condition": "include_transcript", "order": 10 },
+            { "id": "metadata", "heading": "Session Metadata", "order": 11 },
+            { "id": "state_snapshot", "heading": "State Snapshot (Final)", "condition": "include_state_snapshot", "order": 12 }
+          ]
+        }
+      }
+    ]
+  },
+
+  "architect": {
+    "enabled": true,
+    "classification": {
+      "dimensions": [
+        {
+          "id": "case_value",
+          "levels": ["low", "moderate", "high", "premium"],
+          "default": "moderate"
+        },
+        {
+          "id": "urgency",
+          "levels": ["routine", "timely", "urgent", "critical"],
+          "default": "routine"
+        },
+        {
+          "id": "complexity",
+          "levels": ["straightforward", "moderate", "complex"],
+          "default": "moderate"
+        },
+        {
+          "id": "client_readiness",
+          "levels": ["exploring", "evaluating", "ready", "immediate"],
+          "default": "evaluating"
+        }
+      ],
+      "rules": [
+        {
+          "dimension": "case_value",
+          "trigger": "keywords",
+          "keywords": ["million", "catastrophic", "wrongful death", "class action", "mass tort"],
+          "level": "premium",
+          "priority": 10
+        },
+        {
+          "dimension": "case_value",
+          "trigger": "keywords",
+          "keywords": ["surgery", "hospital", "significant", "permanent", "disability"],
+          "level": "high",
+          "priority": 20
+        },
+        {
+          "dimension": "urgency",
+          "trigger": "keywords",
+          "keywords": ["statute", "deadline", "expires", "tomorrow", "this week", "filing date"],
+          "level": "critical",
+          "priority": 10
+        },
+        {
+          "dimension": "urgency",
+          "trigger": "keywords",
+          "keywords": ["court date", "hearing", "arraignment", "bail", "arrested"],
+          "level": "urgent",
+          "priority": 20
+        },
+        {
+          "dimension": "client_readiness",
+          "trigger": "contact_present",
+          "level": "ready",
+          "priority": 30
+        },
+        {
+          "dimension": "client_readiness",
+          "trigger": "keywords",
+          "keywords": ["hire", "retain", "sign up", "ready to proceed", "let's go", "move forward"],
+          "level": "immediate",
+          "priority": 20
+        },
+        {
+          "dimension": "complexity",
+          "trigger": "keywords",
+          "keywords": ["multiple parties", "corporate", "government", "federal", "international", "class action"],
+          "level": "complex",
+          "priority": 20
+        }
+      ]
+    },
+    "artifacts": [
+      {
+        "id": "case_brief",
+        "name": "Preliminary Case Brief",
+        "deliverable_spec_id": "case_brief",
+        "trigger_completeness": 0.3,
+        "depends_on": [],
+        "required_for_pitch": true
+      },
+      {
+        "id": "attorney_memo",
+        "name": "Attorney Recommendation Memo",
+        "deliverable_spec_id": "case_brief",
+        "trigger_completeness": 0.5,
+        "depends_on": ["case_brief"],
+        "required_for_pitch": true
+      },
+      {
+        "id": "followup_draft",
+        "name": "Client Follow-Up Draft",
+        "deliverable_spec_id": "case_brief",
+        "trigger_completeness": 0.7,
+        "depends_on": ["case_brief"],
+        "required_for_pitch": false
+      }
+    ],
+    "pitch_threshold": 0.7,
+    "pitch": {
+      "specs": [
+        {
+          "id": "attorney_notification",
+          "name": "Attorney Case Notification",
+          "channel": "email",
+          "subject_template": "New {{classification.case_value}} Case — {{contact_name}}",
+          "template": "## New Intake: {{contact_name}}\n\n**Value:** {{classification.case_value}} | **Urgency:** {{classification.urgency}} | **Complexity:** {{classification.complexity}}\n\n### Case Summary\n{{artifact.case_brief.summary}}\n\n### Recommendation\n{{artifact.attorney_memo.summary}}\n\n### Contact\n{{contact_name}} — {{contact_email}} — {{contact_phone}}",
+          "requires_artifacts": ["case_brief", "attorney_memo"],
+          "auto_send": false
+        }
+      ]
+    }
+  },
+
+  "inbound": {
+    "enabled": true,
+    "addresses": [
+      {
+        "handle": "intake",
+        "display_name": "Legal Intake",
+        "auto_reply": true,
+        "greeting": "Thank you for reaching out. I'm the intake assistant and I'll help gather some initial information about your situation."
+      }
+    ]
+  },
+
+  "data_rail": {
+    "tabs": [
+      {
+        "id": "auth",
+        "label": "Auth",
+        "icon": "key",
+        "type": "infrastructure"
+      },
+      {
+        "id": "pricing",
+        "label": "Pricing",
+        "icon": "sparkles",
+        "type": "infrastructure"
+      },
+      {
+        "id": "case_info",
+        "label": "Case Info",
+        "icon": "scale",
+        "type": "pack",
+        "require_before_chat": true,
+        "title": "Client & Case Details",
+        "description": "Captured securely. Encrypted at rest. Never sent to AI.",
+        "submit_label": "Save to Vault",
+        "success_message": "Case details saved.",
+        "endpoint": "/api/datarail/submit",
+        "fields": [
+          { "id": "client_name", "type": "text", "label": "Client Name", "placeholder": "Full legal name", "required": true, "pii": true },
+          { "id": "client_email", "type": "email", "label": "Email", "placeholder": "client@example.com", "required": true, "pii": true },
+          { "id": "client_phone", "type": "tel", "label": "Phone", "placeholder": "(555) 555-5555", "required": false, "pii": true },
+          { "id": "case_type", "type": "select", "label": "Case Type", "required": true, "options": ["Personal Injury", "Family Law", "Criminal Defense", "Estate Planning", "General Consultation"] },
+          { "id": "incident_date", "type": "date", "label": "Date of Incident", "required": false, "pii": false },
+          { "id": "summary", "type": "text", "label": "Brief Summary", "placeholder": "One-line description of the matter", "required": false, "pii": false }
+        ]
+      }
+    ]
+  },
+
+  "library": {
+    "visible": true,
+    "category": "legal",
+    "tags": ["intake", "qualification", "case-management"],
+    "description": "Prospective clients get qualified and captured before an attorney picks up the phone. Case details, conflict checks, urgency routing, and attorney-grade briefs from conversational data.",
+    "author": "TMOS13",
+    "license": "included",
+    "verb_type": "intake",
+    "industry_tags": ["legal-services", "law-firm"],
+    "icon_url": null,
+    "price": {
+      "model": "included",
+      "tier_minimum": null
+    }
+  }
+}

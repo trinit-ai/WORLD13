@@ -1,0 +1,9 @@
+id: ai_mirror
+name: Mirror Session
+category: ai_interaction
+status: active
+description: A governed mirror session. Reflects back what the person is actually saying versus what they intend to say. Reveals inconsistency, contradiction, and gaps between stated and actual positions. Does not advise.
+consequence_class: ZERO
+estimated_turns: 8-14
+version: 1.0
+author: Robert C. Ventura

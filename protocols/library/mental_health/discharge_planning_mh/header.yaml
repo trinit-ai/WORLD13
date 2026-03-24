@@ -1,0 +1,9 @@
+id: discharge_planning_mh
+name: Mental Health Discharge Planning Intake
+category: mental_health
+status: active
+description: Mental health discharge planning intake for clinicians and case managers planning a discharge from psychiatric inpatient, residential, or intensive outpatient mental health treatment. Evaluates the clinical stability, the safety plan, the step-down care, the support system, the medication plan, and the crisis resources to produce a mental health discharge planning profile with safe discharge criteria and aftercare coordination requirements. Not clinical advice.
+deliverable: mh_discharge_planning_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

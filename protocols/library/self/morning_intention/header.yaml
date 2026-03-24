@@ -1,0 +1,9 @@
+id: morning_intention
+name: Morning Intention
+category: self
+status: active
+description: Brief daily ritual for deliberate intention-setting, not task management.
+deliverable: daily_intention
+estimated_turns: "4-6"
+version: 1.0
+author: Robert C. Ventura

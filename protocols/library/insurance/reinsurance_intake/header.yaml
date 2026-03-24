@@ -1,0 +1,9 @@
+id: reinsurance_intake
+name: Reinsurance Placement Intake
+category: insurance
+status: active
+description: Reinsurance placement intake for cedents, reinsurance brokers, and reinsurance underwriters scoping a reinsurance placement. Evaluates the ceding company's portfolio, the reinsurance structure, the coverage objectives, treaty vs. facultative considerations, and submission requirements to produce a reinsurance intake profile with placement structure and submission requirements.
+deliverable: reinsurance_intake_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

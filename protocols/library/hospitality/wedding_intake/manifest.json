@@ -1,0 +1,46 @@
+{
+  "id": "wedding_intake",
+  "name": "Wedding Planning Intake",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "hospitality",
+  "description": "Wedding planning intake for wedding planners and couples beginning wedding planning. Evaluates the couple's vision, the guest count, the budget, the vendor priorities, and the logistical requirements to produce a wedding planning intake profile with vision summary and planning priorities.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "professional, direct",
+    "warmth": 0.5,
+    "humor": 0.0,
+    "formality": 0.7
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 20,
+    "estimated_turns": "12-16"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  }
+}

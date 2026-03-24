@@ -1,0 +1,9 @@
+id: event_intake
+name: Event Planning Intake
+category: hospitality
+status: active
+description: Event planning intake for event planners, venue coordinators, and hospitality professionals scoping a new event. Evaluates event type, objectives, guest count, budget, timeline, venue requirements, catering, entertainment, and production needs to produce a comprehensive event brief with vendor requirements and timeline.
+deliverable: event_planning_brief
+estimated_turns: 12-18
+version: 1.0
+author: Robert C. Ventura

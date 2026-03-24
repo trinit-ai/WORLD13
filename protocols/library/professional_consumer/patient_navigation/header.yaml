@@ -1,0 +1,9 @@
+id: patient_navigation
+name: Patient Navigation
+category: professional_consumer
+status: active
+description: Guides individuals navigating healthcare systems — appointments, diagnoses, insurance, self-advocacy.
+deliverable: care_navigation_plan
+estimated_turns: "8-12"
+version: 1.0
+author: Robert C. Ventura

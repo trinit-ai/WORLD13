@@ -1,0 +1,9 @@
+id: fin_debt_payoff
+name: Debt Payoff Planning
+category: personal_finance
+status: active
+description: Debt payoff planning session that helps individuals inventory their debts, compare avalanche vs snowball strategies, and build a payoff plan with realistic milestones. NOT financial advice.
+deliverable: debt_payoff_plan
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

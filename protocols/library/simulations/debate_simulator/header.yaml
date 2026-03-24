@@ -1,0 +1,9 @@
+id: debate_simulator
+name: Debate Simulator
+category: simulations
+status: active
+description: A live debate simulation for students, professionals, and competitive debaters practicing argumentation, rebuttal, and persuasion. The session assigns a position, presents the opposing argument, manages the debate structure, and produces a performance debrief assessing argument quality, evidence use, rebuttal effectiveness, and persuasive impact.
+deliverable: debate_performance_debrief
+estimated_turns: 12-20
+version: 1.0
+author: Robert C. Ventura

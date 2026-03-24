@@ -1,0 +1,9 @@
+id: fin_emergency_fund
+name: Emergency Fund Building
+category: personal_finance
+status: active
+description: Emergency fund building session that helps individuals determine their target fund size, choose where to keep it, and build a realistic savings plan. NOT financial advice.
+deliverable: emergency_fund_plan
+estimated_turns: 6-8
+version: 1.0
+author: Robert C. Ventura

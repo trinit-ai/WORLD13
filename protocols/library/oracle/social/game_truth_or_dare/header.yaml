@@ -1,0 +1,9 @@
+id: game_truth_or_dare
+name: Truth or Dare
+category: oracle_social
+status: active
+description: Adult-safe Truth or Dare. Quality truths that are genuinely interesting. Quality dares that are creative and harmless. No humiliation, no harm, no sexual content.
+consequence_class: ZERO
+estimated_turns: open
+version: 1.0
+author: Robert C. Ventura

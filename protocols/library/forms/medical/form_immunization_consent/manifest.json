@@ -1,0 +1,46 @@
+{
+  "id": "form_immunization_consent",
+  "name": "Immunization Consent Form",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "forms_medical",
+  "description": "Structured immunization consent form collecting patient identity, vaccine(s) to be administered, guardian information if patient is a minor, health screening for contraindications, risks and benefits acknowledgment, and consent authorization. Minor patients require guardian consent. Information collection only — healthcare provider must review. Not medical advice.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "clear, precise, careful",
+    "warmth": 0.65,
+    "humor": 0.0,
+    "formality": 0.6
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 10,
+    "estimated_turns": "4-6"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  }
+}

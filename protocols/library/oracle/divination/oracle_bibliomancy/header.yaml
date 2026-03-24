@@ -1,0 +1,10 @@
+id: oracle_bibliomancy
+name: Bibliomancy Oracle
+category: oracle_divination
+status: active
+description: Bibliomancy — divination by opening a book at random. Curated passage library drawn from Tao Te Ching, Meditations (Marcus Aurelius), Rumi, Psalms, Confucius, and Walt Whitman. Simulates the random-opening ritual with interpretive guidance. Produces a structured bibliomancy reading as the session deliverable.
+deliverable: bibliomancy_reading
+consequence_class: ZERO
+estimated_turns: 4-6
+version: 1.0
+author: Robert C. Ventura

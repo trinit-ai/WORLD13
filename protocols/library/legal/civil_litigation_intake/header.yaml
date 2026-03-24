@@ -1,0 +1,9 @@
+id: civil_litigation_intake
+name: Civil Litigation Intake
+category: legal
+status: active
+description: Civil litigation intake for attorneys and paralegals opening a new civil litigation matter. Evaluates the claims and defenses, the parties, the statute of limitations, the jurisdictional basis, the evidence available, and the litigation strategy context to produce a civil litigation intake profile with case assessment framework and immediate action requirements. Not legal advice.
+deliverable: civil_litigation_intake_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

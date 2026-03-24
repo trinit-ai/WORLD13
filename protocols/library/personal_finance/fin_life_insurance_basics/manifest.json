@@ -1,0 +1,17 @@
+{
+  "id": "fin_life_insurance_basics",
+  "name": "Life Insurance Basics",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "personal_finance",
+  "description": "Life insurance basics session that explains term vs whole life, helps individuals estimate appropriate coverage amounts, and separates insurance education from insurance sales. NOT financial advice.",
+  "base": "library_intake",
+  "personality": { "tone": "educational", "warmth": 0.5, "humor": 0.0, "formality": 0.5 },
+  "cartridges": [],
+  "commands": { "session": { "reset": { "pattern": "^(reset|start over|restart|new session|clear)$", "action": "reset_session" }, "status": { "pattern": "^(status|progress|where am i|summary)$", "action": "show_status" } } },
+  "features": { "session_intelligence": true, "contact_collection": false, "deliverables_pipeline": true, "session_journal": true, "depth_tracking": true },
+  "session_policy": { "type": "metered", "free_turns": 14, "estimated_turns": "8-10" },
+  "privacy": { "disclosure": "A summary of this session will be available for review.", "data_tier": "standard_intake", "transcript_available": true },
+  "deliverables": { "enabled": true, "types": [{ "id": "life_insurance_overview", "name": "Life Insurance Overview", "description": "Generated life insurance overview from session data.", "trigger": { "min_turns": 3, "contact_required": false }, "channels": ["download"], "include_transcript": true, "include_state_snapshot": true }] }
+}

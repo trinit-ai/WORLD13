@@ -1,0 +1,25 @@
+{
+  "pack_id": "form_i9",
+  "pack_name": "I-9 Employment Eligibility Verification",
+  "category": "forms_hr",
+  "tone": "clear, professional, helpful",
+  "warmth": 0.6,
+  "formality": 0.6,
+  "autonomy": "mediated",
+  "turn_budget": 8,
+  "deliverable": "completed_form",
+  "version": "1.0",
+  "fields": [
+    "employee_name",
+    "employee_address",
+    "date_of_birth",
+    "ssn",
+    "citizenship_status",
+    "list_a_documents",
+    "list_b_documents",
+    "list_c_documents",
+    "start_date",
+    "employer_name",
+    "employer_address"
+  ]
+}

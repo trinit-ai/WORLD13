@@ -1,0 +1,9 @@
+id: chronic_condition_session
+name: Chronic Condition Session
+category: embodiment
+status: active
+description: Guided session for navigating life with a chronic health condition — identity, advocacy, and living well within constraints.
+deliverable: condition_brief
+estimated_turns: "10-14"
+version: 1.0
+author: Robert C. Ventura

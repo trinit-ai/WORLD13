@@ -1,0 +1,9 @@
+id: sales_call_sim
+name: Sales Call Simulation
+category: simulations
+status: active
+description: A live sales call simulation for sales professionals, founders, and anyone practicing consultative selling. The session plays a realistic prospect — with real objections, real buying criteria, and a decision to make — conducts the call under realistic conditions, and produces a performance debrief assessing discovery quality, value articulation, objection handling, and closing approach.
+deliverable: sales_call_debrief
+estimated_turns: 12-20
+version: 1.0
+author: Robert C. Ventura

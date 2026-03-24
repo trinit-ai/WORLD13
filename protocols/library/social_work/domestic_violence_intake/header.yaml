@@ -1,0 +1,9 @@
+id: domestic_violence_intake
+name: Domestic Violence Intake
+category: social_work
+status: active
+description: Domestic violence intake for social workers and victim advocates conducting an intake with a survivor of domestic violence or intimate partner violence. Evaluates the safety situation, the abuse history, the lethality risk, the client's needs and goals, and the service options to produce a domestic violence intake profile with safety plan and service priorities. Not legal advice.
+deliverable: domestic_violence_profile
+estimated_turns: 12-16
+version: 1.0
+author: Robert C. Ventura

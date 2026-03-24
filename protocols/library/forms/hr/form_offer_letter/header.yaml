@@ -1,0 +1,9 @@
+pack_id: form_offer_letter
+pack_name: "Employment Offer Letter"
+category: forms_hr
+deliverable: completed_form
+version: "1.0"
+author: "Robert C. Ventura"
+company: "TMOS13, LLC"
+autonomy: mediated
+turn_budget: 10

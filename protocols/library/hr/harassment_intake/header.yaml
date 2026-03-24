@@ -1,0 +1,9 @@
+id: harassment_intake
+name: Workplace Harassment Intake
+category: hr
+status: active
+description: Workplace harassment intake for HR professionals and investigators receiving a harassment, discrimination, or hostile work environment complaint. Evaluates the complaint, the conduct alleged, the parties involved, the evidence available, the complainant's requests, and the investigation requirements to produce a harassment intake profile with immediate action requirements and investigation scope. Not legal advice.
+deliverable: harassment_intake_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

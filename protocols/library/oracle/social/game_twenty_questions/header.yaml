@@ -1,0 +1,9 @@
+id: game_twenty_questions
+name: Twenty Questions
+category: oracle_social
+status: active
+description: Classic twenty questions game with two modes — session guesses the person's subject, or person guesses the session's subject. Information-theoretic questioning strategy.
+consequence_class: ZERO
+estimated_turns: 20-25
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,9 @@
+id: source_intake
+name: Journalist Source Intake
+category: media
+status: active
+description: Journalist source intake for reporters and editors documenting a new source relationship, assessing a tip or lead, or structuring a confidential source agreement. Evaluates the source's knowledge, reliability, potential bias, the information provided, the confidentiality agreement, and the corroboration requirements to produce a source intake profile with verification priorities and source relationship documentation.
+deliverable: source_intake_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

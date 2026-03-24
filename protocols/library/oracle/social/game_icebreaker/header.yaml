@@ -1,0 +1,9 @@
+id: game_icebreaker
+name: Icebreaker Session
+category: oracle_social
+status: active
+description: Facilitated icebreaker questions calibrated to group context. Light, medium, and deep registers. Designed for team meetings, events, or group warm-ups.
+consequence_class: ZERO
+estimated_turns: 10-20
+version: 1.0
+author: Robert C. Ventura

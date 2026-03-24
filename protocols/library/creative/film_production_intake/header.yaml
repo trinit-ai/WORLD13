@@ -1,0 +1,9 @@
+id: film_production_intake
+name: Film and Video Production Intake
+category: creative
+status: active
+description: Film and video production intake for producers, directors, and production companies beginning a film, documentary, or video production. Evaluates the concept, the format, the budget, the crew and talent requirements, the production timeline, and the distribution goals to produce a film production intake profile with pre-production priorities and budget framework.
+deliverable: film_production_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

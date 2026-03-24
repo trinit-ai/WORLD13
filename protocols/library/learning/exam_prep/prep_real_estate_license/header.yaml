@@ -1,0 +1,9 @@
+id: prep_real_estate_license
+name: Real Estate License Prep
+category: learning_exam
+status: active
+description: Real estate licensing exam preparation and diagnostic assessment. Covers national and state-specific content areas including property ownership, land use, valuation, financing, contracts, agency, and real estate math. Builds a focused study plan with math skill assessment.
+deliverable: real_estate_study_plan
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,19 @@
+id: imagination_session
+name: Imagination Session
+category: exploratory
+turns: "6-10"
+version: "1.0"
+author: Robert C. Ventura
+company: "TMOS13, LLC"
+description: >
+  Exercising imagination — what if? what might? Not planning, not problem-solving.
+  Future, alternative, possibility, character imagination. Reality-testing can
+  happen after.
+kill_patterns:
+  - "'but realistically...' during imagination phase"
+  - premature reality-testing
+  - converting imagination to planning
+  - evaluating feasibility
+  - dismissing as impractical
+completion: experiential
+completion_signal: "imagination was genuinely exercised — the person went somewhere they hadn't been"

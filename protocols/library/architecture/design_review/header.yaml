@@ -1,0 +1,9 @@
+id: design_review
+name: Design Review Intake
+category: architecture
+status: active
+description: Architectural and interior design project review. Evaluates a project's design intent, program compliance, constructability, coordination status, and deliverable completeness across design phases to produce a design review profile with gap analysis and recommended actions before advancing to the next phase or permit submission.
+deliverable: design_review_report
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

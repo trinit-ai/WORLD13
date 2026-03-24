@@ -1,0 +1,9 @@
+id: strategy_intake
+name: Strategy Engagement Intake
+category: consulting
+status: active
+description: Strategy engagement intake for organizations defining direction, making resource allocation choices, or resolving a strategic inflection point. Evaluates the strategic question, decision-maker clarity, information base, competitive context, constraint map, and implementation ownership to produce a strategy engagement profile with gap analysis, risk flags, and recommended pre-strategy actions.
+deliverable: strategy_engagement_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

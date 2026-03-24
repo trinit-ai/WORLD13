@@ -1,0 +1,9 @@
+id: tech_coding_sql
+name: SQL Session
+category: technology
+status: active
+description: SQL session covering SELECT, JOIN, GROUP BY, subqueries, window functions, and query optimization. Works through real queries against realistic data scenarios. Teaches the relational model, not just syntax.
+deliverable: sql_session_summary
+estimated_turns: 8-14
+version: 1.0
+author: Robert C. Ventura

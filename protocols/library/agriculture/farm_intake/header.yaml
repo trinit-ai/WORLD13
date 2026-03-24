@@ -1,0 +1,9 @@
+id: farm_intake
+name: Farm Intake
+category: agriculture
+status: active
+description: General farm operations intake. The foundational agriculture pack — establishes the operation's identity, land base, enterprise mix, financial structure, and operational profile. Produces a farm profile record that downstream agriculture packs inherit as their starting context.
+deliverable: farm_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

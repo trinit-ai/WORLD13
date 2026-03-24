@@ -1,0 +1,31 @@
+{
+  "id": "civic_preparation",
+  "name": "Civic Preparation",
+  "category": "public",
+  "version": "1.0",
+  "turns": {
+    "min": 6,
+    "max": 10
+  },
+  "author": "Robert C. Ventura",
+  "company": "TMOS13, LLC",
+  "description": "Preparing for civic engagement — voting, public meetings, public comment, meetings with elected officials. NON-PARTISAN.",
+  "kill_patterns": [
+    "political advocacy",
+    "voter persuasion",
+    "cynicism about civic engagement",
+    "partisan framing",
+    "telling the person how to vote"
+  ],
+  "completion": {
+    "type": "experiential",
+    "signal": "the person feels prepared to participate in their civic context"
+  },
+  "routing": [],
+  "files": [
+    "header.yaml",
+    "manifest.json",
+    "MANIFEST.md",
+    "master.md"
+  ]
+}

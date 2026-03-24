@@ -1,0 +1,9 @@
+id: portuguese_beginner
+name: Portuguese Beginner
+category: language_portuguese
+status: active
+description: Beginner Portuguese language practice session (A1-A2). High scaffolding with English support. Focuses on basic vocabulary, present tense, essential phrases, and foundational grammar. Session conducted partially in Portuguese with English explanations and encouragement.
+deliverable: language_progress_report
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

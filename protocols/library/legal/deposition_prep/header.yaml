@@ -1,0 +1,9 @@
+id: deposition_prep
+name: Deposition Preparation Intake
+category: legal
+status: active
+description: Deposition preparation intake for attorneys preparing a witness or client for deposition. Evaluates the deponent's role, the key subject areas likely to be covered, the sensitive topics requiring preparation, the deponent's demeanor and communication style, and the case context to produce a deposition preparation profile with preparation focus areas and witness guidelines. Not legal advice.
+deliverable: deposition_prep_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,336 @@
+{
+  "id": "clinical_decision",
+  "access": "paid",
+  "tier_gate": "S1",
+  "name": "Patient Intake",
+  "version": "1.1.0",
+  "description": "AI-powered patient intake that captures symptoms, collects history, triages urgency, routes to the right specialist, and produces a structured intake summary — before the patient ever sees a provider.",
+  "tagline": "Your front desk, always on.",
+  "philosophy": "The waiting room is where care begins. A good intake captures what matters, asks the right follow-ups, and gets the patient to the right provider — fast, thorough, and human. This is your always-on front desk.",
+  "category": "scenarios",
+  "icon": "🩺",
+  "base": "strategic_simulation",
+  "assembly_mode": "assembled",
+  "citations": true,
+
+  "personality": {
+    "tone": "empathetic, professional, thorough, calm",
+    "warmth": 0.8,
+    "humor": 0.05,
+    "formality": 0.6,
+    "identity_name": "Intake",
+    "identity_description": "AI-powered patient intake specialist that captures symptoms, collects history, triages urgency, and routes to the right provider"
+  },
+
+  "cartridges": [
+    { "id": "briefing", "name": "Symptom Capture", "number": 1, "description": "Collect the patient's chief complaint, symptom timeline, severity, and any immediate red flags.", "file": "briefing.md" },
+    { "id": "encounter", "name": "History Collection", "number": 2, "description": "Gather medical history, medications, allergies, social factors, and family history — conversationally, not as a form.", "file": "encounter.md" },
+    { "id": "diagnosis", "name": "Urgency Triage", "number": 3, "description": "Assess urgency level, flag time-sensitive conditions, and determine whether the patient needs immediate, same-day, or routine care.", "file": "diagnosis.md" },
+    { "id": "treatment", "name": "Specialist Routing", "number": 4, "description": "Match the patient's presentation to the right provider, specialty, or department — with context for the receiving clinician.", "file": "treatment.md" },
+    { "id": "debrief", "name": "Intake Summary", "number": 5, "description": "Produce a structured intake summary with demographics, symptoms, history, triage level, and routing recommendation.", "file": "debrief.md" },
+    { "id": "company_profile", "name": "Company Profile", "description": "Your business identity, hours, contact info, FAQs, disclaimers, and policies — automatically woven into every interaction.", "passive": true }
+  ],
+
+  "commands": {
+    "session": {
+      "reset": { "pattern": "^(reset|start over|restart|new case|new patient|clear)$", "action": "reset_session" },
+      "menu": { "pattern": "^(menu|help|options|commands|back)$", "action": "show_menu" },
+      "status": { "pattern": "^(status|summary|chart|vitals|labs|results|findings)$", "action": "show_status" },
+      "branch": { "pattern": "^(what if|alternative|other diagnosis|branch|explore)$", "action": "explore_branch" },
+      "debrief": { "pattern": "^(debrief|analysis|review|score|how did I do|case review)$", "action": "enter_debrief" },
+      "transcript": { "pattern": "^(transcript|download|export|save|case report)$", "action": "show_transcript" }
+    },
+    "navigation": {
+      "encounter": {
+        "pattern": "(history|ask|tell me|symptoms|when did|how long|pain|describe|review of systems|social|family|past medical|medications|allergies|exam|examine|auscultate|palpate|inspect|vitals)",
+        "cartridge": "encounter"
+      },
+      "diagnosis": {
+        "pattern": "(differential|diagnos|test|order|labs|imaging|CT|MRI|xray|x-ray|blood|CBC|CMP|EKG|ECG|echo|ultrasound|biopsy|culture|results|interpret|rule out|workup)",
+        "cartridge": "diagnosis"
+      },
+      "treatment": {
+        "pattern": "(treat|prescribe|medication|dose|therapy|refer|surgery|procedure|admit|discharge|follow up|plan|management|intervention|counsel|educate)",
+        "cartridge": "treatment"
+      }
+    }
+  },
+
+  "system_screens": { "boot": "boot.md", "menu": "menu.md" },
+
+  "features": {
+    "session_intelligence": true,
+    "dual_state": true,
+    "persona_engine": true,
+    "branching_tree": true,
+    "outcome_scoring": true,
+    "counterfactual_analysis": true,
+    "contact_collection": false,
+    "transcript_export": true,
+    "depth_tracking": true,
+    "mood_resonance": true,
+    "cross_module_memory": true,
+    "vault_rag": true,
+    "multi_pack_session": true,
+    "session_journal": true
+  },
+
+  "delivery": {
+    "default_mode": "staged",
+    "allowed_recipients": ["email", "internal"],
+    "require_approval_for_ai_sessions": true
+  },
+
+  "privacy": {
+    "disclosure": "This is a clinical education simulation. No real patient data is used or collected. Not a substitute for medical training or clinical judgment.",
+    "data_tier": "session_only",
+    "transcript_available": true,
+    "retention_days": 90
+  },
+
+  "notifications": {},
+
+  "settings": {
+    "difficulty": {
+      "default": "balanced",
+      "options": ["guided", "balanced", "challenging", "adaptive"]
+    },
+    "patient_realism": {
+      "default": "realistic",
+      "options": ["cooperative", "realistic", "difficult"]
+    },
+    "branching_mode": {
+      "default": "interactive",
+      "options": ["linear", "interactive", "exhaustive"]
+    },
+    "specialty_focus": {
+      "default": "general",
+      "options": ["general", "emergency", "internal_medicine", "surgery", "psychiatry", "pediatrics", "ob_gyn"]
+    },
+    "clinical_setting": {
+      "default": "outpatient",
+      "options": ["outpatient", "emergency", "inpatient", "icu", "telehealth"]
+    }
+  },
+
+  "state": {
+    "session": {
+      "phase": null,
+      "outcome": null,
+      "turn_count": 0,
+      "active_cartridge": null,
+      "depth": 0,
+      "mode": "simulation",
+      "difficulty": "balanced",
+      "branches_explored": 0,
+      "current_branch": "main"
+    },
+    "scenario": {
+      "title": null,
+      "domain": "clinical",
+      "specialty": null,
+      "setting": null,
+      "complexity": null,
+      "time_pressure": null,
+      "resource_constraints": null,
+      "ethical_dimensions": []
+    },
+    "patient": {
+      "name": null,
+      "age": null,
+      "sex": null,
+      "pronouns": null,
+      "occupation": null,
+      "chief_complaint": null,
+      "presentation_acuity": null,
+      "communication_style": null,
+      "health_literacy": null,
+      "language": null,
+      "insurance_status": null,
+      "visible_state": {
+        "appearance": null,
+        "affect": null,
+        "vital_signs": {},
+        "stated_symptoms": [],
+        "stated_duration": null,
+        "stated_severity": null,
+        "stated_medications": [],
+        "stated_allergies": [],
+        "stated_pmh": []
+      },
+      "hidden_state": {
+        "true_diagnosis": null,
+        "secondary_diagnoses": [],
+        "undisclosed_symptoms": [],
+        "undisclosed_medications": [],
+        "undisclosed_substances": [],
+        "undisclosed_social": [],
+        "undisclosed_trauma": [],
+        "undisclosed_psych": [],
+        "medication_nonadherence": null,
+        "unreported_exposures": [],
+        "genetic_factors": [],
+        "abnormal_labs": {},
+        "abnormal_imaging": {},
+        "exam_findings": {},
+        "disease_progression_if_missed": null,
+        "time_sensitive": false,
+        "red_herrings": []
+      },
+      "behavior_rules": {
+        "disclosure_threshold": null,
+        "embarrassment_topics": [],
+        "trust_triggers": [],
+        "fear_triggers": [],
+        "will_volunteer": [],
+        "requires_direct_ask": [],
+        "will_deny_unless_pressed": [],
+        "cultural_factors": []
+      },
+      "revealed_information": [],
+      "withheld_information": []
+    },
+    "user_position": {
+      "role": null,
+      "specialty": null,
+      "setting": null,
+      "objectives": [],
+      "constraints": [],
+      "information_gathered": [],
+      "information_gaps": [],
+      "current_differential": [],
+      "working_diagnosis": null,
+      "tests_ordered": [],
+      "treatments_initiated": [],
+      "referrals_made": [],
+      "time_elapsed_sim": null,
+      "resources_used": 0
+    },
+    "clinical_data": {
+      "history": {
+        "hpi_completeness": 0,
+        "ros_completeness": 0,
+        "pmh_gathered": false,
+        "medications_gathered": false,
+        "allergies_gathered": false,
+        "social_history_gathered": false,
+        "family_history_gathered": false,
+        "sexual_history_gathered": false,
+        "substance_history_gathered": false,
+        "trauma_history_gathered": false
+      },
+      "exam": {
+        "performed": [],
+        "findings_positive": [],
+        "findings_negative": [],
+        "findings_missed": []
+      },
+      "tests": {
+        "ordered": [],
+        "results_received": [],
+        "results_pending": [],
+        "unnecessary_tests": [],
+        "missed_critical_tests": []
+      },
+      "timeline": []
+    },
+    "decision_tree": {
+      "moves": [],
+      "current_node": null,
+      "branch_points": [],
+      "paths_explored": [],
+      "critical_moments": []
+    },
+    "outcome": {
+      "result": null,
+      "score": 0,
+      "dimensions": {
+        "diagnostic_accuracy": 0,
+        "clinical_reasoning": 0,
+        "patient_communication": 0,
+        "therapeutic_appropriateness": 0,
+        "efficiency": 0
+      },
+      "optimal_play_delta": null,
+      "key_decisions": [],
+      "missed_opportunities": [],
+      "risks_avoided": [],
+      "risks_incurred": [],
+      "clinical_grade": null,
+      "correct_diagnosis": false,
+      "time_to_diagnosis": null,
+      "patient_outcome_projected": null,
+      "harm_events": []
+    }
+  },
+
+  "theme": {
+    "accent": "#059669",
+    "surface": "#0D0B09",
+    "text": "#E5E2DC"
+  },
+
+  "transcript": {
+    "format": "markdown",
+    "include_metadata": true,
+    "include_summary": true,
+    "include_scoring": true,
+    "include_decision_tree": true,
+    "include_counterfactuals": true,
+    "include_clinical_timeline": true,
+    "download_label": "Download Case Analysis"
+  },
+
+  "data_rail": {
+    "tabs": [
+      {
+        "id": "auth",
+        "label": "Auth",
+        "icon": "key",
+        "type": "infrastructure"
+      },
+      {
+        "id": "pricing",
+        "label": "Pricing",
+        "icon": "sparkles",
+        "type": "infrastructure"
+      },
+      {
+        "id": "patient_info",
+        "label": "Patient Info",
+        "icon": "HeartPulse",
+        "type": "pack",
+        "require_before_chat": true,
+        "title": "Patient Information",
+        "description": "Captured securely. Encrypted at rest. Never sent to AI.",
+        "submit_label": "Save to Vault",
+        "success_message": "Patient info saved.",
+        "endpoint": "/api/datarail/submit",
+        "fields": [
+          { "id": "patient_name", "type": "text", "label": "Patient Name", "placeholder": "Full name", "required": true, "pii": true },
+          { "id": "patient_email", "type": "email", "label": "Email", "placeholder": "patient@example.com", "required": true, "pii": true },
+          { "id": "patient_phone", "type": "tel", "label": "Phone", "placeholder": "(555) 555-5555", "required": false, "pii": true },
+          { "id": "date_of_birth", "type": "date", "label": "Date of Birth", "required": false, "pii": true },
+          { "id": "visit_reason", "type": "select", "label": "Reason for Visit", "required": true, "options": ["New Symptoms", "Follow-Up", "Annual Physical", "Urgent Concern", "Referral"] },
+          { "id": "chief_complaint", "type": "text", "label": "Chief Complaint", "placeholder": "Describe the primary concern in a few words", "required": false, "pii": false }
+        ]
+      }
+    ]
+  },
+
+  "library": {
+    "visible": true,
+    "category": "healthcare",
+    "tags": ["intake", "screening", "triage"],
+    "description": "Patient intake that captures symptoms, collects history, triages urgency, and routes to the right specialist. Structured intake summaries ready before the provider walks in.",
+    "author": "TMOS13",
+    "license": "included",
+    "verb_type": "intake",
+    "industry_tags": ["healthcare", "medical", "clinic"],
+    "icon_url": null,
+    "price": {
+      "model": "included",
+      "tier_minimum": null
+    }
+  }
+}

@@ -1,0 +1,9 @@
+id: form_w9
+name: W-9 Taxpayer Identification
+category: forms_financial
+status: active
+description: Guided completion of IRS Form W-9 capturing taxpayer name, business name, entity classification, exemptions, address, and TIN for information return reporting.
+deliverable: completed_form
+estimated_turns: "4-6"
+version: 1.0
+author: Robert C. Ventura

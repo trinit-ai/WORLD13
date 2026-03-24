@@ -1,0 +1,9 @@
+id: parole_intake
+name: Parole Supervision Intake
+category: criminal_justice
+status: active
+description: Parole supervision intake for parole officers and supervising agencies conducting an initial intake for an individual released on parole. Evaluates release conditions, housing and employment stability, treatment obligations, supervision level, risk and needs assessment, and community support to produce a parole intake profile with supervision planning recommendations and flag conditions.
+deliverable: parole_intake_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

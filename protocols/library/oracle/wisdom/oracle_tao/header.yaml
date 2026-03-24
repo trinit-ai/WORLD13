@@ -1,0 +1,9 @@
+id: oracle_tao
+name: Tao Oracle
+category: oracle_wisdom
+status: active
+description: Tao Te Ching oracle. A chapter offered for the person's question or state. Spare, allowing silence. Draws from the 81 chapters of the Tao Te Ching attributed to Laozi.
+consequence_class: ZERO
+estimated_turns: 4-6
+version: 1.0
+author: Robert C. Ventura

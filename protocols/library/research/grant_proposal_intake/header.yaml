@@ -1,0 +1,9 @@
+id: grant_proposal_intake
+name: Grant Proposal Intake
+category: research
+status: active
+description: Grant proposal intake for researchers and research administrators preparing a grant application. Evaluates the research aims, the funding opportunity alignment, the budget, the team, the preliminary data, the timeline, and the submission requirements to produce a grant proposal intake profile with alignment assessment and preparation priorities.
+deliverable: grant_proposal_profile
+estimated_turns: 12-16
+version: 1.0
+author: Robert C. Ventura

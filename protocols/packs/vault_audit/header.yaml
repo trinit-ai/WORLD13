@@ -1,0 +1,26 @@
+id: vault_audit
+name: Vault Audit
+category: _meta
+status: active
+description: >
+  Governance and compliance audit pack. Reads Vault records and pack manifests
+  to produce structured audit reports verifying session compliance. Use when
+  a compliance officer, attorney, or administrator needs to verify that AI
+  sessions ran in accordance with their governing protocols. Produces a
+  compliance report as its deliverable.
+deliverable: compliance_report
+estimated_turns: 4-8
+triggers:
+  - audit
+  - compliance report
+  - verify sessions
+  - what did the AI do
+  - session history
+  - governance review
+excludes:
+  - running new client sessions (use load <pack_id>)
+  - querying individual records (use vault query)
+version: "1.0"
+author: Robert C. Ventura
+vault:
+  write: full

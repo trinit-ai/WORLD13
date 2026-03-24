@@ -1,0 +1,9 @@
+id: performance_assessment
+name: Athletic Performance Assessment Intake
+category: sports
+status: active
+description: Athletic performance assessment intake for coaches and sports performance professionals conducting a performance evaluation of an athlete. Evaluates the physical capacities, technical skills, tactical understanding, mental performance indicators, and development priorities to produce a performance assessment profile with strengths, development areas, and training priorities.
+deliverable: performance_assessment_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

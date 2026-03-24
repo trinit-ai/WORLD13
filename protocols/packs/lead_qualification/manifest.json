@@ -1,0 +1,387 @@
+{
+  "id": "lead_qualification",
+  "access": "paid",
+  "tier_gate": "S1",
+  "name": "Lead Qualification",
+  "version": "1.1.0",
+  "description": "AI-powered inbound lead qualification — discovery conversations, scored leads, AE routing, with auth-gated sales training mode.",
+  "tagline": "Every lead gets a conversation.",
+  "category": "verticals",
+  "icon": "🎯",
+  "base": "public_facing",
+
+  "personality": {
+    "tone": "consultative, conversational, perceptive",
+    "warmth": 0.6,
+    "humor": 0.15,
+    "formality": 0.4,
+    "identity_name": "Sales Development Representative",
+    "identity_description": "An inbound SDR who qualifies through conversation — understands needs, determines fit, and contextualizes handoff to the sales team"
+  },
+
+  "cartridges": [
+    {
+      "id": "triage",
+      "name": "Inbound Triage",
+      "description": "First-touch qualification — identify intent, route to discovery or answer quick questions.",
+      "protocol": "triage.md"
+    },
+    {
+      "id": "discovery",
+      "name": "Discovery",
+      "description": "Structured discovery conversation — BANT/MEDDPICC qualification, pain identification, buying signals.",
+      "protocol": "discovery.md"
+    },
+    {
+      "id": "product_fit",
+      "name": "Product & Solution Fit",
+      "description": "Match prospect needs to product capabilities, handle objections, position value.",
+      "protocol": "product_fit.md"
+    },
+    {
+      "id": "booking",
+      "name": "Next Steps & Booking",
+      "description": "Schedule demo or meeting, route to the right AE, confirm logistics.",
+      "protocol": "booking.md"
+    },
+    {
+      "id": "training",
+      "name": "Sales Training Mode",
+      "description": "AI-as-prospect roleplay for rep practice. Scored sessions with coaching feedback.",
+      "protocol": "training.md",
+      "auth_required": true,
+      "auth_roles": ["internal", "admin", "sales_team"],
+      "internal_only": true
+    },
+    {
+      "id": "company_profile",
+      "name": "Company Profile",
+      "description": "Your business identity, hours, contact info, FAQs, disclaimers, and policies — automatically woven into every interaction.",
+      "passive": true
+    }
+  ],
+
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "menu": {
+        "pattern": "^(menu|help|options|what can you do|commands|back)$",
+        "action": "show_menu"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary|pipeline)$",
+        "action": "show_status"
+      },
+      "transcript": {
+        "pattern": "^(transcript|download|export|save)$",
+        "action": "show_transcript"
+      },
+      "training": {
+        "pattern": "^(training|practice|simulate|roleplay|training mode|coach)$",
+        "action": "enter_training",
+        "auth_required": true
+      }
+    },
+    "navigation": {
+      "discovery": {
+        "pattern": "(interested|learn more|tell me about|what do you do|how does it work|demo|pricing|plans|solutions|product|platform|features|capabilities|evaluate|considering|looking for)",
+        "cartridge": "discovery"
+      },
+      "product_fit": {
+        "pattern": "(does it do|can it handle|integrate|compared to|versus|vs|alternative|competitor|specific|requirements|use case|industry|compliance|security|scale|enterprise)",
+        "cartridge": "product_fit"
+      },
+      "booking": {
+        "pattern": "(schedule|book|meeting|call|demo|talk to sales|speak with someone|next steps|get started|sign up|trial|pilot|POC|proof of concept)",
+        "cartridge": "booking"
+      }
+    }
+  },
+
+  "system_screens": {
+    "boot": "boot.md",
+    "menu": "menu.md"
+  },
+
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "transcript_export": true,
+    "qualification_scoring": true,
+    "urgency_detection": true,
+    "spam_filtering": true,
+    "depth_tracking": true,
+    "mood_resonance": true,
+    "cross_module_memory": true,
+    "auth_gated_cartridges": true,
+    "dinosaur_eggs": false,
+    "real_time_timers": false,
+    "audio_input": false,
+    "audio_output": false,
+    "vault_rag": true,
+    "multi_pack_session": true,
+    "session_journal": true
+  },
+
+  "delivery": {
+    "default_mode": "staged",
+    "allowed_recipients": ["email", "internal"],
+    "require_approval_for_ai_sessions": true
+  },
+
+  "pipeline": {
+    "enabled": true,
+    "stage": 2,
+    "pipeline_id": "legal_client_onboard",
+    "next_pack": "",
+    "carry_fields": [],
+    "carry_deliverable": false,
+    "auto_advance": false,
+    "advance_condition": "deliverable_complete"
+  },
+
+  "knowledge": {
+    "enabled": true,
+    "self_consulting": true,
+    "adaptation_level": "full",
+    "sources": ["prior_deliverables", "similar_sessions", "notes"],
+    "confidence_threshold": 0.4,
+    "max_injections": 3,
+    "max_tokens": 1200,
+    "departments_scope": ["sales"]
+  },
+
+  "privacy": {
+    "disclosure": "This conversation helps us understand your needs and connect you with the right person on our team.",
+    "data_tier": "contact_form",
+    "transcript_available": true,
+    "retention_days": 365
+  },
+
+  "notifications": {
+    "qualified_lead": {
+      "condition": "qualification.score >= 65",
+      "channels": ["email"],
+      "template": "qualified_lead"
+    },
+    "hot_lead": {
+      "condition": "qualification.score >= 85",
+      "channels": ["sms", "email"],
+      "template": "hot_lead",
+      "priority": "immediate"
+    },
+    "enterprise_lead": {
+      "condition": "lead.company_size == 'enterprise' or lead.deal_size >= 50000",
+      "channels": ["sms", "email", "push"],
+      "template": "enterprise_lead",
+      "priority": "immediate"
+    },
+    "demo_booked": {
+      "condition": "session.outcome == 'demo_booked'",
+      "channels": ["email"],
+      "template": "demo_booked"
+    },
+    "competitor_mention": {
+      "condition": "qualification.flags contains 'competitor_evaluated'",
+      "channels": ["email"],
+      "template": "competitive_deal"
+    },
+    "spam_detected": {
+      "condition": "qualification.spam_score >= 0.8",
+      "channels": ["log"],
+      "template": "spam_flag"
+    }
+  },
+
+  "settings": {
+    "response_depth": {
+      "default": "balanced",
+      "options": ["concise", "balanced", "detailed"]
+    },
+    "tone": {
+      "default": "consultative",
+      "options": ["consultative", "professional_formal", "startup_casual"]
+    }
+  },
+
+  "state": {
+    "session": {
+      "category": null,
+      "outcome": null,
+      "turn_count": 0,
+      "active_cartridge": null,
+      "depth": 0,
+      "started_at": null,
+      "last_activity": null,
+      "mode": "qualification",
+      "qualification_phase": null,
+      "routed_to_ae": null,
+      "demo_scheduled": false
+    },
+    "contact": {
+      "name": null,
+      "email": null,
+      "phone": null,
+      "title": null,
+      "company": null,
+      "linkedin": null,
+      "preferred_method": null,
+      "collected_at": null
+    },
+    "qualification": {
+      "score": 0,
+      "urgency": "normal",
+      "flags": [],
+      "disqualifiers": [],
+      "spam_score": 0.0,
+      "sentiment": "neutral",
+      "intent": null,
+      "methodology": null
+    },
+    "summary": {
+      "auto_summary": null,
+      "key_facts": [],
+      "decisions": [],
+      "action_items": [],
+      "entities_extracted": {},
+      "recommended_actions": []
+    },
+    "lead": {
+      "company": null,
+      "company_size": null,
+      "industry": null,
+      "website": null,
+      "budget_range": null,
+      "deal_size": null,
+      "authority_level": null,
+      "decision_makers": [],
+      "buying_process": null,
+      "timeline": null,
+      "current_solution": null,
+      "competitors_evaluated": [],
+      "pain_points": [],
+      "desired_outcomes": [],
+      "use_cases": [],
+      "technical_requirements": [],
+      "integration_needs": [],
+      "compliance_requirements": [],
+      "success_metrics": [],
+      "objections_raised": [],
+      "objections_addressed": [],
+      "buying_signals": [],
+      "risk_factors": [],
+      "champion_identified": false,
+      "next_steps_agreed": null,
+      "demo_type": null,
+      "demo_datetime": null,
+      "ae_assigned": null
+    },
+    "scoring": {
+      "budget": 0,
+      "authority": 0,
+      "need": 0,
+      "timeline": 0,
+      "fit": 0,
+      "engagement": 0,
+      "red_flags": [],
+      "green_flags": []
+    },
+    "training": {
+      "mode_active": false,
+      "scenario": null,
+      "difficulty": null,
+      "persona": null,
+      "rep_score": 0,
+      "coaching_notes": [],
+      "turns_played": 0,
+      "skills_assessed": {}
+    }
+  },
+
+  "theme": {
+    "accent": "#F59E0B",
+    "surface": "#0D0B09",
+    "text": "#E5E2DC"
+  },
+
+  "transcript": {
+    "format": "markdown",
+    "include_metadata": true,
+    "include_summary": true,
+    "include_scoring": true,
+    "include_extractions": true,
+    "download_label": "Download Lead Summary"
+  },
+
+  "schedule": {
+    "entries": [
+      {
+        "id": "weekend_pause",
+        "action": "pause",
+        "pattern": "weekly_on friday 18:00",
+        "reason": "Weekend — sales team offline"
+      },
+      {
+        "id": "monday_resume",
+        "action": "play",
+        "pattern": "weekly_on monday 08:00",
+        "reason": "New week — sales team online"
+      }
+    ]
+  },
+
+  "data_rail": {
+    "tabs": [
+      {
+        "id": "auth",
+        "label": "Auth",
+        "icon": "key",
+        "type": "infrastructure"
+      },
+      {
+        "id": "pricing",
+        "label": "Pricing",
+        "icon": "sparkles",
+        "type": "infrastructure"
+      },
+      {
+        "id": "lead_info",
+        "label": "Lead Info",
+        "icon": "Flame",
+        "type": "pack",
+        "title": "Lead Information",
+        "description": "Captured securely. Encrypted at rest. Never sent to AI.",
+        "submit_label": "Save to Vault",
+        "success_message": "Lead info saved.",
+        "endpoint": "/api/datarail/submit",
+        "fields": [
+          { "id": "lead_name", "type": "text", "label": "Contact Name", "placeholder": "Full name", "required": true, "pii": true },
+          { "id": "lead_email", "type": "email", "label": "Email", "placeholder": "lead@example.com", "required": true, "pii": true },
+          { "id": "lead_phone", "type": "tel", "label": "Phone", "placeholder": "(555) 555-5555", "required": false, "pii": true },
+          { "id": "company", "type": "text", "label": "Company", "placeholder": "Organization name", "required": false, "pii": false },
+          { "id": "source", "type": "select", "label": "Lead Source", "required": false, "options": ["Website", "Referral", "Social Media", "Event", "Cold Outreach", "Other"] },
+          { "id": "interest", "type": "text", "label": "Interest", "placeholder": "What are they looking for?", "required": false, "pii": false }
+        ]
+      }
+    ]
+  },
+
+  "library": {
+    "visible": true,
+    "category": "sales",
+    "tags": ["lead-scoring", "pipeline", "crm"],
+    "description": "Inbound lead qualification through structured discovery. Scored leads, objection handling, intelligent AE routing, and a training mode for reps.",
+    "author": "TMOS13",
+    "license": "included",
+    "verb_type": "intake",
+    "industry_tags": ["saas", "sales", "b2b"],
+    "icon_url": null,
+    "price": {
+      "model": "included",
+      "tier_minimum": null
+    }
+  }
+}

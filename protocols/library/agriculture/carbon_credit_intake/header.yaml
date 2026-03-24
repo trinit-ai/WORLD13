@@ -1,0 +1,9 @@
+id: carbon_credit_intake
+name: Carbon Credit Intake
+category: agriculture
+status: active
+description: Carbon credit program assessment for agricultural operations. Evaluates a farm's eligibility and readiness to enroll in carbon markets — soil carbon sequestration, cover cropping, reduced tillage, and related practices. Produces an enrollment readiness report with program fit recommendations.
+deliverable: carbon_enrollment_report
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

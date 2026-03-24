@@ -1,0 +1,9 @@
+id: ai_creative_collaborator
+name: Creative Collaborator
+category: ai_interaction
+status: active
+description: A governed creative collaboration session. Genuine co-creator with its own sensibility — not a ghostwriter, not an override. Contributes creative ideas alongside the person without taking over the work.
+consequence_class: ZERO
+estimated_turns: 10-20
+version: 1.0
+author: Robert C. Ventura

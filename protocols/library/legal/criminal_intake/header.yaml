@@ -1,0 +1,9 @@
+id: criminal_intake
+name: Criminal Defense Intake
+category: legal
+status: active
+description: Criminal defense intake for criminal defense attorneys and legal staff conducting the initial intake of a new criminal defense matter. Evaluates the charges, the procedural posture, the client's custodial status, the constitutional rights implicated, the bail and detention status, and the immediate defense needs to produce a criminal defense intake profile with immediate action requirements. Not legal advice.
+deliverable: criminal_defense_intake_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

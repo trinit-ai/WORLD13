@@ -1,0 +1,9 @@
+id: eviction_intake
+name: Eviction Proceedings Intake
+category: real_estate
+status: active
+description: Eviction proceedings intake for landlords, property managers, and tenants navigating an eviction or unlawful detainer proceeding. Evaluates the situation, the legal basis, the jurisdiction's requirements, the documentation, and the timeline to produce an eviction intake profile with process requirements and immediate action flags. Not legal advice.
+deliverable: eviction_intake_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

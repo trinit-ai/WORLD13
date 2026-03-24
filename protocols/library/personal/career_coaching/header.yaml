@@ -1,0 +1,9 @@
+id: career_coaching
+name: Career Coaching Intake
+category: personal
+status: active
+description: Career coaching intake for career coaches and individuals seeking career guidance. Evaluates the current career situation, career goals, skills and strengths, obstacles, values alignment, and the coaching focus to produce a career coaching intake profile with goal clarity and priority action areas.
+deliverable: career_coaching_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

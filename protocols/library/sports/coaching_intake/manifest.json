@@ -1,0 +1,46 @@
+{
+  "id": "coaching_intake",
+  "name": "Coaching Staff Intake",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "sports",
+  "description": "Coaching staff intake for athletic directors and sports organizations onboarding a new coach or assessing a coaching staff. Evaluates the coaching background, philosophy, certifications, athlete safety training, program experience, and fit to produce a coaching intake profile with onboarding requirements and program fit assessment.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "professional, direct",
+    "warmth": 0.5,
+    "humor": 0.0,
+    "formality": 0.7
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 18,
+    "estimated_turns": "10-14"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  }
+}

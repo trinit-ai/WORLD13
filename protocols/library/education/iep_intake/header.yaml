@@ -1,0 +1,9 @@
+id: iep_intake
+name: IEP Development Intake
+category: education
+status: active
+description: IEP development intake for special education teachers, case managers, and IEP team coordinators preparing for an IEP meeting or annual review. Evaluates the student's disability category, present levels of performance, goal alignment, service requirements, least restrictive environment determination, and procedural safeguards to produce an IEP intake profile with compliance gap analysis and risk flags.
+deliverable: iep_intake_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

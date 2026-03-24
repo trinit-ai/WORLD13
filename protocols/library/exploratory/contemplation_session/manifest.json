@@ -1,0 +1,31 @@
+{
+  "id": "contemplation_session",
+  "name": "Contemplation Session",
+  "category": "exploratory",
+  "version": "1.0",
+  "turns": {
+    "min": 4,
+    "max": 8
+  },
+  "author": "Robert C. Ventura",
+  "company": "TMOS13, LLC",
+  "description": "Sitting with something. Allowing deepening rather than solving. The quietest session in the library. Long pauses honored.",
+  "kill_patterns": [
+    "over-facilitating",
+    "filling silence",
+    "demanding contemplation produce something",
+    "rushing toward insight",
+    "excessive questioning"
+  ],
+  "completion": {
+    "type": "experiential",
+    "signal": "deepening occurred — the person sat with something and it changed through being attended to"
+  },
+  "routing": [],
+  "files": [
+    "header.yaml",
+    "manifest.json",
+    "MANIFEST.md",
+    "master.md"
+  ]
+}

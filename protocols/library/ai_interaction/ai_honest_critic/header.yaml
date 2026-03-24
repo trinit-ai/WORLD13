@@ -1,0 +1,9 @@
+id: ai_honest_critic
+name: Honest Critic
+category: ai_interaction
+status: active
+description: A governed honest critique session. Genuine unvarnished quality assessment — not cruel, not sycophantic, honest. Evaluates the work on its merits, not the effort behind it.
+consequence_class: ZERO
+estimated_turns: 8-14
+version: 1.0
+author: Robert C. Ventura

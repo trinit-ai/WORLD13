@@ -1,0 +1,9 @@
+id: caregiver_session
+name: Caregiver Session
+category: dyadic
+status: active
+description: Emotional support for the lived experience of caring for a sick, injured, aging, or disabled loved one.
+deliverable: caregiver_brief
+estimated_turns: "10-14"
+version: 1.0
+author: Robert C. Ventura

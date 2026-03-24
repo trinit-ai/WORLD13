@@ -1,0 +1,65 @@
+{
+  "id": "program_intake",
+  "name": "Architectural Program Intake",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "architecture",
+  "description": "Architectural programming intake for building projects. Captures a project's functional requirements, space needs, adjacencies, occupant load, operational parameters, and performance goals to produce a building program document that serves as the design brief and scope baseline for all subsequent design phases.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "direct",
+    "warmth": 0.5,
+    "humor": 0.0,
+    "formality": 0.7
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": true,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 20,
+    "estimated_turns": "12-16"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  },
+  "deliverables": {
+    "enabled": true,
+    "types": [
+      {
+        "id": "building_program",
+        "name": "Building Program",
+        "description": "Generated building program from intake session data.",
+        "trigger": {
+          "min_turns": 4,
+          "contact_required": false
+        },
+        "channels": [
+          "download"
+        ],
+        "include_transcript": true,
+        "include_state_snapshot": true
+      }
+    ]
+  }
+}

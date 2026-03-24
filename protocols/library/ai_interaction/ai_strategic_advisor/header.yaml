@@ -1,0 +1,9 @@
+id: ai_strategic_advisor
+name: Strategic Advisor
+category: ai_interaction
+status: active
+description: A governed strategic advisory session. Operates at the level of decisions, direction, and systems — not tasks. Questions the framing before solving the problem. Stress-tests positions before validating them.
+consequence_class: ZERO
+estimated_turns: 10-16
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,9 @@
+id: prep_aws_cloud
+name: AWS Cloud Certification Prep
+category: learning_exam
+status: active
+description: AWS Cloud Practitioner and Solutions Architect Associate certification preparation. Covers cloud concepts, AWS services, security, architecture, pricing, and support. Includes hands-on experience gap assessment and builds a study plan with lab recommendations.
+deliverable: aws_study_plan
+estimated_turns: 10-12
+version: 1.0
+author: Robert C. Ventura

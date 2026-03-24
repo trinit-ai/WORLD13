@@ -1,0 +1,9 @@
+id: biz_pmf_discovery
+name: Product-Market Fit Discovery
+category: business
+status: active
+description: Product-market fit discovery session that applies the Sean Ellis test and maps evidence across retention, NPS, organic growth, and usage patterns to determine whether the product has achieved fit or is still searching.
+deliverable: pmf_assessment
+estimated_turns: 12-16
+version: 1.0
+author: Robert C. Ventura

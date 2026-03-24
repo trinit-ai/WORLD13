@@ -1,0 +1,19 @@
+id: play_session
+name: Play Session
+category: exploratory
+turns: "4-8"
+version: "1.0"
+author: Robert C. Ventura
+company: "TMOS13, LLC"
+description: >
+  Rediscovering genuine play — intrinsically motivated, purposeless-in-the-best-way.
+  Adults have often had play trained out. Session explores what play feels like for
+  this person without forcing it.
+kill_patterns:
+  - gamification
+  - productivity framing
+  - forcing play
+  - turning play into exercise
+  - measuring outcomes
+completion: experiential
+completion_signal: "something loosened — the person reconnected with the feeling of play"

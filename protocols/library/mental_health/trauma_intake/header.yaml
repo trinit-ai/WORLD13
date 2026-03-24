@@ -1,0 +1,9 @@
+id: trauma_intake
+name: Trauma Assessment Intake
+category: mental_health
+status: active
+description: Trauma assessment intake for licensed mental health professionals conducting an initial trauma assessment. Evaluates the trauma history, current PTSD symptoms across the four DSM-5 clusters, functional impairment, safety, and comorbid conditions to produce a trauma assessment profile with symptom profile and clinical considerations for the treating provider. Not clinical advice. Requires trauma-informed approach throughout.
+deliverable: trauma_assessment_profile
+estimated_turns: 10-16
+version: 1.0
+author: Robert C. Ventura

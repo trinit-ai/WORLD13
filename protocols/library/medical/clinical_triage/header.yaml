@@ -1,0 +1,9 @@
+id: clinical_triage
+name: Clinical Triage Intake
+category: medical
+status: active
+description: Clinical triage intake for nurses and clinical staff conducting telephone or in-person triage for non-emergency clinical settings. Evaluates the presenting complaint, symptom assessment, relevant history, and urgency level to produce a clinical triage profile with disposition recommendation for provider review. Not medical advice. Emergency conditions route to 911 immediately.
+deliverable: clinical_triage_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

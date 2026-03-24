@@ -1,0 +1,9 @@
+id: form_immunization_consent
+name: Immunization Consent Form
+category: forms_medical
+status: active
+description: Structured immunization consent form collecting patient identity, vaccine(s) to be administered, guardian information if patient is a minor, health screening for contraindications, risks and benefits acknowledgment, and consent authorization. Minor patients require guardian consent. Information collection only — healthcare provider must review. Not medical advice.
+deliverable: completed_form
+estimated_turns: 4-6
+version: 1.0
+author: Robert C. Ventura

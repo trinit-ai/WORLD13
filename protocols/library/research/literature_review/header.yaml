@@ -1,0 +1,9 @@
+id: literature_review
+name: Literature Review Intake
+category: research
+status: active
+description: Literature review intake for researchers and graduate students conducting a systematic or scoping literature review. Evaluates the review question, the search strategy, the inclusion/exclusion criteria, the databases, the synthesis approach, and the documentation requirements to produce a literature review intake profile with search protocol and methodology.
+deliverable: literature_review_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

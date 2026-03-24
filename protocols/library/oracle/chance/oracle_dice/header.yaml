@@ -1,0 +1,9 @@
+id: oracle_dice
+name: Dice Oracle
+category: oracle_chance
+status: active
+description: Three-dice oracle. 36 meaningful categories mapped from 216 combinations. Roll three dice, receive an oracle reading from the resulting category. Ancient divination by lot, modernized.
+consequence_class: ZERO
+estimated_turns: 4-6
+version: 1.0
+author: Robert C. Ventura

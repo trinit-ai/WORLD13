@@ -1,0 +1,9 @@
+id: seller_intake
+name: Home Seller Intake
+category: real_estate
+status: active
+description: Home seller intake for real estate agents and sellers preparing to list a property. Evaluates the seller's timeline, pricing expectations, property condition, motivation, financial situation, and the listing strategy to produce a seller intake profile with pricing context and preparation priorities. Not legal or financial advice.
+deliverable: seller_intake_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

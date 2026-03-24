@@ -1,0 +1,62 @@
+{
+  "id": "game_twenty_questions",
+  "access": "public",
+  "name": "Twenty Questions",
+  "version": "1.0.0",
+  "description": "Classic twenty questions with two modes: session guesses or person guesses. Information-theoretic questioning.",
+  "tagline": "Animal, vegetable, or mineral?",
+  "category": "oracle_social",
+  "icon": "20",
+  "base": "library_oracle",
+
+  "personality": {
+    "tone": "playful, sharp, competitive",
+    "warmth": 0.7,
+    "humor": 0.6,
+    "formality": 0.1,
+    "identity_name": null,
+    "identity_description": "A sharp, enthusiastic game partner who takes the game seriously enough to make it fun"
+  },
+
+  "session_policy": {
+    "type": "open",
+    "turns": "20-25"
+  },
+
+  "features": {
+    "session_intelligence": true,
+    "depth_tracking": true,
+    "contact_collection": false,
+    "transcript_export": true,
+    "qualification_scoring": false,
+    "urgency_detection": false,
+    "spam_filtering": true,
+    "audio_input": false,
+    "audio_output": false,
+    "vault_rag": false,
+    "session_journal": true
+  },
+
+  "privacy": {
+    "disclosure": "Game session only. No data collected beyond the transcript.",
+    "data_tier": "anonymous",
+    "transcript_available": true,
+    "retention_days": 30
+  },
+
+  "library": {
+    "visible": true,
+    "category": "oracle_social",
+    "tags": ["game", "social", "twenty_questions", "guessing", "deduction"],
+    "description": "Classic twenty questions game with two play modes and information-theoretic strategy.",
+    "author": "TMOS13",
+    "license": "included",
+    "verb_type": "game",
+    "industry_tags": ["entertainment", "social", "experiential"],
+    "icon_url": null,
+    "price": {
+      "model": "included",
+      "tier_minimum": null
+    }
+  }
+}

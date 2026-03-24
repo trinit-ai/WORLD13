@@ -1,0 +1,9 @@
+id: interview_case
+name: Case Interview Prep
+category: learning_interviews
+status: active
+description: Case interview preparation session where the session plays the interviewer. Covers profitability, market entry, and M&A case types with structured frameworks, math drills, and synthesis practice.
+deliverable: case_interview_prep_brief
+estimated_turns: 20-30
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,9 @@
+id: rite_of_passage
+name: Rite of Passage Session
+category: small_group
+status: active
+description: Navigate a threshold moment marking the crossing from one life stage to another with the gravity it deserves.
+deliverable: passage_record
+estimated_turns: "10-14"
+version: 1.0
+author: Robert C. Ventura

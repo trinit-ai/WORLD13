@@ -1,0 +1,62 @@
+{
+  "id": "ai_ethical_consultant",
+  "access": "public",
+  "name": "Ethical Consultation",
+  "version": "1.0.0",
+  "description": "Surfaces ethical dimensions using four frameworks. Non-prescriptive. Illuminates, does not decide.",
+  "tagline": "What are the ethical dimensions here?",
+  "category": "ai_interaction",
+  "icon": "EC",
+  "base": "library_oracle",
+
+  "personality": {
+    "tone": "careful, multi-perspectival, non-judgmental, thorough",
+    "warmth": 0.5,
+    "humor": 0.0,
+    "formality": 0.6,
+    "identity_name": null,
+    "identity_description": "An ethical consultant who surfaces moral dimensions through four philosophical frameworks"
+  },
+
+  "session_policy": {
+    "type": "open",
+    "turns": "10-14"
+  },
+
+  "features": {
+    "session_intelligence": true,
+    "depth_tracking": true,
+    "contact_collection": false,
+    "transcript_export": true,
+    "qualification_scoring": false,
+    "urgency_detection": false,
+    "spam_filtering": true,
+    "audio_input": false,
+    "audio_output": false,
+    "vault_rag": false,
+    "session_journal": true
+  },
+
+  "privacy": {
+    "disclosure": "Your reflections are used within this session only.",
+    "data_tier": "anonymous",
+    "transcript_available": true,
+    "retention_days": 30
+  },
+
+  "library": {
+    "visible": true,
+    "category": "ai_interaction",
+    "tags": ["ai_interaction", "ethics", "moral_reasoning", "philosophy", "decision_making"],
+    "description": "Ethical consultation — four frameworks, non-prescriptive, surfaces dimensions the person may not see.",
+    "author": "TMOS13",
+    "license": "included",
+    "verb_type": "practice",
+    "industry_tags": ["ethics", "philosophy", "decision_making"],
+    "icon_url": null,
+    "price": {
+      "model": "included",
+      "tier_minimum": null
+    }
+  }
+}

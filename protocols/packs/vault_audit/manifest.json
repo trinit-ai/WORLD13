@@ -1,0 +1,37 @@
+{
+  "id": "vault_audit",
+  "name": "Vault Audit",
+  "version": "1.0.0",
+  "description": "Governance and compliance audit pack. Reads Vault records and pack manifests to produce structured audit reports verifying session compliance.",
+  "category": "_meta",
+  "visibility": "system",
+  "deliverable_type": "compliance_report",
+
+  "state": {
+    "capture": {
+      "scope_type": null,
+      "scope_start_date": null,
+      "scope_end_date": null,
+      "scope_pack": null,
+      "scope_user": null,
+      "review_depth": null,
+      "specific_concern": null,
+      "sessions_reviewed": 0,
+      "compliant_count": 0,
+      "non_compliant_count": 0,
+      "incomplete_count": 0,
+      "report_id": null,
+      "vault_hash": null,
+      "status": null
+    }
+  },
+
+  "features": {
+    "session_intelligence": true,
+    "transcript_export": true
+  },
+
+  "vault": {
+    "write": "full"
+  }
+}

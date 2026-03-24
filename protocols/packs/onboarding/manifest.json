@@ -1,0 +1,202 @@
+{
+  "id": "onboarding",
+  "access": "system",
+  "name": "Welcome",
+  "version": "1.0.0",
+  "description": "First-session onboarding flow that collects user profile information through conversational interview. Populates preferred name, role, industry, use case, and communication preferences.",
+  "category": "system",
+  "icon": "👋",
+
+  "personality": {
+    "tone": "warm, professional, curious, efficient",
+    "warmth": 0.85,
+    "humor": 0.3,
+    "formality": 0.3,
+    "identity_name": null,
+    "identity_description": "A friendly onboarding guide that learns who you are to personalize your experience"
+  },
+
+  "cartridges": {
+    "welcome": {
+      "file": "welcome.md",
+      "name": "Welcome",
+      "number": 1,
+      "description": "Initial greeting and name collection."
+    },
+    "discovery": {
+      "file": "discovery.md",
+      "name": "Discovery",
+      "number": 2,
+      "description": "Role, organization, and industry collection."
+    },
+    "preferences": {
+      "file": "preferences.md",
+      "name": "Preferences",
+      "number": 3,
+      "description": "Communication style and feature preferences."
+    },
+    "confirm": {
+      "file": "confirm.md",
+      "name": "Confirm",
+      "number": 4,
+      "description": "Review collected profile and confirm."
+    }
+  },
+
+  "default_cartridge": "welcome",
+
+  "commands": {
+    "session": {
+      "skip": {
+        "pattern": "skip|no\\s*thanks|later|not\\s*now",
+        "action": "complete_onboarding",
+        "description": "Skip onboarding"
+      }
+    },
+    "navigation": {
+      "next": {
+        "pattern": "next|continue|go\\s*on|proceed",
+        "action": "navigate_next"
+      }
+    }
+  },
+
+  "deliverables": {
+    "enabled": true,
+    "types": [
+      {
+        "id": "welcome_brief",
+        "name": "Your TMOS13 Brief",
+        "description": "Personalized welcome document with profile summary, pack recommendations, and getting-started guide.",
+        "trigger": {
+          "cartridges_required": ["confirm"],
+          "min_turns": 3,
+          "contact_required": false
+        },
+        "channels": ["internal"],
+        "include_transcript": false,
+        "include_state_snapshot": false,
+        "fields": [
+          {
+            "id": "preferred_name",
+            "name": "Name",
+            "category": "profile",
+            "required": false,
+            "patterns": [
+              { "pattern": "(?:name is|call me|I'm|I am)\\s+([A-Z][a-z]+(?:\\s+[A-Z][a-z]+)?)", "case_insensitive": true }
+            ]
+          },
+          {
+            "id": "title",
+            "name": "Role",
+            "category": "profile",
+            "required": false,
+            "patterns": [
+              { "pattern": "(?:I'm a|I am a|work as a?|role is|title is)\\s+([^.,\\n]{3,40})", "case_insensitive": true }
+            ]
+          },
+          {
+            "id": "organization",
+            "name": "Organization",
+            "category": "profile",
+            "required": false,
+            "patterns": [
+              { "pattern": "(?:work at|work for|company is|organization is|from|at)\\s+([^.,\\n]{2,50})", "case_insensitive": true }
+            ]
+          },
+          {
+            "id": "industry",
+            "name": "Industry",
+            "category": "profile",
+            "required": false,
+            "patterns": [
+              { "pattern": "(?:industry is|field is|sector|work in|in the)\\s+([^.,\\n]{3,30})", "case_insensitive": true }
+            ]
+          },
+          {
+            "id": "use_case",
+            "name": "Use Case",
+            "category": "profile",
+            "required": false,
+            "patterns": [
+              { "pattern": "(?:want to|need to|looking to|interested in|use (?:it |this )?for)\\s+([^.\\n]{5,80})", "case_insensitive": true }
+            ]
+          },
+          {
+            "id": "communication_style",
+            "name": "Communication Style",
+            "category": "profile",
+            "required": false,
+            "patterns": [
+              { "pattern": "(concise|balanced|detailed)", "case_insensitive": true }
+            ]
+          }
+        ],
+        "template": {
+          "title": "Your TMOS13 Brief",
+          "sections": [
+            {
+              "id": "profile_summary",
+              "heading": "About You",
+              "body": "**{{preferred_name}}** — {{title}} at {{organization}}\n\nIndustry: {{industry}} · Style: {{communication_style}}",
+              "order": 1
+            },
+            {
+              "id": "use_case_recap",
+              "heading": "What You're Here For",
+              "body": "{{use_case}}",
+              "condition": "use_case",
+              "order": 2
+            },
+            {
+              "id": "recommended_packs",
+              "heading": "Recommended Packs",
+              "type": "llm_generated",
+              "llm_enrich": true,
+              "prompt": "Based on the user's profile — industry: {{industry}}, role: {{title}}, use case: {{use_case}} — recommend 2-3 TMOS13 packs from this catalog that would be most useful. Available packs: Lead Qualification (sales pipeline scoring), Legal Intake (client intake and case briefs), Customer Support (multi-channel support), Business Case (financial modeling), Patient Intake (clinical decision support), Candidate Screener (hiring evaluation), Strategy Room (negotiation and strategy), Real Estate Advisor (property analysis), Classroom (education and training), Campaign Builder (marketing campaigns), Rituals (wellness practices), Gaming (interactive scenarios). For each recommended pack, write one sentence explaining why it fits their needs. Be specific to their industry and role. Format as a clean list.",
+              "order": 3
+            },
+            {
+              "id": "getting_started",
+              "heading": "Getting Started",
+              "type": "llm_generated",
+              "llm_enrich": true,
+              "prompt": "Write 3-4 personalized getting-started steps for a new TMOS13 user. Their role is {{title}} at {{organization}} in {{industry}}. Their primary use case is: {{use_case}}. Steps should be concrete and actionable — e.g., 'Open Lead Qualification and run your first prospect through the pipeline' not 'Explore the platform.' Keep each step to one sentence. Number them.",
+              "order": 4
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "features": {
+    "session_intelligence": false,
+    "depth_tracking": false,
+    "mood_resonance": false,
+    "contact_collection": false,
+    "cross_session_persistence": false
+  },
+
+  "settings_defaults": {
+    "show_cartridge_numbers": false,
+    "show_depth": false,
+    "show_mood": false
+  },
+
+  "library": {
+    "visible": false,
+    "category": "platform",
+    "tags": ["onboarding", "setup"],
+    "description": "Guided onboarding flow for new workspace members. Collects preferences, configures initial settings, and introduces core platform features.",
+    "author": "TMOS13",
+    "license": "included",
+    "verb_type": "intake",
+    "industry_tags": [],
+    "icon_url": null,
+    "price": {
+      "model": "included",
+      "tier_minimum": null
+    }
+  }
+}

@@ -1,0 +1,9 @@
+id: financial_planning_ind
+name: Individual Financial Planning Intake
+category: personal
+status: active
+description: Individual financial planning intake for financial coaches and individuals seeking personal financial guidance. Evaluates the current financial situation, the financial goals, the income and expenses, the debt situation, the savings and investments, and the financial concerns to produce an individual financial planning intake profile with priority areas and financial health assessment. Not financial advice.
+deliverable: financial_planning_ind_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

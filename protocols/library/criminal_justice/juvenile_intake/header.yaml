@@ -1,0 +1,9 @@
+id: juvenile_intake
+name: Juvenile Justice Intake
+category: criminal_justice
+status: active
+description: Juvenile justice intake for juvenile probation officers, court intake workers, and diversion program staff conducting an initial assessment of a youth referred to the juvenile justice system. Evaluates the referral, developmental factors, family and school context, diversion eligibility, detention necessity, and service needs to produce a juvenile intake profile with disposition recommendations and risk flags.
+deliverable: juvenile_intake_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

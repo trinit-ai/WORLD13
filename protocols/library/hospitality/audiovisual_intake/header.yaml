@@ -1,0 +1,9 @@
+id: audiovisual_intake
+name: Audiovisual Requirements Intake
+category: hospitality
+status: active
+description: Audiovisual requirements intake for event planners, production managers, and AV coordinators scoping the technical production requirements for an event. Evaluates presentation formats, audio requirements, video and display needs, livestreaming, recording, and technical infrastructure to produce an AV requirements brief with equipment specification and production timeline.
+deliverable: av_requirements_brief
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

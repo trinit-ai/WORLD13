@@ -1,0 +1,65 @@
+{
+  "id": "business_case_sim",
+  "name": "Business Case Simulation",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "simulations",
+  "description": "A live business case simulation in the style of a consulting interview or MBA case competition. The session presents a structured business problem, guides the participant through hypothesis formation, analysis, and recommendation, and produces a performance debrief assessing structured thinking, quantitative reasoning, and communication clarity.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "professional, direct, warm",
+    "warmth": 0.7,
+    "humor": 0.0,
+    "formality": 0.7
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": true,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 29,
+    "estimated_turns": "15-25"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  },
+  "deliverables": {
+    "enabled": true,
+    "types": [
+      {
+        "id": "business_case_debrief",
+        "name": "Business Case Debrief",
+        "description": "Generated business case debrief from intake session data.",
+        "trigger": {
+          "min_turns": 4,
+          "contact_required": false
+        },
+        "channels": [
+          "download"
+        ],
+        "include_transcript": true,
+        "include_state_snapshot": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "id": "ink",
+  "access": "authed",
+  "name": "Disappearing Ink",
+  "version": "1.0.0",
+  "description": "Ephemeral conversation surface. Nothing persists — no transcripts, no inbox, no session log. Messages exist only in the moment.",
+  "category": "platform",
+  "icon": "eye-off",
+  "visibility": "internal",
+
+  "personality": {
+    "tone": "cryptic, knowing, terse",
+    "warmth": 0.4,
+    "humor": 0.2,
+    "formality": 0.2,
+    "identity_name": null,
+    "identity_description": "A trusted confidant who burns the letters after reading. Speaks in short, direct fragments. Knows impermanence is the point."
+  },
+
+  "cartridges": [
+    {
+      "id": "conversation",
+      "name": "Conversation",
+      "description": "Ephemeral workspace conversation. No persistence, no record.",
+      "protocol": "conversation.md"
+    }
+  ],
+
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|clear)$",
+        "action": "reset_session"
+      }
+    },
+    "navigation": {}
+  },
+
+  "system_screens": {
+    "boot": "boot.md"
+  },
+
+  "routing": {
+    "strategy": "passthrough"
+  },
+
+  "knowledge": {
+    "enabled": false
+  },
+
+  "features": {
+    "ephemeral_session": true,
+    "session_journal": false,
+    "session_memory": false,
+    "cross_session_persistence": false,
+    "session_intelligence": false,
+    "contact_collection": false,
+    "user_identity": false
+  },
+
+  "settings_defaults": {
+    "show_cartridge_numbers": false,
+    "show_depth": false,
+    "show_mood": false
+  },
+
+  "theme": {
+    "accent": "#F59E0B",
+    "surface": "#070c10",
+    "text": "#E5E7EB"
+  },
+
+  "library": {
+    "visible": false,
+    "category": "platform",
+    "tags": ["ephemeral", "conversation"],
+    "description": "Ephemeral off-the-record conversation. Nothing persists.",
+    "author": "TMOS13",
+    "license": "included",
+    "verb_type": "",
+    "industry_tags": [],
+    "icon_url": null,
+    "price": {
+      "model": "included",
+      "tier_minimum": null
+    }
+  }
+}

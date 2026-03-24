@@ -1,0 +1,9 @@
+id: story_intake
+name: Story Development Intake
+category: media
+status: active
+description: Story development intake for journalists and editors assessing a new story idea or tip. Evaluates the news value, the story angle, the sources needed, the reporting requirements, the publication fit, and the timeline to produce a story development profile with reporting priorities and publication assessment.
+deliverable: story_development_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

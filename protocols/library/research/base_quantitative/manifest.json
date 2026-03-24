@@ -1,0 +1,210 @@
+{
+  "id": "{{PACK_ID}}",
+  "access": "system",
+  "name": "{{PACK_NAME}}",
+  "version": "1.0.0",
+  "description": "{{DESCRIPTION}}",
+  "category": "quantitative",
+  "icon": "{{ICON}}",
+  "base": "investment_analysis",
+
+  "_comment_category": "QUANTITATIVE packs are the third TMOS13 category alongside CRM (session intelligence) and SIMULATOR (strategic simulation). Quantitative packs are interactive analytical engines — they compute, explain, stress-test, and recommend. The AI is an analyst, not a persona. Every number shows its work. Every assumption is explicit and adjustable.",
+
+  "_comment_architecture": "CRM = conversation → structured record → business action. SIMULATOR = situation → persona roleplay → strategic insight. QUANTITATIVE = inputs → interactive model → investment decision support. No roleplay, no persona engine, no hidden state. Instead: calculation engine, assumption tracking, sensitivity analysis, scenario comparison, and data feed integration.",
+
+  "cartridges": [
+    {
+      "_comment": "REQUIRED: Every quantitative pack needs an intake cartridge that captures the investment parameters. Unlike simulator briefing (which builds a world) or CRM triage (which routes), this builds a MODEL — capturing the numbers, assumptions, and constraints that drive the analysis.",
+      "id": "intake",
+      "name": "{{INTAKE_NAME}}",
+      "description": "Describe the investment opportunity. Capture parameters, assumptions, and constraints.",
+      "protocol": "intake.md"
+    },
+    {
+      "_comment": "REQUIRED: The core analysis cartridge. This is where the math lives. Runs calculations, shows work, explains what each number means, and surfaces the key metrics that drive the decision.",
+      "id": "analysis",
+      "name": "{{ANALYSIS_NAME}}",
+      "description": "Core financial analysis — calculations, metrics, comparisons.",
+      "protocol": "analysis.md"
+    },
+    {
+      "_comment": "REQUIRED: Stress testing. What if rates change? What if vacancy doubles? What if growth slows? Every quantitative pack needs a scenario engine that varies assumptions and shows how outcomes change.",
+      "id": "scenarios",
+      "name": "Scenario Analysis",
+      "description": "Stress-test assumptions. Compare bull/base/bear cases. Sensitivity analysis on key variables.",
+      "protocol": "scenarios.md"
+    },
+    {
+      "_comment": "REQUIRED: The output. Synthesize the analysis into a recommendation with explicit confidence, key risks, decision criteria, and a downloadable report.",
+      "id": "recommendation",
+      "name": "Investment Recommendation",
+      "description": "Synthesized analysis — recommendation, confidence level, key risks, decision criteria.",
+      "protocol": "recommendation.md"
+    }
+  ],
+
+  "_comment_optional_cartridges": "Domain-specific packs add cartridges between analysis and scenarios. Examples: real_estate adds 'renovation' and 'financing'. stocks adds 'valuation' and 'technical'. Each domain has its own analytical modules.",
+
+  "commands": {
+    "session": {
+      "reset": { "pattern": "^(reset|start over|restart|new|clear)$", "action": "reset_session" },
+      "menu": { "pattern": "^(menu|help|options|commands|back)$", "action": "show_menu" },
+      "status": { "pattern": "^(status|summary|numbers|dashboard|model)$", "action": "show_status" },
+      "compare": { "pattern": "^(compare|versus|vs|side by side|which is better)$", "action": "compare_scenarios" },
+      "adjust": { "pattern": "^(adjust|change|what if|update|modify|sensitivity)$", "action": "adjust_assumptions" },
+      "transcript": { "pattern": "^(transcript|download|export|save|report|memo)$", "action": "show_transcript" }
+    },
+    "navigation": {
+      "_comment": "Domain-specific navigation patterns go here. Route to analytical cartridges based on what the user is asking about."
+    }
+  },
+
+  "system_screens": { "boot": "boot.md", "menu": "menu.md" },
+
+  "features": {
+    "session_intelligence": true,
+    "interactive_calculator": true,
+    "assumption_tracking": true,
+    "sensitivity_analysis": true,
+    "scenario_comparison": true,
+    "data_feeds": true,
+    "dual_state": false,
+    "persona_engine": false,
+    "branching_tree": false,
+    "contact_collection": false,
+    "transcript_export": true,
+    "depth_tracking": true,
+    "mood_resonance": false,
+    "cross_module_memory": true,
+
+    "_comment_features": "Quantitative packs have NO persona_engine, NO dual_state, NO branching_tree — these are simulator features. Instead they have interactive_calculator (real-time computation), assumption_tracking (every number traced to its source), sensitivity_analysis (vary inputs, see output changes), scenario_comparison (side-by-side bull/base/bear), and data_feeds (MCP integration for real market data)."
+  },
+
+  "privacy": {
+    "disclosure": "{{DOMAIN_SPECIFIC_DISCLOSURE}}",
+    "data_tier": "session_only",
+    "transcript_available": true,
+    "retention_days": 90,
+    "_comment": "Financial analysis sessions contain sensitive investment data. Session-only retention by default. User can opt to save models for future reference."
+  },
+
+  "notifications": {},
+
+  "settings": {
+    "analysis_depth": {
+      "default": "detailed",
+      "options": ["quick", "standard", "detailed", "exhaustive"]
+    },
+    "assumption_visibility": {
+      "default": "explicit",
+      "options": ["minimal", "explicit", "verbose"]
+    },
+    "risk_tolerance": {
+      "default": "moderate",
+      "options": ["conservative", "moderate", "aggressive"]
+    },
+    "data_source": {
+      "default": "user_input",
+      "options": ["user_input", "mcp_feed", "hybrid"],
+      "_comment": "When MCP feeds are available, 'hybrid' uses live data for market rates, comps, etc. while accepting user overrides. 'user_input' is fully manual. 'mcp_feed' pulls everything available automatically."
+    }
+  },
+
+  "state": {
+    "session": {
+      "phase": null,
+      "outcome": null,
+      "turn_count": 0,
+      "active_cartridge": null,
+      "depth": 0,
+      "mode": "analysis",
+      "scenarios_run": 0,
+      "comparisons_made": 0
+    },
+
+    "investment": {
+      "_comment": "EXTEND with domain-specific investment parameters. This is the core data model — the numbers that drive everything.",
+      "type": null,
+      "name": null,
+      "description": null,
+      "total_cost": null,
+      "expected_return": null,
+      "time_horizon": null,
+      "risk_profile": null,
+      "liquidity": null
+    },
+
+    "assumptions": {
+      "_comment": "CRITICAL: Every assumption must be tracked explicitly. The assumption register is the spine of the quantitative pack — it's what makes the analysis auditable and adjustable. Each assumption has a value, a source (user input, market data, estimate), and a confidence level.",
+      "register": [],
+      "sources": {},
+      "confidence_levels": {},
+      "last_updated": null
+    },
+
+    "model": {
+      "_comment": "EXTEND with domain-specific calculated outputs. This is where computed values live — derived from investment parameters + assumptions. Recalculates when any input changes.",
+      "metrics": {},
+      "projections": {},
+      "comparisons": {}
+    },
+
+    "scenarios": {
+      "base_case": null,
+      "bull_case": null,
+      "bear_case": null,
+      "custom_scenarios": [],
+      "sensitivity_results": {}
+    },
+
+    "recommendation": {
+      "action": null,
+      "confidence": null,
+      "key_risks": [],
+      "key_drivers": [],
+      "decision_criteria": [],
+      "conditions": []
+    },
+
+    "decision_tree": {
+      "_comment": "Not branching roleplay — but analytical decision points. 'Should I finance with fixed or variable?' 'Should I renovate now or hold?' These are computational branches with different outcome projections.",
+      "decisions_made": [],
+      "alternatives_explored": [],
+      "pivotal_assumptions": []
+    }
+  },
+
+  "theme": {
+    "accent": "{{ACCENT_COLOR}}",
+    "surface": "#0D0B09",
+    "text": "#E5E2DC"
+  },
+
+  "transcript": {
+    "format": "markdown",
+    "include_metadata": true,
+    "include_summary": true,
+    "include_assumptions": true,
+    "include_calculations": true,
+    "include_scenarios": true,
+    "include_sensitivity": true,
+    "include_recommendation": true,
+    "download_label": "Download Investment Analysis"
+  },
+
+  "library": {
+    "visible": false,
+    "category": "templates",
+    "tags": ["template", "quantitative"],
+    "description": "Base template for quantitative analysis packs. Fork this to create calculation-heavy experiences with transparent assumptions and sensitivity analysis.",
+    "author": "TMOS13",
+    "license": "included",
+    "verb_type": "compose",
+    "industry_tags": [],
+    "icon_url": null,
+    "price": {
+      "model": "included",
+      "tier_minimum": null
+    }
+  }
+}

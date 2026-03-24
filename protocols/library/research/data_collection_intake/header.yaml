@@ -1,0 +1,9 @@
+id: data_collection_intake
+name: Research Data Collection Intake
+category: research
+status: active
+description: Research data collection intake for researchers planning or conducting data collection for a research project. Evaluates the data type, collection method, sampling strategy, data quality protocols, ethical compliance, data management, and documentation requirements to produce a data collection intake profile with protocol and compliance checklist.
+deliverable: data_collection_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

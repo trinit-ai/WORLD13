@@ -1,0 +1,9 @@
+id: audit_intake
+name: Financial Audit Intake
+category: finance
+status: active
+description: Financial audit intake for CFOs, controllers, and finance teams preparing for or initiating a financial audit. Evaluates audit type, scope, materiality thresholds, prior findings, internal control assessment, auditor relationship, and timeline to produce a financial audit intake profile with readiness assessment and risk flags.
+deliverable: financial_audit_intake_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

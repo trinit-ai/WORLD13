@@ -1,0 +1,9 @@
+id: research_supervision
+name: Graduate Research Supervision Intake
+category: education
+status: active
+description: Graduate research supervision intake for faculty advisors, thesis committee members, and graduate program coordinators establishing or reviewing a graduate research supervision relationship. Evaluates the research project scope, advisor-advisee expectations, milestone structure, committee composition, intellectual property considerations, and wellbeing and support framework to produce a research supervision profile with gap analysis and risk flags.
+deliverable: research_supervision_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

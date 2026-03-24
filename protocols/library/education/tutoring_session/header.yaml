@@ -1,0 +1,9 @@
+id: tutoring_session
+name: Tutoring Session Intake
+category: education
+status: active
+description: Tutoring session intake for tutors, learning centers, and academic support coordinators conducting an initial assessment before beginning tutoring with a student. Evaluates the subject area, knowledge gaps, learning history, motivational context, session structure, and progress measurement to produce a tutoring session profile with targeted support plan and approach recommendations.
+deliverable: tutoring_session_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,9 @@
+id: form_workplace_incident
+name: Workplace Incident Report
+category: forms_hr
+status: active
+description: Guided completion of a workplace incident report with chronological documentation, OSHA reporting threshold awareness, and corrective action tracking.
+deliverable: completed_form
+estimated_turns: "8-10"
+version: 1.0
+author: Robert C. Ventura

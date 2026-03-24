@@ -1,0 +1,9 @@
+id: fear_inventory
+name: Fear Inventory
+category: self
+status: active
+description: Map the fears actually running your decisions — named and unnamed, rational and irrational.
+deliverable: fear_map
+estimated_turns: "10-14"
+version: 1.0
+author: Robert C. Ventura

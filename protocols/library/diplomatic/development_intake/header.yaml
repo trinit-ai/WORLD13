@@ -1,0 +1,9 @@
+id: development_intake
+name: International Development Program Intake
+category: diplomatic
+status: active
+description: International development program intake for development organizations, bilateral aid agencies, and multilateral institutions planning or assessing a development intervention. Evaluates program theory of change, local ownership, contextual analysis, do no harm assessment, monitoring and evaluation framework, and sustainability planning to produce a development program intake profile with gap analysis and risk flags.
+deliverable: development_program_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

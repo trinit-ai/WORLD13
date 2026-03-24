@@ -1,0 +1,46 @@
+{
+  "id": "conn_tea",
+  "name": "Tea Session",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "connoisseurship",
+  "description": "Accessible tea appreciation guide covering the six tea types, origins, ceremony traditions, brewing variables, and developing taste awareness for tea at any level.",
+  "base": "library_connoisseurship",
+  "personality": {
+    "tone": "warm, knowledgeable, contemplative",
+    "warmth": 0.7,
+    "humor": 0.15,
+    "formality": 0.3
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": false,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 14,
+    "estimated_turns": "6-10"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_session",
+    "transcript_available": true
+  }
+}

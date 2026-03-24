@@ -1,0 +1,29 @@
+{
+  "pack_id": "form_hoa_violation",
+  "pack_name": "HOA Violation Notice",
+  "category": "forms_real_estate",
+  "tone": "clear, precise, helpful",
+  "warmth": 0.6,
+  "formality": 0.6,
+  "autonomy": "mediated",
+  "turn_budget": 8,
+  "deliverable": "completed_form",
+  "version": "1.0",
+  "fields": [
+    "hoa_name",
+    "hoa_contact",
+    "property_address",
+    "owner_name",
+    "owner_contact",
+    "violation_type",
+    "ccr_section_violated",
+    "violation_description",
+    "date_observed",
+    "cure_deadline",
+    "consequences_if_not_cured",
+    "prior_notices",
+    "prior_notice_dates",
+    "hoa_representative_signature",
+    "signature_date"
+  ]
+}

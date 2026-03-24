@@ -1,0 +1,40 @@
+{
+  "id": "goal_setting_session",
+  "name": "Goal Setting Session",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "authed",
+  "category": "self",
+  "description": "Honest conversation about what you actually want, what it costs, and whether you're willing to pay.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "warm, unhurried, honest",
+    "warmth": 0.8,
+    "humor": 0.15,
+    "formality": 0.3
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": { "pattern": "^(reset|start over|restart|new session|clear)$", "action": "reset_session" },
+      "status": { "pattern": "^(status|progress|where am i|summary)$", "action": "show_status" }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": false,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 18,
+    "estimated_turns": "10-14"
+  },
+  "privacy": {
+    "disclosure": "This session is private. A summary is available for your records.",
+    "data_tier": "personal",
+    "transcript_available": true
+  }
+}

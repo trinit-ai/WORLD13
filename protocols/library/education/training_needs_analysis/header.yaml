@@ -1,0 +1,9 @@
+id: training_needs_analysis
+name: Training Needs Analysis Intake
+category: education
+status: active
+description: Training needs analysis intake for L&D professionals, HR managers, and organizational leaders assessing a performance gap or training request. Evaluates whether the gap is a training problem, the performance context, audience profile, desired outcomes, constraints, and measurement approach to produce a training needs analysis profile with gap diagnosis and design recommendations.
+deliverable: training_needs_analysis_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

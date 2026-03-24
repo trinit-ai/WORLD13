@@ -1,0 +1,9 @@
+id: insurance_intake
+name: Insurance Coverage Intake
+category: finance
+status: active
+description: Insurance coverage intake for businesses, organizations, and individuals assessing their insurance coverage needs or reviewing existing coverage. Evaluates coverage types, coverage gaps, risk exposure, policy terms, and professional coordination needs to produce an insurance intake profile with gap analysis and professional referral guidance. Not insurance or financial advice.
+deliverable: insurance_intake_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

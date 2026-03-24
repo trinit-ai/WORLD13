@@ -1,0 +1,9 @@
+id: officiating_intake
+name: Officiating and Referee Services Intake
+category: sports
+status: active
+description: Officiating services intake for sports administrators and officiating coordinators assigning or onboarding game officials. Evaluates the official's certification, experience, fitness, game management philosophy, and assignment suitability to produce an officiating intake profile with certification status and assignment priorities.
+deliverable: officiating_intake_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

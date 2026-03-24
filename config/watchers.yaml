@@ -1,0 +1,50 @@
+# 13TMOS Watcher Rules
+# Evaluated in order on every vault write. First match wins.
+
+watchers:
+
+  - name: legal_urgent_autoroute
+    description: High urgency legal intakes route immediately to conflict check
+    trigger: vault_write
+    condition: pack == "legal_intake" and fields.urgency == "high"
+    action: load_pack
+    pack: conflict_check
+    inherit: true
+    notify: "Urgent matter detected — routing to conflict check"
+
+  - name: legal_standard_notify
+    description: Standard legal intakes notify for human review
+    trigger: vault_write
+    condition: pack == "legal_intake" and fields.urgency != "high"
+    action: notify
+    message: "Legal intake complete — matter type: {fields.matter_type}. Review when ready."
+
+  - name: conflict_clear_autoroute
+    description: Cleared conflicts route to engagement intake
+    trigger: vault_write
+    condition: pack == "conflict_check" and fields.conflict_detected == "false"
+    action: load_pack
+    pack: engagement_intake
+    inherit: true
+    notify: "Conflict cleared — routing to engagement intake"
+
+  - name: conflict_flagged_notify
+    description: Flagged conflicts notify for attorney review
+    trigger: vault_write
+    condition: pack == "conflict_check" and fields.conflict_detected == "true"
+    action: notify
+    message: "CONFLICT DETECTED — matter flagged for attorney review. Session: {session_id}"
+
+  - name: session_milestone_summary
+    description: Every 10 sessions write a vault summary
+    trigger: vault_write
+    condition: session_count >= 10 and session_count % 10 == 0
+    action: write_summary
+    notify: "Milestone: {session_count} sessions complete — summary written to output/"
+
+  - name: game_session_notify
+    description: Gaming sessions complete silently
+    trigger: vault_write
+    condition: pack == "gaming" or pack == "rpg_dungeon"
+    action: notify
+    message: "Session complete: {pack} | {date}"

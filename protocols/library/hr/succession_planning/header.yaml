@@ -1,0 +1,9 @@
+id: succession_planning
+name: Succession Planning Intake
+category: hr
+status: active
+description: Succession planning intake for CHROs, HR business partners, and senior leaders scoping a succession planning process for critical roles. Evaluates the critical role inventory, successor identification, readiness assessment, development gap analysis, and retention risk to produce a succession planning profile with bench strength assessment and development priorities.
+deliverable: succession_planning_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

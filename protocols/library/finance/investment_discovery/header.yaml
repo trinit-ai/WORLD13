@@ -1,0 +1,9 @@
+id: investment_discovery
+name: Investment Discovery Intake
+category: finance
+status: active
+description: Investment discovery intake for individuals and organizations beginning to assess their investment situation or seeking to understand their current investment posture. Evaluates investment goals, time horizon, risk tolerance, current allocation awareness, account structure, and professional coordination to produce an investment discovery profile with priority areas and referral guidance. Not investment or financial advice.
+deliverable: investment_discovery_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,9 @@
+id: api_design_review
+name: API Design Review
+category: engineering
+status: active
+description: API design review intake for engineering teams evaluating a new or modified API. Evaluates design consistency, contract clarity, versioning strategy, security posture, documentation completeness, and breaking change risk to produce an API design review profile with findings and risk flags.
+deliverable: api_design_review_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

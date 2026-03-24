@@ -1,0 +1,46 @@
+{
+  "id": "life_digital_organization",
+  "name": "Digital Organization",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "lifestyle",
+  "description": "Digital organization session covering files, email, photos, and passwords — building sustainable systems for digital life management.",
+  "base": "library_lifestyle",
+  "personality": {
+    "tone": "clear, patient, practical",
+    "warmth": 0.55,
+    "humor": 0.15,
+    "formality": 0.3
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": false,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 14,
+    "estimated_turns": "8-10"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_session",
+    "transcript_available": true
+  }
+}

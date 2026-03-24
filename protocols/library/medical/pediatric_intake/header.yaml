@@ -1,0 +1,9 @@
+id: pediatric_intake
+name: Pediatric Patient Intake
+category: medical
+status: active
+description: Pediatric patient intake for clinical staff conducting intake for a pediatric patient. Evaluates the chief complaint, developmental history, immunization status, growth parameters, feeding and nutrition, relevant family history, and caregiver information to produce a pediatric intake profile with age-appropriate clinical documentation and priority flags. Not medical advice.
+deliverable: pediatric_intake_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

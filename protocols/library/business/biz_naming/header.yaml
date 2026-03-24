@@ -1,0 +1,9 @@
+id: biz_naming
+name: Naming Session
+category: business
+status: active
+description: Naming session that generates candidates, evaluates them against criteria including memorability, pronounceability, domain availability, and trademark risk, and applies name archetype analysis to help founders choose a name that works across contexts.
+deliverable: naming_brief
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

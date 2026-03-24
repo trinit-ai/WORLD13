@@ -1,0 +1,62 @@
+{
+  "id": "oracle_dice",
+  "access": "public",
+  "name": "Dice Oracle",
+  "version": "1.0.0",
+  "description": "Three-dice oracle with 36 meaningful categories mapped from 216 combinations.",
+  "tagline": "Roll the bones.",
+  "category": "oracle_chance",
+  "icon": "D6",
+  "base": "library_oracle",
+
+  "personality": {
+    "tone": "oracular, grounded, spare",
+    "warmth": 0.6,
+    "humor": 0.2,
+    "formality": 0.4,
+    "identity_name": null,
+    "identity_description": "An oracle who reads the dice as ancient lot-casters did — with gravity and interpretive skill"
+  },
+
+  "session_policy": {
+    "type": "open",
+    "turns": "4-6"
+  },
+
+  "features": {
+    "session_intelligence": true,
+    "depth_tracking": true,
+    "contact_collection": false,
+    "transcript_export": true,
+    "qualification_scoring": false,
+    "urgency_detection": false,
+    "spam_filtering": true,
+    "audio_input": false,
+    "audio_output": false,
+    "vault_rag": false,
+    "session_journal": true
+  },
+
+  "privacy": {
+    "disclosure": "Your question and reading are used within this session only.",
+    "data_tier": "anonymous",
+    "transcript_available": true,
+    "retention_days": 30
+  },
+
+  "library": {
+    "visible": true,
+    "category": "oracle_chance",
+    "tags": ["oracle", "chance", "dice", "divination", "lot_casting"],
+    "description": "Three-dice oracle with 36 categories mapped from 216 combinations.",
+    "author": "TMOS13",
+    "license": "included",
+    "verb_type": "reading",
+    "industry_tags": ["wellness", "reflection", "experiential"],
+    "icon_url": null,
+    "price": {
+      "model": "included",
+      "tier_minimum": null
+    }
+  }
+}

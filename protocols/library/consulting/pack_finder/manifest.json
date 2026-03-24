@@ -1,0 +1,64 @@
+{
+  "id": "pack_finder",
+  "access": "authed",
+  "name": "Pack Finder",
+  "version": "1.0.0",
+  "tagline": "Find the right pack for your use case",
+  "icon": "\uD83D\uDD0D",
+  "accent": "#2563EB",
+  "assembly_mode": "assembled",
+  "personality": {
+    "tone": "helpful",
+    "style": "consultative",
+    "register": "professional"
+  },
+  "settings_defaults": {
+    "tone": "conversational",
+    "verbosity": "balanced",
+    "formatting": "clean"
+  },
+  "cartridges": [
+    { "id": "discovery", "name": "Discovery Interview", "number": 1, "file": "discovery.md" },
+    { "id": "matching", "name": "Pack Matching", "number": 2, "file": "matching.md" },
+    { "id": "preview", "name": "Pack Preview", "number": 3, "file": "preview.md" },
+    { "id": "install", "name": "Pack Install", "number": 4, "file": "install.md" },
+    { "id": "company_profile", "name": "Company Profile", "passive": true }
+  ],
+  "system_screens": {
+    "boot": "boot.md"
+  },
+  "features": {
+    "knowledge": false,
+    "vault_rag": true,
+    "session_journal": true,
+    "cross_session_persistence": true,
+    "mood_resonance": false,
+    "depth_tracking": false
+  },
+  "library": {
+    "visible": false,
+    "category": "platform",
+    "tags": ["discovery", "onboarding", "recommendation"],
+    "description": "Guided discovery conversation to find the right pack for your use case",
+    "author": "TMOS13",
+    "license": "proprietary",
+    "verb_type": "intake",
+    "industry_tags": ["general"],
+    "icon_url": null,
+    "price": {
+      "model": "included",
+      "tier_minimum": null
+    }
+  },
+  "deliverable": {
+    "type": "pack_assignment",
+    "title": "Pack Assignment",
+    "description": "Recommended pack based on discovery conversation",
+    "format": "structured"
+  },
+  "theme": {
+    "accent": "#2563EB",
+    "bg": "#0A0F1A",
+    "card": "#111827"
+  }
+}

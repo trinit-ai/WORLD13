@@ -1,0 +1,9 @@
+id: fin_home_buying_readiness
+name: Home Buying Readiness
+category: personal_finance
+status: active
+description: Home buying readiness session that helps individuals assess whether they are financially and personally ready to buy a home by surfacing hidden costs beyond the mortgage, evaluating financial position, and separating emotional readiness from financial readiness. NOT financial advice.
+deliverable: home_readiness_assessment
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

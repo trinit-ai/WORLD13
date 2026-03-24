@@ -1,0 +1,9 @@
+id: editorial_review
+name: Editorial Review Intake
+category: media
+status: active
+description: Editorial review intake for editors assessing a submitted piece for publication. Evaluates the argument, structure, evidence, voice, fit with the publication, and editorial requirements to produce an editorial review profile with revision priorities and publication recommendation.
+deliverable: editorial_review_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

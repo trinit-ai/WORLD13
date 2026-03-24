@@ -1,0 +1,28 @@
+{
+  "pack_id": "form_fmla",
+  "pack_name": "FMLA Leave Request",
+  "category": "forms_hr",
+  "tone": "clear, professional, helpful",
+  "warmth": 0.6,
+  "formality": 0.6,
+  "autonomy": "mediated",
+  "turn_budget": 8,
+  "deliverable": "completed_form",
+  "version": "1.0",
+  "fields": [
+    "employee_name",
+    "employee_id",
+    "department",
+    "employer_name",
+    "employer_address",
+    "leave_start_date",
+    "leave_type",
+    "leave_duration",
+    "continuous_or_intermittent",
+    "intermittent_schedule",
+    "family_member_name",
+    "family_member_relationship",
+    "physician_certification_required",
+    "eligibility_confirmed"
+  ]
+}

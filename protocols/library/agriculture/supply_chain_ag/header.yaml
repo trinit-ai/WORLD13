@@ -1,0 +1,9 @@
+id: supply_chain_ag
+name: Agricultural Supply Chain Intake
+category: agriculture
+status: active
+description: Agricultural supply chain and market access assessment. Evaluates a farm operation's current buyer relationships, contract structure, market channel mix, input sourcing dependencies, and logistics constraints to produce a supply chain profile with diversification recommendations and risk flags.
+deliverable: agricultural_supply_chain_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,9 @@
+id: appraisal_intake
+name: Real Estate Appraisal Intake
+category: real_estate
+status: active
+description: Real estate appraisal intake for appraisers, lenders, and homeowners engaging in a property appraisal. Evaluates the appraisal purpose, the property information, the relevant comparables context, and any known factors affecting value to produce an appraisal intake profile with relevant information for the appraiser. Not a valuation or legal advice.
+deliverable: appraisal_intake_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

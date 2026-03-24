@@ -1,0 +1,9 @@
+id: game_lateral_thinking
+name: Lateral Thinking Puzzles
+category: oracle_puzzles
+status: active
+description: Mysterious scenarios solved through yes/no questions. The session presents a strange situation; the person asks questions to uncover the explanation. A library of 20-30 original puzzles.
+consequence_class: ZERO
+estimated_turns: 15-30
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,40 @@
+{
+  "id": "memory_session",
+  "name": "Memory Session",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "authed",
+  "category": "temporal",
+  "description": "Revisit a significant memory with deliberate witnessed engagement — not therapy, not analysis, but governed presence with the past.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "warm, unhurried, honest",
+    "warmth": 0.8,
+    "humor": 0.1,
+    "formality": 0.3
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": { "pattern": "^(reset|start over|restart|new session|clear)$", "action": "reset_session" },
+      "status": { "pattern": "^(status|progress|where am i|summary)$", "action": "show_status" }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": false,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 18,
+    "estimated_turns": "8-12"
+  },
+  "privacy": {
+    "disclosure": "This session is private. A summary is available for your records.",
+    "data_tier": "personal",
+    "transcript_available": true
+  }
+}

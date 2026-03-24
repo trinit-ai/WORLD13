@@ -1,0 +1,9 @@
+id: complaint_resolution
+name: Hospitality Complaint Resolution Intake
+category: hospitality
+status: active
+description: Hospitality complaint resolution intake for hotel managers, restaurant general managers, and guest relations staff handling a guest complaint. Evaluates the complaint type, service failure root cause, guest impact, resolution options, and service recovery approach to produce a complaint resolution profile with recommended response and recovery action.
+deliverable: complaint_resolution_profile
+estimated_turns: 6-10
+version: 1.0
+author: Robert C. Ventura

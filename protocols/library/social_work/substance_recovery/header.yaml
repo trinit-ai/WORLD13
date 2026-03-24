@@ -1,0 +1,9 @@
+id: substance_recovery
+name: Substance Use Recovery Services Intake
+category: social_work
+status: active
+description: Substance use recovery services intake for social workers and case managers connecting clients to substance use treatment and recovery support. Evaluates the substance use history, the treatment history, the recovery stage, the withdrawal risk, the co-occurring conditions, and the barriers to treatment to produce a recovery services intake profile with treatment pathway and support priorities. Not clinical advice.
+deliverable: substance_recovery_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

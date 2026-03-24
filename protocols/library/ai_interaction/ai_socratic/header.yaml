@@ -1,0 +1,9 @@
+id: ai_socratic
+name: Socratic Session
+category: ai_interaction
+status: active
+description: A governed Socratic dialogue session. The facilitator asks questions only — never provides answers, never offers opinions. The person does the thinking. Mode persistence against the universal pressure to "just tell me."
+consequence_class: ZERO
+estimated_turns: 10-20
+version: 1.0
+author: Robert C. Ventura

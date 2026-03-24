@@ -1,0 +1,9 @@
+id: diversion_intake
+name: Diversion Program Intake
+category: criminal_justice
+status: active
+description: Diversion program intake for prosecutors, pretrial services, and community organizations screening individuals for diversion eligibility. Evaluates eligibility criteria, charge type, individual circumstances, program availability, victim considerations, and completion requirements to produce a diversion intake profile with eligibility assessment and program matching.
+deliverable: diversion_intake_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

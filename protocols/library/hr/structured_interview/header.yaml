@@ -1,0 +1,9 @@
+id: structured_interview
+name: Structured Interview Intake
+category: hr
+status: active
+description: Structured interview intake for HR professionals and hiring managers designing or conducting a structured interview process. Evaluates the role requirements, competency framework, question design, scoring rubric, interviewer calibration, and legal compliance to produce a structured interview profile with question guide and scoring framework. Not legal advice.
+deliverable: structured_interview_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

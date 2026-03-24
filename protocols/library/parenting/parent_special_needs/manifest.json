@@ -1,0 +1,46 @@
+{
+  "id": "parent_special_needs",
+  "name": "Special Needs Parenting",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "parenting",
+  "description": "Session for parents of children with disabilities or special needs. Covers IEP/504 navigation, advocacy, caregiver burnout, sibling dynamics, and daily reality. NOT clinical.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "steady, knowledgeable, deeply respectful",
+    "warmth": 0.7,
+    "humor": 0.0,
+    "formality": 0.4
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 14,
+    "estimated_turns": "10-14"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  }
+}

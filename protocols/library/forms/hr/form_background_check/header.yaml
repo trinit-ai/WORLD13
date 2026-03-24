@@ -1,0 +1,9 @@
+pack_id: form_background_check
+pack_name: "Background Check Authorization"
+category: forms_hr
+deliverable: completed_form
+version: "1.0"
+author: "Robert C. Ventura"
+company: "TMOS13, LLC"
+autonomy: mediated
+turn_budget: 6

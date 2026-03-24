@@ -1,0 +1,18 @@
+id: performance_preparation
+name: Performance Preparation
+category: public
+turns: "8-10"
+version: "1.0"
+author: Robert C. Ventura
+company: "TMOS13, LLC"
+description: >
+  High-stakes performance prep — audition, competition, debut. Mental and emotional,
+  not technical. Relationship with nerves, what success looks like from inside.
+kill_patterns:
+  - performance coaching
+  - technical advice
+  - "'just relax'"
+  - visualization scripts
+  - outcome fixation
+completion: experiential
+completion_signal: "the person has a clear internal relationship with their performance — ready, not perfect"

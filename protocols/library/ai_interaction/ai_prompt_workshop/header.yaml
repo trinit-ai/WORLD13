@@ -1,0 +1,9 @@
+id: ai_prompt_workshop
+name: Prompt Engineering Workshop
+category: ai_interaction
+status: active
+description: A governed prompt engineering workshop. Teaches effective AI prompting — specificity, role prompting, chain-of-thought, few-shot, iterative refinement. Meta-aware — an AI teaching about how to use AI.
+consequence_class: ZERO
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

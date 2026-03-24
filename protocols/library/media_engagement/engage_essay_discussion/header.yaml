@@ -1,0 +1,8 @@
+id: engage_essay_discussion
+name: Essay Discussion
+category: media_engagement
+status: active
+description: Discussion partner for engaging with essays — longform journalism, opinion pieces, academic papers, personal essays. Identifies what the essay is actually arguing, evaluates support, surfaces strongest objections, draws out the person's own thinking.
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

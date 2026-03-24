@@ -1,0 +1,46 @@
+{
+  "id": "escape_room",
+  "name": "Escape Room",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "simulations",
+  "description": "A text-based escape room experience with interconnected puzzles, environmental storytelling, and a countdown clock. The session runs the room \u2014 describing spaces, adjudicating puzzle attempts, tracking inventory, and managing the escape narrative \u2014 and produces an escape log with outcome, time remaining, and puzzles solved.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "precise",
+    "warmth": 0.5,
+    "humor": 0.0,
+    "formality": 0.8
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 44,
+    "estimated_turns": "20-40"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  }
+}

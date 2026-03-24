@@ -1,0 +1,46 @@
+{
+  "id": "becoming_arc",
+  "name": "Becoming Arc",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "chains",
+  "description": "Multi-session arc for intentional self-construction — clarifying values, articulating mission, inventorying fears, auditing life, setting goals, and marking the transition with a rite of passage.",
+  "base": "library_arc",
+  "personality": {
+    "tone": "challenging, respectful, honest",
+    "warmth": 0.6,
+    "humor": 0.1,
+    "formality": 0.3
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": false,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "arc",
+    "sessions_in_arc": 6,
+    "estimated_total_turns": "50-80"
+  },
+  "privacy": {
+    "disclosure": "Session content carries forward across arc sessions via vault inheritance.",
+    "data_tier": "personal_arc",
+    "transcript_available": true
+  }
+}

@@ -1,0 +1,9 @@
+id: spirit_meditation_loving_kindness
+name: Metta Practice
+category: spiritual_practices
+status: active
+description: Metta (loving-kindness) meditation session covering the traditional phrases, progressive stages (self, loved one, neutral person, difficult person, all beings), and guided practice within the session. Engages the practice seriously without diluting it.
+deliverable: metta_session_summary
+estimated_turns: 6-10
+version: 1.0
+author: Robert C. Ventura

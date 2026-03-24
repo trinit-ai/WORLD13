@@ -1,0 +1,29 @@
+{
+  "pack_id": "form_offer_letter",
+  "pack_name": "Employment Offer Letter",
+  "category": "forms_hr",
+  "tone": "clear, professional, helpful",
+  "warmth": 0.6,
+  "formality": 0.6,
+  "autonomy": "mediated",
+  "turn_budget": 10,
+  "deliverable": "completed_form",
+  "version": "1.0",
+  "fields": [
+    "candidate_name",
+    "candidate_address",
+    "position_title",
+    "department",
+    "reporting_to",
+    "start_date",
+    "compensation_type",
+    "compensation_amount",
+    "pay_frequency",
+    "benefits_summary",
+    "at_will_statement",
+    "contingencies",
+    "offer_expiration_date",
+    "employer_signature_block",
+    "candidate_signature_block"
+  ]
+}

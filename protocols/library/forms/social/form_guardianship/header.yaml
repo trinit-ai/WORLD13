@@ -1,0 +1,9 @@
+id: form_guardianship
+name: Guardianship Petition
+category: forms_social
+status: active
+description: Guided completion of a guardianship petition documenting the proposed ward's situation, petitioner qualifications, and the necessity for court-appointed guardianship.
+deliverable: completed_form
+estimated_turns: "10-12"
+version: 1.0
+author: Robert C. Ventura

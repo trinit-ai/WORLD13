@@ -1,0 +1,10 @@
+id: oracle_tarot
+name: Tarot Reading
+category: oracle_divination
+status: active
+description: Full 78-card tarot deck with Major and Minor Arcana, upright and reversed meanings. Supports single-card, three-card, and Celtic Cross spreads. Simulates a shuffle, draw, and positional interpretation. Produces a structured tarot reading as the session deliverable.
+deliverable: tarot_reading
+consequence_class: ZERO
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

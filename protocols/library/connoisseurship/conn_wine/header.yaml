@@ -1,0 +1,8 @@
+id: conn_wine
+name: Wine Session
+category: connoisseurship
+status: active
+description: Accessible wine appreciation guide covering varietals, regions, tasting methodology, food pairing, and developing palate vocabulary without snobbery.
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

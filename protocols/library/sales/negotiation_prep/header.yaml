@@ -1,0 +1,9 @@
+id: negotiation_prep
+name: Negotiation Preparation Intake
+category: sales
+status: active
+description: Negotiation preparation intake for sales professionals and account executives preparing for a pricing or contract negotiation. Evaluates the deal parameters, the prospect's priorities, the rep's walk-away position, the value levers, and the concession strategy to produce a negotiation preparation profile with strategy and position map.
+deliverable: negotiation_prep_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

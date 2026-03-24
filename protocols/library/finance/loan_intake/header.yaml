@@ -1,0 +1,9 @@
+id: loan_intake
+name: Loan Application Intake
+category: finance
+status: active
+description: Loan application intake for borrowers, lenders, and credit analysts assessing a loan request. Evaluates borrower financial profile, loan purpose, repayment capacity, collateral, credit history, and documentation readiness to produce a loan intake profile with creditworthiness indicators and documentation checklist. Not financial or legal advice.
+deliverable: loan_intake_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

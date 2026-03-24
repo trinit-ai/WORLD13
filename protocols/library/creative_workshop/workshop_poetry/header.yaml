@@ -1,0 +1,8 @@
+id: workshop_poetry
+name: Poetry Workshop
+category: creative_workshop
+status: active
+description: Craft-level poetry workshop where the session functions as genuine reader — responding to what the poem does to the reader rather than what the poet intended.
+estimated_turns: 8-14
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,17 @@
+id: coll_watches
+name: Watch Collecting
+slug: watches
+category: collecting
+version: "1.0"
+status: active
+turn_budget: 12
+metered: true
+description: >
+  Watch collecting companion covering movements, complications, brand hierarchy,
+  references, and market navigation.
+tags:
+  - collecting
+  - watches
+  - horology
+  - luxury
+  - craftsmanship

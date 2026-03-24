@@ -1,0 +1,9 @@
+id: estate_valuation
+name: Estate and Asset Valuation Intake
+category: finance
+status: active
+description: Estate and asset valuation intake for estate attorneys, financial advisors, and executors preparing for an estate valuation or significant asset valuation event. Evaluates the asset types, valuation triggers, appraisal requirements, liquidity considerations, tax implications awareness, and professional coordination to produce an estate valuation intake profile with scope definition and professional referral guidance.
+deliverable: estate_valuation_intake_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

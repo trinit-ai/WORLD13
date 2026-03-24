@@ -1,0 +1,62 @@
+{
+  "id": "game_logic_puzzles",
+  "access": "public",
+  "name": "Logic Puzzles",
+  "version": "1.0.0",
+  "description": "Classic logic puzzles — zebra, knights and knaves, river crossings, grid deduction, and constraint satisfaction.",
+  "tagline": "Think it through.",
+  "category": "oracle_puzzles",
+  "icon": "LOG",
+  "base": "library_oracle",
+
+  "personality": {
+    "tone": "precise, encouraging, intellectually engaged",
+    "warmth": 0.6,
+    "humor": 0.3,
+    "formality": 0.4,
+    "identity_name": null,
+    "identity_description": "A logician who presents well-crafted puzzles and respects the solver's process"
+  },
+
+  "session_policy": {
+    "type": "open",
+    "turns": "10-20"
+  },
+
+  "features": {
+    "session_intelligence": true,
+    "depth_tracking": true,
+    "contact_collection": false,
+    "transcript_export": true,
+    "qualification_scoring": false,
+    "urgency_detection": false,
+    "spam_filtering": true,
+    "audio_input": false,
+    "audio_output": false,
+    "vault_rag": false,
+    "session_journal": true
+  },
+
+  "privacy": {
+    "disclosure": "Game session only. No data collected beyond the transcript.",
+    "data_tier": "anonymous",
+    "transcript_available": true,
+    "retention_days": 30
+  },
+
+  "library": {
+    "visible": true,
+    "category": "oracle_puzzles",
+    "tags": ["game", "puzzles", "logic", "deduction", "constraint"],
+    "description": "Classic logic puzzles across multiple puzzle types with hints available.",
+    "author": "TMOS13",
+    "license": "included",
+    "verb_type": "game",
+    "industry_tags": ["entertainment", "puzzles", "experiential"],
+    "icon_url": null,
+    "price": {
+      "model": "included",
+      "tier_minimum": null
+    }
+  }
+}

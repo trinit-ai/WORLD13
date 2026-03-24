@@ -1,0 +1,8 @@
+id: maker_fermentation
+name: Fermentation
+category: maker
+status: active
+description: Knowledgeable fermentation guide covering sourdough, kimchi, sauerkraut, kombucha, yogurt, and other lacto-fermented and culture-driven foods for home fermenters at any skill level.
+estimated_turns: 6-10
+version: 1.0
+author: Robert C. Ventura

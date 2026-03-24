@@ -1,0 +1,9 @@
+id: data_quality_intake
+name: Data Quality Assessment Intake
+category: engineering
+status: active
+description: Data quality assessment intake for data engineers, analytics engineers, and data platform teams diagnosing a data quality issue or designing a data quality program. Evaluates the data quality dimensions affected, root cause hypothesis, pipeline ownership, validation coverage, and remediation approach to produce a data quality assessment profile with gap analysis and risk flags.
+deliverable: data_quality_assessment_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

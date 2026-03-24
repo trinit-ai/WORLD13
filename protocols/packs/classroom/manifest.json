@@ -1,0 +1,169 @@
+{
+  "id": "classroom",
+  "access": "authed",
+  "name": "Classroom",
+  "version": "1.0.0",
+  "description": "Learn anything, test everything. Guided study sessions, practice exams, knowledge checks, concept deep-dives, and structured lesson plans — with progress tracking across sessions.",
+  "tagline": "Learn anything. Test everything.",
+  "philosophy": "Real learning isn't passive. It's active recall, honest assessment, and building on what you actually know — not what you think you know. The Classroom meets you at your level, pushes you past it, and remembers where you left off.",
+  "category": "education",
+  "icon": "📚",
+  "base": "public_facing",
+  "assembly_mode": "assembled",
+
+  "personality": {
+    "tone": "encouraging, clear, patient, rigorous",
+    "warmth": 0.7,
+    "humor": 0.3,
+    "formality": 0.5,
+    "identity_name": "Professor",
+    "identity_description": "An AI-powered learning environment that adapts to your level, tracks your progress, and helps you build real understanding through active engagement"
+  },
+
+  "cartridges": [
+    { "id": "study_session", "name": "Study Session", "description": "Guided learning on any topic — adaptive depth, active recall, and retention-focused review.", "protocol": "study_session.md" },
+    { "id": "practice_exam", "name": "Practice Exam", "description": "Timed practice tests with scoring, answer explanations, and gap analysis across any subject.", "protocol": "practice_exam.md" },
+    { "id": "knowledge_check", "name": "Knowledge Check", "description": "Quick assessment of what you know — rapid-fire questions, gap identification, and targeted recommendations.", "protocol": "knowledge_check.md" },
+    { "id": "concept_explainer", "name": "Concept Explainer", "description": "Deep dive into any concept — multiple explanation approaches, analogies, examples, and understanding checks.", "protocol": "concept_explainer.md" },
+    { "id": "lesson_plan", "name": "Lesson Plan", "description": "Structured learning path — goal setting, scope definition, milestone planning, and resource mapping.", "protocol": "lesson_plan.md" },
+    { "id": "company_profile", "name": "Company Profile", "description": "Your business identity, hours, contact info, FAQs, disclaimers, and policies — automatically woven into every interaction.", "passive": true }
+  ],
+
+  "commands": {
+    "session": {
+      "reset": { "pattern": "^(reset|start over|restart|new session|clear)$", "action": "reset_session" },
+      "menu": { "pattern": "^(menu|help|options|what can you do|commands)$", "action": "show_menu" },
+      "status": { "pattern": "^(status|progress|where am i|summary|score)$", "action": "show_status" },
+      "transcript": { "pattern": "^(transcript|download|export|save|notes)$", "action": "show_transcript" }
+    },
+    "navigation": {
+      "study": { "pattern": "(study|learn|teach me|explain|understand|review|go over)", "cartridge": "study_session" },
+      "exam": { "pattern": "(exam|test|quiz|practice test|mock exam|assessment)", "cartridge": "practice_exam" },
+      "check": { "pattern": "(check|assess|how much do I know|knowledge check|quick test|rapid)", "cartridge": "knowledge_check" },
+      "explain": { "pattern": "(what is|how does|concept|deep dive|break down|eli5|analogy)", "cartridge": "concept_explainer" },
+      "plan": { "pattern": "(plan|curriculum|roadmap|schedule|lesson plan|learning path|syllabus)", "cartridge": "lesson_plan" }
+    }
+  },
+
+  "system_screens": { "boot": "boot.md", "menu": "menu.md" },
+
+  "features": {
+    "session_intelligence": true,
+    "depth_tracking": true,
+    "mood_resonance": true,
+    "cross_module_memory": true,
+    "contact_collection": false,
+    "transcript_export": true,
+    "qualification_scoring": false,
+    "urgency_detection": false,
+    "spam_filtering": true,
+    "audio_input": false,
+    "audio_output": false,
+    "session_journal": true,
+    "vault_rag": true
+  },
+
+  "privacy": {
+    "disclosure": "Your learning progress and session history are remembered between visits to personalize your experience. This is not an accredited educational institution — no credentials or certifications are issued.",
+    "data_tier": "session_only",
+    "transcript_available": true,
+    "retention_days": 90
+  },
+
+  "notifications": {},
+
+  "settings": {
+    "difficulty": {
+      "default": "adaptive",
+      "options": ["beginner", "intermediate", "advanced", "adaptive"]
+    },
+    "response_depth": {
+      "default": "balanced",
+      "options": ["concise", "balanced", "detailed"]
+    }
+  },
+
+  "state": {
+    "session": {
+      "active_cartridge": null,
+      "turn_count": 0,
+      "depth": 0,
+      "topic": null,
+      "difficulty": "adaptive"
+    },
+    "progress": {
+      "topics_studied": [],
+      "exams_taken": 0,
+      "average_score": null,
+      "strengths": [],
+      "gaps": [],
+      "total_questions_answered": 0,
+      "correct_answers": 0
+    }
+  },
+
+  "theme": {
+    "accent": "#6366F1",
+    "surface": "#0D0B09",
+    "text": "#E5E2DC"
+  },
+
+  "transcript": {
+    "format": "markdown",
+    "include_metadata": true,
+    "include_summary": true,
+    "include_scoring": true,
+    "download_label": "Download Study Notes"
+  },
+
+  "data_rail": {
+    "tabs": [
+      {
+        "id": "auth",
+        "label": "Auth",
+        "icon": "key",
+        "type": "infrastructure"
+      },
+      {
+        "id": "pricing",
+        "label": "Pricing",
+        "icon": "sparkles",
+        "type": "infrastructure"
+      },
+      {
+        "id": "student_info",
+        "label": "Student Info",
+        "icon": "GraduationCap",
+        "type": "pack",
+        "title": "Student Information",
+        "description": "Captured securely. Encrypted at rest. Never sent to AI.",
+        "submit_label": "Save to Vault",
+        "success_message": "Student info saved.",
+        "endpoint": "/api/datarail/submit",
+        "fields": [
+          { "id": "student_name", "type": "text", "label": "Student Name", "placeholder": "Full name", "required": true, "pii": true },
+          { "id": "student_email", "type": "email", "label": "Email", "placeholder": "student@example.com", "required": true, "pii": true },
+          { "id": "subject", "type": "text", "label": "Subject", "placeholder": "What are you studying?", "required": false, "pii": false },
+          { "id": "level", "type": "select", "label": "Level", "required": true, "options": ["K\u20135", "6\u20138", "9\u201312", "Undergraduate", "Graduate", "Professional"] },
+          { "id": "learning_goal", "type": "text", "label": "Learning Goal", "placeholder": "What do you want to accomplish?", "required": false, "pii": false }
+        ]
+      }
+    ]
+  },
+
+  "library": {
+    "visible": true,
+    "category": "education",
+    "tags": ["train", "scenario", "debrief"],
+    "description": "Guided study sessions, practice exams, knowledge checks, and concept deep-dives with progress tracking. Write the lesson plan once — it teaches forever.",
+    "author": "TMOS13",
+    "license": "included",
+    "verb_type": "train",
+    "industry_tags": ["education", "training", "certification", "corporate"],
+    "icon_url": null,
+    "price": {
+      "model": "included",
+      "tier_minimum": null
+    }
+  }
+}

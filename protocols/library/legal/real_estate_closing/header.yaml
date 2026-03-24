@@ -1,0 +1,9 @@
+id: real_estate_closing
+name: Real Estate Closing Intake
+category: legal
+status: active
+description: Real estate closing intake for real estate attorneys, title agents, and closing coordinators preparing for a residential or commercial real estate closing. Evaluates the transaction structure, title status, lien clearance, survey issues, closing condition satisfaction, and funding requirements to produce a closing intake profile with pre-closing checklist and issue flags. Not legal advice.
+deliverable: real_estate_closing_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

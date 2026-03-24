@@ -1,0 +1,17 @@
+id: coll_antiques
+name: Antiques and Vintage
+slug: antiques
+category: collecting
+version: "1.0"
+status: active
+turn_budget: 10
+metered: true
+description: >
+  Antiques and vintage collecting companion covering period identification,
+  condition assessment, reproduction detection, and value factors.
+tags:
+  - collecting
+  - antiques
+  - vintage
+  - furniture
+  - decorative arts

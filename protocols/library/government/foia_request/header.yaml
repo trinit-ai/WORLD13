@@ -1,0 +1,9 @@
+id: foia_request
+name: FOIA / Public Records Request Intake
+category: government
+status: active
+description: FOIA and public records request intake for journalists, researchers, and members of the public preparing a public records request. Evaluates the request scope, applicable law, agency identification, exemption considerations, fee structure, and timeline to produce a FOIA intake profile with request drafting guidance and strategic recommendations.
+deliverable: foia_intake_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

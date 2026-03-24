@@ -1,0 +1,9 @@
+id: prep_nclex
+name: NCLEX Prep
+category: learning_exam
+status: active
+description: NCLEX-RN and NCLEX-PN preparation and diagnostic assessment. Covers CAT (Computer Adaptive Testing) format, 8 client needs categories, and the Clinical Judgment Measurement Model (CJMM). Builds a study plan focused on clinical reasoning and priority-setting.
+deliverable: nclex_study_plan
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

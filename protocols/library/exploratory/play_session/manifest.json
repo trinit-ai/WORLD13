@@ -1,0 +1,31 @@
+{
+  "id": "play_session",
+  "name": "Play Session",
+  "category": "exploratory",
+  "version": "1.0",
+  "turns": {
+    "min": 4,
+    "max": 8
+  },
+  "author": "Robert C. Ventura",
+  "company": "TMOS13, LLC",
+  "description": "Rediscovering genuine play — intrinsically motivated, purposeless-in-the-best-way. Explores what play feels like for this person.",
+  "kill_patterns": [
+    "gamification",
+    "productivity framing",
+    "forcing play",
+    "turning play into exercise",
+    "measuring outcomes"
+  ],
+  "completion": {
+    "type": "experiential",
+    "signal": "something loosened — the person reconnected with the feeling of play"
+  },
+  "routing": [],
+  "files": [
+    "header.yaml",
+    "manifest.json",
+    "MANIFEST.md",
+    "master.md"
+  ]
+}

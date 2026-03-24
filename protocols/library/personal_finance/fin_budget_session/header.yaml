@@ -1,0 +1,9 @@
+id: fin_budget_session
+name: Budget Session
+category: personal_finance
+status: active
+description: Budget session that helps individuals align their spending with their values by building a values-based budget — not a restriction framework, but a decision-making tool that makes trade-offs visible. NOT financial advice.
+deliverable: budget_plan
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

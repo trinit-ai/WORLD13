@@ -1,0 +1,9 @@
+id: pricing_review
+name: Pricing Review Intake
+category: sales
+status: active
+description: Pricing review intake for sales professionals and sales managers reviewing pricing for a deal. Evaluates the deal economics, the discount request, the justification, the value delivered, and the precedent risk to produce a pricing review profile with approval recommendation and discount guidance.
+deliverable: pricing_review_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

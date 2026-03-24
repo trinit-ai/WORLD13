@@ -1,0 +1,9 @@
+id: demo_qualification
+name: Demo Qualification Intake
+category: sales
+status: active
+description: Demo qualification intake for sales professionals preparing a product demonstration. Evaluates the prospect's specific needs, the use cases to prioritize, the attendees and their roles, the discovery gaps, and the demo success criteria to produce a demo qualification profile with demo plan and talking point priorities.
+deliverable: demo_qualification_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

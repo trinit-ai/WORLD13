@@ -1,0 +1,10 @@
+id: oracle_numerology
+name: Numerology Reading
+category: oracle_divination
+status: active
+description: Pythagorean numerology reading. Calculates Life Path, Expression, Soul Urge, and Birthday numbers from full birth name and date. Covers core numbers 1-9 and master numbers 11, 22, 33. Produces a structured numerology profile as the session deliverable.
+deliverable: numerology_reading
+consequence_class: ZERO
+estimated_turns: 8-10
+version: 1.0
+author: Robert C. Ventura

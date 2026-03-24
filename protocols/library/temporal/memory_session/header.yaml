@@ -1,0 +1,9 @@
+id: memory_session
+name: Memory Session
+category: temporal
+status: active
+description: Revisit a significant memory with deliberate witnessed engagement — not therapy, not analysis, but governed presence with the past.
+deliverable: memory_record
+estimated_turns: "8-12"
+version: 1.0
+author: Robert C. Ventura

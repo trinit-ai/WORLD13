@@ -1,0 +1,9 @@
+id: humanitarian_intake
+name: Humanitarian Response Intake
+category: diplomatic
+status: active
+description: Humanitarian response intake for humanitarian organizations, cluster coordinators, and emergency response teams assessing or planning a humanitarian intervention. Evaluates the crisis context, needs assessment, access and security conditions, coordination architecture, protection mainstreaming, and accountability to affected populations to produce a humanitarian response profile with gap analysis and risk flags.
+deliverable: humanitarian_response_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,46 @@
+{
+  "id": "eating_disorder_intake",
+  "name": "Eating Disorder Assessment Intake",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "mental_health",
+  "description": "Eating disorder assessment intake for licensed mental health professionals and medical clinicians conducting an initial eating disorder assessment. Evaluates the eating and weight history, the behavioral and cognitive symptoms, the medical risk indicators, the co-occurring conditions, and the level of care considerations to produce an eating disorder intake profile with medical risk assessment and clinical considerations. Not clinical advice.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "professional, direct",
+    "warmth": 0.5,
+    "humor": 0.0,
+    "formality": 0.7
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 22,
+    "estimated_turns": "12-18"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  }
+}

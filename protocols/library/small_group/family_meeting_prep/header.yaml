@@ -1,0 +1,9 @@
+id: family_meeting_prep
+name: Family Meeting Preparation
+category: small_group
+status: active
+description: Preparing to facilitate or participate in a family meeting about something affecting the family as a whole.
+deliverable: family_meeting_brief
+estimated_turns: "8-12"
+version: 1.0
+author: Robert C. Ventura

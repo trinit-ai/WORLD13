@@ -1,0 +1,9 @@
+id: oracle_archetype
+name: Archetype Session
+category: oracle_typology
+status: active
+description: Guided Jungian archetype exploration. Hero, Shadow, Trickster, Sage, Lover, Creator, and more. Each archetype has a light and shadow dimension. Surfaces the dominant archetypes operating in the person's life through narrative and situational inquiry.
+consequence_class: ZERO
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

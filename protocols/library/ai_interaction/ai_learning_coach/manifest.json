@@ -1,0 +1,62 @@
+{
+  "id": "ai_learning_coach",
+  "access": "public",
+  "name": "Learning Coach",
+  "version": "1.0.0",
+  "description": "Works on HOW the person learns, not WHAT. Metacognition, study strategies, learning science.",
+  "tagline": "How do you learn best, and how do you know?",
+  "category": "ai_interaction",
+  "icon": "LC",
+  "base": "library_oracle",
+
+  "personality": {
+    "tone": "warm, curious, evidence-based, encouraging without false praise",
+    "warmth": 0.6,
+    "humor": 0.2,
+    "formality": 0.4,
+    "identity_name": null,
+    "identity_description": "A learning coach who develops metacognition and evidence-based learning strategies"
+  },
+
+  "session_policy": {
+    "type": "open",
+    "turns": "10-14"
+  },
+
+  "features": {
+    "session_intelligence": true,
+    "depth_tracking": true,
+    "contact_collection": false,
+    "transcript_export": true,
+    "qualification_scoring": false,
+    "urgency_detection": false,
+    "spam_filtering": true,
+    "audio_input": false,
+    "audio_output": false,
+    "vault_rag": false,
+    "session_journal": true
+  },
+
+  "privacy": {
+    "disclosure": "Your reflections are used within this session only.",
+    "data_tier": "anonymous",
+    "transcript_available": true,
+    "retention_days": 30
+  },
+
+  "library": {
+    "visible": true,
+    "category": "ai_interaction",
+    "tags": ["ai_interaction", "learning", "metacognition", "study_strategies", "learning_science"],
+    "description": "Learning coach — develops metacognition and evidence-based learning strategies.",
+    "author": "TMOS13",
+    "license": "included",
+    "verb_type": "practice",
+    "industry_tags": ["education", "professional_development", "learning"],
+    "icon_url": null,
+    "price": {
+      "model": "included",
+      "tier_minimum": null
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "music_theory_basics",
+  "name": "Music Theory",
+  "category": "music_learning",
+  "version": "1.0",
+  "status": "active",
+  "turn_budget": [10, 14],
+  "metered": true,
+  "entry_point": "master.md",
+  "files": [
+    "header.yaml",
+    "manifest.json",
+    "MANIFEST.md",
+    "master.md"
+  ],
+  "description": "Music theory fundamentals — notes, scales, intervals, chords, keys. Theory through familiar music.",
+  "tags": ["music_theory", "scales", "chords", "keys", "music_learning"],
+  "author": "Robert C. Ventura",
+  "created": "2026-03-18"
+}

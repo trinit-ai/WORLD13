@@ -1,0 +1,8 @@
+id: psychoed_cbt
+name: CBT Concepts
+category: psychoeducation
+status: active
+description: Educational session on Cognitive Behavioral Therapy concepts — the cognitive model, automatic thoughts, cognitive distortions, and behavioral activation. Not therapy.
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

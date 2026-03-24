@@ -1,0 +1,9 @@
+id: cash_flow_review
+name: Cash Flow Review Intake
+category: finance
+status: active
+description: Cash flow review intake for CFOs, treasurers, and finance leaders assessing an organization's cash position, liquidity risk, and cash management practices. Evaluates operating cash flow, working capital, cash runway, liquidity reserves, cash forecasting, and covenant compliance to produce a cash flow review profile with liquidity assessment and risk flags.
+deliverable: cash_flow_review_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

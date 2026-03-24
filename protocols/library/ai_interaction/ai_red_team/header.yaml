@@ -1,0 +1,9 @@
+id: ai_red_team
+name: Red Team Session
+category: ai_interaction
+status: active
+description: A governed red team session. Systematically finds what is wrong, weak, or could fail. Assumes hostile conditions and worst-case scenarios. No praise, no encouragement — only threat identification.
+consequence_class: ZERO
+estimated_turns: 10-16
+version: 1.0
+author: Robert C. Ventura

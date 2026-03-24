@@ -1,0 +1,9 @@
+id: game_would_you_rather
+name: Would You Rather
+category: oracle_social
+status: active
+description: Would You Rather dilemmas with reasoning. Absurdist, value-based, lifestyle, and ethical categories. The session presents dilemmas, the person chooses, and both explore the reasoning.
+consequence_class: ZERO
+estimated_turns: 10-20
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,9 @@
+id: form_insurance_claim
+name: Insurance Claim
+category: forms_financial
+status: active
+description: Guided completion of an insurance claim form capturing policyholder details, incident information, itemized damages, documentation, and witness information.
+deliverable: completed_form
+estimated_turns: "8-10"
+version: 1.0
+author: Robert C. Ventura

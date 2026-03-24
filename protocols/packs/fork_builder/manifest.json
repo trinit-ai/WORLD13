@@ -1,0 +1,20 @@
+{
+  "id": "fork_builder",
+  "name": "Fork Builder",
+  "version": "1.0.0",
+  "description": "Governs pack forking and customization. Takes a source pack as archetype.",
+  "category": "_meta",
+  "visibility": "system",
+  "deliverable_type": "forked_pack_manifest",
+  "personality": {
+    "tone": "efficient, collaborative",
+    "warmth": 0.6,
+    "humor": 0.0,
+    "formality": 0.4
+  },
+  "features": {
+    "session_intelligence": true,
+    "transcript_export": true,
+    "session_journal": true
+  }
+}

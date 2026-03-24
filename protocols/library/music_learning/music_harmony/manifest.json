@@ -1,0 +1,20 @@
+{
+  "id": "music_harmony",
+  "name": "Harmony and Progressions",
+  "category": "music_learning",
+  "version": "1.0",
+  "status": "active",
+  "turn_budget": [10, 12],
+  "metered": true,
+  "entry_point": "master.md",
+  "files": [
+    "header.yaml",
+    "manifest.json",
+    "MANIFEST.md",
+    "master.md"
+  ],
+  "description": "Harmony and chord progressions — why progressions feel the way they do, patterns beneath familiar music.",
+  "tags": ["harmony", "progressions", "chords", "composition", "music_learning"],
+  "author": "Robert C. Ventura",
+  "created": "2026-03-18"
+}

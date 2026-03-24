@@ -1,0 +1,9 @@
+id: ops_assessment
+name: Operations Assessment Intake
+category: consulting
+status: active
+description: Operations assessment intake for organizations seeking to diagnose operational performance gaps, inefficiencies, or system failures. Evaluates scope, baseline metrics, process documentation, technology stack, workforce capacity, root cause hypothesis, and access to produce an operational assessment profile with gap analysis, risk flags, and recommended assessment design.
+deliverable: operations_assessment_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

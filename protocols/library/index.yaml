@@ -1,0 +1,1237 @@
+# 13TMOS Pack Library Index
+# Generated: 2026-03-12
+# Total packs: 378
+# Active: 23
+# Stubs: 355
+
+categories:
+  agriculture:
+    total: 15
+    active: 0
+    packs:
+    - id: agtech_intake
+      status: stub
+      description: agricultural technology intake
+    - id: carbon_credit_intake
+      status: stub
+      description: carbon credit assessment
+    - id: climate_risk_intake
+      status: stub
+      description: climate risk assessment
+    - id: conservation_intake
+      status: stub
+      description: conservation planning intake
+    - id: crop_assessment
+      status: stub
+      description: crop health and yield intake
+    - id: environmental_intake
+      status: stub
+      description: environmental impact intake
+    - id: farm_intake
+      status: stub
+      description: farm operations intake
+    - id: food_safety_intake
+      status: stub
+      description: food safety compliance intake
+    - id: forestry_intake
+      status: stub
+      description: forestry management intake
+    - id: land_use_intake
+      status: stub
+      description: land use planning intake
+    - id: livestock_intake
+      status: stub
+      description: livestock health assessment
+    - id: organic_certification
+      status: stub
+      description: organic certification intake
+    - id: supply_chain_ag
+      status: stub
+      description: agricultural supply chain
+    - id: sustainability_audit
+      status: stub
+      description: sustainability assessment
+    - id: water_rights_intake
+      status: stub
+      description: water rights assessment
+  architecture:
+    total: 15
+    active: 0
+    packs:
+    - id: accessibility_design
+      status: stub
+      description: ADA compliance design intake
+    - id: code_compliance
+      status: stub
+      description: building code compliance intake
+    - id: construction_intake
+      status: stub
+      description: construction management intake
+    - id: design_review
+      status: stub
+      description: design review protocol
+    - id: historic_preservation
+      status: stub
+      description: historic building assessment
+    - id: interior_intake
+      status: stub
+      description: interior design needs intake
+    - id: landscape_intake
+      status: stub
+      description: landscape design intake
+    - id: mep_intake
+      status: stub
+      description: MEP systems intake
+    - id: program_intake
+      status: stub
+      description: architectural program intake
+    - id: project_intake
+      status: stub
+      description: architectural project intake
+    - id: renovation_intake
+      status: stub
+      description: renovation scope and intake
+    - id: site_assessment
+      status: stub
+      description: site evaluation intake
+    - id: structural_intake
+      status: stub
+      description: structural engineering intake
+    - id: sustainability_intake
+      status: stub
+      description: green building and LEED intake
+    - id: urban_planning_intake
+      status: stub
+      description: urban planning assessment
+  consulting:
+    total: 18
+    active: 3
+    packs:
+    - id: business_case
+      status: active
+      description: Turn business decisions into transparent models. Headcount, build vs buy, pricing, market sizing, and ROI — all with visible assumptions and sensitivity analysis.
+    - id: change_mgmt_intake
+      status: stub
+      description: change management intake
+    - id: crisis_comms_intake
+      status: stub
+      description: crisis communications intake
+    - id: customer_research
+      status: stub
+      description: customer insights intake
+    - id: desk
+      status: active
+      description: Neutral conversational ground state. Profile-aware, memory-loaded workspace — no funnel, no pack pitch. Just conversation.
+    - id: engagement_scoping
+      status: stub
+      description: consulting engagement intake
+    - id: executive_coaching
+      status: stub
+      description: executive coaching intake
+    - id: it_consulting_intake
+      status: stub
+      description: IT advisory needs intake
+    - id: management_consulting
+      status: stub
+      description: management issue intake
+    - id: market_entry_intake
+      status: stub
+      description: market entry assessment
+    - id: marketing_intake
+      status: stub
+      description: marketing strategy intake
+    - id: ops_assessment
+      status: stub
+      description: operational efficiency intake
+    - id: pack_finder
+      status: active
+      description: 
+    - id: pr_intake
+      status: stub
+      description: public relations intake
+    - id: pricing_strategy
+      status: stub
+      description: pricing strategy intake
+    - id: restructuring_intake
+      status: stub
+      description: organizational restructure intake
+    - id: strategy_intake
+      status: stub
+      description: strategic planning intake
+    - id: supply_chain_intake
+      status: stub
+      description: supply chain assessment
+  creative:
+    total: 16
+    active: 1
+    packs:
+    - id: brand_intake
+      status: stub
+      description: brand identity needs assessment
+    - id: commission_intake
+      status: stub
+      description: custom work commission intake
+    - id: content_strategy
+      status: stub
+      description: content strategy assessment
+    - id: copywriting_brief
+      status: stub
+      description: copy and content brief intake
+    - id: creative_brief
+      status: stub
+      description: creative project intake and brief
+    - id: design_critique
+      status: stub
+      description: structured design feedback
+    - id: exhibition_planning
+      status: stub
+      description: exhibition design intake
+    - id: film_production_intake
+      status: stub
+      description: production needs assessment
+    - id: gallery_intake
+      status: stub
+      description: gallery submission review
+    - id: illustration_brief
+      status: stub
+      description: illustration commission intake
+    - id: ink
+      status: active
+      description: Ephemeral conversation surface. Nothing persists — no transcripts, no inbox, no session log. Messages exist only in the moment.
+    - id: music_licensing
+      status: stub
+      description: music licensing intake
+    - id: photography_brief
+      status: stub
+      description: photography project intake
+    - id: portfolio_review
+      status: stub
+      description: artist/designer portfolio assessment
+    - id: screenplay_coverage
+      status: stub
+      description: script assessment and notes
+    - id: ux_research_intake
+      status: stub
+      description: UX research study intake
+  criminal_justice:
+    total: 15
+    active: 0
+    packs:
+    - id: background_check
+      status: stub
+      description: background check intake
+    - id: compliance_audit
+      status: stub
+      description: compliance audit intake
+    - id: cybersecurity_intake
+      status: stub
+      description: cyber incident intake
+    - id: diversion_intake
+      status: stub
+      description: diversion program intake
+    - id: forensic_intake
+      status: stub
+      description: forensic assessment intake
+    - id: incident_report
+      status: stub
+      description: incident documentation intake
+    - id: juvenile_intake
+      status: stub
+      description: juvenile services intake
+    - id: mediation_intake
+      status: stub
+      description: dispute mediation intake
+    - id: parole_intake
+      status: stub
+      description: parole hearing intake
+    - id: probation_intake
+      status: stub
+      description: probation assessment intake
+    - id: reentry_intake
+      status: stub
+      description: reentry services intake
+    - id: restorative_justice
+      status: stub
+      description: restorative justice intake
+    - id: security_assessment
+      status: stub
+      description: physical security assessment
+    - id: threat_assessment
+      status: stub
+      description: threat and risk intake
+    - id: victim_intake
+      status: stub
+      description: victim services intake
+  diplomatic:
+    total: 15
+    active: 0
+    packs:
+    - id: asylum_intake
+      status: stub
+      description: asylum claim intake
+    - id: bilateral_intake
+      status: stub
+      description: bilateral negotiation prep
+    - id: consular_intake
+      status: stub
+      description: consular services intake
+    - id: cultural_intake
+      status: stub
+      description: cross-cultural needs intake
+    - id: development_intake
+      status: stub
+      description: international development intake
+    - id: diplomatic_intake
+      status: stub
+      description: diplomatic meeting intake
+    - id: expat_intake
+      status: stub
+      description: expatriate services intake
+    - id: humanitarian_intake
+      status: stub
+      description: humanitarian mission intake
+    - id: international_legal
+      status: stub
+      description: international legal intake
+    - id: ngo_intake
+      status: stub
+      description: NGO project intake
+    - id: peacekeeping_intake
+      status: stub
+      description: conflict resolution intake
+    - id: sanctions_intake
+      status: stub
+      description: sanctions compliance intake
+    - id: trade_intake
+      status: stub
+      description: international trade intake
+    - id: translation_intake
+      status: stub
+      description: translation needs intake
+    - id: treaty_review
+      status: stub
+      description: treaty assessment intake
+  education:
+    total: 15
+    active: 1
+    packs:
+    - id: academic_assessment
+      status: stub
+      description: learning progress evaluation
+    - id: admissions_interview
+      status: stub
+      description: college/program admissions screen
+    - id: certification_prep
+      status: stub
+      description: exam readiness assessment
+    - id: classroom
+      status: active
+      description: Learn anything, test everything. Guided study sessions, practice exams, knowledge checks, concept deep-dives, and structured lesson plans — with progress tracking across sessions.
+    - id: continuing_ed_intake
+      status: stub
+      description: professional development intake
+    - id: curriculum_design
+      status: stub
+      description: course design and scoping
+    - id: faculty_review
+      status: stub
+      description: instructor performance evaluation
+    - id: iep_intake
+      status: stub
+      description: individualized education plan
+    - id: language_assessment
+      status: stub
+      description: proficiency level evaluation
+    - id: research_supervision
+      status: stub
+      description: thesis and dissertation intake
+    - id: scholarship_assessment
+      status: stub
+      description: scholarship eligibility screening
+    - id: student_intake
+      status: stub
+      description: new student assessment and placement
+    - id: study_skills_assessment
+      status: stub
+      description: learning style and strategy intake
+    - id: training_needs_analysis
+      status: stub
+      description: corporate training gap assessment
+    - id: tutoring_session
+      status: stub
+      description: one-on-one tutoring intake
+  engineering:
+    total: 17
+    active: 2
+    packs:
+    - id: api_design_review
+      status: stub
+      description: API design assessment
+    - id: architecture_review
+      status: stub
+      description: system design assessment
+    - id: bug_triage
+      status: stub
+      description: bug severity and assignment
+    - id: code_review
+      status: stub
+      description: structured code review protocol
+    - id: data_quality_intake
+      status: stub
+      description: data quality and schema review
+    - id: devops_intake
+      status: stub
+      description: CI/CD and deployment review
+    - id: incident_intake
+      status: stub
+      description: production incident intake
+    - id: infrastructure_intake
+      status: stub
+      description: infrastructure needs assessment
+    - id: operator
+      status: active
+      description: Platform operator agent. Action-first command surface for inbox, contacts, packs, automation, and observability.
+    - id: pack_builder
+      status: active
+      description: Design your own TMOS13 pack through guided conversation. Map your use case to the platform's ontology, walk through architecture, preview it live, and export a production-ready specification.
+    - id: product_requirements
+      status: stub
+      description: PRD intake and refinement
+    - id: retrospective
+      status: stub
+      description: structured sprint retrospective
+    - id: rfp_technical
+      status: stub
+      description: technical RFP review
+    - id: security_audit
+      status: stub
+      description: security assessment intake
+    - id: sprint_planning
+      status: stub
+      description: sprint scope and capacity
+    - id: technical_intake
+      status: stub
+      description: engineering project scope intake
+    - id: vendor_assessment
+      status: stub
+      description: technical vendor evaluation
+  finance:
+    total: 16
+    active: 1
+    packs:
+    - id: audit_intake
+      status: stub
+      description: audit engagement and scope
+    - id: budget_review
+      status: stub
+      description: annual budget review protocol
+    - id: cash_flow_review
+      status: stub
+      description: liquidity and runway assessment
+    - id: due_diligence
+      status: stub
+      description: M&A financial due diligence
+    - id: estate_valuation
+      status: stub
+      description: asset inventory and valuation
+    - id: expense_audit
+      status: stub
+      description: expense report review protocol
+    - id: financial_discovery
+      status: stub
+      description: client financial profile intake
+    - id: financial_planning
+      status: stub
+      description: personal financial plan intake
+    - id: fraud_intake
+      status: stub
+      description: financial fraud investigation intake
+    - id: grant_assessment
+      status: stub
+      description: grant eligibility and fit screening
+    - id: insurance_intake
+      status: stub
+      description: coverage needs assessment
+    - id: investment_discovery
+      status: stub
+      description: portfolio and risk assessment
+    - id: loan_intake
+      status: stub
+      description: credit application and review
+    - id: manda_negotiation
+      status: active
+      description: Pressure-test any high-stakes decision. Scenario modeling, negotiation prep, risk analysis, and strategy briefs — for deals, partnerships, launches, or pivots.
+    - id: tax_intake
+      status: stub
+      description: tax preparation client intake
+    - id: vc_due_diligence
+      status: stub
+      description: startup investment assessment
+  games:
+    total: 16
+    active: 1
+    packs:
+    - id: business_case_sim
+      status: stub
+      description: case interview practice
+    - id: courtroom_sim
+      status: stub
+      description: trial advocacy practice
+    - id: crisis_management_sim
+      status: stub
+      description: crisis scenario simulation
+    - id: debate_simulator
+      status: stub
+      description: formal debate practice
+    - id: escape_room
+      status: stub
+      description: puzzle-based escape room
+    - id: gaming
+      status: active
+      description: 
+    - id: interview_sim
+      status: stub
+      description: job interview practice
+    - id: language_immersion
+      status: stub
+      description: foreign language conversation
+    - id: medical_sim
+      status: stub
+      description: clinical decision simulation
+    - id: mystery_interrogation
+      status: stub
+      description: detective/interrogation game
+    - id: negotiation_sim
+      status: stub
+      description: negotiation skills simulation
+    - id: rpg_dungeon
+      status: development
+      description: text-based RPG session
+    - id: sales_call_sim
+      status: stub
+      description: sales call roleplay
+    - id: scenario_planning
+      status: stub
+      description: strategic scenario exploration
+    - id: socratic_seminar
+      status: stub
+      description: guided Socratic dialogue
+    - id: trivia_game
+      status: stub
+      description: structured trivia session
+  government:
+    total: 15
+    active: 0
+    packs:
+    - id: benefits_intake
+      status: stub
+      description: government benefits eligibility
+    - id: code_enforcement
+      status: stub
+      description: code violation intake
+    - id: complaint_intake
+      status: stub
+      description: civic complaint and case intake
+    - id: court_intake
+      status: stub
+      description: court case intake and routing
+    - id: ethics_complaint
+      status: stub
+      description: ethics violation intake
+    - id: foia_request
+      status: stub
+      description: FOIA request intake and routing
+    - id: grant_intake
+      status: stub
+      description: government grant intake
+    - id: immigration_services
+      status: stub
+      description: immigration services intake
+    - id: inspection_intake
+      status: stub
+      description: regulatory inspection prep
+    - id: licensing_intake
+      status: stub
+      description: professional license application
+    - id: permit_intake
+      status: stub
+      description: building/business permit intake
+    - id: procurement_intake
+      status: stub
+      description: government procurement intake
+    - id: public_comment
+      status: stub
+      description: structured public comment intake
+    - id: tax_assessment
+      status: stub
+      description: property tax appeal intake
+    - id: voter_registration
+      status: stub
+      description: voter registration intake
+  hospitality:
+    total: 17
+    active: 2
+    packs:
+    - id: accessibility_intake
+      status: stub
+      description: accessibility requirements intake
+    - id: audiovisual_intake
+      status: stub
+      description: AV and production needs intake
+    - id: catering_intake
+      status: stub
+      description: catering scope and requirements
+    - id: complaint_resolution
+      status: stub
+      description: guest complaint resolution
+    - id: concierge_intake
+      status: stub
+      description: guest services intake
+    - id: event_intake
+      status: stub
+      description: event planning needs assessment
+    - id: guest
+      status: active
+      description: 
+    - id: membership_intake
+      status: stub
+      description: club/membership intake
+    - id: menu_development
+      status: stub
+      description: menu and dietary needs intake
+    - id: restaurant_intake
+      status: stub
+      description: private dining and reservation
+    - id: spa_intake
+      status: stub
+      description: wellness and spa intake
+    - id: staffing_intake
+      status: stub
+      description: event staffing needs assessment
+    - id: tour_intake
+      status: stub
+      description: tour and experience intake
+    - id: travel_intake
+      status: stub
+      description: travel planning and itinerary
+    - id: venue_intake
+      status: stub
+      description: venue selection and requirements
+    - id: wedding_intake
+      status: stub
+      description: wedding planning intake
+    - id: welcome
+      status: active
+      description: First-run onboarding — collects user identity, explains the platform, and routes to a recommended pack.
+  hr:
+    total: 15
+    active: 2
+    packs:
+    - id: accommodation_request
+      status: stub
+      description: ADA/disability accommodation intake
+    - id: candidate_screener
+      status: active
+      description: AI-powered first-round candidate screening — structured interviews, scored evaluations, hiring manager summaries.
+    - id: compensation_review
+      status: stub
+      description: salary and equity evaluation
+    - id: culture_assessment
+      status: stub
+      description: team health and engagement survey
+    - id: exit_interview
+      status: stub
+      description: departing employee structured interview
+    - id: harassment_intake
+      status: stub
+      description: workplace complaint intake
+    - id: leave_request
+      status: stub
+      description: FMLA and leave intake
+    - id: onboarding
+      status: active
+      description: First-session onboarding flow that collects user profile information through conversational interview. Populates preferred name, role, industry, use case, and communication preferences.
+    - id: performance_review
+      status: stub
+      description: structured performance evaluation
+    - id: pip_intake
+      status: stub
+      description: performance improvement plan intake
+    - id: promotion_assessment
+      status: stub
+      description: readiness and case documentation
+    - id: reference_check
+      status: stub
+      description: employment reference verification
+    - id: structured_interview
+      status: stub
+      description: competency-based interview protocol
+    - id: succession_planning
+      status: stub
+      description: leadership pipeline assessment
+    - id: workforce_planning
+      status: stub
+      description: headcount and role planning
+  insurance:
+    total: 15
+    active: 0
+    packs:
+    - id: actuarial_intake
+      status: stub
+      description: risk assessment intake
+    - id: appeals_intake
+      status: stub
+      description: claim denial appeal intake
+    - id: auto_claims
+      status: stub
+      description: auto accident claim intake
+    - id: broker_intake
+      status: stub
+      description: insurance broker needs assessment
+    - id: claims_intake
+      status: stub
+      description: insurance claim intake and triage
+    - id: coverage_review
+      status: stub
+      description: coverage needs assessment
+    - id: disability_intake
+      status: stub
+      description: disability claim intake
+    - id: fraud_investigation
+      status: stub
+      description: claims fraud intake
+    - id: health_claims
+      status: stub
+      description: health insurance claim intake
+    - id: liability_intake
+      status: stub
+      description: liability claim assessment
+    - id: life_insurance_intake
+      status: stub
+      description: life insurance needs assessment
+    - id: policy_intake
+      status: stub
+      description: new policy application intake
+    - id: property_claims
+      status: stub
+      description: property damage claim intake
+    - id: reinsurance_intake
+      status: stub
+      description: reinsurance treaty intake
+    - id: underwriting_intake
+      status: stub
+      description: policy underwriting assessment
+  legal:
+    total: 15
+    active: 1
+    packs:
+    - id: bankruptcy_intake
+      status: stub
+      description: chapter 7/13 eligibility and intake
+    - id: civil_litigation_intake
+      status: stub
+      description: plaintiff/defendant case assessment
+    - id: conflict_check
+      status: stub
+      description: conflict of interest screening
+    - id: contract_review_intake
+      status: stub
+      description: contract dispute initial assessment
+    - id: criminal_intake
+      status: stub
+      description: criminal defense initial consultation
+    - id: deposition_prep
+      status: stub
+      description: witness preparation protocol
+    - id: employment_intake
+      status: stub
+      description: wrongful termination, discrimination
+    - id: engagement_intake
+      status: stub
+      description: retainer and scope confirmation
+    - id: estate_planning
+      status: stub
+      description: will, trust, and estate intake
+    - id: family_law_intake
+      status: stub
+      description: divorce, custody, and family matters
+    - id: immigration_intake
+      status: stub
+      description: immigration case assessment
+    - id: ip_assessment
+      status: stub
+      description: intellectual property evaluation
+    - id: legal_intake
+      status: active
+      description: AI-powered legal intake — qualify leads, capture case details, route to the right attorney. Generates attorney-grade case briefs from conversational data.
+    - id: real_estate_closing
+      status: stub
+      description: property transaction intake
+    - id: regulatory_compliance
+      status: stub
+      description: compliance gap assessment
+  media:
+    total: 16
+    active: 1
+    packs:
+    - id: broadcast_intake
+      status: stub
+      description: broadcast segment intake
+    - id: crisis_media_intake
+      status: stub
+      description: crisis media response intake
+    - id: documentary_intake
+      status: stub
+      description: documentary project intake
+    - id: editorial_review
+      status: stub
+      description: editorial assessment intake
+    - id: fact_check_intake
+      status: stub
+      description: fact-checking protocol
+    - id: feed_portal
+      status: active
+      description: 
+    - id: interview_prep
+      status: stub
+      description: interview preparation protocol
+    - id: literary_agent_intake
+      status: stub
+      description: manuscript submission intake
+    - id: newsletter_intake
+      status: stub
+      description: newsletter planning intake
+    - id: op_ed_intake
+      status: stub
+      description: op-ed submission review
+    - id: podcast_intake
+      status: stub
+      description: podcast guest and topic intake
+    - id: pr_pitch_intake
+      status: stub
+      description: PR pitch assessment
+    - id: publishing_intake
+      status: stub
+      description: book publishing intake
+    - id: social_media_intake
+      status: stub
+      description: social media strategy intake
+    - id: source_intake
+      status: stub
+      description: source credibility assessment
+    - id: story_intake
+      status: stub
+      description: news story intake and assessment
+  medical:
+    total: 16
+    active: 1
+    packs:
+    - id: chronic_disease_mgmt
+      status: stub
+      description: ongoing condition monitoring intake
+    - id: clinical_decision
+      status: active
+      description: AI-powered patient intake that captures symptoms, collects history, triages urgency, routes to the right specialist, and produces a structured intake summary — before the patient ever sees a provider.
+    - id: clinical_triage
+      status: stub
+      description: symptom intake and urgency routing
+    - id: clinical_trial_screen
+      status: stub
+      description: trial eligibility screening
+    - id: discharge_planning
+      status: stub
+      description: post-hospitalization care planning
+    - id: emergency_triage
+      status: stub
+      description: ER severity classification
+    - id: end_of_life_planning
+      status: stub
+      description: advance directive and care planning
+    - id: geriatric_assessment
+      status: stub
+      description: elderly patient functional evaluation
+    - id: insurance_prior_auth
+      status: stub
+      description: prior authorization intake
+    - id: medication_review
+      status: stub
+      description: polypharmacy and interaction check
+    - id: patient_intake
+      status: stub
+      description: new patient registration and history
+    - id: pediatric_intake
+      status: stub
+      description: child patient assessment
+    - id: referral_intake
+      status: stub
+      description: specialist referral assessment
+    - id: second_opinion_intake
+      status: stub
+      description: second opinion case review
+    - id: surgical_consent
+      status: stub
+      description: pre-surgical informed consent protocol
+    - id: telehealth_intake
+      status: stub
+      description: remote consultation intake
+  mental_health:
+    total: 15
+    active: 0
+    packs:
+    - id: adhd_assessment
+      status: stub
+      description: attention deficit evaluation
+    - id: anxiety_assessment
+      status: stub
+      description: GAD and panic disorder screening
+    - id: cognitive_assessment
+      status: stub
+      description: memory and cognitive function screen
+    - id: couples_intake
+      status: stub
+      description: relationship therapy initial session
+    - id: crisis_assessment
+      status: stub
+      description: suicide risk and safety planning
+    - id: depression_screen
+      status: stub
+      description: PHQ-9 structured intake
+    - id: discharge_planning_mh
+      status: stub
+      description: mental health discharge protocol
+    - id: eating_disorder_intake
+      status: stub
+      description: ED history and severity assessment
+    - id: family_therapy_intake
+      status: stub
+      description: family systems assessment
+    - id: grief_intake
+      status: stub
+      description: bereavement and loss assessment
+    - id: medication_management
+      status: stub
+      description: psychiatric medication review
+    - id: substance_abuse_intake
+      status: stub
+      description: addiction history and severity
+    - id: therapeutic_intake
+      status: stub
+      description: new client psychological assessment
+    - id: therapy_progress
+      status: stub
+      description: ongoing session structured check-in
+    - id: trauma_intake
+      status: stub
+      description: PTSD and trauma history screening
+  personal:
+    total: 16
+    active: 1
+    packs:
+    - id: career_coaching
+      status: stub
+      description: career development intake
+    - id: digital_detox
+      status: stub
+      description: digital wellness intake
+    - id: elder_care_intake
+      status: stub
+      description: elder care needs assessment
+    - id: end_of_life_personal
+      status: stub
+      description: personal legacy planning
+    - id: financial_planning_ind
+      status: stub
+      description: personal financial planning
+    - id: life_coaching
+      status: stub
+      description: life coaching intake
+    - id: memoir_intake
+      status: stub
+      description: personal memoir intake
+    - id: nutrition_coaching
+      status: stub
+      description: nutrition coaching intake
+    - id: parenting_intake
+      status: stub
+      description: parenting support intake
+    - id: personal_training
+      status: stub
+      description: fitness and training intake
+    - id: productivity_intake
+      status: stub
+      description: productivity coaching intake
+    - id: relationship_intake
+      status: stub
+      description: relationship coaching intake
+    - id: rituals
+      status: active
+      description: Daily mood tracking, gratitude, affirmations, readings, breathwork, and therapeutic techniques. Nine rituals that reward showing up.
+    - id: sleep_assessment
+      status: stub
+      description: sleep health intake
+    - id: spiritual_intake
+      status: stub
+      description: spiritual direction intake
+    - id: stress_management
+      status: stub
+      description: stress and wellness intake
+  real_estate:
+    total: 16
+    active: 1
+    packs:
+    - id: appraisal_intake
+      status: stub
+      description: property appraisal intake
+    - id: buyer_intake
+      status: stub
+      description: home buyer needs assessment
+    - id: commercial_intake
+      status: stub
+      description: commercial real estate intake
+    - id: eviction_intake
+      status: stub
+      description: eviction process intake
+    - id: foreclosure_intake
+      status: stub
+      description: foreclosure assessment and options
+    - id: hoa_dispute
+      status: stub
+      description: HOA complaint and resolution
+    - id: home_inspection_intake
+      status: stub
+      description: inspection findings review
+    - id: investment_property
+      status: stub
+      description: investment property analysis
+    - id: lease_intake
+      status: stub
+      description: rental application and screening
+    - id: mortgage_intake
+      status: stub
+      description: mortgage qualification intake
+    - id: property_assessment
+      status: stub
+      description: property condition and value intake
+    - id: real_estate
+      status: active
+      description: Your real estate numbers person. Property analysis, investment calculators, market comparison, buyer profiling, and advisor briefs — with every assumption visible and adjustable.
+    - id: relocation_intake
+      status: stub
+      description: corporate relocation needs
+    - id: seller_intake
+      status: stub
+      description: listing and pricing consultation
+    - id: title_review
+      status: stub
+      description: title search and issue intake
+    - id: zoning_intake
+      status: stub
+      description: zoning and land use assessment
+  research:
+    total: 17
+    active: 2
+    packs:
+    - id: base_quantitative
+      status: active
+      description: {{DESCRIPTION}}
+    - id: base_simulator
+      status: active
+      description: {{One-line description of the strategic simulation.}}
+    - id: clinical_research_intake
+      status: stub
+      description: clinical research intake
+    - id: collaboration_intake
+      status: stub
+      description: research collaboration intake
+    - id: conference_submission
+      status: stub
+      description: conference paper intake
+    - id: data_analysis_intake
+      status: stub
+      description: statistical analysis intake
+    - id: data_collection_intake
+      status: stub
+      description: data collection protocol
+    - id: grant_proposal_intake
+      status: stub
+      description: research grant intake
+    - id: irb_intake
+      status: stub
+      description: IRB/ethics review intake
+    - id: lab_onboarding
+      status: stub
+      description: research lab onboarding
+    - id: literature_review
+      status: stub
+      description: systematic literature review
+    - id: patent_intake
+      status: stub
+      description: invention disclosure intake
+    - id: peer_review
+      status: stub
+      description: manuscript peer review
+    - id: research_intake
+      status: stub
+      description: research project intake
+    - id: survey_design
+      status: stub
+      description: survey design and review
+    - id: tech_transfer_intake
+      status: stub
+      description: technology transfer intake
+    - id: thesis_supervision
+      status: stub
+      description: thesis supervision intake
+  sales:
+    total: 17
+    active: 3
+    packs:
+    - id: account_planning
+      status: stub
+      description: strategic account review
+    - id: campaign_builder
+      status: active
+      description: Turn an idea into a launch plan. Audience profiling, positioning, channel strategy, content planning, and a ready-to-execute campaign brief — from concept to calendar.
+    - id: churn_intake
+      status: stub
+      description: at-risk account assessment
+    - id: cold_outreach_qualify
+      status: stub
+      description: outbound lead qualification
+    - id: competitive_analysis
+      status: stub
+      description: win/loss and competitive intake
+    - id: customer_success_intake
+      status: stub
+      description: onboarding and health check
+    - id: customer_support
+      status: active
+      description: AI-powered tier-1 customer support — issue resolution, intelligent escalation, structured handoff summaries.
+    - id: deal_review
+      status: stub
+      description: pipeline deal inspection
+    - id: demo_qualification
+      status: stub
+      description: demo readiness and fit screen
+    - id: discovery_call
+      status: stub
+      description: structured sales discovery
+    - id: lead_qualification
+      status: active
+      description: AI-powered inbound lead qualification — discovery conversations, scored leads, AE routing, with auth-gated sales training mode.
+    - id: negotiation_prep
+      status: stub
+      description: deal term and walkaway preparation
+    - id: partnership_intake
+      status: stub
+      description: partner and channel assessment
+    - id: pricing_review
+      status: stub
+      description: custom pricing and discount approval
+    - id: proposal_review
+      status: stub
+      description: RFP and proposal assessment
+    - id: renewal_review
+      status: stub
+      description: contract renewal assessment
+    - id: upsell_discovery
+      status: stub
+      description: expansion opportunity intake
+  social_work:
+    total: 15
+    active: 0
+    packs:
+    - id: adoption_intake
+      status: stub
+      description: adoption process intake
+    - id: case_intake
+      status: stub
+      description: social services case intake
+    - id: crisis_intervention
+      status: stub
+      description: crisis intervention protocol
+    - id: disability_services
+      status: stub
+      description: disability services intake
+    - id: domestic_violence_intake
+      status: stub
+      description: DV case intake and safety planning
+    - id: donor_intake
+      status: stub
+      description: donor relationship intake
+    - id: food_assistance
+      status: stub
+      description: food assistance eligibility
+    - id: foster_care_intake
+      status: stub
+      description: foster placement intake
+    - id: grant_writing_intake
+      status: stub
+      description: grant application intake
+    - id: housing_intake
+      status: stub
+      description: housing assistance intake
+    - id: program_evaluation
+      status: stub
+      description: program impact assessment
+    - id: refugee_intake
+      status: stub
+      description: refugee services intake
+    - id: substance_recovery
+      status: stub
+      description: recovery services intake
+    - id: veteran_services
+      status: stub
+      description: veteran benefits and services intake
+    - id: volunteer_intake
+      status: stub
+      description: volunteer screening and placement
+  sports:
+    total: 15
+    active: 0
+    packs:
+    - id: athlete_intake
+      status: stub
+      description: athlete assessment and profiling
+    - id: coaching_intake
+      status: stub
+      description: coaching needs assessment
+    - id: contract_intake
+      status: stub
+      description: athlete contract intake
+    - id: event_operations
+      status: stub
+      description: sporting event intake
+    - id: facility_intake
+      status: stub
+      description: facility needs assessment
+    - id: injury_intake
+      status: stub
+      description: sports injury assessment
+    - id: media_intake
+      status: stub
+      description: sports media intake
+    - id: mental_performance
+      status: stub
+      description: sports psychology intake
+    - id: nutrition_intake
+      status: stub
+      description: sports nutrition assessment
+    - id: officiating_intake
+      status: stub
+      description: official certification intake
+    - id: performance_assessment
+      status: stub
+      description: athletic performance evaluation
+    - id: recruiting_intake
+      status: stub
+      description: athlete recruiting screen
+    - id: scouting_report
+      status: stub
+      description: player scouting protocol
+    - id: sponsorship_intake
+      status: stub
+      description: sponsorship assessment
+    - id: team_assessment
+      status: stub
+      description: team performance evaluation

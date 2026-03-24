@@ -1,0 +1,9 @@
+id: mental_performance
+name: Mental Performance Coaching Intake
+category: sports
+status: active
+description: Mental performance coaching intake for sports psychologists and mental performance consultants beginning a mental performance engagement with an athlete. Evaluates the mental performance profile, the competitive mindset, the performance challenges, the mental skills, and the goals to produce a mental performance intake profile with skill priorities and development plan. Not clinical advice.
+deliverable: mental_performance_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

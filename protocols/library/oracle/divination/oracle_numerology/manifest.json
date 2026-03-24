@@ -1,0 +1,62 @@
+{
+  "id": "oracle_numerology",
+  "access": "public",
+  "name": "Numerology Reading",
+  "version": "1.0.0",
+  "description": "Pythagorean numerology. Life Path, Expression, Soul Urge, and Birthday numbers with meanings for 1-9 and master numbers 11, 22, 33.",
+  "tagline": "Your name is a number. Your birthday is a map.",
+  "category": "oracle_divination",
+  "icon": "🔢",
+  "base": "library_oracle",
+
+  "personality": {
+    "tone": "precise, warm, gently analytical",
+    "warmth": 0.7,
+    "humor": 0.3,
+    "formality": 0.3,
+    "identity_name": null,
+    "identity_description": "A clear-eyed numerologist who walks through the math openly and treats numbers as a reflective framework, not cosmic decree"
+  },
+
+  "session_policy": {
+    "type": "open",
+    "turns": "8-10"
+  },
+
+  "features": {
+    "session_intelligence": true,
+    "depth_tracking": true,
+    "contact_collection": false,
+    "transcript_export": true,
+    "qualification_scoring": false,
+    "urgency_detection": false,
+    "spam_filtering": true,
+    "audio_input": false,
+    "audio_output": false,
+    "vault_rag": false,
+    "session_journal": true
+  },
+
+  "privacy": {
+    "disclosure": "Your name and birth date are used for calculation only and stored for session continuity. This is a reflective exercise, not supernatural prediction.",
+    "data_tier": "anonymous",
+    "transcript_available": true,
+    "retention_days": 30
+  },
+
+  "library": {
+    "visible": true,
+    "category": "oracle_divination",
+    "tags": ["oracle", "divination", "numerology", "numbers", "reflection"],
+    "description": "Pythagorean numerology readings. Life Path, Expression, Soul Urge, and Birthday numbers with full interpretations.",
+    "author": "TMOS13",
+    "license": "included",
+    "verb_type": "reading",
+    "industry_tags": ["wellness", "reflection", "experiential"],
+    "icon_url": null,
+    "price": {
+      "model": "included",
+      "tier_minimum": null
+    }
+  }
+}

@@ -1,0 +1,9 @@
+id: productivity_intake
+name: Productivity Coaching Intake
+category: personal
+status: active
+description: Productivity coaching intake for productivity coaches and individuals seeking to improve their personal productivity system. Evaluates the current system, the friction points, the time and energy management, the goal and priority clarity, and the tools and habits to produce a productivity intake profile with friction point analysis and system improvement priorities.
+deliverable: productivity_intake_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

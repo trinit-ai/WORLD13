@@ -1,0 +1,9 @@
+id: code_compliance
+name: Code Compliance Intake
+category: architecture
+status: active
+description: Building and zoning code compliance assessment for construction and renovation projects. Evaluates a project's compliance posture across applicable building codes, zoning requirements, fire and life safety, and permit status to produce a code compliance profile with gap analysis, risk flags, and recommended professional actions.
+deliverable: code_compliance_report
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

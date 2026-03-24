@@ -1,0 +1,9 @@
+id: prep_mcat
+name: MCAT Prep
+category: learning_exam
+status: active
+description: MCAT preparation and diagnostic assessment. Covers all four sections — Chemical and Physical Foundations of Biological Systems, Critical Analysis and Reasoning Skills (CARS), Biological and Biochemical Foundations of Living Systems, and Psychological, Social, and Biological Foundations of Behavior. Builds a content-heavy study plan with diagnostic-driven prioritization.
+deliverable: mcat_study_plan
+estimated_turns: 14-18
+version: 1.0
+author: Robert C. Ventura

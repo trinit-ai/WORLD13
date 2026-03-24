@@ -1,0 +1,9 @@
+id: complaint_intake
+name: Government Complaint Intake
+category: government
+status: active
+description: Government complaint intake for municipal complaint offices, ombudsman offices, and government service departments receiving a complaint from a member of the public. Evaluates the complaint type, jurisdiction, evidence, applicable process, and resolution pathway to produce a complaint intake profile with routing and response guidance.
+deliverable: complaint_intake_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

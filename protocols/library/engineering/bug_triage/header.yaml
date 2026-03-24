@@ -1,0 +1,9 @@
+id: bug_triage
+name: Bug Triage Intake
+category: engineering
+status: active
+description: Bug triage intake for engineering teams assessing an incoming defect report. Evaluates severity, reproducibility, impact scope, root cause hypothesis, affected components, and resolution priority to produce a bug triage profile with severity classification and recommended next steps.
+deliverable: bug_triage_profile
+estimated_turns: 6-10
+version: 1.0
+author: Robert C. Ventura

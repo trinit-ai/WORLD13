@@ -1,0 +1,9 @@
+id: interview_graduate_school
+name: Grad School Interview
+category: learning_interviews
+status: active
+description: Graduate school interview preparation session adapted for PhD, Masters, MBA, and MFA programs. Covers research fit, intellectual motivation, faculty alignment, and program-specific interview formats.
+deliverable: grad_school_interview_prep_brief
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

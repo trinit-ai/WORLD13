@@ -1,0 +1,9 @@
+id: form_financial_aid
+name: Financial Aid Application
+category: forms_financial
+status: active
+description: Guided completion of a financial aid application (FAFSA-style) capturing student information, dependency status, household details, income, assets, school selection, and enrollment information.
+deliverable: completed_form
+estimated_turns: "12-16"
+version: 1.0
+author: Robert C. Ventura

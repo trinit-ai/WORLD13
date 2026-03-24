@@ -1,0 +1,9 @@
+id: parent_school_age
+name: School Age Parent (4-12)
+category: parenting
+status: active
+description: School age parent session covering the 4-12 age range. Asks the child's specific age because a 4-year-old and a 12-year-old are different species. Covers friendships, academic engagement, screen time, emerging independence, and the long runway between toddlerhood and adolescence.
+deliverable: school_age_parent_session_summary
+estimated_turns: 8-10
+version: 1.0
+author: Robert C. Ventura

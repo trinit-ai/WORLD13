@@ -1,0 +1,9 @@
+id: exit_interview
+name: Exit Interview Intake
+category: hr
+status: active
+description: Exit interview intake for HR professionals conducting a structured exit interview with a departing employee. Evaluates departure reasons, engagement factors, management effectiveness, compensation and benefits feedback, and organizational improvement signals to produce an exit interview profile with retention intelligence and systemic issue flags.
+deliverable: exit_interview_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

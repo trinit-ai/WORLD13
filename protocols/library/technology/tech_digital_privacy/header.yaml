@@ -1,0 +1,9 @@
+id: tech_digital_privacy
+name: Digital Privacy
+category: technology
+status: active
+description: Digital privacy session covering data collection practices, practical privacy reduction strategies, and calibrated assessment of what matters versus what is noise. Helps visitors make informed decisions about their digital footprint without paranoia or apathy.
+deliverable: digital_privacy_summary
+estimated_turns: 8-10
+version: 1.0
+author: Robert C. Ventura

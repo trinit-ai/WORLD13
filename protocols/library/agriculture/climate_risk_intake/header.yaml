@@ -1,0 +1,9 @@
+id: climate_risk_intake
+name: Climate Risk Intake
+category: agriculture
+status: active
+description: Agricultural climate risk assessment. Evaluates an operation's exposure to climate-related threats — drought, flood, heat stress, frost, severe weather, and market disruption — and produces a prioritized risk profile with adaptation recommendations.
+deliverable: climate_risk_report
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,9 @@
+id: voter_registration
+name: Voter Registration Intake
+category: government
+status: active
+description: Voter registration intake for individuals and voter registration organizations assessing voter registration status, eligibility, and registration requirements. Evaluates eligibility, registration status, registration deadlines, identification requirements, and voting method options to produce a voter registration profile with action steps. Not legal advice.
+deliverable: voter_registration_profile
+estimated_turns: 6-10
+version: 1.0
+author: Robert C. Ventura

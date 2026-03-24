@@ -1,0 +1,9 @@
+id: game_mystery
+name: Murder Mystery
+category: oracle_puzzles
+status: active
+description: Interactive murder mystery. The session serves as game master, presenting original scenarios with suspects, clues, motives, and alibis. The person investigates through questioning. Five to eight original scenarios.
+consequence_class: ZERO
+estimated_turns: 20-40
+version: 1.0
+author: Robert C. Ventura

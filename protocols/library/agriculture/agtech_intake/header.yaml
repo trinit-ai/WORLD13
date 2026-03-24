@@ -1,0 +1,9 @@
+id: agtech_intake
+name: AgTech Intake
+category: agriculture
+status: active
+description: Agricultural technology needs assessment. Evaluates a farm or ag operation's readiness to adopt new technology — precision agriculture, IoT sensors, automation, drone systems, soil analytics, and farm management platforms. Produces a technology readiness report with prioritized recommendations.
+deliverable: tech_readiness_report
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

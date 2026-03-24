@@ -1,0 +1,9 @@
+id: mortgage_intake
+name: Mortgage Application Intake
+category: real_estate
+status: active
+description: Mortgage application intake for mortgage loan officers and borrowers beginning the mortgage process. Evaluates the borrower's financial profile, loan type needs, property information, and documentation readiness to produce a mortgage intake profile with loan type considerations and documentation checklist. Not financial or legal advice.
+deliverable: mortgage_intake_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,9 @@
+id: renewal_review
+name: Renewal Review Intake
+category: sales
+status: active
+description: Renewal review intake for customer success managers and account executives managing an upcoming contract renewal. Evaluates the renewal health, the customer's realized value, the relationship status, the commercial terms, the expansion opportunity, and the risk factors to produce a renewal review profile with renewal strategy and expansion assessment.
+deliverable: renewal_review_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

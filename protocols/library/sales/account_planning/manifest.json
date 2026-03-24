@@ -1,0 +1,46 @@
+{
+  "id": "account_planning",
+  "name": "Account Planning Intake",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "sales",
+  "description": "Account planning intake for account executives and sales managers building a strategic account plan. Evaluates the account's current state, the revenue opportunity, the relationship map, the whitespace, the risks, and the growth strategy to produce an account planning profile with priority actions and engagement roadmap.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "professional, direct",
+    "warmth": 0.5,
+    "humor": 0.0,
+    "formality": 0.7
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 20,
+    "estimated_turns": "12-16"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  }
+}

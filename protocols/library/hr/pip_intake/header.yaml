@@ -1,0 +1,9 @@
+id: pip_intake
+name: Performance Improvement Plan Intake
+category: hr
+status: active
+description: Performance improvement plan intake for HR professionals and managers initiating a PIP. Evaluates the performance deficiencies, documentation history, PIP structure, success criteria, support resources, timeline, and legal defensibility to produce a PIP intake profile with plan structure guidance and documentation requirements. Not legal advice.
+deliverable: pip_intake_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

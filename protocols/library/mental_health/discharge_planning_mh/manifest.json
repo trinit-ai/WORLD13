@@ -1,0 +1,46 @@
+{
+  "id": "discharge_planning_mh",
+  "name": "Mental Health Discharge Planning Intake",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "mental_health",
+  "description": "Mental health discharge planning intake for clinicians and case managers planning a discharge from psychiatric inpatient, residential, or intensive outpatient mental health treatment. Evaluates the clinical stability, the safety plan, the step-down care, the support system, the medication plan, and the crisis resources to produce a mental health discharge planning profile with safe discharge criteria and aftercare coordination requirements. Not clinical advice.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "professional, direct",
+    "warmth": 0.5,
+    "humor": 0.0,
+    "formality": 0.7
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 18,
+    "estimated_turns": "10-14"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  }
+}

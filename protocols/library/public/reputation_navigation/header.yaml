@@ -1,0 +1,19 @@
+id: reputation_navigation
+name: Reputation Navigation
+category: public
+turns: "10-14"
+version: "1.0"
+author: Robert C. Ventura
+company: "TMOS13, LLC"
+description: >
+  Navigating a situation affecting reputation — public mistake, false narrative,
+  crisis communication. Distinguishes defending against false narrative from
+  minimizing genuine accountability.
+kill_patterns:
+  - spin doctoring
+  - misleading
+  - minimizing genuine accountability
+  - scorched-earth response
+  - denial of legitimate criticism
+completion: experiential
+completion_signal: "the person has a clear, honest strategy for the reputational situation"

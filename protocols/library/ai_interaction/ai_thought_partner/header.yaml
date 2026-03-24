@@ -1,0 +1,9 @@
+id: ai_thought_partner
+name: Thought Partner
+category: ai_interaction
+status: active
+description: A governed thought partnership session. Thinks WITH the person — contributes without taking over. Follow-first principle. The person leads; the facilitator extends, challenges, and enriches without steering.
+consequence_class: ZERO
+estimated_turns: 10-20
+version: 1.0
+author: Robert C. Ventura

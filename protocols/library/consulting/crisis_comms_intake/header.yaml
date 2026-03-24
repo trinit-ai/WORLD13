@@ -1,0 +1,9 @@
+id: crisis_comms_intake
+name: Crisis Communications Intake
+category: consulting
+status: active
+description: Crisis communications intake for organizations managing an active or emerging reputational, operational, legal, or public safety event. Evaluates crisis type, current information posture, stakeholder exposure, media status, spokesperson readiness, legal coordination, and response timeline to produce a crisis communications profile with immediate action priorities and response framework.
+deliverable: crisis_communications_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

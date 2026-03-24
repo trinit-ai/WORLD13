@@ -1,0 +1,9 @@
+id: environmental_intake
+name: Environmental Intake
+category: agriculture
+status: active
+description: Agricultural environmental impact intake. Evaluates an operation's environmental footprint across water quality, air quality, soil health, and biodiversity — identifying compliance obligations, voluntary improvement opportunities, and regulatory exposure. Produces an environmental impact profile with prioritized action recommendations.
+deliverable: environmental_impact_report
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

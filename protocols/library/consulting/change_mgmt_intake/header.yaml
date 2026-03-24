@@ -1,0 +1,9 @@
+id: change_mgmt_intake
+name: Change Management Intake
+category: consulting
+status: active
+description: Change management engagement intake for organizational transformation initiatives. Evaluates a change initiative's type, scope, sponsorship quality, readiness posture, communication strategy, and resistance profile to produce a change management profile with gap analysis, risk flags, and recommended pre-launch actions.
+deliverable: change_management_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

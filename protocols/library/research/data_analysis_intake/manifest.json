@@ -1,0 +1,46 @@
+{
+  "id": "data_analysis_intake",
+  "name": "Research Data Analysis Intake",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "research",
+  "description": "Research data analysis intake for researchers and analysts planning or beginning a quantitative or qualitative data analysis. Evaluates the data, the analytic questions, the methodology, the software, the assumptions, and the reporting requirements to produce a data analysis intake profile with analytic plan and methodology flags.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "professional, direct",
+    "warmth": 0.5,
+    "humor": 0.0,
+    "formality": 0.7
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 18,
+    "estimated_turns": "10-14"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  }
+}

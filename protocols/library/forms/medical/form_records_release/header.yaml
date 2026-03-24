@@ -1,0 +1,9 @@
+id: form_records_release
+name: Medical Records Release
+category: forms_medical
+status: active
+description: Structured medical records release form collecting patient identity, releasing provider, recipient details, specific records requested with date range and type, purpose, format preference, expiration, and signature authorization. Information collection only — healthcare provider must review. Not medical advice.
+deliverable: completed_form
+estimated_turns: 6-8
+version: 1.0
+author: Robert C. Ventura

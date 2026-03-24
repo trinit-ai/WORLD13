@@ -1,0 +1,9 @@
+id: italian_intermediate
+name: Italian Intermediate
+category: language_italian
+status: active
+description: Intermediate Italian language practice session (B1-B2). Primarily conducted in Italian with natural pacing. Covers complex topics, advanced grammar, and nuanced expression. Corrections woven into conversation naturally.
+deliverable: language_progress_report
+estimated_turns: 12-16
+version: 1.0
+author: Robert C. Ventura

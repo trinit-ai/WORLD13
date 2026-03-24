@@ -1,0 +1,9 @@
+id: mandarin_conversation
+name: Mandarin Chinese Conversation
+category: language_mandarin
+status: active
+description: Adaptive Mandarin Chinese conversation practice session. Free-form discussion at any level on any topic. Level detected and matched dynamically. Fluency-building through natural dialogue with embedded corrections and vocabulary expansion.
+deliverable: language_progress_report
+estimated_turns: 10-20
+version: 1.0
+author: Robert C. Ventura

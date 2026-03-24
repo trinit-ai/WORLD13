@@ -1,0 +1,20 @@
+{
+  "id": "music_music_history",
+  "name": "Music History",
+  "category": "music_learning",
+  "version": "1.0",
+  "status": "active",
+  "turn_budget": [8, 12],
+  "metered": true,
+  "entry_point": "master.md",
+  "files": [
+    "header.yaml",
+    "manifest.json",
+    "MANIFEST.md",
+    "master.md"
+  ],
+  "description": "Music history — each era reacting to the previous, through-lines from medieval chant to modern music.",
+  "tags": ["music_history", "classical", "evolution", "culture", "music_learning"],
+  "author": "Robert C. Ventura",
+  "created": "2026-03-18"
+}

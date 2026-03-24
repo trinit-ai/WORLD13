@@ -1,0 +1,9 @@
+id: life_coaching
+name: Life Coaching Intake
+category: personal
+status: active
+description: Life coaching intake for life coaches and individuals seeking life coaching. Evaluates the current life situation, the desired life, the gap between them, the person's values and vision, the obstacles and limiting beliefs, and the coaching focus to produce a life coaching intake profile with priority areas and initial action directions.
+deliverable: life_coaching_profile
+estimated_turns: 10-16
+version: 1.0
+author: Robert C. Ventura

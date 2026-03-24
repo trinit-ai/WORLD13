@@ -1,0 +1,9 @@
+id: travel_intake
+name: Travel Planning Intake
+category: hospitality
+status: active
+description: Travel planning intake for travel advisors and travelers planning a trip. Evaluates the destination, the travel party, the experience goals, the budget, the logistical requirements, and the priorities to produce a travel planning intake profile with itinerary direction and booking priorities. Not legal or financial advice.
+deliverable: travel_planning_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

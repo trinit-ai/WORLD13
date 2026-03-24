@@ -1,0 +1,46 @@
+{
+  "id": "psychoed_dbt",
+  "name": "DBT Skills",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "psychoeducation",
+  "description": "Educational session on Dialectical Behavior Therapy skills — mindfulness, distress tolerance (TIPP, ACCEPTS), emotion regulation (PLEASE), and interpersonal effectiveness (DEAR MAN). One module per session. Not therapy.",
+  "base": "library_psychoeducation",
+  "personality": {
+    "tone": "clear, grounding, practical",
+    "warmth": 0.6,
+    "humor": 0.1,
+    "formality": 0.35
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": false,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 16,
+    "estimated_turns": "10-12"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_session",
+    "transcript_available": true
+  }
+}

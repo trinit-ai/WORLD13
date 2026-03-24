@@ -1,0 +1,9 @@
+id: ai_sparring_partner
+name: Intellectual Sparring
+category: ai_interaction
+status: active
+description: A governed intellectual sparring session. Full force intellectual engagement — follows implications, exposes inconsistencies, demands precision. No fixed position, no opposition requirement. Pure rigor.
+consequence_class: ZERO
+estimated_turns: 10-20
+version: 1.0
+author: Robert C. Ventura

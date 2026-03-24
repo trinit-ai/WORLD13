@@ -1,0 +1,9 @@
+id: decision_session
+name: Decision Session
+category: self
+status: active
+description: Clarify a significant decision by surfacing real options and reaching clarity without deciding for the person.
+deliverable: decision_brief
+estimated_turns: "10-14"
+version: 1.0
+author: Robert C. Ventura

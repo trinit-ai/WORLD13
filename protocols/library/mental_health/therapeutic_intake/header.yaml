@@ -1,0 +1,9 @@
+id: therapeutic_intake
+name: Therapy Intake Assessment
+category: mental_health
+status: active
+description: Therapy intake assessment for licensed mental health professionals conducting an initial therapy intake. Evaluates the presenting concerns, the treatment history, the client's goals, the clinical history, the social context, and the therapeutic fit to produce a therapy intake profile with presenting problem summary and treatment planning considerations. Not clinical advice.
+deliverable: therapy_intake_profile
+estimated_turns: 12-18
+version: 1.0
+author: Robert C. Ventura

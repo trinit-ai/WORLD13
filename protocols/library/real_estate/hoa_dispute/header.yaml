@@ -1,0 +1,9 @@
+id: hoa_dispute
+name: HOA Dispute Intake
+category: real_estate
+status: active
+description: HOA dispute intake for homeowners and HOA board members navigating a homeowner association dispute. Evaluates the dispute type, the governing documents, the violation or assessment at issue, the resolution process, and the escalation options to produce an HOA dispute intake profile with resolution pathway and documentation requirements. Not legal advice.
+deliverable: hoa_dispute_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

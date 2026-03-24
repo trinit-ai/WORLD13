@@ -1,0 +1,9 @@
+id: event_operations
+name: Sports Event Operations Intake
+category: sports
+status: active
+description: Sports event operations intake for event directors and sports administrators planning or reviewing a sporting event. Evaluates the event scope, venue, operations plan, safety and medical preparation, staffing, logistics, and contingency planning to produce an event operations intake profile with operational priorities and safety checklist.
+deliverable: event_operations_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

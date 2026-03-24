@@ -1,0 +1,9 @@
+id: grant_assessment
+name: Grant Assessment Intake
+category: finance
+status: active
+description: Grant assessment intake for nonprofits, researchers, and organizations evaluating a grant opportunity or preparing a grant application. Evaluates eligibility, alignment with funder priorities, organizational capacity, reporting requirements, and application readiness to produce a grant assessment profile with fit analysis and risk flags.
+deliverable: grant_assessment_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

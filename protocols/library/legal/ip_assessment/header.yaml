@@ -1,0 +1,9 @@
+id: ip_assessment
+name: Intellectual Property Assessment Intake
+category: legal
+status: active
+description: Intellectual property assessment intake for IP attorneys and business professionals assessing an intellectual property portfolio or a specific IP matter. Evaluates the IP asset types, ownership, registration status, infringement concerns, freedom to operate, and protection strategy to produce an IP assessment profile with protection priorities and action requirements. Not legal advice.
+deliverable: ip_assessment_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

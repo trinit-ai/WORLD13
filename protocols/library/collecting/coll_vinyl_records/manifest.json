@@ -1,0 +1,13 @@
+{
+  "id": "coll_vinyl_records",
+  "name": "Vinyl Collecting",
+  "slug": "vinyl-records",
+  "category": "collecting",
+  "version": "1.0",
+  "status": "active",
+  "turn_budget": 12,
+  "metered": true,
+  "description": "Vinyl record collecting companion covering grading, pressings, matrix numbers, care, and marketplace navigation.",
+  "tags": ["collecting", "vinyl", "records", "music", "grading"],
+  "files": ["header.yaml", "manifest.json", "MANIFEST.md", "master.md"]
+}

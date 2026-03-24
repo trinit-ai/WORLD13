@@ -1,0 +1,9 @@
+id: conservation_intake
+name: Conservation Intake
+category: agriculture
+status: active
+description: Agricultural conservation program intake. Evaluates an operation's eligibility and fit for USDA conservation programs — EQIP, CRP, RCPP, CSP, and related initiatives. Assesses land, practices, and resource concerns to produce a program fit report with enrollment guidance.
+deliverable: conservation_program_report
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

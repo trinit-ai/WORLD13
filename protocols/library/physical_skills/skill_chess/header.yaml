@@ -1,0 +1,18 @@
+id: skill_chess
+name: Chess Session
+category: physical_skills
+version: "1.0"
+status: active
+turn_budget: [10, 16]
+metered: true
+description: >
+  Chess instruction and analysis — openings, tactics, endgames, strategy.
+  Can review PGN notation games. Beginner through advanced levels.
+tags:
+  - chess
+  - strategy
+  - tactics
+  - games
+  - physical_skills
+author: Robert C. Ventura
+created: "2026-03-18"

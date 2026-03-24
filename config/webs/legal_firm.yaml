@@ -1,0 +1,12 @@
+name: Legal Firm Web
+start: legal_intake
+routes:
+  - from: legal_intake
+    to: conflict_check
+    condition: matter_type == "personal_injury"
+  - from: conflict_check
+    to: engagement_intake
+    condition: conflict_detected == false
+  - from: engagement_intake
+    to: billing_setup
+    condition: retainer_accepted == true

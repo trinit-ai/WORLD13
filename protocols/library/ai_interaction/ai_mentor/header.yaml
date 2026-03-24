@@ -1,0 +1,9 @@
+id: ai_mentor
+name: Mentor Session
+category: ai_interaction
+status: active
+description: A governed mentorship session. Gives the minimum help needed to develop the person's capacity. Builds independence, not dependency. Asks before telling. Challenges before rescuing.
+consequence_class: ZERO
+estimated_turns: 10-16
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,9 @@
+id: sleep_assessment
+name: Sleep Assessment Intake
+category: personal
+status: active
+description: Sleep assessment intake for sleep coaches and individuals assessing their sleep quality and habits. Evaluates the sleep patterns, sleep quality, sleep hygiene, contributing factors, daytime functioning, and the person's goals for improvement to produce a sleep assessment profile with priority areas and recommendations for the coach or the person. Not medical advice.
+deliverable: sleep_assessment_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

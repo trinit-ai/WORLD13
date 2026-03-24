@@ -1,0 +1,9 @@
+id: therapy_seeker
+name: Finding Therapy
+category: professional_consumer
+status: active
+description: Prepares individuals considering or beginning therapy by identifying needs, matching criteria, navigating insurance, and preparing for a first session.
+deliverable: therapy_readiness_profile
+estimated_turns: "8-12"
+version: 1.0
+author: Robert C. Ventura

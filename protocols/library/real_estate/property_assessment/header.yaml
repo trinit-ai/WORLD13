@@ -1,0 +1,9 @@
+id: property_assessment
+name: Property Tax Assessment Review Intake
+category: real_estate
+status: active
+description: Property tax assessment review intake for homeowners and property owners reviewing or contesting a property tax assessment. Evaluates the assessed value, the basis for the assessment, comparable properties, and the appeal process to produce a property assessment review profile with appeal basis and deadline requirements. Not legal advice.
+deliverable: property_assessment_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

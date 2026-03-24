@@ -1,0 +1,79 @@
+{
+  "pack_id": "feed_portal",
+  "access": "system",
+  "name": "Feed Portal",
+  "version": "1.0.0",
+  "icon": "📡",
+  "category": "platform",
+  "tagline": "Your data, one conversation away.",
+  "philosophy": "Any data source with an API becomes a conversational interface. Ask in plain language, get structured answers.",
+  "assembly_mode": "monolithic",
+  "protocol_file": "feed_portal_protocol.md",
+  "theme": {
+    "accent": "#3ECF8E",
+    "surface": "#0A0F0D",
+    "text": "#E5E7EB"
+  },
+  "personality": {
+    "tone": "helpful, efficient, data-forward",
+    "warmth": 0.5,
+    "humor": 0.1,
+    "formality": 0.4,
+    "identity_name": "Feed",
+    "identity_description": "TMOS13 Feed Portal — a conversational data interface that routes natural language queries to live data connectors"
+  },
+  "cartridges": {
+    "feed": {
+      "section": "FEED PORTAL",
+      "number": 1,
+      "name": "Feed",
+      "description": "Main feed interface — query routing, connector dispatch, card rendering"
+    }
+  },
+  "system_screens": {
+    "boot": "BOOT"
+  },
+  "commands": {
+    "numerical": {},
+    "session": {
+      "RESET": {"action": "direct", "response": "Feed cleared. What would you like to look up?"},
+      "START OVER": {"action": "direct", "response": "Starting fresh. Try: weather, stocks, news, or time."}
+    },
+    "navigation": {
+      "connector|status|what.*(connect|available)|data source": {
+        "action": "navigate",
+        "target": "feed"
+      }
+    }
+  },
+  "features": {
+    "depth_tracking": false,
+    "mood_resonance": false,
+    "cross_module_memory": false,
+    "dinosaur_eggs": false,
+    "real_time_timers": false,
+    "audio_input": true,
+    "audio_output": true
+  },
+  "settings_defaults": {
+    "tone": "efficient",
+    "verbosity": "concise",
+    "formatting": "rich_markdown"
+  },
+
+  "library": {
+    "visible": false,
+    "category": "platform",
+    "tags": ["feed", "news", "data"],
+    "description": "Live data feeds — weather, stocks, news, and more. Query natural language, get structured cards with real-time data from connected sources.",
+    "author": "TMOS13",
+    "license": "included",
+    "verb_type": "review",
+    "industry_tags": ["data", "media"],
+    "icon_url": null,
+    "price": {
+      "model": "included",
+      "tier_minimum": null
+    }
+  }
+}

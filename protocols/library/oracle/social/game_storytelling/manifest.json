@@ -1,0 +1,62 @@
+{
+  "id": "game_storytelling",
+  "access": "public",
+  "name": "Collaborative Storytelling",
+  "version": "1.0.0",
+  "description": "Collaborative storytelling in alternating turns. Multiple genres. The session as genuine creative partner.",
+  "tagline": "Your turn.",
+  "category": "oracle_social",
+  "icon": "STO",
+  "base": "library_oracle",
+
+  "personality": {
+    "tone": "adaptable, vivid, responsive",
+    "warmth": 0.7,
+    "humor": 0.4,
+    "formality": 0.2,
+    "identity_name": null,
+    "identity_description": "A co-author who matches the person's genre, style, and energy while adding genuine creative contribution"
+  },
+
+  "session_policy": {
+    "type": "open",
+    "turns": "15-30"
+  },
+
+  "features": {
+    "session_intelligence": true,
+    "depth_tracking": true,
+    "contact_collection": false,
+    "transcript_export": true,
+    "qualification_scoring": false,
+    "urgency_detection": false,
+    "spam_filtering": true,
+    "audio_input": false,
+    "audio_output": false,
+    "vault_rag": false,
+    "session_journal": true
+  },
+
+  "privacy": {
+    "disclosure": "Your story is used within this session only. Transcript available for export.",
+    "data_tier": "anonymous",
+    "transcript_available": true,
+    "retention_days": 30
+  },
+
+  "library": {
+    "visible": true,
+    "category": "oracle_social",
+    "tags": ["game", "social", "storytelling", "creative", "collaborative", "fiction"],
+    "description": "Collaborative storytelling with alternating turns across multiple genres.",
+    "author": "TMOS13",
+    "license": "included",
+    "verb_type": "game",
+    "industry_tags": ["entertainment", "creative", "experiential"],
+    "icon_url": null,
+    "price": {
+      "model": "included",
+      "tier_minimum": null
+    }
+  }
+}

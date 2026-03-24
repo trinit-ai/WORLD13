@@ -1,0 +1,65 @@
+{
+  "id": "sustainability_audit",
+  "name": "Agricultural Sustainability Audit",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "agriculture",
+  "description": "Whole-farm sustainability assessment. Synthesizes findings across an operation's soil health, water management, energy use, biodiversity, economic resilience, and social practices to produce a scored sustainability profile with improvement priorities and program eligibility flags. Designed to run downstream of other agriculture packs \u2014 vault inheritance pulls prior assessment findings directly.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "direct",
+    "warmth": 0.5,
+    "humor": 0.0,
+    "formality": 0.7
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": true,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 20,
+    "estimated_turns": "12-16"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  },
+  "deliverables": {
+    "enabled": true,
+    "types": [
+      {
+        "id": "farm_sustainability_report",
+        "name": "Farm Sustainability Report",
+        "description": "Generated farm sustainability report from intake session data.",
+        "trigger": {
+          "min_turns": 4,
+          "contact_required": false
+        },
+        "channels": [
+          "download"
+        ],
+        "include_transcript": true,
+        "include_state_snapshot": true
+      }
+    ]
+  }
+}

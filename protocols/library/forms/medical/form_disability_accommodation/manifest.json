@@ -1,0 +1,46 @@
+{
+  "id": "form_disability_accommodation",
+  "name": "Disability Accommodation Request",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "forms_medical",
+  "description": "Structured disability accommodation request form collecting employee or student identity, employer or institution, position or program, functional limitations (diagnosis disclosure NOT required per ADA), accommodations requested, why each accommodation is needed, prior accommodations, and requested start date. Information collection only — healthcare provider must review. Not medical advice.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "clear, precise, careful",
+    "warmth": 0.65,
+    "humor": 0.0,
+    "formality": 0.6
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 14,
+    "estimated_turns": "8-10"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  }
+}

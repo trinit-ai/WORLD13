@@ -1,0 +1,9 @@
+id: restaurant_intake
+name: Restaurant Guest Intake
+category: hospitality
+status: active
+description: Restaurant guest intake for fine dining restaurants, private dining coordinators, and hospitality-forward restaurants capturing guest preferences for an upcoming reservation. Evaluates occasion, dietary requirements, seating preferences, allergies, wine preferences, and special requests to produce a guest profile that enables a personalized dining experience.
+deliverable: restaurant_guest_profile
+estimated_turns: 6-10
+version: 1.0
+author: Robert C. Ventura

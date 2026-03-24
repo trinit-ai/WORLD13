@@ -1,0 +1,9 @@
+id: fraud_intake
+name: Fraud Investigation Intake
+category: finance
+status: active
+description: Fraud investigation intake for internal audit, legal counsel, and management initiating a fraud investigation. Evaluates the allegation, evidence preservation requirements, investigation scope, privilege structure, witness considerations, regulatory reporting obligations, and professional coordination to produce a fraud investigation intake profile with immediate action priorities and scope definition.
+deliverable: fraud_investigation_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

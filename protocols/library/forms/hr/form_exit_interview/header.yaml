@@ -1,0 +1,9 @@
+pack_id: form_exit_interview
+pack_name: "Exit Interview"
+category: forms_hr
+deliverable: completed_form
+version: "1.0"
+author: "Robert C. Ventura"
+company: "TMOS13, LLC"
+autonomy: zero
+turn_budget: 10

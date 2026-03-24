@@ -1,0 +1,9 @@
+id: regulatory_compliance
+name: Regulatory Compliance Intake
+category: legal
+status: active
+description: Regulatory compliance intake for compliance officers, general counsel, and regulatory attorneys assessing a compliance situation or initiating a compliance program review. Evaluates the regulatory framework, current compliance status, gap analysis, enforcement risk, and remediation priorities to produce a regulatory compliance profile with gap assessment and action priorities. Not legal advice.
+deliverable: regulatory_compliance_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

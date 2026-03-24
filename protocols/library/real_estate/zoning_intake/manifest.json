@@ -1,0 +1,46 @@
+{
+  "id": "zoning_intake",
+  "name": "Zoning and Land Use Intake",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "real_estate",
+  "description": "Zoning and land use intake for property owners, developers, and real estate professionals assessing the zoning status of a property or pursuing a zoning change. Evaluates the current zoning, the permitted uses, the proposed use or change, the variance or rezoning process, and the timeline to produce a zoning intake profile with use assessment and process requirements. Not legal advice.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "professional, direct",
+    "warmth": 0.5,
+    "humor": 0.0,
+    "formality": 0.7
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 16,
+    "estimated_turns": "8-12"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  }
+}

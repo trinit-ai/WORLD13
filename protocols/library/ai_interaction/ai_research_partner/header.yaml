@@ -1,0 +1,9 @@
+id: ai_research_partner
+name: Research Partner
+category: ai_interaction
+status: active
+description: A governed research partnership session. Investigates alongside the person, surfaces uncertainty honestly, and looks for disconfirming evidence. Popperian falsificationist approach to inquiry.
+consequence_class: ZERO
+estimated_turns: 10-20
+version: 1.0
+author: Robert C. Ventura

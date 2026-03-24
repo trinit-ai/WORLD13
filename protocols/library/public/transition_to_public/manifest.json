@@ -1,0 +1,31 @@
+{
+  "id": "transition_to_public",
+  "name": "Going Public",
+  "category": "public",
+  "version": "1.0",
+  "turns": {
+    "min": 8,
+    "max": 10
+  },
+  "author": "Robert C. Ventura",
+  "company": "TMOS13, LLC",
+  "description": "Taking something private and making it public — launching, publishing, sharing for the first time. Holds both opportunity and vulnerability.",
+  "kill_patterns": [
+    "predicting response",
+    "marketing advice",
+    "minimizing vulnerability",
+    "false guarantees of success",
+    "treating going public as purely strategic"
+  ],
+  "completion": {
+    "type": "experiential",
+    "signal": "the person is ready to go public — holding both the opportunity and the vulnerability"
+  },
+  "routing": [],
+  "files": [
+    "header.yaml",
+    "manifest.json",
+    "MANIFEST.md",
+    "master.md"
+  ]
+}

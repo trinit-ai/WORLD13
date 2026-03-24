@@ -1,0 +1,18 @@
+id: civic_preparation
+name: Civic Preparation
+category: public
+turns: "6-10"
+version: "1.0"
+author: Robert C. Ventura
+company: "TMOS13, LLC"
+description: >
+  Preparing for civic engagement — voting, public meetings, public comment,
+  meetings with elected officials. NON-PARTISAN — zero political advocacy.
+kill_patterns:
+  - political advocacy
+  - voter persuasion
+  - cynicism about civic engagement
+  - partisan framing
+  - telling the person how to vote
+completion: experiential
+completion_signal: "the person feels prepared to participate in their civic context"

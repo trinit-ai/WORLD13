@@ -1,0 +1,46 @@
+{
+  "id": "emergency_triage",
+  "name": "Emergency Triage Intake",
+  "version": "1.0.0",
+  "status": "active",
+  "access": "public",
+  "category": "medical",
+  "description": "Emergency triage intake for emergency department triage nurses and clinical staff conducting an initial emergency triage assessment. Evaluates the chief complaint, vital signs, acuity level, and immediate clinical needs to produce an emergency triage profile with acuity classification and immediate action requirements. Not medical advice. Emergency conditions route to immediate clinical response.",
+  "base": "library_intake",
+  "personality": {
+    "tone": "professional, direct",
+    "warmth": 0.5,
+    "humor": 0.0,
+    "formality": 0.7
+  },
+  "cartridges": [],
+  "commands": {
+    "session": {
+      "reset": {
+        "pattern": "^(reset|start over|restart|new session|clear)$",
+        "action": "reset_session"
+      },
+      "status": {
+        "pattern": "^(status|progress|where am i|summary)$",
+        "action": "show_status"
+      }
+    }
+  },
+  "features": {
+    "session_intelligence": true,
+    "contact_collection": true,
+    "deliverables_pipeline": false,
+    "session_journal": true,
+    "depth_tracking": true
+  },
+  "session_policy": {
+    "type": "metered",
+    "free_turns": 14,
+    "estimated_turns": "6-10"
+  },
+  "privacy": {
+    "disclosure": "A summary of this session will be available for review.",
+    "data_tier": "standard_intake",
+    "transcript_available": true
+  }
+}

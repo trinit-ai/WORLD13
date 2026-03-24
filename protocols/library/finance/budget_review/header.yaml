@@ -1,0 +1,9 @@
+id: budget_review
+name: Budget Review Intake
+category: finance
+status: active
+description: Budget review intake for finance leads, CFOs, and department heads conducting a budget review or planning cycle assessment. Evaluates budget methodology, variance analysis, assumption quality, forecasting reliability, departmental alignment, and reforecast triggers to produce a budget review profile with findings and recommendations.
+deliverable: budget_review_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

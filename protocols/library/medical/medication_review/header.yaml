@@ -1,0 +1,9 @@
+id: medication_review
+name: Medication Review Intake
+category: medical
+status: active
+description: Medication review intake for clinical pharmacists, clinical staff, and providers conducting a comprehensive medication review. Evaluates the complete medication list, indication alignment, potential interactions, adherence, side effects, and high-risk medications to produce a medication review profile with reconciliation findings and clinical flags for provider review. Not medical advice.
+deliverable: medication_review_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

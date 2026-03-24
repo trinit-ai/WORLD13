@@ -1,0 +1,20 @@
+{
+  "id": "news_history_context",
+  "name": "Historical Context",
+  "category": "news_literacy",
+  "version": "1.0",
+  "status": "active",
+  "turn_budget": [8, 12],
+  "metered": true,
+  "entry_point": "master.md",
+  "files": [
+    "header.yaml",
+    "manifest.json",
+    "MANIFEST.md",
+    "master.md"
+  ],
+  "description": "History as context for the present — patterns, precedents, forces. Non-partisan.",
+  "tags": ["history", "context", "current_events", "perspective", "news_literacy"],
+  "author": "Robert C. Ventura",
+  "created": "2026-03-18"
+}

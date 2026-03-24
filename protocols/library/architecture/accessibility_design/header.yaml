@@ -1,0 +1,9 @@
+id: accessibility_design
+name: Accessibility Design Intake
+category: architecture
+status: active
+description: Built environment and digital accessibility assessment. Evaluates a project's compliance posture and design intent across ADA, WCAG, and universal design principles — covering physical space, digital interfaces, and communication materials — to produce an accessibility profile with gap analysis, compliance risk flags, and prioritized remediation recommendations.
+deliverable: accessibility_design_report
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,31 @@
+{
+  "id": "reputation_navigation",
+  "name": "Reputation Navigation",
+  "category": "public",
+  "version": "1.0",
+  "turns": {
+    "min": 10,
+    "max": 14
+  },
+  "author": "Robert C. Ventura",
+  "company": "TMOS13, LLC",
+  "description": "Navigating a situation affecting reputation — public mistake, false narrative, crisis communication. Distinguishes defense from accountability-avoidance.",
+  "kill_patterns": [
+    "spin doctoring",
+    "misleading",
+    "minimizing genuine accountability",
+    "scorched-earth response",
+    "denial of legitimate criticism"
+  ],
+  "completion": {
+    "type": "experiential",
+    "signal": "the person has a clear, honest strategy for the reputational situation"
+  },
+  "routing": [],
+  "files": [
+    "header.yaml",
+    "manifest.json",
+    "MANIFEST.md",
+    "master.md"
+  ]
+}

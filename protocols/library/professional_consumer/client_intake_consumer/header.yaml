@@ -1,0 +1,9 @@
+id: client_intake_consumer
+name: Legal Client Preparation
+category: professional_consumer
+status: active
+description: Prepares individuals to engage effectively with legal counsel — situation clarity, documentation, expectations.
+deliverable: legal_preparation_brief
+estimated_turns: "8-12"
+version: 1.0
+author: Robert C. Ventura

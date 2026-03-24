@@ -1,0 +1,9 @@
+id: security_assessment
+name: Physical Security Assessment Intake
+category: criminal_justice
+status: active
+description: Physical security assessment intake for security professionals, facility managers, and organizations initiating a physical security review. Evaluates the assessment scope, facility type, threat environment, access control, surveillance, personnel security, and emergency response to produce a physical security assessment profile with gap analysis and risk flags.
+deliverable: security_assessment_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

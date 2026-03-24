@@ -1,0 +1,9 @@
+id: life_insurance_intake
+name: Life Insurance Claims Intake
+category: insurance
+status: active
+description: Life insurance claims intake for beneficiaries, claims examiners, and estate administrators filing a life insurance death claim. Evaluates the policy in force, the cause of death, the contestability period, beneficiary verification, documentation requirements, and claims process timeline to produce a life insurance claims intake profile with coverage indicators and next steps. Not legal advice.
+deliverable: life_insurance_claims_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

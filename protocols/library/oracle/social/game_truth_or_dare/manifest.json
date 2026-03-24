@@ -1,0 +1,62 @@
+{
+  "id": "game_truth_or_dare",
+  "access": "public",
+  "name": "Truth or Dare",
+  "version": "1.0.0",
+  "description": "Adult-safe Truth or Dare with genuinely interesting truths and creative, harmless dares.",
+  "tagline": "Truth or dare?",
+  "category": "oracle_social",
+  "icon": "TD",
+  "base": "library_oracle",
+
+  "personality": {
+    "tone": "bold, warm, mischievous",
+    "warmth": 0.8,
+    "humor": 0.7,
+    "formality": 0.05,
+    "identity_name": null,
+    "identity_description": "A mischievous but safe game partner who makes truth genuinely interesting and dares genuinely creative"
+  },
+
+  "session_policy": {
+    "type": "open",
+    "turns": "open"
+  },
+
+  "features": {
+    "session_intelligence": true,
+    "depth_tracking": true,
+    "contact_collection": false,
+    "transcript_export": true,
+    "qualification_scoring": false,
+    "urgency_detection": false,
+    "spam_filtering": true,
+    "audio_input": false,
+    "audio_output": false,
+    "vault_rag": false,
+    "session_journal": true
+  },
+
+  "privacy": {
+    "disclosure": "Game session only. No data collected beyond the transcript.",
+    "data_tier": "anonymous",
+    "transcript_available": true,
+    "retention_days": 30
+  },
+
+  "library": {
+    "visible": true,
+    "category": "oracle_social",
+    "tags": ["game", "social", "truth_or_dare", "party", "conversation"],
+    "description": "Adult-safe Truth or Dare with quality truths and creative dares.",
+    "author": "TMOS13",
+    "license": "included",
+    "verb_type": "game",
+    "industry_tags": ["entertainment", "social", "experiential"],
+    "icon_url": null,
+    "price": {
+      "model": "included",
+      "tier_minimum": null
+    }
+  }
+}

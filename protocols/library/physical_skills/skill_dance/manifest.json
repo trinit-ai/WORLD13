@@ -1,0 +1,20 @@
+{
+  "id": "skill_dance",
+  "name": "Dance Fundamentals",
+  "category": "physical_skills",
+  "version": "1.0",
+  "status": "active",
+  "turn_budget": [8, 10],
+  "metered": true,
+  "entry_point": "master.md",
+  "files": [
+    "header.yaml",
+    "manifest.json",
+    "MANIFEST.md",
+    "master.md"
+  ],
+  "description": "Dance fundamentals — salsa, tango, swing, waltz. Theory, counting, musicality, partner concepts.",
+  "tags": ["dance", "salsa", "tango", "swing", "waltz", "physical_skills"],
+  "author": "Robert C. Ventura",
+  "created": "2026-03-18"
+}

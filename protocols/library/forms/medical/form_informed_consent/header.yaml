@@ -1,0 +1,9 @@
+id: form_informed_consent
+name: Informed Consent Form
+category: forms_medical
+status: active
+description: Structured informed consent form collecting patient identity, procedure details, description, material risks (provider-completed section), benefits, alternatives, acknowledgment of understanding, and signatures. Information collection only — risks section completed by provider. Healthcare provider must review. Not medical advice.
+deliverable: completed_form
+estimated_turns: 6-8
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,9 @@
+id: personal_training
+name: Personal Training Intake
+category: personal
+status: active
+description: Personal training intake for fitness coaches and individuals starting a personal training engagement. Evaluates the fitness goals, current fitness level, training history, physical limitations, lifestyle context, and motivation to produce a personal training intake profile with goal assessment and program design considerations.
+deliverable: personal_training_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

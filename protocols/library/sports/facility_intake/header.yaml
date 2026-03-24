@@ -1,0 +1,9 @@
+id: facility_intake
+name: Sports Facility Intake
+category: sports
+status: active
+description: Sports facility intake for facility managers and sports administrators assessing or planning a sports facility. Evaluates the facility's condition, safety compliance, operational capacity, scheduling, maintenance needs, and capital improvement priorities to produce a sports facility intake profile with condition assessment and priority actions.
+deliverable: facility_intake_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

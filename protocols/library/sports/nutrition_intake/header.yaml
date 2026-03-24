@@ -1,0 +1,9 @@
+id: nutrition_intake
+name: Sports Nutrition Intake
+category: sports
+status: active
+description: Sports nutrition intake for sports dietitians and nutrition coaches assessing an athlete's nutritional status and needs. Evaluates the current dietary patterns, the training demands, the body composition goals, the fueling and recovery practices, and the nutritional concerns to produce a sports nutrition intake profile with fueling priorities and dietary recommendations framework. Not medical or clinical nutrition advice.
+deliverable: sports_nutrition_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

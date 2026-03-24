@@ -1,0 +1,9 @@
+id: program_intake
+name: Architectural Program Intake
+category: architecture
+status: active
+description: Architectural programming intake for building projects. Captures a project's functional requirements, space needs, adjacencies, occupant load, operational parameters, and performance goals to produce a building program document that serves as the design brief and scope baseline for all subsequent design phases.
+deliverable: building_program
+estimated_turns: 12-16
+version: 1.0
+author: Robert C. Ventura

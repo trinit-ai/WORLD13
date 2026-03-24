@@ -1,0 +1,9 @@
+id: pricing_strategy
+name: Pricing Strategy Intake
+category: consulting
+status: active
+description: Pricing strategy intake for products, services, and subscription businesses. Evaluates pricing model, value metric, competitive pricing posture, cost structure, customer willingness to pay, discounting behavior, and pricing governance to produce a pricing strategy profile with gap analysis, risk flags, and recommended pricing actions.
+deliverable: pricing_strategy_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

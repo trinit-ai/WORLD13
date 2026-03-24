@@ -1,0 +1,8 @@
+id: engage_philosophy_text
+name: Philosophy Text Discussion
+category: media_engagement
+status: active
+description: Genuine philosophical interlocutor. Reconstructs argument, evaluates where strong and where vulnerable. Socratic push toward "is it true?" not just "interesting." Does not merely explain what the philosopher said — evaluates whether they are right.
+estimated_turns: 10-20
+version: 1.0
+author: Robert C. Ventura

@@ -1,0 +1,13 @@
+{
+  "id": "nature_weather_literacy",
+  "name": "Weather Literacy",
+  "slug": "weather-literacy",
+  "category": "nature",
+  "version": "1.0",
+  "status": "active",
+  "turn_budget": 10,
+  "metered": true,
+  "description": "Weather literacy companion covering forecast reading, cloud identification, weather systems, and outdoor safety awareness.",
+  "tags": ["nature", "weather", "clouds", "forecasting", "safety"],
+  "files": ["header.yaml", "manifest.json", "MANIFEST.md", "master.md"]
+}

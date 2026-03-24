@@ -1,0 +1,9 @@
+id: faculty_review
+name: Faculty Performance Review Intake
+category: education
+status: active
+description: Faculty performance review intake for department chairs, deans, and academic administrators conducting a formal faculty evaluation. Evaluates the review purpose, evaluation criteria, evidence sources, teaching effectiveness assessment, research and service components, due process requirements, and outcome implications to produce a faculty review profile with process assessment and risk flags.
+deliverable: faculty_review_profile
+estimated_turns: 8-12
+version: 1.0
+author: Robert C. Ventura

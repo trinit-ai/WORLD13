@@ -1,0 +1,9 @@
+id: coaching_intake
+name: Coaching Staff Intake
+category: sports
+status: active
+description: Coaching staff intake for athletic directors and sports organizations onboarding a new coach or assessing a coaching staff. Evaluates the coaching background, philosophy, certifications, athlete safety training, program experience, and fit to produce a coaching intake profile with onboarding requirements and program fit assessment.
+deliverable: coaching_intake_profile
+estimated_turns: 10-14
+version: 1.0
+author: Robert C. Ventura

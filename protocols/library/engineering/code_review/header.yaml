@@ -1,0 +1,9 @@
+id: code_review
+name: Code Review Intake
+category: engineering
+status: active
+description: Code review intake for engineering teams structuring or assessing a code review process. Evaluates the change scope, review criteria, reviewer qualification, feedback quality, and process health to produce a code review profile with findings and recommendations.
+deliverable: code_review_profile
+estimated_turns: 6-10
+version: 1.0
+author: Robert C. Ventura

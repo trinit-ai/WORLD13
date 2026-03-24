@@ -1,0 +1,17 @@
+id: family_reckoning_arc
+name: Family Reckoning Arc
+category: chains
+status: active
+description: Multi-session arc for family of origin work — navigating conflict, processing memories, handling regret and forgiveness, clarifying values, and preparing for family conversations. Sensitive material may surface. Routes abuse and trauma disclosures to therapeutic support.
+type: arc
+sessions_in_arc: 5
+estimated_total_turns: "45-70"
+packs_in_arc:
+  - family_conflict_navigation
+  - memory_session
+  - regret_processing
+  - self_forgiveness
+  - values_clarification
+  - family_meeting_prep
+version: 1.0
+author: Robert C. Ventura
