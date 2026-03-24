@@ -20,14 +20,12 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install anthropic fastapi pydantic python-dotenv pyyaml httpx
+          pip install anthropic fastapi pydantic python-dotenv pyyaml httpx uvicorn
           pip install pytest pytest-asyncio pytest-timeout ruff
 
       - name: Run tests
-        working-directory: engine
-        run: python -m pytest ../tests/ -v --timeout=30
+        run: python -m pytest tests/ -v --timeout=30
 
       - name: Lint (advisory)
-        working-directory: engine
         continue-on-error: true
-        run: ruff check . --select E,F --statistics
+        run: ruff check engine/ --select E,F --statistics
