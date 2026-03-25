@@ -73,6 +73,33 @@ CREATE TABLE IF NOT EXISTS world_state (
     recorded_at REAL NOT NULL
 );
 
+CREATE TABLE IF NOT EXISTS shadow_contagion_events (
+    id TEXT PRIMARY KEY,
+    tick INTEGER NOT NULL,
+    source_agent_id TEXT NOT NULL,
+    target_agent_id TEXT NOT NULL,
+    k_transferred REAL NOT NULL,
+    mechanism TEXT NOT NULL,
+    session_id TEXT NOT NULL,
+    shadow_domain TEXT NOT NULL,
+    recorded_at REAL NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS shadow_agent_state (
+    agent_id TEXT PRIMARY KEY,
+    shadow_arch TEXT,
+    is_crystallized INTEGER DEFAULT 0,
+    crystallization_tick INTEGER,
+    oscillation_count INTEGER DEFAULT 0,
+    last_intervention_window INTEGER,
+    shadow_k_accumulated REAL DEFAULT 0.0,
+    shadow_sessions_completed INTEGER DEFAULT 0,
+    resolution_sessions_completed INTEGER DEFAULT 0,
+    shadow_entry_tick INTEGER,
+    shadow_exit_tick INTEGER,
+    updated_at REAL NOT NULL
+);
+
 CREATE INDEX IF NOT EXISTS idx_vault_dim_pack ON vault_records(dim_pack);
 CREATE INDEX IF NOT EXISTS idx_vault_dim_user ON vault_records(dim_user);
 CREATE INDEX IF NOT EXISTS idx_vault_dim_date ON vault_records(dim_date);
@@ -277,3 +304,87 @@ class WorldVault:
         ).fetchall()
         conn.close()
         return [dict(r) for r in rows]
+
+    # ── Shadow State ──
+
+    def write_contagion_event(self, event) -> None:
+        conn = self._conn()
+        conn.execute(
+            """INSERT INTO shadow_contagion_events
+               (id, tick, source_agent_id, target_agent_id, k_transferred,
+                mechanism, session_id, shadow_domain, recorded_at)
+               VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+            (
+                str(uuid.uuid4()),
+                event.tick,
+                event.source_agent_id,
+                event.target_agent_id,
+                event.k_transferred,
+                event.mechanism,
+                event.session_id,
+                getattr(event, "shadow_domain", event.mechanism),
+                time.time(),
+            ),
+        )
+        conn.commit()
+        conn.close()
+
+    def get_contagion_events(self, agent_id: str, limit: int = 20) -> list[dict]:
+        conn = self._conn()
+        rows = conn.execute(
+            """SELECT * FROM shadow_contagion_events
+               WHERE target_agent_id = ? OR source_agent_id = ?
+               ORDER BY recorded_at DESC LIMIT ?""",
+            (agent_id, agent_id, limit),
+        ).fetchall()
+        conn.close()
+        return [dict(r) for r in rows]
+
+    def update_shadow_state(self, agent_id: str, updates: dict) -> None:
+        updates["updated_at"] = time.time()
+        conn = self._conn()
+        existing = conn.execute(
+            "SELECT agent_id FROM shadow_agent_state WHERE agent_id = ?",
+            (agent_id,),
+        ).fetchone()
+        if existing:
+            sets = ", ".join(f"{k} = ?" for k in updates)
+            vals = list(updates.values()) + [agent_id]
+            conn.execute(f"UPDATE shadow_agent_state SET {sets} WHERE agent_id = ?", vals)
+        else:
+            updates["agent_id"] = agent_id
+            cols = ", ".join(updates.keys())
+            placeholders = ", ".join("?" for _ in updates)
+            conn.execute(
+                f"INSERT INTO shadow_agent_state ({cols}) VALUES ({placeholders})",
+                list(updates.values()),
+            )
+        conn.commit()
+        conn.close()
+
+    def get_shadow_state(self, agent_id: str) -> Optional[dict]:
+        conn = self._conn()
+        row = conn.execute(
+            "SELECT * FROM shadow_agent_state WHERE agent_id = ?", (agent_id,)
+        ).fetchone()
+        conn.close()
+        return dict(row) if row else None
+
+    def get_shadow_aggregate(self) -> dict:
+        conn = self._conn()
+        shadow_agents = conn.execute(
+            "SELECT COUNT(*) as cnt FROM shadow_agent_state WHERE shadow_arch IS NOT NULL"
+        ).fetchone()
+        crystallized = conn.execute(
+            "SELECT COUNT(*) as cnt FROM shadow_agent_state WHERE is_crystallized = 1"
+        ).fetchone()
+        total_contagion = conn.execute(
+            "SELECT COUNT(*) as cnt, COALESCE(SUM(k_transferred), 0) as total_k FROM shadow_contagion_events"
+        ).fetchone()
+        conn.close()
+        return {
+            "shadow_agents": shadow_agents["cnt"] if shadow_agents else 0,
+            "crystallized": crystallized["cnt"] if crystallized else 0,
+            "contagion_events": total_contagion["cnt"] if total_contagion else 0,
+            "total_k_transferred": round(total_contagion["total_k"], 4) if total_contagion else 0,
+        }

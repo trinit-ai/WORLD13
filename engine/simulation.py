@@ -13,8 +13,9 @@ from typing import Optional
 
 from .agent import Agent, initialize_population
 from .world_vault import WorldVault
-from .session import run_session
+from .session import run_session, run_shadow_session
 from .tvr import karmic_inertia, coherence
+from .mode import is_shadow, get_mode
 
 TICK_INTERVAL_SECONDS = float(os.environ.get("WORLD13_TICK_SECONDS", "30"))
 SESSIONS_PER_TICK = int(os.environ.get("WORLD13_SESSIONS_PER_TICK", "3"))
@@ -27,6 +28,10 @@ class WorldSimulation:
         self.running = False
         self.total_sessions = 0
         self.total_liberations = 0
+        self.shadow_mode = is_shadow()
+        self.total_contagion_events = 0
+        self.total_crystallizations = 0
+        self.total_intervention_windows = 0
         self._shutdown = asyncio.Event()
 
     def _load_agents(self) -> list[Agent]:
@@ -59,11 +64,21 @@ class WorldSimulation:
         for _ in range(SESSIONS_PER_TICK):
             agent = self._select_agent(agents)
             try:
-                result = await run_session(agent, self.vault)
+                if self.shadow_mode:
+                    result = await run_shadow_session(agent, self.vault, agents, self.tick_count)
+                else:
+                    result = await run_session(agent, self.vault)
                 session_results.append(result)
                 self.total_sessions += 1
                 if result.get("is_liberated"):
                     self.total_liberations += 1
+                # Shadow metrics
+                if result.get("contagion_events"):
+                    self.total_contagion_events += len(result["contagion_events"])
+                if result.get("crystallization_triggered"):
+                    self.total_crystallizations += 1
+                if result.get("intervention_window"):
+                    self.total_intervention_windows += 1
             except Exception as e:
                 session_results.append({
                     "agent_name": agent.name,
@@ -86,7 +101,10 @@ class WorldSimulation:
     async def run(self) -> None:
         """Main simulation loop. Runs until shutdown signal."""
         self.running = True
-        print(f"WORLD13 simulation starting. Tick interval: {TICK_INTERVAL_SECONDS}s, Sessions/tick: {SESSIONS_PER_TICK}")
+        mode_label = "SHADOW" if self.shadow_mode else "PURE"
+        print(f"WORLD13 simulation starting. Mode: {mode_label}. Tick interval: {TICK_INTERVAL_SECONDS}s, Sessions/tick: {SESSIONS_PER_TICK}")
+        if self.shadow_mode:
+            print("  Shadow mode active: dark archetypes, K(x) contagion, crystallization enabled")
         print()
 
         # Handle graceful shutdown
@@ -130,11 +148,28 @@ class WorldSimulation:
                 coh = s["coherence_after"]
                 phase = s["cycle_phase"]
                 lib = " ★ LIBERATED" if s.get("is_liberated") else ""
-                print(f"  {name:12s} P{plane}/{phase:3s} · {proto:25s} · K:{k_b:.2f}→{k_a:.2f} Δ:{delta:+.3f} · C:{coh:.2f}{lib}")
+                shadow_tag = ""
+                if s.get("is_shadow_session"):
+                    sd = s.get("shadow_domain", "?")[:12]
+                    if s.get("resolution_session"):
+                        shadow_tag = f" ◈ RES:{sd}"
+                    else:
+                        shadow_tag = f" ◆ {sd}"
+                    if s.get("crystallization_triggered"):
+                        shadow_tag += " ✦CRYST"
+                    if s.get("intervention_window"):
+                        shadow_tag += " ⚡WINDOW"
+                print(f"  {name:12s} P{plane}/{phase:3s} · {proto:25s} · K:{k_b:.2f}→{k_a:.2f} Δ:{delta:+.3f} · C:{coh:.2f}{lib}{shadow_tag}")
 
         total = tick_result.get("total_sessions", 0)
         libs = tick_result.get("total_liberations", 0)
         print(f"  ── Total sessions: {total} | Liberations: {libs}")
+        if self.shadow_mode:
+            contagion = sum(len(s.get("contagion_events", [])) for s in sessions if not s.get("error"))
+            cryst = sum(1 for s in sessions if s.get("crystallization_triggered"))
+            windows = sum(1 for s in sessions if s.get("intervention_window"))
+            shadow_count = sum(1 for s in sessions if s.get("is_shadow_session"))
+            print(f"  ── Shadow: {shadow_count} sessions | Contagion: {contagion} | Crystallized: {cryst} | Windows: {windows}")
         print()
 
     def get_world_summary(self) -> dict:
