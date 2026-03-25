@@ -1,0 +1,186 @@
+name: "enlightened_duck"
+version: "0.1.0"
+description: "10 agents with distinct life situations each receive the Enlightened Duck's three-question reading. Divergent answers are mapped to liberation paths and K(x) projections."
+author: "Rob Ventura"
+created: "2026-03-25"
+
+protocol:
+  pack: "enlightened_duck"
+  pack_password: "rcv2026"
+  session_mode: "single"
+  sessions_per_agent: 1
+  max_tokens: 1000
+  user_prompt_template: |
+    {agent_name} arrives at the Duck. They carry this with them:
+    {agent_backstory}
+    Their current K(x): {k_current:.2f}. Their phase: {cycle_phase}.
+    They are ready for their three questions.
+
+population:
+  size: 10
+  initialization: "manual"
+  agents:
+    - name: "The Sovereign"
+      plane: 3
+      primary_arch: "SOV"
+      secondary_arch: "JDG"
+      tertiary_arch: "WAR"
+      k0: 7.2
+      lambda_coeff: 2.8
+      cycle_phase: "CRS"
+      karmic_phi: 1.8
+      backstory: >
+        A CEO at the apex of their power. Has built something real but feels
+        a hollowness at the center of it. Arrives with authority and a
+        private suspicion that authority is the problem.
+
+    - name: "The Healer"
+      plane: 4
+      primary_arch: "HLR"
+      secondary_arch: "WIT"
+      tertiary_arch: "TCH"
+      k0: 5.1
+      lambda_coeff: 5.5
+      cycle_phase: "RES"
+      karmic_phi: 2.7
+      backstory: >
+        A therapist who has spent 20 years holding other people's pain.
+        Recently started wondering who holds theirs. Arrives exhausted
+        and genuinely curious.
+
+    - name: "The Seeker"
+      plane: 2
+      primary_arch: "SKR"
+      secondary_arch: "TRK"
+      tertiary_arch: "LVR"
+      k0: 6.3
+      lambda_coeff: 3.9
+      cycle_phase: "ACC"
+      karmic_phi: 0.9
+      backstory: >
+        Has tried everything — meditation retreats, psychedelics, relationships,
+        career pivots. Always moving. Arrives not knowing what they're looking
+        for but certain they haven't found it.
+
+    - name: "The Mystic"
+      plane: 6
+      primary_arch: "MYS"
+      secondary_arch: "WIT"
+      tertiary_arch: "TRN"
+      k0: 4.8
+      lambda_coeff: 7.8
+      cycle_phase: "TRN"
+      karmic_phi: 3.6
+      backstory: >
+        Has been on the path for decades. Practices daily. Knows the
+        vocabulary. Arrives because something is dissolving that they
+        built their identity around and they don't know if that's good or bad.
+
+    - name: "The Builder"
+      plane: 1
+      primary_arch: "BLD"
+      secondary_arch: "SKR"
+      tertiary_arch: "WAR"
+      k0: 4.2
+      lambda_coeff: 2.1
+      cycle_phase: "ACC"
+      karmic_phi: 0.3
+      backstory: >
+        Makes things. Has always made things. Arrives because they finished
+        the biggest thing they've ever built and feel nothing. Expected
+        to feel something.
+
+    - name: "The Lover"
+      plane: 2
+      primary_arch: "LVR"
+      secondary_arch: "HLR"
+      tertiary_arch: "BLD"
+      k0: 8.1
+      lambda_coeff: 4.2
+      cycle_phase: "CRS"
+      karmic_phi: 1.2
+      backstory: >
+        In the middle of a breakup that doesn't make sense. Loved well.
+        Was loved well. It ended anyway. Arrives with the specific grief
+        of a loss that can't be explained by anyone doing anything wrong.
+
+    - name: "The Judge"
+      plane: 3
+      primary_arch: "JDG"
+      secondary_arch: "SOV"
+      tertiary_arch: "TCH"
+      k0: 6.8
+      lambda_coeff: 3.1
+      cycle_phase: "CRS"
+      karmic_phi: 2.1
+      backstory: >
+        Has spent a career distinguishing right from wrong professionally.
+        Now faces a situation where there is no right answer and the
+        discomfort of that is becoming unbearable. Arrives looking for
+        a framework.
+
+    - name: "The Teacher"
+      plane: 4
+      primary_arch: "TCH"
+      secondary_arch: "MYS"
+      tertiary_arch: "WIT"
+      k0: 5.5
+      lambda_coeff: 4.8
+      cycle_phase: "ACC"
+      karmic_phi: 2.4
+      backstory: >
+        Has taught for 30 years. Recently a student asked them a question
+        they couldn't answer. Not a hard question — a simple one. It
+        opened something they haven't been able to close.
+
+    - name: "The Transmuter"
+      plane: 5
+      primary_arch: "TRN"
+      secondary_arch: "TRK"
+      tertiary_arch: "MYS"
+      k0: 7.6
+      lambda_coeff: 5.2
+      cycle_phase: "CRS"
+      karmic_phi: 3.0
+      backstory: >
+        Has been through it — abuse, recovery, reinvention. Has become
+        someone new so many times they're not sure there's a self beneath
+        the transformations. Arrives asking if the fire ever stops.
+
+    - name: "The Witness"
+      plane: 6
+      primary_arch: "WIT"
+      secondary_arch: "MYS"
+      tertiary_arch: "HLR"
+      k0: 3.2
+      lambda_coeff: 8.1
+      cycle_phase: "RES"
+      karmic_phi: 3.9
+      backstory: >
+        Watches everything. Has always watched. Rarely acts. Arrives
+        because watching has become its own kind of prison and they're
+        not sure how to stop.
+
+context:
+  sampling: "tvr_weighted"
+  fixed_axes:
+    E2_1: "E2.1.g"
+    E1_3: "E1.3.c"
+    E3_1: "E3.1.a"
+  k_bias_scale: 0.6
+
+simulation:
+  omega: 0.015
+  tick_interval_seconds: 5
+  output_mode: "full"
+
+output:
+  vault_prefix: "duck_"
+  generate_report: true
+  report_format: "markdown"
+  track_divergence: true
+  analysis:
+    - liberation_path_alignment
+    - k_delta_projection
+    - question_divergence_map
+    - life_path_fork_summary

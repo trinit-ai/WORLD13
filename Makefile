@@ -1,4 +1,4 @@
-.PHONY: init sim api dashboard test install shadow-init shadow-sim shadow-api
+.PHONY: init sim api dashboard test install shadow-init shadow-sim shadow-api duck theatres theatre
 
 init:
 	python3 scripts/init_world.py
@@ -24,6 +24,15 @@ shadow-sim:
 shadow-api:
 	WORLD13_MODE=shadow uvicorn api.app:app --reload --port 8002
 
+duck:
+	python3 theatres/run_theatre.py --theatre enlightened_duck
+
+theatres:
+	python3 theatres/run_theatre.py --list
+
+theatre:
+	python3 theatres/run_theatre.py --theatre $(name)
+
 install:
-	pip3 install fastapi uvicorn anthropic python-dotenv pytest pytest-asyncio
+	pip3 install fastapi uvicorn anthropic python-dotenv pytest pytest-asyncio pyyaml
 	cd dashboard && npm install

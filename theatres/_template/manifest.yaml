@@ -1,0 +1,56 @@
+# WORLD13 Theatre Manifest Template
+# Copy this directory and customize for your theatre.
+
+name: "my_theatre"
+version: "0.1.0"
+description: "Description of what this theatre explores."
+author: "Author Name"
+created: "2026-01-01"
+
+protocol:
+  pack: "pack_name"              # 13TMOS pack to use
+  pack_password: null            # Pack password if required
+  session_mode: "single"         # "single" or "multi"
+  sessions_per_agent: 1          # Number of sessions per agent
+  max_tokens: 1000               # Max tokens per session response
+  user_prompt_template: |
+    {agent_name} enters the session.
+    {agent_backstory}
+    K(x): {k_current:.2f}. Phase: {cycle_phase}.
+
+population:
+  size: 10
+  initialization: "manual"       # "manual" (agents defined below) or "random"
+  agents:
+    - name: "Agent One"
+      plane: 1
+      primary_arch: "BLD"
+      secondary_arch: "SKR"
+      tertiary_arch: "WAR"
+      k0: 5.0
+      lambda_coeff: 3.0
+      cycle_phase: "ACC"
+      karmic_phi: 1.0
+      backstory: >
+        The agent's life situation and what they bring to the session.
+
+context:
+  sampling: "tvr_weighted"       # "tvr_weighted" or "uniform"
+  fixed_axes: {}                 # Override specific context axes
+  k_bias_scale: 0.5             # How much K(x) biases context sampling
+
+simulation:
+  omega: 0.015                   # Session omega parameter
+  tick_interval_seconds: 5       # Interval between sessions
+  output_mode: "full"            # "full" or "summary"
+
+output:
+  vault_prefix: ""               # Prefix for vault records
+  generate_report: true          # Generate markdown report
+  report_format: "markdown"
+  track_divergence: true         # Track divergence across agents
+  analysis:
+    - liberation_path_alignment
+    - k_delta_projection
+    - question_divergence_map
+    - life_path_fork_summary
