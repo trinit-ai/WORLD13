@@ -52,6 +52,10 @@ class TheatreManifest:
     report_format: str
     track_divergence: bool
     analysis: List[str]
+    # Voynich (defaults)
+    voynich_mode: bool = False
+    voynich_instance_seed: Optional[str] = None
+    voynich_vault_mode: str = "sealed"
 
 
 def load_theatre(theatre_name: str) -> TheatreManifest:
@@ -110,6 +114,9 @@ def load_theatre(theatre_name: str) -> TheatreManifest:
         omega=float(sim.get("omega", 0.015)),
         tick_interval_seconds=int(sim.get("tick_interval_seconds", 5)),
         output_mode=sim.get("output_mode", "full"),
+        voynich_mode=proto.get("voynich_mode", False),
+        voynich_instance_seed=sim.get("voynich", {}).get("instance_seed"),
+        voynich_vault_mode=sim.get("voynich", {}).get("vault_mode", "sealed"),
         vault_prefix=out.get("vault_prefix", ""),
         generate_report=out.get("generate_report", True),
         report_format=out.get("report_format", "markdown"),

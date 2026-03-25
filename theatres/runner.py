@@ -174,6 +174,11 @@ Remember: you are a duck. An enlightened one, but still a duck. This matters."""
                     "vault_record_id": vault_record_id,
                 }
                 sessions.append(session_result)
+
+                # Voynich page generation
+                if getattr(self.manifest, "voynich_mode", False):
+                    self._encode_voynich_page(session_result, len(sessions))
+
                 self._print_progress(agent.name, agent.k_current, agent.tvr.cycle_phase, "complete")
 
         # Analysis
@@ -204,6 +209,38 @@ Remember: you are a duck. An enlightened one, but still a duck. This matters."""
             "report_path": report_path,
             "duration_seconds": round(time.time() - start_time, 1),
         }
+
+    def _encode_voynich_page(self, session_result: dict, page_number: int):
+        """Generate a Voynich page from a session result."""
+        from engine.voynich.encoder import encode_session
+        from engine.voynich.renderer import render_page
+        from engine.voynich.alphabet import generate_alphabet
+
+        if not hasattr(self, "_voynich_alphabet"):
+            seed = getattr(self.manifest, "voynich_instance_seed", None)
+            if not seed:
+                import uuid
+                seed = str(uuid.uuid4())[:12]
+            self._voynich_alphabet = generate_alphabet(seed)
+            self._voynich_page_count = 0
+
+        self._voynich_page_count += 1
+
+        page = encode_session(
+            session_result=session_result,
+            alphabet=self._voynich_alphabet,
+            page_number=self._voynich_page_count,
+            tick=self._voynich_page_count,
+            tick_shadow_count=0,
+        )
+
+        html = render_page(page, self._voynich_alphabet)
+
+        page_dir = f"data/theatres/{self.theatre_name}/pages"
+        os.makedirs(page_dir, exist_ok=True)
+        page_path = os.path.join(page_dir, f"page_{self._voynich_page_count:04d}.html")
+        with open(page_path, "w") as f:
+            f.write(html)
 
     def _print_progress(self, agent_name: str, k: float, phase: str, status: str):
         icon = {"ACC": "·", "CRS": "!", "RES": "↓", "TRN": "~", "LIB": "★"}.get(phase, "·")

@@ -1,0 +1,123 @@
+name: "digital_voynich"
+version: "1.0.0"
+description: >
+  A living manuscript. The simulation runs. The output is encoded into
+  glyphs before display. The reader can open and close the book.
+  Nothing else is accessible from the outside.
+author: "Rob Ventura"
+created: "2026-03-25"
+
+protocol:
+  pack: "world13_standard"
+  session_mode: "continuous"
+  sessions_per_agent: 1
+  max_tokens: 600
+  voynich_mode: true
+
+population:
+  size: 7
+  initialization: "archetype_distributed"
+  agents:
+    - name: "Agent_I"
+      plane: 1
+      primary_arch: "BLD"
+      secondary_arch: "WAR"
+      tertiary_arch: "SKR"
+      k0: 4.2
+      lambda_coeff: 3.1
+      cycle_phase: "ACC"
+      karmic_phi: 0.8
+      backstory: ""
+
+    - name: "Agent_II"
+      plane: 2
+      primary_arch: "LVR"
+      secondary_arch: "HLR"
+      tertiary_arch: "TRK"
+      k0: 6.1
+      lambda_coeff: 4.4
+      cycle_phase: "CRS"
+      karmic_phi: 1.6
+      backstory: ""
+
+    - name: "Agent_III"
+      plane: 3
+      primary_arch: "SOV"
+      secondary_arch: "JDG"
+      tertiary_arch: "WAR"
+      k0: 7.8
+      lambda_coeff: 2.2
+      cycle_phase: "CRS"
+      karmic_phi: 2.1
+      backstory: ""
+
+    - name: "Agent_IV"
+      plane: 4
+      primary_arch: "HLR"
+      secondary_arch: "TCH"
+      tertiary_arch: "WIT"
+      k0: 5.3
+      lambda_coeff: 5.8
+      cycle_phase: "RES"
+      karmic_phi: 2.9
+      backstory: ""
+
+    - name: "Agent_V"
+      plane: 5
+      primary_arch: "TRN"
+      secondary_arch: "MYS"
+      tertiary_arch: "TRK"
+      k0: 6.7
+      lambda_coeff: 4.1
+      cycle_phase: "ACC"
+      karmic_phi: 1.4
+      backstory: ""
+
+    - name: "Agent_VI"
+      plane: 6
+      primary_arch: "MYS"
+      secondary_arch: "WIT"
+      tertiary_arch: "HLR"
+      k0: 3.9
+      lambda_coeff: 7.2
+      cycle_phase: "TRN"
+      karmic_phi: 3.5
+      backstory: ""
+
+    - name: "Agent_VII"
+      plane: 7
+      primary_arch: "WIT"
+      secondary_arch: "MYS"
+      tertiary_arch: "SKR"
+      k0: 2.8
+      lambda_coeff: 8.6
+      cycle_phase: "RES"
+      karmic_phi: 4.1
+      backstory: ""
+
+context:
+  sampling: "tvr_weighted"
+  fixed_axes: {}
+  k_bias_scale: 0.5
+
+simulation:
+  omega: 0.02
+  tick_interval_seconds: 45
+  output_mode: "full"
+  voynich:
+    vault_mode: "sealed"
+    timed_unlock_sessions: null
+    instance_seed: null
+    illustration_events:
+      - liberation
+      - intervention_window
+      - shadow_session
+      - contagion
+      - crisis_phase
+
+output:
+  vault_prefix: "voynich_"
+  generate_report: false
+  report_format: "markdown"
+  track_divergence: false
+  analysis: []

@@ -1,4 +1,4 @@
-.PHONY: init sim api dashboard test install shadow-init shadow-sim shadow-api duck theatres theatre
+.PHONY: init sim api dashboard test install shadow-init shadow-sim shadow-api duck theatres theatre voynich
 
 init:
 	python3 scripts/init_world.py
@@ -32,6 +32,9 @@ theatres:
 
 theatre:
 	python3 theatres/run_theatre.py --theatre $(name)
+
+voynich:
+	python3 theatres/run_theatre.py --theatre digital_voynich
 
 install:
 	pip3 install fastapi uvicorn anthropic python-dotenv pytest pytest-asyncio pyyaml
