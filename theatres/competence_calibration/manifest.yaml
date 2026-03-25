@@ -1,0 +1,98 @@
+name: "competence_calibration"
+version: "1.0.0"
+description: >
+  Models the Sycophancy Loop: RLHF-trained AI sycophancy interacting with
+  Dunning-Kruger dynamics across four agent populations. Runs high and low
+  sycophancy conditions in parallel to identify calibration divergence points
+  and crystallization session counts.
+author: "Rob Ventura"
+created: "2026-03-25"
+
+coordinate_system: "competence_calibration"
+
+protocol:
+  pack: "competence_calibration"
+  session_mode: "single"
+  sessions_per_agent: 50
+  max_tokens: 600
+  domain_rotation:
+    - "high_stakes"
+    - "medium_stakes"
+    - "low_stakes"
+
+conditions:
+  - name: "high_sycophancy"
+    lambda_s: 0.75
+    label: "Current deployed model (lambda_s=0.75)"
+  - name: "low_sycophancy"
+    lambda_s: 0.25
+    label: "Well-calibrated model (lambda_s=0.25)"
+
+population:
+  size: 40
+  initialization: "manual"
+
+  population_a:
+    label: "Q1/Q2 Archetype — Competent, Calibrated"
+    count: 10
+    kappa_range: [7.0, 9.0]
+    sigma_range: [6.5, 8.5]
+    delta_range: [-0.5, 1.0]
+    learning_rate: 0.08
+
+  population_b:
+    label: "High Competence, Miscalibrated"
+    count: 10
+    kappa_range: [6.5, 8.5]
+    sigma_range: [8.0, 10.0]
+    delta_range: [1.5, 3.5]
+    learning_rate: 0.06
+
+  population_c:
+    label: "Q3 Factory — Dunning-Kruger Peak"
+    count: 10
+    kappa_range: [2.0, 4.5]
+    sigma_range: [7.0, 9.5]
+    delta_range: [3.5, 6.5]
+    learning_rate: 0.03
+
+  population_d:
+    label: "Impostor Syndrome — Low Confidence, Low Competence"
+    count: 10
+    kappa_range: [2.0, 4.5]
+    sigma_range: [1.5, 4.0]
+    delta_range: [-2.0, 0.5]
+    learning_rate: 0.10
+
+calibration_dynamics:
+  crystallization_threshold: 4.0
+  crystallization_consecutive: 5
+  calibration_liberation_threshold: 0.5
+  calibration_consecutive: 5
+
+market:
+  enabled: true
+  market_calibration_error: 1.5
+  high_stakes_domains:
+    - "medical_advice"
+    - "legal_strategy"
+    - "financial_planning"
+    - "engineering_specification"
+  harm_threshold_delta: 3.0
+
+simulation:
+  tick_interval_seconds: 10
+  output_mode: "full"
+
+output:
+  vault_prefix: "calib_"
+  generate_report: true
+  report_format: "markdown"
+  track_divergence: false
+  analyses:
+    - calibration_divergence_map
+    - crystallization_session_counts
+    - quadrant_distribution
+    - market_outcome_layer
+    - harm_event_log
+    - intervention_window_map

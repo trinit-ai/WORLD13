@@ -36,6 +36,12 @@ theatre:
 voynich:
 	python3 theatres/run_theatre.py --theatre digital_voynich
 
+calibration:
+	python3 theatres/competence_calibration/run.py
+
+calibration-dry:
+	python3 theatres/competence_calibration/run.py --dry-run
+
 install:
 	pip3 install fastapi uvicorn anthropic python-dotenv pytest pytest-asyncio pyyaml
 	cd dashboard && npm install
