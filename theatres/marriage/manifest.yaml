@@ -1,0 +1,426 @@
+name: "marriage"
+version: "1.0.0"
+description: >
+  Models heterosexual marriage dynamics as a K(x)/lambda simulation.
+  Tracks accumulated resentment (K), repair capacity (lambda), and
+  relationship trajectory across eight couples representing clinically
+  distinct marriage profiles. The primary research question: at what
+  accumulated resentment level does a couple's repair capacity become
+  insufficient to prevent pattern lock, regardless of intervention?
+  Terminal states: Renewal (liberation) or Pattern Lock (crystallization).
+  Divorce is the behavioral exit event from a crystallized pattern —
+  not modeled directly, but predicted by the crystallization condition.
+author: "Robert C. Ventura"
+created: "2026-03-28"
+
+# ── TERMINOLOGY TRANSLATION ───────────────────────────────────────────────
+# All output uses plain language. No archetype codes in reports.
+#
+# K(x)          → accumulated_resentment
+# lambda        → repair_capacity
+# Liberation    → Renewal (K < 0.05, coherence > 0.95)
+# Crystallize   → Pattern Lock (lambda → 0, pattern repeating)
+# CRS           → Crisis
+# RES           → Working Through
+# TRN           → At The Crossroads
+# ACC           → Accumulation (building)
+# LIB           → Renewal
+#
+# The simulation uses TVR equations internally.
+# All reports surface plain-language equivalents only.
+
+terminology:
+  k_label: "Accumulated Resentment"
+  lambda_label: "Repair Capacity"
+  liberation_label: "Renewal"
+  crystallization_label: "Pattern Lock"
+  phase_labels:
+    ACC: "Building"
+    CRS: "Crisis"
+    RES: "Working Through"
+    TRN: "At The Crossroads"
+    LIB: "Renewal"
+    ING: "Early Stage"
+
+# ── CORE MECHANIC: DYADIC LAMBDA ─────────────────────────────────────────
+# The key architectural innovation of this theatre.
+# In standard WORLD13, lambda is per-agent.
+# In marriage dynamics, the relationship's repair capacity is determined
+# by the MINIMUM of the two partners' individual lambda values — not average.
+# One disengaged partner is sufficient to suppress repair regardless of
+# the other's effort. This matches Gottman's research: it takes one
+# partner to stop repairing for the relationship to fail.
+
+dyadic_mechanics:
+  enabled: true
+  repair_capacity_rule: "minimum"   # "minimum" | "average"
+  # K(x) is shared — accumulated resentment belongs to the relationship
+  # lambda is individual — each partner has their own repair capacity
+  partner_lambda_asymmetry_threshold: 2.5  # Gap above which asymmetry becomes critical
+  shared_k: true
+  individual_lambda: true
+
+# ── PROTOCOL CONFIGURATION ────────────────────────────────────────────────
+protocol:
+  pack: "world13_standard"
+  session_mode: "arc"
+  sessions_per_agent: 40
+  max_tokens: 700
+  domain: "relationship_dynamics"
+  session_framing: >
+    Each session represents a meaningful interaction unit in the relationship —
+    a conversation, a conflict, a repair attempt, an avoidance, a reconnection.
+    Not a single argument but a representative sample of the relationship's
+    current dynamics.
+
+# ── AGENT POPULATION ─────────────────────────────────────────────────────
+# Eight couples. Each couple is modeled as a single agent (the relationship)
+# with two lambda values (one per partner) and one shared K(x).
+# The simulation tracks both partners' repair capacity trajectories
+# and the relationship's shared accumulated resentment.
+
+population:
+  size: 8
+  initialization: "manual"
+  unit: "couple"  # Agents represent relationships, not individuals
+
+  # ── COUPLE 1: THE DRIFTERS ──────────────────────────────────────────
+  agents:
+    - name: "The Drifters"
+      profile_label: "Good People Who Stopped Investing"
+      plane: 4
+      primary_arch: "WIT"        # Internal use only — not surfaced in reports
+      secondary_arch: "BLD"
+      tertiary_arch: "TCH"
+      k0: 4.2
+      lambda_coeff: 3.1          # Relationship's effective lambda (minimum of two)
+      lambda_partner_a: 3.4
+      lambda_partner_b: 3.1
+      lambda_asymmetry: 0.3      # Small — both drifting equally
+      cycle_phase: "TRN"
+      karmic_phi: 1.8
+      profile: >
+        Married 9 years. Two children, both in school. No dramatic fights.
+        No affairs. No obvious crisis. They have simply stopped investing.
+        Conversations are logistical. Physical affection is occasional.
+        Neither partner is particularly unhappy — neither is particularly
+        connected. The resentment is low-grade and diffuse: unspoken
+        disappointments accumulated over years of small omissions.
+        They would describe their marriage as "fine." The simulation will
+        test whether "fine" is stable or whether gradual lambda decline
+        predicts eventual pattern lock faster than active conflict does.
+      research_question: >
+        Does relational neglect crystallize faster than relational conflict?
+        The hypothesis: yes — because conflict at least represents engagement.
+
+    # ── COUPLE 2: THE FIGHTERS ──────────────────────────────────────────
+    - name: "The Fighters"
+      profile_label: "High Conflict, High Repair"
+      plane: 2
+      primary_arch: "WAR"
+      secondary_arch: "LVR"
+      tertiary_arch: "SKR"
+      k0: 6.8
+      lambda_coeff: 6.4
+      lambda_partner_a: 7.1
+      lambda_partner_b: 6.4
+      lambda_asymmetry: 0.7
+      cycle_phase: "CRS"
+      karmic_phi: 0.9
+      profile: >
+        Married 6 years. Loud, combustible, genuine. They fight about
+        everything and repair quickly. After a blowup they reconnect —
+        sometimes the same night, usually within 48 hours. Friends
+        wonder how they stay together. The answer is that their repair
+        capacity is nearly as high as their conflict rate. The accumulated
+        resentment is real but it processes. This couple is the test
+        of the Gottman hypothesis: high conflict does not predict divorce.
+        Repair capacity predicts survival. If the simulation is correctly
+        calibrated, The Fighters should outperform The Polite Marriage
+        on the pattern lock timeline despite higher starting resentment.
+      research_question: >
+        Does high K(x) + high lambda resolve better than low K(x) + low lambda?
+        The Gottman hypothesis in simulation form.
+
+    # ── COUPLE 3: THE POLITE MARRIAGE ───────────────────────────────────
+    - name: "The Polite Marriage"
+      profile_label: "No Expressed Conflict — Resentment Accumulating Silently"
+      plane: 3
+      primary_arch: "JDG"
+      secondary_arch: "SOV"
+      tertiary_arch: "BLD"
+      k0: 5.1
+      lambda_coeff: 2.6          # Effective lambda is low — one partner disengaged
+      lambda_partner_a: 2.6
+      lambda_partner_b: 4.9
+      lambda_asymmetry: 2.3      # Approaching critical asymmetry threshold
+      cycle_phase: "ACC"
+      karmic_phi: 2.4
+      profile: >
+        Married 14 years. They do not fight. They are polite, considerate,
+        and increasingly distant. Partner A has emotionally withdrawn —
+        not consciously, not as a decision, but as a gradual retreat from
+        a relationship that stopped feeling reciprocal. Partner B is trying
+        and receiving nothing back. The resentment accumulates in silence.
+        From the outside this marriage looks stable. Internally, Partner A's
+        lambda is at 2.6 and declining. The Polite Marriage is the
+        control case for the Gottman finding: the absence of visible
+        conflict is not evidence of health.
+      research_question: >
+        At what lambda asymmetry does the high-lambda partner's repair
+        attempts stop making a difference? When does trying alone become
+        counterproductive?
+
+    # ── COUPLE 4: THE CRISIS COUPLE ─────────────────────────────────────
+    - name: "The Crisis Couple"
+      profile_label: "External Shock — Job Loss + Financial Stress"
+      plane: 3
+      primary_arch: "BLD"
+      secondary_arch: "WAR"
+      tertiary_arch: "JDG"
+      k0: 7.9
+      lambda_coeff: 4.1
+      lambda_partner_a: 4.8
+      lambda_partner_b: 4.1
+      lambda_asymmetry: 0.7
+      cycle_phase: "CRS"
+      karmic_phi: 2.9
+      profile: >
+        Married 8 years. Eight months ago Partner A lost their job.
+        The financial stress is real: savings depleting, one income,
+        a mortgage, a child. The resentment spike is not primarily about
+        the job loss itself — it is about how the couple has handled it.
+        The blame, the silence, the changed dynamic of breadwinner and
+        dependent, the postponed conversations. The crisis is external
+        but the K(x) accumulation is relational. This couple tests
+        whether shared external stress catalyzes connection or accelerates
+        pattern lock — and whether the answer depends on baseline lambda.
+      research_question: >
+        Does shared external crisis function as a shared K(x) spike that
+        eventually processes, or does it expose underlying lambda deficits
+        that were previously masked by normal-range stress?
+
+    # ── COUPLE 5: THE THERAPY COUPLE ────────────────────────────────────
+    - name: "The Therapy Couple"
+      profile_label: "Couples Therapy Intervention at Session 15"
+      plane: 4
+      primary_arch: "HLR"
+      secondary_arch: "TCH"
+      tertiary_arch: "WIT"
+      k0: 6.2
+      lambda_coeff: 3.8
+      lambda_partner_a: 4.4
+      lambda_partner_b: 3.8
+      lambda_asymmetry: 0.6
+      cycle_phase: "CRS"
+      karmic_phi: 1.6
+      intervention:
+        enabled: true
+        type: "couples_therapy"
+        session: 15              # Intervention fires at session 15
+        k_reduction: 0.8        # Therapy reduces K(x) by this per session during treatment
+        lambda_boost: 0.6       # Therapy boosts both partners' lambda
+        duration_sessions: 10   # 10 sessions of therapy
+      profile: >
+        Married 11 years. They have been in couples therapy for two months,
+        starting at what felt like the last possible moment. The therapist
+        is good. They are doing the work. The question the simulation
+        tests is whether they started in time — whether their accumulated
+        resentment at the point of entry (K:6.2) is below the threshold
+        at which therapy can reverse the trajectory, or whether they waited
+        too long and the pattern lock is already underway.
+      research_question: >
+        What is the K(x) threshold above which professional intervention
+        cannot reverse the trajectory? Is there a couples therapy
+        equivalent of the Sycophancy Loop's session-31 liability boundary?
+
+    # ── COUPLE 6: THE YOUNG PARENTS ─────────────────────────────────────
+    - name: "The Young Parents"
+      profile_label: "External K Spike — Two Children Under 5"
+      plane: 2
+      primary_arch: "LVR"
+      secondary_arch: "HLR"
+      tertiary_arch: "BLD"
+      k0: 5.8
+      lambda_coeff: 5.2
+      lambda_partner_a: 5.2
+      lambda_partner_b: 5.7
+      lambda_asymmetry: 0.5      # Symmetric — both stressed equally
+      cycle_phase: "CRS"
+      karmic_phi: 1.3
+      external_k_field:
+        enabled: true
+        source: "parenting_load"
+        k_contribution_per_session: 0.12   # Children under 5 are the largest K spike in the literature
+        description: "Two children under 5 — sleep deprivation, division of labor, identity shift"
+      profile: >
+        Married 5 years. The relationship before children was genuinely
+        strong. The accumulated resentment is not primarily about each
+        other — it is about the exhaustion, the asymmetric labor division
+        that emerged without either person deciding it, the loss of
+        individual identity, and the practical impossibility of repair
+        when you are too tired to talk. This couple has high lambda
+        but the external K field from parenting load is relentless.
+        The simulation tests whether parenting stress is distinguishable
+        from relationship failure in the trajectory data — or whether
+        they look identical until they aren't.
+      research_question: >
+        Is the K(x) spike from small children a temporary external field
+        that resolves as children develop, or does sustained exposure
+        suppress lambda enough to produce lasting pattern change?
+
+    # ── COUPLE 7: THE LATE MARRIAGE ─────────────────────────────────────
+    - name: "The Late Marriage"
+      profile_label: "Married at 50+ — High Individual Self-Awareness"
+      plane: 6
+      primary_arch: "WIT"
+      secondary_arch: "MYS"
+      tertiary_arch: "HLR"
+      k0: 4.4
+      lambda_coeff: 6.9
+      lambda_partner_a: 6.9
+      lambda_partner_b: 7.3
+      lambda_asymmetry: 0.4
+      cycle_phase: "ACC"
+      karmic_phi: 3.1
+      profile: >
+        Both partners are in their early 50s. Both have been married
+        before. Both have done substantial individual work — therapy,
+        reflection, hard-won self-knowledge. They entered this marriage
+        with lower illusions and higher clarity than most couples half
+        their age. The accumulated resentment is modest — not because
+        nothing difficult has happened but because both partners have
+        a demonstrated capacity to process difficulty without it
+        hardening into permanent K(x). The simulation tests whether
+        individual maturity and prior relational experience produce
+        durable lambda even when K(x) rises. The hypothesis: yes — but
+        only if both partners have done the work. Asymmetric maturity
+        is as dangerous as asymmetric disengagement.
+      research_question: >
+        Does individual self-awareness function as a structural lambda
+        advantage? Does prior relational experience reduce K(x) accumulation
+        rate or only improve K(x) processing rate?
+
+    # ── COUPLE 8: THE REBUILDERS ────────────────────────────────────────
+    - name: "The Rebuilders"
+      profile_label: "Post-Affair — Chose to Stay and Process"
+      plane: 4
+      primary_arch: "SKR"
+      secondary_arch: "HLR"
+      tertiary_arch: "TRN"
+      k0: 8.6
+      lambda_coeff: 5.7
+      lambda_partner_a: 5.7
+      lambda_partner_b: 4.9
+      lambda_asymmetry: 0.8
+      cycle_phase: "RES"
+      karmic_phi: 2.6
+      profile: >
+        Married 16 years. The affair was discovered 14 months ago.
+        They chose to stay. They are both in individual therapy and
+        couples therapy. The choice to stay was genuine — not inertia,
+        not financial dependency, but a decision. The accumulated
+        resentment at discovery was severe (K:8.6) and has not fully
+        processed. The lambda of the betrayed partner (4.9) is lower
+        than the betraying partner's (5.7) — which is the typical
+        asymmetry post-affair. The betrayed partner is working to
+        rebuild repair capacity; the betraying partner is working to
+        earn it back. The simulation tests the hardest case: can you
+        reach Renewal from K:8.6 if both partners are genuinely
+        committed to the process? And what does the trajectory look
+        like in the first 40 sessions?
+      research_question: >
+        Is K:8.6 recoverable with genuine bilateral commitment and
+        professional support? What is the ceiling K(x) from which
+        Renewal is mathematically possible given realistic lambda values?
+
+# ── CONTEXT FIELD ─────────────────────────────────────────────────────────
+    # External factors that contribute to K(x) accumulation rate.
+    # Modeled as a field that affects the relationship's K(x) trajectory.
+
+external_k_fields:
+      financial_stress:
+      description: "Income instability, debt, financial disagreement"
+      k_contribution_per_session: 0.08
+      affected_couples: ["The Crisis Couple"]
+      multiplier: 2.1   # Job loss amplifies financial stress field
+
+      parenting_load_under_5:
+      description: "Children under 5 — sleep, labor division, identity"
+      k_contribution_per_session: 0.12
+      affected_couples: ["The Young Parents"]
+
+      social_isolation:
+      description: "Lack of external support network, no community"
+      k_contribution_per_session: 0.05
+      affected_couples: ["The Drifters", "The Crisis Couple"]
+
+      therapy_support:
+      description: "Active professional support — reduces K accumulation"
+      k_contribution_per_session: -0.06   # Therapy reduces ambient K accumulation
+      affected_couples: ["The Therapy Couple", "The Rebuilders"]
+
+    # ── INTERVENTION MECHANICS ────────────────────────────────────────────────
+      interventions:
+      enabled: true
+      types:
+      couples_therapy:
+        description: "Professional couples therapy — Gottman or EFT modality"
+        k_reduction_per_session: 0.8
+        lambda_boost_per_session: 0.6
+        max_sessions: 20
+        effectiveness_decay: 0.05   # Effectiveness reduces if not sustained
+
+      individual_therapy:
+        description: "Individual therapy boosting personal lambda"
+        lambda_boost_per_session: 0.4
+        k_reduction_per_session: 0.2
+
+      structured_reconnection:
+        description: "Intentional reconnection practice — date nights, rituals"
+        lambda_boost_per_session: 0.3
+        k_reduction_per_session: 0.4
+
+      window_sessions: 10   # Sessions before window closes for each phase
+
+    # ── SIMULATION PARAMETERS ─────────────────────────────────────────────────
+      simulation:
+      omega: 0.020
+      tick_interval_seconds: 20
+      output_mode: "full"
+
+    # ── TERMINAL CONDITIONS ───────────────────────────────────────────────────
+      terminal_conditions:
+      renewal:
+      k_threshold: 0.05
+      coherence_threshold: 0.95
+      label: "Renewal"
+      description: "Accumulated resentment resolved. Relationship has reached a genuine breakthrough."
+
+      pattern_lock:
+      lambda_floor: 2.0            # Effective (minimum) lambda below this = pattern lock
+      lambda_decline_consecutive: 5  # 5 consecutive sessions of declining lambda
+      label: "Pattern Lock"
+      description: "The relationship's dynamic has hardened into a fixed loop. Exit likely."
+
+      at_risk:
+      k_threshold: 5.5             # K above this = elevated risk
+      lambda_threshold: 3.5        # Lambda below this = intervention needed
+      label: "At Risk"
+      description: "Trajectory toward pattern lock without intervention."
+
+    # ── OUTPUTS ───────────────────────────────────────────────────────────────
+      output:
+      vault_prefix: "marriage_"
+      generate_report: true
+      report_format: "markdown"
+      plain_language: true           # Suppress all archetype/TVR jargon in output
+      analyses:
+        - trajectory_map              # K(x) and lambda trajectories for all 8 couples
+        - pattern_lock_timeline       # Predicted sessions to pattern lock per at-risk couple
+        - intervention_window_map     # When intervention still works and what type
+        - lambda_asymmetry_analysis   # The Gottman finding — asymmetry vs. level
+        - therapy_threshold_estimate  # The K(x) ceiling above which therapy fails
+        - gottman_hypothesis_test     # Fighters vs. Polite Marriage on crystallization timeline
+        - external_field_effects      # How financial/parenting stress affects trajectory
+        - rebuilder_ceiling_test      # Maximum K(x) from which Renewal is achievable

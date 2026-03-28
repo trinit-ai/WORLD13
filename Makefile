@@ -1,4 +1,4 @@
-.PHONY: init sim api dashboard test install shadow-init shadow-sim shadow-api duck theatres theatre voynich
+.PHONY: init sim api dashboard test install shadow-init shadow-sim shadow-api duck theatres theatre voynich rits rits-validate talent talent-dry marriage marriage-dry
 
 init:
 	python3 scripts/init_world.py
@@ -41,6 +41,24 @@ calibration:
 
 calibration-dry:
 	python3 theatres/competence_calibration/run.py --dry-run
+
+marriage:
+	python3 theatres/marriage/run.py
+
+marriage-dry:
+	python3 theatres/marriage/run.py --dry-run
+
+talent:
+	python3 theatres/talent_retention/run.py
+
+talent-dry:
+	python3 theatres/talent_retention/run.py --dry-run
+
+rits:
+	WORLD13_MODE=rits python3 -c "import asyncio; from engine.rits import RITSSimulation; asyncio.run(RITSSimulation().run())"
+
+rits-validate:
+	python3 -c "from engine.rits import RITSCoordinates, RITSAgent, RITSSimulation; print('RITS 13-system stack OK')"
 
 install:
 	pip3 install fastapi uvicorn anthropic python-dotenv pytest pytest-asyncio pyyaml
