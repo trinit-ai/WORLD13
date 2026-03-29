@@ -35,6 +35,8 @@ class WorldSimulation:
         self.world_mode = is_world()
         self.total_births = 0
         self._rng = random.Random()
+        self._chronicle_file = None
+        self._chronicle_path = None
         self._shutdown = asyncio.Event()
 
     def _load_agents(self) -> list[Agent]:
@@ -118,6 +120,7 @@ class WorldSimulation:
             print(f"WORLD13 — World Mode. The world runs.")
             print(f"  Tick interval: {TICK_INTERVAL_SECONDS}s, Sessions/tick: {SESSIONS_PER_TICK}")
             print(f"  Renewal: population below {RENEWAL_FLOOR} → birth {RENEWAL_COUNT} agents")
+            self._open_chronicle()
             print()
         else:
             mode_label = "SHADOW" if self.shadow_mode else "PURE"
@@ -145,6 +148,7 @@ class WorldSimulation:
                 print(f"[ERROR] Tick {self.tick_count}: {e}")
 
         print("\nWORLD13 simulation shutting down gracefully.")
+        self._close_chronicle()
         self.running = False
 
     def _log_tick(self, tick_result: dict) -> None:
@@ -195,6 +199,35 @@ class WorldSimulation:
             print(f"  ── Shadow: {shadow_count} sessions | Contagion: {contagion} | Crystallized: {cryst} | Windows: {windows}")
         print()
 
+    def _open_chronicle(self) -> None:
+        """Open the live chronicle file for world mode."""
+        import datetime
+        os.makedirs("data/world_logs", exist_ok=True)
+        timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+        self._chronicle_path = f"data/world_logs/world_{timestamp}.md"
+        self._chronicle_file = open(self._chronicle_path, "w", buffering=1)
+        self._chronicle_file.write("# WORLD13 — Chronicle\n\n")
+        self._chronicle_file.write(f"**Started:** {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+        self._chronicle_file.write(f"**Database:** {self.vault.db_path if hasattr(self.vault, 'db_path') else 'data/world13_world.db'}\n\n")
+        self._chronicle_file.write("---\n\n")
+        print(f"  Chronicle: {self._chronicle_path}")
+
+    def _write_chronicle(self, text: str) -> None:
+        """Write a line to the chronicle file if open."""
+        if self._chronicle_file:
+            self._chronicle_file.write(text + "\n")
+
+    def _close_chronicle(self) -> None:
+        """Close the chronicle file cleanly."""
+        if self._chronicle_file:
+            import datetime
+            self._chronicle_file.write(f"\n---\n\n**Ended:** {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+            self._chronicle_file.write(f"**Total sessions:** {self.total_sessions}\n")
+            self._chronicle_file.write(f"**Total liberations:** {self.total_liberations}\n")
+            self._chronicle_file.close()
+            self._chronicle_file = None
+            print(f"Chronicle saved: {self._chronicle_path}")
+
     def _run_world_renewal(self, agents: list) -> list:
         """World mode: birth new agents when population drops below floor."""
         from .world_renewal import (should_renew, birth_agent, format_birth_event,
@@ -215,10 +248,15 @@ class WorldSimulation:
         return events
 
     def _log_world_tick(self, tick_result: dict, renewal_events: list) -> None:
-        """Chronicle log — not data, events."""
+        """Chronicle log — what happened, written to console and file."""
         tick = tick_result["tick"]
         sessions = tick_result.get("sessions", [])
 
+        # Build markdown for chronicle file
+        md = []
+        md.append(f"## Tick {tick}\n")
+
+        # Console output
         print(f"═══ TICK {tick} ══════════════════════════════════════════")
 
         for s in sessions:
@@ -230,36 +268,46 @@ class WorldSimulation:
             delta = s["k_delta"]
             excerpt = s.get("session_excerpt", "")
 
+            first = ""
+            if excerpt and len(excerpt) > 50:
+                first = excerpt.split(".")[0].strip()
+                if len(first) > 120:
+                    first = first[:120] + "..."
+
             if s.get("is_liberated"):
                 print(f"\n  ★ {name} — something completes.")
-                if excerpt:
-                    first = excerpt.split(".")[0].strip()
-                    if first:
-                        print(f"    \"{first}.\"")
+                md.append(f"\n**★ {name} — something completes.**")
+                if first:
+                    print(f"    \"{first}.\"")
+                    md.append(f"\n> {first}.")
                 print()
+                md.append("")
             else:
                 print(f"\n  {name} — {event}  (K:{k_after:.2f}  Δ:{delta:+.3f})")
-                if excerpt and len(excerpt) > 50:
-                    first = excerpt.split(".")[0].strip()
-                    if len(first) > 120:
-                        first = first[:120] + "..."
-                    if first:
-                        print(f"    {first}.")
+                md.append(f"\n**{name}** — {event}  `K:{k_after:.2f}  Δ:{delta:+.3f}`")
+                if first:
+                    print(f"    {first}.")
+                    md.append(f"\n> {first}.")
 
         for event_type, agent, predecessor in renewal_events:
             if event_type == "birth":
                 from .world_renewal import format_birth_event
-                print(f"\n{format_birth_event(agent, predecessor)}")
+                birth_line = format_birth_event(agent, predecessor).strip()
+                print(f"\n{birth_line}")
+                md.append(f"\n{birth_line}")
 
-        print()
         agents = self._load_agents()
         active = [a for a in agents if not a.is_liberated_flag]
         completed = [a for a in agents if a.is_liberated_flag]
         if active:
             mean_k = sum(a.k_current for a in active) / len(active)
-            print(f"  ── {len(active)} living · {len(completed)} completed · "
-                  f"mean K:{mean_k:.2f} · session {self.total_sessions}")
+            pulse = f"{len(active)} living · {len(completed)} completed · mean K:{mean_k:.2f} · session {self.total_sessions}"
+            print(f"\n  ── {pulse}")
+            md.append(f"\n*{pulse}*\n")
         print()
+
+        md.append("\n---\n")
+        self._write_chronicle("\n".join(md))
 
     def get_world_summary(self) -> dict:
         """Return current civilization-level aggregate metrics."""

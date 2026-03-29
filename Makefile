@@ -1,4 +1,4 @@
-.PHONY: init sim api dashboard test install shadow-init shadow-sim shadow-api duck theatres theatre voynich rits rits-validate talent talent-dry marriage marriage-dry world world-init world-fast
+.PHONY: init sim api dashboard test install shadow-init shadow-sim shadow-api duck theatres theatre voynich rits rits-validate talent talent-dry marriage marriage-dry world world-init world-fast world-export
 
 init:
 	python3 scripts/init_world.py
@@ -62,6 +62,12 @@ world:
 
 world-fast:
 	WORLD13_MODE=world WORLD13_TICK_SECONDS=30 WORLD13_SESSIONS_PER_TICK=2 python3 -c "from dotenv import load_dotenv; load_dotenv(); import asyncio; from engine.simulation import WorldSimulation; asyncio.run(WorldSimulation('data/world13_world.db').run())"
+
+world-export:
+	python3 scripts/export_world_chronicle.py
+
+world-export-range:
+	python3 scripts/export_world_chronicle.py --ticks $(ticks)
 
 rits:
 	WORLD13_MODE=rits python3 -c "import asyncio; from engine.rits import RITSSimulation; asyncio.run(RITSSimulation().run())"
