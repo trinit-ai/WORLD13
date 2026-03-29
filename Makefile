@@ -4,7 +4,7 @@ init:
 	python3 scripts/init_world.py
 
 sim:
-	python3 -c "import asyncio; from engine.simulation import WorldSimulation; asyncio.run(WorldSimulation().run())"
+	python3 -c "from dotenv import load_dotenv; load_dotenv(); import asyncio; from engine.simulation import WorldSimulation; asyncio.run(WorldSimulation().run())"
 
 api:
 	uvicorn api.app:app --reload --port 8001
@@ -19,7 +19,7 @@ shadow-init:
 	python3 scripts/init_shadow_world.py
 
 shadow-sim:
-	WORLD13_MODE=shadow python3 -c "import asyncio; from engine.simulation import WorldSimulation; asyncio.run(WorldSimulation().run())"
+	WORLD13_MODE=shadow python3 -c "from dotenv import load_dotenv; load_dotenv(); import asyncio; from engine.simulation import WorldSimulation; asyncio.run(WorldSimulation().run())"
 
 shadow-api:
 	WORLD13_MODE=shadow uvicorn api.app:app --reload --port 8002
@@ -58,10 +58,10 @@ world-init:
 	python3 scripts/init_world_mode.py
 
 world:
-	WORLD13_MODE=world WORLD13_TICK_SECONDS=300 WORLD13_SESSIONS_PER_TICK=1 python3 -c "import asyncio; from engine.simulation import WorldSimulation; asyncio.run(WorldSimulation('data/world13_world.db').run())"
+	WORLD13_MODE=world WORLD13_TICK_SECONDS=300 WORLD13_SESSIONS_PER_TICK=1 python3 -c "from dotenv import load_dotenv; load_dotenv(); import asyncio; from engine.simulation import WorldSimulation; asyncio.run(WorldSimulation('data/world13_world.db').run())"
 
 world-fast:
-	WORLD13_MODE=world WORLD13_TICK_SECONDS=30 WORLD13_SESSIONS_PER_TICK=2 python3 -c "import asyncio; from engine.simulation import WorldSimulation; asyncio.run(WorldSimulation('data/world13_world.db').run())"
+	WORLD13_MODE=world WORLD13_TICK_SECONDS=30 WORLD13_SESSIONS_PER_TICK=2 python3 -c "from dotenv import load_dotenv; load_dotenv(); import asyncio; from engine.simulation import WorldSimulation; asyncio.run(WorldSimulation('data/world13_world.db').run())"
 
 rits:
 	WORLD13_MODE=rits python3 -c "import asyncio; from engine.rits import RITSSimulation; asyncio.run(RITSSimulation().run())"
