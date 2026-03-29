@@ -13,7 +13,7 @@ from typing import Optional
 
 from .agent import Agent, initialize_population
 from .world_vault import WorldVault
-from .session import run_session, run_shadow_session
+from .session import run_session, run_shadow_session, run_world_session
 from .tvr import karmic_inertia, coherence
 from .mode import is_shadow, is_world, get_mode
 
@@ -67,7 +67,9 @@ class WorldSimulation:
         for _ in range(SESSIONS_PER_TICK):
             agent = self._select_agent(agents)
             try:
-                if self.shadow_mode:
+                if self.world_mode:
+                    result = await run_world_session(agent, self.vault)
+                elif self.shadow_mode:
                     result = await run_shadow_session(agent, self.vault, agents, self.tick_count)
                 else:
                     result = await run_session(agent, self.vault)
@@ -223,31 +225,40 @@ class WorldSimulation:
             if "error" in s:
                 continue
             name = s["agent_name"]
-            proto = s.get("protocol_name", "session")[:32]
+            event = s.get("protocol_name", "a moment")
             k_after = s["k_after"]
             delta = s["k_delta"]
+            excerpt = s.get("session_excerpt", "")
 
             if s.get("is_liberated"):
-                print(f"  ★ {name} completes their arc.  (K:{k_after:.4f})")
-            elif delta < -0.3:
-                print(f"  ↓ {name:<12s}  {proto:<32s}  K:{k_after:.2f}  Δ:{delta:+.3f}")
-            elif delta > 0.2:
-                print(f"  ↑ {name:<12s}  {proto:<32s}  K:{k_after:.2f}  Δ:{delta:+.3f}")
+                print(f"\n  ★ {name} — something completes.")
+                if excerpt:
+                    first = excerpt.split(".")[0].strip()
+                    if first:
+                        print(f"    \"{first}.\"")
+                print()
             else:
-                print(f"    {name:<12s}  {proto:<32s}  K:{k_after:.2f}  Δ:{delta:+.3f}")
+                print(f"\n  {name} — {event}  (K:{k_after:.2f}  Δ:{delta:+.3f})")
+                if excerpt and len(excerpt) > 50:
+                    first = excerpt.split(".")[0].strip()
+                    if len(first) > 120:
+                        first = first[:120] + "..."
+                    if first:
+                        print(f"    {first}.")
 
         for event_type, agent, predecessor in renewal_events:
             if event_type == "birth":
                 from .world_renewal import format_birth_event
-                print(format_birth_event(agent, predecessor))
+                print(f"\n{format_birth_event(agent, predecessor)}")
 
+        print()
         agents = self._load_agents()
         active = [a for a in agents if not a.is_liberated_flag]
         completed = [a for a in agents if a.is_liberated_flag]
         if active:
             mean_k = sum(a.k_current for a in active) / len(active)
-            print(f"  ── World: {len(active)} living · {len(completed)} completed · "
-                  f"mean K:{mean_k:.2f} · {self.total_sessions} sessions")
+            print(f"  ── {len(active)} living · {len(completed)} completed · "
+                  f"mean K:{mean_k:.2f} · session {self.total_sessions}")
         print()
 
     def get_world_summary(self) -> dict:

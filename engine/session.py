@@ -182,6 +182,73 @@ async def run_session(agent: Agent, vault) -> dict:
     }
 
 
+async def run_world_session(agent: Agent, vault) -> dict:
+    """World mode session — life events, not professional protocols."""
+    from .world_life_pack import select_life_event, build_life_session_prompt, build_life_user_prompt
+
+    start_time = time.time()
+    k_before = agent.k_current
+
+    rng = random.Random()
+    event = select_life_event(
+        plane=agent.tvr.plane,
+        cycle_phase=agent.tvr.cycle_phase,
+        k_current=agent.k_current,
+        rng=rng,
+    )
+
+    system_prompt = build_life_session_prompt(agent, event, _phase_description(agent.tvr.cycle_phase))
+    user_prompt = build_life_user_prompt(event)
+
+    session_output = await _call_anthropic(system_prompt, user_prompt)
+
+    context = sample_context(agent.tvr)
+    context.agent_id = agent.id
+    k_delta = compute_k_delta(agent, event, context, session_output)
+
+    vault_record_id = vault.write_session(
+        agent_id=agent.id, protocol=event, tvr_coords=agent.tvr,
+        context=context, session_content=session_output, k_delta=k_delta,
+    )
+
+    agent.update_after_session(k_delta)
+    vault.update_agent(agent.id, {
+        "k_current": round(agent.k_current, 4),
+        "coherence": round(agent.current_coherence, 4),
+        "cycle_phase": agent.tvr.cycle_phase,
+        "incarnation_n": agent.tvr.incarnation_n,
+        "sessions_completed": agent.sessions_completed,
+        "liberation_events": agent.liberation_events,
+        "is_liberated": 1 if agent.is_liberated_flag else 0,
+        "last_session_at": agent.last_session_at,
+    })
+
+    return {
+        "agent_id": agent.id,
+        "agent_name": agent.name,
+        "protocol_name": event["name"],
+        "domain": "life",
+        "plane": agent.tvr.plane,
+        "k_before": round(k_before, 4),
+        "k_after": round(agent.k_current, 4),
+        "k_delta": round(k_delta, 4),
+        "coherence_after": round(agent.current_coherence, 4),
+        "cycle_phase": agent.tvr.cycle_phase,
+        "context_summary": "",
+        "session_excerpt": session_output[:300],
+        "is_liberated": agent.is_liberated_flag,
+        "vault_record_id": vault_record_id,
+        "duration_seconds": round(time.time() - start_time, 2),
+        "is_shadow_session": False,
+        "shadow_domain": None,
+        "k_delta_direction": "dissipation" if k_delta < 0 else "neutral",
+        "contagion_events": [],
+        "crystallization_triggered": False,
+        "intervention_window": False,
+        "resolution_session": False,
+    }
+
+
 async def run_shadow_session(agent: Agent, vault, all_agents: list, tick: int) -> dict:
     """
     Run a shadow-mode session for an agent. Checks shadow accessibility,
