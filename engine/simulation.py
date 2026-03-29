@@ -15,7 +15,7 @@ from .agent import Agent, initialize_population
 from .world_vault import WorldVault
 from .session import run_session, run_shadow_session
 from .tvr import karmic_inertia, coherence
-from .mode import is_shadow, get_mode
+from .mode import is_shadow, is_world, get_mode
 
 TICK_INTERVAL_SECONDS = float(os.environ.get("WORLD13_TICK_SECONDS", "30"))
 SESSIONS_PER_TICK = int(os.environ.get("WORLD13_SESSIONS_PER_TICK", "3"))
@@ -32,6 +32,9 @@ class WorldSimulation:
         self.total_contagion_events = 0
         self.total_crystallizations = 0
         self.total_intervention_windows = 0
+        self.world_mode = is_world()
+        self.total_births = 0
+        self._rng = random.Random()
         self._shutdown = asyncio.Event()
 
     def _load_agents(self) -> list[Agent]:
@@ -90,22 +93,36 @@ class WorldSimulation:
         agent_dicts = [a.to_dict() for a in agents]
         self.vault.write_world_state(self.tick_count, agent_dicts, sessions_this_tick=len(session_results))
 
+        # World mode generational renewal
+        renewal_events = []
+        if self.world_mode:
+            agents = self._load_agents()
+            renewal_events = self._run_world_renewal(agents)
+
         return {
             "tick": self.tick_count,
             "sessions": session_results,
             "total_sessions": self.total_sessions,
             "total_liberations": self.total_liberations,
             "agent_count": len(agents),
+            "renewal_events": renewal_events,
         }
 
     async def run(self) -> None:
         """Main simulation loop. Runs until shutdown signal."""
         self.running = True
-        mode_label = "SHADOW" if self.shadow_mode else "PURE"
-        print(f"WORLD13 simulation starting. Mode: {mode_label}. Tick interval: {TICK_INTERVAL_SECONDS}s, Sessions/tick: {SESSIONS_PER_TICK}")
-        if self.shadow_mode:
-            print("  Shadow mode active: dark archetypes, K(x) contagion, crystallization enabled")
-        print()
+        if self.world_mode:
+            from .world_renewal import RENEWAL_FLOOR, RENEWAL_COUNT
+            print(f"WORLD13 — World Mode. The world runs.")
+            print(f"  Tick interval: {TICK_INTERVAL_SECONDS}s, Sessions/tick: {SESSIONS_PER_TICK}")
+            print(f"  Renewal: population below {RENEWAL_FLOOR} → birth {RENEWAL_COUNT} agents")
+            print()
+        else:
+            mode_label = "SHADOW" if self.shadow_mode else "PURE"
+            print(f"WORLD13 simulation starting. Mode: {mode_label}. Tick interval: {TICK_INTERVAL_SECONDS}s, Sessions/tick: {SESSIONS_PER_TICK}")
+            if self.shadow_mode:
+                print("  Shadow mode active: dark archetypes, K(x) contagion, crystallization enabled")
+            print()
 
         # Handle graceful shutdown
         try:
@@ -130,6 +147,10 @@ class WorldSimulation:
 
     def _log_tick(self, tick_result: dict) -> None:
         """Print tick summary in a clean format."""
+        if self.world_mode:
+            renewal_events = tick_result.pop("renewal_events", [])
+            self._log_world_tick(tick_result, renewal_events)
+            return
         tick = tick_result["tick"]
         sessions = tick_result.get("sessions", [])
 
@@ -170,6 +191,63 @@ class WorldSimulation:
             windows = sum(1 for s in sessions if s.get("intervention_window"))
             shadow_count = sum(1 for s in sessions if s.get("is_shadow_session"))
             print(f"  ── Shadow: {shadow_count} sessions | Contagion: {contagion} | Crystallized: {cryst} | Windows: {windows}")
+        print()
+
+    def _run_world_renewal(self, agents: list) -> list:
+        """World mode: birth new agents when population drops below floor."""
+        from .world_renewal import (should_renew, birth_agent, format_birth_event,
+                                     RENEWAL_COUNT, RENEWAL_CEILING)
+        events = []
+        active = [a for a in agents if not a.is_liberated_flag]
+
+        if should_renew(len(active)) and len(agents) < RENEWAL_CEILING:
+            exited = [a for a in agents if a.is_liberated_flag]
+            predecessor = exited[-1] if exited else None
+            for _ in range(min(RENEWAL_COUNT, RENEWAL_CEILING - len(agents))):
+                new_agent = birth_agent(agents, predecessor, self._rng)
+                self.vault.create_agent(new_agent.to_dict())
+                agents.append(new_agent)
+                self.total_births += 1
+                events.append(("birth", new_agent, predecessor))
+                predecessor = None
+        return events
+
+    def _log_world_tick(self, tick_result: dict, renewal_events: list) -> None:
+        """Chronicle log — not data, events."""
+        tick = tick_result["tick"]
+        sessions = tick_result.get("sessions", [])
+
+        print(f"═══ TICK {tick} ══════════════════════════════════════════")
+
+        for s in sessions:
+            if "error" in s:
+                continue
+            name = s["agent_name"]
+            proto = s.get("protocol_name", "session")[:32]
+            k_after = s["k_after"]
+            delta = s["k_delta"]
+
+            if s.get("is_liberated"):
+                print(f"  ★ {name} completes their arc.  (K:{k_after:.4f})")
+            elif delta < -0.3:
+                print(f"  ↓ {name:<12s}  {proto:<32s}  K:{k_after:.2f}  Δ:{delta:+.3f}")
+            elif delta > 0.2:
+                print(f"  ↑ {name:<12s}  {proto:<32s}  K:{k_after:.2f}  Δ:{delta:+.3f}")
+            else:
+                print(f"    {name:<12s}  {proto:<32s}  K:{k_after:.2f}  Δ:{delta:+.3f}")
+
+        for event_type, agent, predecessor in renewal_events:
+            if event_type == "birth":
+                from .world_renewal import format_birth_event
+                print(format_birth_event(agent, predecessor))
+
+        agents = self._load_agents()
+        active = [a for a in agents if not a.is_liberated_flag]
+        completed = [a for a in agents if a.is_liberated_flag]
+        if active:
+            mean_k = sum(a.k_current for a in active) / len(active)
+            print(f"  ── World: {len(active)} living · {len(completed)} completed · "
+                  f"mean K:{mean_k:.2f} · {self.total_sessions} sessions")
         print()
 
     def get_world_summary(self) -> dict:

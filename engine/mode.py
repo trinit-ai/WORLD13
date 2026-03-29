@@ -20,3 +20,11 @@ def is_shadow() -> bool:
 
 def is_pure() -> bool:
     return get_mode() == PURE
+
+
+WORLD = "world"
+
+
+def is_world() -> bool:
+    """World mode: autonomous persistent civilization. No research outputs."""
+    return get_mode() == WORLD
