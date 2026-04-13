@@ -1,4 +1,4 @@
-.PHONY: init sim api dashboard test install shadow-init shadow-sim shadow-api duck theatres theatre voynich rits rits-validate talent talent-dry marriage marriage-dry world world-init world-fast world-export
+.PHONY: init sim api dashboard test install shadow-init shadow-sim shadow-api duck theatres theatre voynich rits rits-validate talent talent-dry marriage marriage-dry world world-init world-fast world-export paradise paradise-fast eden eden-fast eden-long
 
 init:
 	python3 scripts/init_world.py
@@ -74,6 +74,21 @@ rits:
 
 rits-validate:
 	python3 -c "from engine.rits import RITSCoordinates, RITSAgent, RITSSimulation; print('RITS 13-system stack OK')"
+
+paradise:
+	python3 theatres/paradise_lost/run.py
+
+paradise-fast:
+	PARADISE_SESSIONS_PER_TICK=3 PARADISE_TICK_DELAY=1.0 python3 theatres/paradise_lost/run.py
+
+eden:
+	python3 theatres/eden/run.py
+
+eden-fast:
+	EDEN_MAX_TICKS=50 EDEN_TICK_DELAY=1.0 EDEN_SESSIONS_PER_TICK=2 python3 theatres/eden/run.py
+
+eden-long:
+	EDEN_MAX_TICKS=200 EDEN_TICK_DELAY=5.0 EDEN_SESSIONS_PER_TICK=1 python3 theatres/eden/run.py
 
 install:
 	pip3 install fastapi uvicorn anthropic python-dotenv pytest pytest-asyncio pyyaml
