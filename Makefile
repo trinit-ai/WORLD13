@@ -1,4 +1,4 @@
-.PHONY: init sim api dashboard test install shadow-init shadow-sim shadow-api duck theatres theatre voynich rits rits-validate talent talent-dry marriage marriage-dry world world-init world-fast world-export paradise paradise-fast eden eden-fast eden-long
+.PHONY: init sim api dashboard test install shadow-init shadow-sim shadow-api duck theatres theatre voynich rits rits-validate talent talent-dry marriage marriage-dry world world-init world-fast world-export paradise paradise-fast eden eden-fast eden-long hormuz hormuz-fast hormuz-long
 
 init:
 	python3 scripts/init_world.py
@@ -89,6 +89,15 @@ eden-fast:
 
 eden-long:
 	EDEN_MAX_TICKS=200 EDEN_TICK_DELAY=5.0 EDEN_SESSIONS_PER_TICK=1 python3 theatres/eden/run.py
+
+hormuz:
+	python3 theatres/hormuz/run.py
+
+hormuz-fast:
+	HORMUZ_MAX_TICKS=30 HORMUZ_TICK_DELAY=1.0 HORMUZ_SESSIONS_PER_TICK=2 python3 theatres/hormuz/run.py
+
+hormuz-long:
+	HORMUZ_MAX_TICKS=100 HORMUZ_TICK_DELAY=5.0 HORMUZ_SESSIONS_PER_TICK=1 python3 theatres/hormuz/run.py
 
 install:
 	pip3 install fastapi uvicorn anthropic python-dotenv pytest pytest-asyncio pyyaml
